@@ -1,4 +1,4 @@
-2# Welcome to Jekyll!
+# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -6,15 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:              Fachinormatiker-Forum Fulda
-logo:               https://github.com/joergre/fachinformatiker-forum/blob/gh-pages/logo.jpg # Logo image URL
+title:              Maxima
+logo:               # Logo image URL
 email:              joerg@reuter.sc 
-description:        Alles zum Thema IT
+description:        Minimal Blog & Magazine Jekyll Theme
 baseurl:            '' # The subpath of your site, e.g. /blog
-url:                'https://joergre.github.io/fachinformatiker-forum/' # The base hostname & protocol for your site
-github_username:    joergre
-twitter_username:   joergre
-instagram_username: jorgreuter
+url:                'http://maxima-jekyll.aspirethemes.com' # The base hostname & protocol for your site
+github_username:    aspirethemes
+twitter_username:   aspirethemes
+instagram_username: aspirethemes
 
 markdown:  kramdown
 permalink: pretty
@@ -49,10 +49,10 @@ defaults:
 # Authors
 authors:
   ahmad:
-    name:             Jörg Reuter
-    bio:              Lehrer an der Ferdinand-Braun Schule Fulda
+    name:             Ahmad Ajmi
+    bio:              Author & developer of Aspire Themes. Minimalist. I love creating clean and minimal websites.Technical writer at SitePoint.
     gravatar:         https://s.gravatar.com/avatar/f83141edd9e6339e678648596a403fd5?s=150
-    email:            joerg@reuter.sc
-    website:          https://joergre.github.io/fachinformatiker-forum/
-    github_username:  joergre
-    twitter_username: joergre
+    email:            info@aspirethemes.com
+    website:          http://aspirethemes.com
+    github_username:  ahmadajmi
+    twitter_username: ahmadajmi
