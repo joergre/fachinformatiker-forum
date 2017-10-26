@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maxima</title>
+    <description>Minimal Blog &amp; Magazine Jekyll Theme</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 26 Oct 2017 01:09:22 +0200</pubDate>
+    <lastBuildDate>Thu, 26 Oct 2017 01:09:22 +0200</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 24 Oct 2017 10:07:55 +0200</pubDate>
+        <link>http://localhost:4000/jekyll/update/2017/10/24/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2017/10/24/welcome-to-jekyll/</guid>
+      </item>
+    
+      <item>
+        <title>Die Überwachung nimmt zu</title>
+        <description>&lt;p&gt;Die Überwachung der Menschen nimmt zu, besonders in Bereichen in denen man es nicht unbedingt erwartet. Aber wir haben ja alle nichts zu verheimlichen ...&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2017/niederlande-versteckte-kameras-mit-analyse-software-in-werbetafeln-gefunden/&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Sep 2017 09:42:01 +0200</pubDate>
+        <link>http://localhost:4000/2017/09/23/die-ueberwachung-nimmt-zu/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/23/die-ueberwachung-nimmt-zu/</guid>
+      </item>
+    
+      <item>
+        <title>Einführung Ansible</title>
+        <description>&lt;p&gt;&lt;span class=&quot;_4n-j _3cht fsl&quot; data-testid=&quot;event-permalink-details&quot;&gt;Das nächste Treffen des Fachinformatiker Forums findet am 29.09. um 19:00 Uhr im ITZ Fulda statt.&lt;br /&gt;
+Das Thema ist Ansible. Ansible ist eine Open-Source-Plattform zur Orchestrierung und allgemeinen Konfiguration und Administration von Computern. Sie kombiniert Softwareverteilung, Ad-hoc-Kommando-Ausführung&lt;wbr /&gt; und Konfigurationsmanagement. Ansible benötigt keinen Client auf den zu betreunden Computern. Unterstützt werden Linux und Windows (PowerShell).&lt;br /&gt;
+Um Anmeldung wird gebeten (joerg@reuter.sc).&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;div class=&quot;_6a _6b&quot;&gt;
+&lt;p&gt;ITZ Fulda&lt;/p&gt;
+&lt;div class=&quot;_5xhp fsm fwn fcg&quot;&gt;Am Alten Schlachthof 4, 36037 Fulda&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;Video &lt;a href=&quot;https://www.youtube.com/watch?v=icR-df2Olm8&quot;&gt;https://www.youtube.com/watch?v=icR-df2Olm8&lt;/a&gt;&lt;/div&gt;
+</description>
+        <pubDate>Mon, 18 Sep 2017 13:45:07 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/09/18/einfuehrung-ansible/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/09/18/einfuehrung-ansible/</guid>
+      </item>
+    
+      <item>
+        <title>Quiz Python 1</title>
+        <description>&lt;p&gt;Hier das erste Quiz zum Python - Kurs (&lt;a href=&quot;https://github.com/joergre/workshops/blob/master/LF6/LF6_py.org&quot;&gt;https://github.com/joergre/workshops/blob/master/LF6/LF6_py.org&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;[WATU 2]&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 Sep 2017 03:46:41 +0200</pubDate>
+        <link>http://localhost:4000/tipps&amp;tricks/2017/09/18/quiz-python-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/tipps&amp;tricks/2017/09/18/quiz-python-1/</guid>
+      </item>
+    
+      <item>
+        <title>Google sperrt US-Journalistin – vermutlich wegen Videos zum Verfahren gegen Chelsea Manning</title>
+        <description>&lt;p&gt;Das sperren von Accounts und Mitteilungen müsste eigentlich erschwert werden. Aber momentan werden ja Firmen dazu ermutig Pro-aktiv zu löschen. Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Und den Mail-Account löschen Sie gleich  mit. Kann aber auch nicht sein, dass eine Journalistin von freier Berichterstattung träumt.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2017/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 Sep 2017 21:15:29 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</guid>
+      </item>
+    
+      <item>
+        <title>Ein Rack für wenig Geld - LackRack</title>
+        <description>&lt;p&gt;Ein Rack für wenig Geld, flexibel im Aufbau und in der Größen, kann notfalls auch als Tisch benutzt werden. Sieht hübsch aus und gibt es in verschiedenen Farben. Und günstiger geht es nur schwer: LackRack von IKEA&lt;/p&gt;
+&lt;p&gt;Mehr Informationen hier:&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://wiki.eth-0.nl/index.php/LackRack&quot;]&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 09 Sep 2017 15:18:51 +0200</pubDate>
+        <link>http://localhost:4000/news/tipps&amp;tricks/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/tipps&amp;tricks/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</guid>
+      </item>
+    
+      <item>
+        <title>Ethik und Programmieren</title>
+        <description>&lt;p&gt;Ein Artikel, der ganz anders verläuft als man zunächst erwartet:&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sat, 22 Jul 2017 16:50:00 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/07/22/ethik-und-programmieren/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/07/22/ethik-und-programmieren/</guid>
+      </item>
+    
+      <item>
+        <title>460 freie IT-Kurse die im Juli starten</title>
+        <description>&lt;p&gt;Der Sommer ist da und der Urlaub bietet ideale Möglichkeiten seine Wissenslücken zu schließen oder sich in neue Themen einzuarbeiten. Hier sind 460 Kurse im Bereich IT die alle kostenlos sind und im Juli 2017 starten. Sie sind in 3 Bereiche eingeteilt: Anfänger, mit Kenntnissen und Fortgeschrittene. Jeder Kurs ist mit Bewertungen aufgelistet. Kein Kurs hat von Teilnehmern schlechtre Bewertungen erhalten. Die Themen sind extrem weit: Einführung in JS, IT-Sec, AI oder KI, Deep Learning, Relationale Datenbanken ....&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://medium.freecodecamp.org/460-free-online-programming-computer-science-courses-you-can-start-in-july-ea767bb22092&quot;]&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Jul 2017 09:05:14 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</guid>
+      </item>
+    
+      <item>
+        <title>IT Kindern näher bringen mit dem Maus Türöffner</title>
+        <description>&lt;p&gt;Interessanter Artikel wie Linux und Programmieren Kinder näher gebracht werden kann:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.pro-linux.de/artikel/2/1890/der-maust%C3%BCr%C3%B6ffnertag-bei-der-fralug.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Jul 2017 08:13:16 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</guid>
+      </item>
+    
+      <item>
+        <title>KI mit dem Paspberry Pi? Kein Problem!</title>
+        <description>&lt;p&gt;Möchtest Du ein wenig mit künstlicher Intelligenz und dem Raspberry Pi experimentieren? Kein Problem! Die neue Erweiterung erlaubt es, die Google AI auf dem Raspberry Pi einzusetzen. Leider momentan nur mit einer Zeitschrift verfügbar.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.wired.co.uk/article/google-raspberry-pi-ai?utm_content=buffer3b8f2&amp;amp;utm_medium=social&amp;amp;utm_source=facebook.com&amp;amp;utm_campaign=buffer&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Jul 2017 12:11:54 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</guid>
+      </item>
+    
+      <item>
+        <title>Bye, Bye Whois</title>
+        <description>&lt;p&gt;Die Datenschutzgrundverordnung könnte das Aus für Whois bedeuten und ICANN und Registrare Schwierigkeiten bereiten.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Datenschutzgrundverordnung-Boeses-Erwachen-der-Domainverwaltung-ICANN-3757415.html&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Jun 2017 11:18:12 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/06/28/bye-bye-whois/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/06/28/bye-bye-whois/</guid>
+      </item>
+    
+      <item>
+        <title>Windows vor Petya 2 schützen</title>
+        <description>&lt;p&gt;Das Video von SemperVideo zeigt, wie man sich vor dem neuen Verschlüsselung-Virus Petya 2 schützen kann.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://youtu.be/hSnbp4CXKT0&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Jun 2017 10:13:26 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/06/28/windows-vor-petya-2-schuetzen/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/06/28/windows-vor-petya-2-schuetzen/</guid>
+      </item>
+    
+      <item>
+        <title>REACT – Informativer Workshop des Fachinformatiker-Forums-Fulda</title>
+        <description>&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Unter der Organisation von Jörg Reuter, Studienrat der Ferdinand-Braun-Schule und der &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;kompeteten Moderation&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; von Ralf Kehl konnten Interessierte, &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;am Freitag, 23. Juni 2017&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; an einem &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;spannenden und informativen &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Workshop über &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;&lt;b&gt;REACT&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; teilneh&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;men.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;&lt;b&gt;REACT&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; ist eine Bibliothek, die es&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; ermöglicht, Javascript auch auf dem Server einzusetzen. &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Sie &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;ist auf &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;gutem&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; Weg PHP i&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; Backend abzulösen.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;JavaScript ist &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;als&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; weit verbreitete Internet-Programmiersprache in nahezu jeder Webanwendung zu finden. &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Mit JavaScript programmierte Anwendungen können mit wenig Aufwand zu einer App für Android oder iOS umgewandelt werden.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Die Chancen auf dem Arbeitsmarkt für &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;den gut bezahlten Beruf des&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; Anwendungsentwickler&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; im&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; Bereich JavaScript sind überdurchschnittlich hoch&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Danke an den Verein Zeitsprung e.V. für die Bereitstellung der Räumlichkeiten :-).&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Wir, das Fachinformatiker-Forum &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Fulda&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;, treffen uns in regelmäßigen Abständen im &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Technologiezentrum &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;ITZ. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Nach den Sommerferien &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;freuen&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; wir uns &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;auf einen spannenden Workshop&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; zum Thema &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;&lt;b&gt;„IT Security“ &lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;und hoffen, Euch dort begrüßen zu können. &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Bis dahin eine gute Zeit!&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Die &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Termine &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;könnt Ihr auf unserer Website &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;&lt;a href=&quot;http://fachinformatiker-forum.de/&quot;&gt;http://fachinformatiker-forum.de&lt;/a&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;einsehen&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_205333.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-354&quot; src=&quot;/assets/20170623_205333-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_205245.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-353&quot; src=&quot;/assets/20170623_205245-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_203646.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-352&quot; src=&quot;/assets/20170623_203646-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_195022.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-351&quot; src=&quot;/assets/20170623_195022-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_195004.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-350&quot; src=&quot;/assets/20170623_195004-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_194953-1.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-349&quot; src=&quot;/assets/20170623_194953-1-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_192741.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-348&quot; src=&quot;/assets/20170623_192741-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_191509.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-347&quot; src=&quot;/assets/20170623_191509-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_184239-1.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-346&quot; src=&quot;/assets/20170623_184239-1-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Jun 2017 17:19:35 +0200</pubDate>
+        <link>http://localhost:4000/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</guid>
+      </item>
+    
+      <item>
+        <title>Das nächste Thema für das Fachinformatiker-Treff im Semptember soll sein ...</title>
+        <description>&lt;p&gt;Welches Thema soll im September behandelt werden (Das Fachinformatiker-Forum geht Juli/August in die Sommerferien). Stimme ab:&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://onlinevoten.de/poll/70392-das-naechste-thema-fuer-das-fachinformatiker-treff-im-semptember-soll-sein/&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Jun 2017 20:41:27 +0200</pubDate>
+        <link>http://localhost:4000/events/2017/06/23/das-naechste-thema-fuer-das-fachinformatiker-treff-im-semptember-soll-sein/</link>
+        <guid isPermaLink="true">http://localhost:4000/events/2017/06/23/das-naechste-thema-fuer-das-fachinformatiker-treff-im-semptember-soll-sein/</guid>
+      </item>
+    
+      <item>
+        <title>Synchronisationsprogramm casync</title>
+        <description>&lt;p&gt;Casync ist eine Mischung zwischen  rsync, Git und Tar und versucht besonders effektiv Verzeichnisse und Dateien zu synchronisieren. Insbesondere große Dateien und Images von virtuellen Maschinen.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.pro-linux.de/news/1/24861/synchronisationsprogramm-casync-in-erster-version.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Jun 2017 08:26:37 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/06/22/synchronisationsprogramm-casync/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/06/22/synchronisationsprogramm-casync/</guid>
+      </item>
+    
+      <item>
+        <title>Raspberry Pi: SSH aktivieren</title>
+        <description>&lt;p&gt;Die neue Version von Raspbian hat den SSH-Server nicht mehr aktiviert. Hier wird erklärt, wie der SSH-Server wieder eingeschaltet werden kann.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://youtu.be/qHsbzTbjcX4&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Jun 2017 20:20:17 +0200</pubDate>
+        <link>http://localhost:4000/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</link>
+        <guid isPermaLink="true">http://localhost:4000/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</guid>
+      </item>
+    
+      <item>
+        <title>Cybersecurity - success storys aus dem Darknet</title>
+        <description>&lt;div id=&quot;js_ue&quot; class=&quot;_5pbx userContent&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;K&amp;quot;}&quot;&gt;
+&lt;p&gt;Tech-Treff mit Vortrag &quot;Cybersecurity - success storys aus dem Darknet&quot; am Donnerstag, 22. Juni 2017 um 18.30 Uhr, ITZ Fulda&lt;/p&gt;
+&lt;p&gt;Teilnahme kostenfrei - Anmeldung bitte über &lt;a href=&quot;https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.zeitsprung.org%2Ftermine&amp;amp;h=ATPLAMkvtQig4EkGQfkEvgd6INne_r4bpdDRXu4KRKxD_ciPHj_OBxQZctdCAn5ddCGrbm_kOAQV33OHTe4p9MmrnhcTQHm2gahs83jEYqhuZwz8chF9jvbJtr4mvmxuMo3xCILiDIHLPke1jc5htE8&amp;amp;enc=AZPw9PeGVYcVXtP8PE_RiyXTkeFYq6xRdDhpQSuVg1eljsrV7reUdK9ftceUiMx1cTdbqjlcfQI-Wr8j2d67zN4xBFuChv0vO5DeKFhMpWd51uE_v5U84S3BTNaqQ3slhaLY9yBrEf-DbX53BnqH8b3V_Rae0yyqYqtPzy7DhbUGM527sNJZ8cXOouMmvkzWzzQ&amp;amp;s=1&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot;&gt;www.zeitsprung.org/termine&lt;/a&gt; - wegen begrenzten Plätzen erforderlich - bei großer Nachfrage evtl. anderer Raum/Ort&lt;/p&gt;
+&lt;p&gt;Wie wir inzwischen aus vielen Pressemitteilungen wissen, nimmt die Kriminalität im Internet zu und auch vielen ist inzwischen das &quot;Darknet&quot; ein Begriff.&lt;/p&gt;
+&lt;p&gt;Ob Hacking ein neues Businesskonzept ist, welche Bedrohungsarten es für klein- und mittelständische Unternehmen gibt und wie man sich schützen kann erfahren Sie in unserem Vortrag:&lt;/p&gt;
+&lt;p&gt;&quot;Cybersecurity - success storys aus dem Darknet&quot;&lt;/p&gt;
+&lt;p&gt;am Donnerstag, 22. Juni, um 18.30 Uhr, ITZ Fulda (im 1. Obergeschoss).&lt;/p&gt;
+&lt;p&gt;IT-Consultant Johannes Bittner von Zeitspringer bytewerk GmbH wird anhand von zahlreichen Praxisbeispielen verdeutlichen, welche Gefahren aktuell bestehen. Er freut sich, wenn die Teilnehmer vorab Ihre Fragen zum Thema Cybersecurity an veranstaltung@zeitsprung.org mailen, damit er auf diese konkret am Vortragsabend eingehen kann.&lt;/p&gt;
+&lt;p&gt;Die Teilnahme ist kostenfrei, bitte nutzen Sie zur verbindlichen Anmeldung unser Anmeldeformular unter &lt;a href=&quot;http://www.zeitsprung.org/termine&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot;&gt;www.zeitsprung.org/termine&lt;/a&gt; oder &lt;a href=&quot;http://www.eh-cluster.de/termine/anmeldung&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot;&gt;www.eh-cluster.de/termine/anmeldung&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&gt;&amp;gt; Netzwerken, Infos und Know-How austauschen - dafür stehen die Veranstaltungen der Technologie-Cluster Zeitsprung und EHC&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 20 Jun 2017 19:54:49 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</guid>
+      </item>
+    
+      <item>
+        <title>HPI-Kuus zum Thema Smart Home</title>
+        <description>&lt;h3&gt;Informatik trifft die eigenen 4 Wände: Smart Home&lt;/h3&gt;
+&lt;p&gt;Liebe Lerngemeinschaft,&lt;/p&gt;
+&lt;p&gt;nach dem großen Erfolg im letzten Jahr haben wir auch 2017 wieder einen Workshop zum Thema &lt;a href=&quot;https://open.hpi.de/courses/smarthome2017?tracking_user=3xojUCarIPAxS5WuqG7wQ2&amp;amp;tracking_type=news&amp;amp;tracking_id=2rNqPPVdNYsoxfNQyJO10A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=de&amp;amp;q=https://open.hpi.de/courses/smarthome2017?tracking_user%3D3xojUCarIPAxS5WuqG7wQ2%26tracking_type%3Dnews%26tracking_id%3D2rNqPPVdNYsoxfNQyJO10A&amp;amp;source=gmail&amp;amp;ust=1498030883770000&amp;amp;usg=AFQjCNECPaTw0XqLA5RlBHj3CqzdtWfMMQ&quot;&gt;&lt;strong&gt;Embedded Smart Home&lt;/strong&gt;&lt;/a&gt; in unser openHPI-Programm aufgenommen.&lt;/p&gt;
+&lt;h2&gt;Embedded Smart Home&lt;/h2&gt;
+&lt;p&gt;Der 2-wöchige Kurs startet am 3. Juli 2017 und richtet sich an alle, die Interesse an neuen Technologien und Spaß am Programmieren haben.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;Eine Anmeldung ist möglich unter: &lt;a href=&quot;https://open.hpi.de/courses/smarthome2017?tracking_user=3xojUCarIPAxS5WuqG7wQ2&amp;amp;tracking_type=news&amp;amp;tracking_id=2rNqPPVdNYsoxfNQyJO10A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=de&amp;amp;q=https://open.hpi.de/courses/smarthome2017?tracking_user%3D3xojUCarIPAxS5WuqG7wQ2%26tracking_type%3Dnews%26tracking_id%3D2rNqPPVdNYsoxfNQyJO10A&amp;amp;source=gmail&amp;amp;ust=1498030883770000&amp;amp;usg=AFQjCNECPaTw0XqLA5RlBHj3CqzdtWfMMQ&quot;&gt;https://open.hpi.de/courses/&lt;wbr /&gt;smarthome2017&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Darum geht's&lt;/strong&gt;&lt;br /&gt;
+Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgängerkurs bekannt sein dürften, wagen sich nun an weitere Spielereien, die man im intelligenten Zuhause umsetzen kann: Die Teilnehmer werden lernen, wie Sensoren eingesetzt werden und damit externe Aktuatoren, beispielsweise eine Lampe oder eine Jalousie angesteuert werden können. „Auf Wunsch zahlreicher Teilnehmer des letzten Kurses wollen wir diesmal außerdem zeigen, wie man eine Kamera extern steuern und überwachen kann“, so die Kursleiter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wichtig zu wissen&lt;/strong&gt;&lt;br /&gt;
+Über einen Raspberry Pi, einen erschwinglichen Mini-Computer, können die Lernenden das Embedded Smart Home programmieren und verwalten. Wir werden dafür die Linux-Distribution Raspian benutzen, für die Programmieraufgaben arbeiten wir mit der Programmiersprache Python. Doch zum Mitmachen ist keine Hardware nötig. Alle Aufgaben können auch auf einem über die Lernplattform bereitgestellten Gerät durchgeführt werden.&lt;/p&gt;
+&lt;p&gt;Wer seine Programmierkenntnisse vor Kursbeginn etwas auffrischen möchte, dem empfehlen wir den Kurs &lt;a href=&quot;https://open.hpi.de/courses/pythonjunior2015?tracking_user=3xojUCarIPAxS5WuqG7wQ2&amp;amp;tracking_type=news&amp;amp;tracking_id=2rNqPPVdNYsoxfNQyJO10A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=de&amp;amp;q=https://open.hpi.de/courses/pythonjunior2015?tracking_user%3D3xojUCarIPAxS5WuqG7wQ2%26tracking_type%3Dnews%26tracking_id%3D2rNqPPVdNYsoxfNQyJO10A&amp;amp;source=gmail&amp;amp;ust=1498030883770000&amp;amp;usg=AFQjCNFvWmKms6Htk9kYkDjdbbnhjs-Bog&quot;&gt;Spielend Programmieren lernen&lt;/a&gt;, der im Archivmodus zur Verfügung steht. Diejenigen Teilnehmer, die zuhause selbst am Raspberry Pi mitbasteln, werden bereits kurz vor dem offiziellen Kursstart ein paar Informationen zur Vorbereitung abrufen können.&lt;/p&gt;
+&lt;p&gt;Bis bald im Kurs! (kostenlos aber nicht umsonst)&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Jun 2017 07:50:14 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</guid>
+      </item>
+    
+      <item>
+        <title>Freifunk muss keine Vorratsdaten speichern!</title>
+        <description>&lt;p&gt;Ich habe schon Angst um die Existenz von Freifunk. Als Laie fand ich persönlich die Entscheidung eher überraschend.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;http://www.n-tv.de/technik/Freifunk-muss-keine-Vorratsdaten-speichern-article19897165.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Jun 2017 20:37:22 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</guid>
+      </item>
+    
+      <item>
+        <title>Google darf nicht mehr auf gefilterte Treffer hinweisen</title>
+        <description>&lt;p&gt;Das ist eine wirklich unschöne Entscheidung. Bei kritischen Themen, vor allem im Bereich Verbraucherschutz, wird google damit fast wertlos.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://youtu.be/bQe_ViGxVTo&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Jun 2017 23:33:09 +0200</pubDate>
+        <link>http://localhost:4000/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</guid>
+      </item>
+    
+      <item>
+        <title>Unreparierbar: Surface Laptop fällt bei iFixit durch</title>
+        <description>&lt;p&gt;Eigentlich ist die Aussage des Artikels bereits vorher klar. Keiner erwartet, dass diese Geräte reparierbar sind - Aber vielleicht denkt ja jemand durch den Artikel darüber nach, was er der Umwelt damit antut.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Unreparierbar-Surface-Laptop-faellt-bei-iFixit-durch-3746123.html?wt_mc=rss.ho.beitrag.atom&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Jun 2017 23:26:49 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</guid>
+      </item>
+    
+      <item>
+        <title>Humble Book Bundle Linux &amp; Open Source</title>
+        <description>&lt;p&gt;[link-preview url=&quot;https://www.pro-linux.de/news/1/24811/humble-book-bundle-linux-amp-open-source.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Jun 2017 22:23:26 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/06/07/humble-book-bundle-linux-open-source/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/06/07/humble-book-bundle-linux-open-source/</guid>
+      </item>
+    
+      <item>
+        <title>Markdown in Latex-Dokumentem</title>
+        <description>&lt;p&gt;[link-preview url=&quot;https://www.overleaf.com/blog/441-how-to-write-in-markdown-on-overleaf#.WQz6LYjyjmH&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 04 Jun 2017 19:20:29 +0200</pubDate>
+        <link>http://localhost:4000/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</link>
+        <guid isPermaLink="true">http://localhost:4000/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</guid>
+      </item>
+    
+      <item>
+        <title>Einführung in React</title>
+        <description>&lt;p&gt;&lt;span class=&quot;_4n-j _fbReactionComponent__eventDetailsContentTags fsl&quot; data-testid=&quot;event-permalink-details&quot;&gt;React ist ein modernes JavaScript Framework um HTML Web-Applikationen zu erstellen. Die Erweiterung 'React Native' ermöglicht zudem die Entwicklung von nativen Applikationen für Android und iOS.&lt;br /&gt;
+Die Veranstaltung vermittelt einen Querschnitt und ersten praktischen Einstieg in die Konzepte der JavaScript React Welt.&lt;br /&gt;
+Rendern mit Componenten Lifecycle, JSX, States und Props.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Vorgestellt werden u.a. grundlegende Programmiertechniken von Router, Redux und ReactNative.&lt;br /&gt;
+Anmeldung bitte per Messanger oder E-Mail: joerg@reuter.sc&lt;br /&gt;
+Videos zur Vorbereitung auf den Workshop:(Linux: https://youtu.be/GiWxBDEuW5E&lt;br /&gt;
+Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
+&lt;p&gt;Referent: Ralf Kehl&lt;/p&gt;
+&lt;p&gt;Freitag, 23. Juni 19:00 - 22:30,&lt;/p&gt;
+&lt;div class=&quot;_6a _6b&quot;&gt;
+&lt;p&gt;ITZ Fulda&lt;/p&gt;
+&lt;div class=&quot;_5xhp fsm fwn fcg&quot;&gt;Am Alten Schlachthof 4, 36037 Fulda&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Jun 2017 10:56:21 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/06/02/einfuehrung-in-react/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/06/02/einfuehrung-in-react/</guid>
+      </item>
+    
+      <item>
+        <title>Welche Daten Windows 10 überträgt</title>
+        <description>&lt;p&gt;Welche Daten Windows 10 überträgt. Eine Zusammenfassung von SemperVideo:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=7aaAmULP_rA&amp;amp;feature=push-u&amp;amp;attr_tag=Js9OeHCpCAV3fK0B-6&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Apr 2017 11:19:54 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/04/14/welche-daten-windows-10-uebertraegt/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/04/14/welche-daten-windows-10-uebertraegt/</guid>
+      </item>
+    
+      <item>
+        <title>EHC-Mitglied JUMO GmbH &amp; Co. KG sucht Auszubildende zum Fachinformatiker (m/w)</title>
+        <description>&lt;div id=&quot;js_5&quot; class=&quot;_5pbx userContent&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;K&amp;quot;}&quot;&gt;
+&lt;p&gt;EHC-Mitglied &lt;a class=&quot;profileLink&quot; href=&quot;https://www.facebook.com/jumo.net.de/&quot; data-hovercard=&quot;/ajax/hovercard/page.php?id=100191233407551&quot; data-hovercard-prefer-more-content-show=&quot;1&quot;&gt;JUMO GmbH &amp;amp; Co. KG&lt;/a&gt; sucht Auszubildende zum Fachinformatiker (m/w)&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=wO4LYzykm9w&amp;amp;feature=em-subs_digest&quot;]&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 10 Apr 2017 12:29:16 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</guid>
+      </item>
+    
+      <item>
+        <title>Sorry Windows, Android is now the most popular end-user operating system</title>
+        <description>&lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24622/android-verdr%C3%A4ngt-windows-vom-ersten-platz-der-marktanteile.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 Apr 2017 06:30:32 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</guid>
+      </item>
+    
+      <item>
+        <title>Richard Stallman</title>
+        <description>&lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=jUibaPTXSHk&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Apr 2017 23:00:33 +0200</pubDate>
+        <link>http://localhost:4000/news/2017/04/04/292/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/04/04/292/</guid>
+      </item>
+    
+      <item>
+        <title>Treffen Linux User Group Fulda</title>
+        <description>&lt;p&gt;Mittwoch, dem 22.03.2017 ab 19 Uhr&lt;/p&gt;
+&lt;p&gt;Ort: Office Factory (http://www.office-factory.net/index.php?cat=Unternehmen&amp;amp;page=Anfahrt/)&lt;/p&gt;
+&lt;p&gt;Hier können alle ungezwungen sich (nicht nur) über Themen zu Linux und Open Source austauschen. Meistens sind wir zwischen 4 und 10 Leuten.&lt;/p&gt;
+&lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Mar 2017 08:04:15 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</guid>
+      </item>
+    
+      <item>
+        <title>Freifunk: Bundesrat befürwortet Gemeinnützigkeit</title>
+        <description>&lt;p&gt;Ein wichtiger und richtiger Schritt für freies WLAN in Deutschland.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Freifunk-Bundesrat-befuerwortet-Gemeinnuetzigkeit-3650176.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Mar 2017 10:37:16 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</guid>
+      </item>
+    
+      <item>
+        <title>Das ist also die Datenautobahn ....</title>
+        <description>&lt;p&gt;[link-preview url=&quot;http://www.n-tv.de/wirtschaft/Amazon-transportiert-Daten-per-LKW-article19691380.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Mar 2017 02:16:01 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/03/03/das-ist-also-die-datenautobahn/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/03/03/das-ist-also-die-datenautobahn/</guid>
+      </item>
+    
+      <item>
+        <title>Ausbildung zum Informatiker AE</title>
+        <description>&lt;p&gt;[link-preview url=&quot;https://www.gedys-intraware.de/ausbildungsplatz/fachinformatiker/&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Feb 2017 09:13:06 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/23/ausbildung-zum-informatiker-ae/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/23/ausbildung-zum-informatiker-ae/</guid>
+      </item>
+    
+      <item>
+        <title>Freies Webinar: Effizientes Incident Managment mit i-doit/OTRS</title>
+        <description>&lt;p&gt;[link-preview url=&quot;https://goo.gl/I1QatD&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Feb 2017 08:46:36 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</guid>
+      </item>
+    
+      <item>
+        <title>Treffen Linux User Group Fulda</title>
+        <description>&lt;p&gt;Mittwoch, dem 22.02.2017 ab 19 Uhr&lt;/p&gt;
+&lt;p&gt;Ort: Office Factory (http://www.office-factory.net/index.php?cat=Unternehmen&amp;amp;page=Anfahrt/)&lt;/p&gt;
+&lt;p&gt;Hier können alle ungezwungen sich (nicht nur) über Themen zu Linux und Open Source austauschen. Meistens sind wir zwischen 4 und 10 Leuten.&lt;/p&gt;
+&lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Feb 2017 11:26:32 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</guid>
+      </item>
+    
+      <item>
+        <title>AirSim: Microsoft stellt Simulator für Drohnen und Roboter vor</title>
+        <description>&lt;p&gt;Forscher von Microsoft Research haben die Aerial Informatics and Robotics Platform (AirSim) angekündigt: Teil der Plattform ist eine Sammlung neuer Werkzeuge, mit denen Entwickler Roboter, Drohnen und andere autonome Vehikel testen und den Umgang mit Hindernissen trainieren können.&lt;/p&gt;
+&lt;p&gt;Die Software ist ein Open-Source-Projekt. Momentan nur unter WIndows lauffähig. Linux-Version wird bald erwartet.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24466/airsim-microsoft-stellt-simulator-f%C3%BCr-drohnen-und-roboter-vor.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Feb 2017 07:31:30 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</guid>
+      </item>
+    
+      <item>
+        <title>Puppe „My Friend Cayla“ muss vernichtet werden!</title>
+        <description>&lt;p&gt;Die Puppe „My Friend Cayla“ muss von den Eltern vernichtet werden und darf ab sofort nicht mehr verkauft werden. Es drohen bis zu 2 Jahre Haft bei nicht Zerstörung der Puppe.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2017/schnueffelpuppe-my-friend-cayla-in-deutschland-verboten/&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Feb 2017 10:43:27 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</guid>
+      </item>
+    
+      <item>
+        <title>„Democracy – Im Rausch der Daten“ in der Arte-Mediathek</title>
+        <description>&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2017/democracy-im-rausch-der-daten-in-der-arte-mediathek/&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Feb 2017 07:44:30 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</guid>
+      </item>
+    
+      <item>
+        <title>H5P - Ein freier HTML5-Editor für Lerninhalte</title>
+        <description>&lt;p&gt;H5P ist ein freier, web-basierter HTML5-Editor für Lerninhalte. Die Entwicklung wird vom &lt;a href=&quot;https://h5p.org/about-the-project&quot;&gt;Staat Norwegen getragen.&lt;/a&gt; Es ist sowohl die Nutzung wie der Quellcode frei. Das Ziel des Projektes ist es,  verfügbare Lerninhalte zu neuen Lernmaterialien zusammen zufügen. Die neuen Lerninhalte sollen möglichst einfach überall einsetzbar sein und geteilt werden können. Es gibt Plugins für Moodle, Wordpress, Drupla  und viele andere Plattformen.&lt;/p&gt;
+&lt;p&gt;Die Lernmaterialien werden im Browser erstellt, entweder direkt bei &lt;a href=&quot;http://h5p.org&quot;&gt;H5P&lt;/a&gt; oder auf dem eigenen Webserver. Ein Teilen der Lerninhalte und das weiterverwenden einzelner Elemente einer Lerneinheit sind direkt im Framework und im fertigen Produkt vorgesehen. Die Fernuni Hagen setzt H5P seit einiger Zeit ein und ich denke wir werden noch einiges von H5p hören.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://youtu.be/MnvmPflxJj4&quot;]&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://youtu.be/xG9vhTHwH4w&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Feb 2017 05:23:56 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</guid>
+      </item>
+    
+      <item>
+        <title>Sicherheitsforscher an AV-Hersteller: &quot;Finger weg von HTTPS&quot;</title>
+        <description>&lt;p&gt;Sehr schöner Artikel. Ist zwar schon bekannt, kann man aber nicht oft genug erwähnen.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Sicherheitsforscher-an-AV-Hersteller-Finger-weg-von-HTTPS-3620159.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Feb 2017 16:29:15 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</guid>
+      </item>
+    
+      <item>
+        <title>Britische Lehrer tragen Body-Cams</title>
+        <description>&lt;p&gt;Bald auch in Deutschland? Wird bestimmt eine interessante Diskussion.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Pilotprojekt-Britische-Lehrer-tragen-Body-Cams-3622814.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Feb 2017 16:24:40 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/12/britische-lehrer-tragen-body-cams/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/12/britische-lehrer-tragen-body-cams/</guid>
+      </item>
+    
+      <item>
+        <title>NoTrack: Das schwarze Loch für Tracker</title>
+        <description>&lt;p&gt;Sehr schöne  Erweiterung für PI-Hole. Allerdings funktionieren jetzt einige Seiten wie Bild.de nicht mehr! Um Pi-Hole und notrack zusammen laufen zu lassen&lt;a href=&quot;https://www.facebook.com/notes/pine-64-dach/pi-hole-notrack-auf-dem-pine64-installieren/1857875841102986&quot;&gt;, bitte diese Anleitung beachten!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=i4UndCCqRu8&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sat, 11 Feb 2017 22:20:20 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</guid>
+      </item>
+    
+      <item>
+        <title>Programm der Chemnitzer Linux-Tage 2017</title>
+        <description>&lt;p&gt;Am Wochenende des 11. und 12. März steht Chemnitz, oder genauer gesagt&lt;br /&gt;
+die TU Chemnitz, wieder ganz im Zeichen des Tux. Nun haben die&lt;br /&gt;
+Organisatoren das Vortrags- und Workshop-Programm der kommenden&lt;br /&gt;
+Chemnitzer Linux-Tage vorgestellt.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://chemnitzer.linux-tage.de/2017/de/programm&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Feb 2017 08:02:43 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</guid>
+      </item>
+    
+      <item>
+        <title>E-Bike-Akku löst Parkhausbrand</title>
+        <description>&lt;p&gt;Die Akkutechnik kommt immer mehr an ihre Grenzen. bei dem Artikel ist das Video ganz unten über das aktuelle Problem der Akkutechnik empfehlenswert. Smartphones, Tablets, E-Bikes, Hoverboards explodieren.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Hannover-Explosion-von-E-Bike-Akku-loest-Parkhausbrand-aus-3619564.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Feb 2017 07:52:45 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</guid>
+      </item>
+    
+      <item>
+        <title>Trojaner bietet Support und bittet um eine gut Bewertung</title>
+        <description>&lt;p&gt;Erpressungstrojaner bietet Support beim bezahlen mit Bitcoins und dem entschlüsseln der Festplatte und bittet danach um eine gute Bewertung, Dreistigkeit siegt.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/security/meldung/Erpressungs-Trojaner-Spora-Der-Kunde-ist-Koenig-3618984.html&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Feb 2017 07:39:16 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</guid>
+      </item>
+    
+      <item>
+        <title>Tag der offenen Tür 2017 - Konrad Zuse Schule</title>
+        <description>&lt;p&gt;Am 11. Februar 2017 10:00 Uhr - 14:00 Uhr&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;http://www.konrad-zuse-schule.de/index.php?id=568&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Wed, 08 Feb 2017 08:36:25 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</guid>
+      </item>
+    
+      <item>
+        <title>Tag der offenen Tür an der Richard-Müller-Schule</title>
+        <description>&lt;p&gt;Die Richard-Müller-Schule als kaufmännisches Kompetenzzentrum der Region Fulda lädt am&lt;br /&gt;
+Samstag, 11.02.2017, von 10:00 bis 14:30 Uhr ein zum Tag der offenen Tür.&lt;br /&gt;
+Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vor.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Feb 2017 01:49:21 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</guid>
+      </item>
+    
+      <item>
+        <title>Pi-Hole</title>
+        <description>&lt;p&gt;Sehr schönes Video über Pi-Hole, dem Netzwerkweiten Adblocker.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=3GJ2Jqk8wD4&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Feb 2017 01:07:40 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/02/07/pi-hole/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/02/07/pi-hole/</guid>
+      </item>
+    
+      <item>
+        <title>Neues Zuse-Computer-Museum: ZCOM</title>
+        <description>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Zuse-Computer-Museum-ZCOM-in-Hoyerswerda-eroeffnet-3609845.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 29 Jan 2017 23:37:39 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/01/29/neues-zuse-computer-museum-zcom/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/01/29/neues-zuse-computer-museum-zcom/</guid>
+      </item>
+    
+      <item>
+        <title>Milliarden-Förderprogramm für digitale Klassenzimmer</title>
+        <description>&lt;p&gt;Ich bin mir nicht sicher, ob das Geld gut angelegt ist. Ok, ich träume von Beamern mit HDMI und einem offenen Port 22. Aber ich denke, dass Geld wäre besser in offene Schulbücher (OER: https://de.wikipedia.org/wiki/Open_Educational_Resources) angelegt.&lt;/p&gt;
+&lt;p&gt;Zum nachdenken: https://www.youtube.com/watch?v=a90Tto1b4eo&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Milliarden-Foerderprogramm-fuer-digitale-Klassenzimmer-3609761.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 29 Jan 2017 23:20:12 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</guid>
+      </item>
+    
+      <item>
+        <title>Microsoft Cloud Community Spring Event in Fulda</title>
+        <description>&lt;p&gt;Am 02. Februar 2017, 9:00 - 17:00 Uhr. Preis: kostenlos Ort: Neuland &amp;amp; Partner&lt;/p&gt;
+&lt;p&gt;Im Bereich Cloud ist Microsoft ein Anbieter von vielen und bietet die gesamte Bandbreite von Diensten an wie andere Mitbewerber auch, insbesondere auch diverse Linux-Distributionen. Man kann zum Thema Cloud stehen wie man möchte, man kommt heute nicht mehr daran vorbei. Die Cloud ist da und wird, zumindest meiner Meinung nach, bleiben. Die Frage ist nur, wie man sie sinnvoll in das Unternehmen integriert und sicherlich sehen die Möglichkeiten und gesetzlichen Rahmenbedingungen bei jeder Firma anders aus.&lt;/p&gt;
+&lt;p&gt;Das Thema Cloud und die Umwälzungen die auf uns zurollen sind in den Firmen, Universitäten, Schulen und insbesondere Auszubildenden noch nicht angekommen. Insofern finde ich die Veranstaltung mehr als sinnvoll. Die Ergebnisse lassen sich mit Sicherheit auch auf andere Anbieter oder das Design einer &quot;private cloud&quot; übertragen.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;http://mscommunity.cloud/community/2102-safe-the-date-02-02-2017-community-spring-event-in-fulda?utm_content=buffer02391&amp;amp;utm_medium=social&amp;amp;utm_source=linkedin.com&amp;amp;utm_campaign=buffer&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 29 Jan 2017 22:09:58 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</guid>
+      </item>
+    
+      <item>
+        <title>Smartphone misst den Herzschlag</title>
+        <description>&lt;p&gt;Erste App die ein zertifiziertes Medizinprodukte ist: Preventicus Heartbeats! Sie kann einen bevorstehenden Schlaganfall erkennen weil dem meist ein unregelmäßig schlagendes Herz voraus geht.&lt;/p&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;http://www.presseportal.de/pm/121571/3412209&quot;]&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.heise.de/tr/artikel/Digital-Health-Pioneers-sind-ausgewaehlt-3454865.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Jan 2017 16:29:18 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/01/25/smartphone-misst-den-herzschlag/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/01/25/smartphone-misst-den-herzschlag/</guid>
+      </item>
+    
+      <item>
+        <title>Treffen Linux User Group Fulda</title>
+        <description>&lt;blockquote&gt;Mittwoch, dem 25.01.2017 ab 19 Uhr&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Ort: Office Factory (http://www.office-factory.net/index.php?cat=Unternehmen&amp;amp;page=Anfahrt/)&lt;/p&gt;
+&lt;p&gt;Hier können alle ungezwungen sich (nicht nur) über Themen zu Linux und Open Source austauschen. Meistens sind wir zwischen 4 und 10 Leuten.&lt;/p&gt;
+&lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Jan 2017 16:18:42 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</guid>
+      </item>
+    
+      <item>
+        <title>SSHFS mit Windows 10</title>
+        <description>&lt;p&gt;Nach vielen Versuchen die beste Lösung:&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://igikorn.com/sshfs-windows-10/&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Jan 2017 19:10:33 +0100</pubDate>
+        <link>http://localhost:4000/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</link>
+        <guid isPermaLink="true">http://localhost:4000/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</guid>
+      </item>
+    
+      <item>
+        <title>Analyse von Spiegel Online: So tickt Deutschlands größte Nachrichtenseite</title>
+        <description>&lt;p&gt;Schöner Artikel über die Anwendung von BigData bei dem Nachrichtenmagazin Spiegel in einem Zeitraum von 2 Jahren. Das Video ist sehenswert.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2016/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 19 Jan 2017 11:07:31 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</guid>
+      </item>
+    
+      <item>
+        <title>2. Fuldaer Netzwerke-Abend</title>
+        <description>&lt;p&gt;Wann:  Mo. 6. Februar 2017 19:00 Uhr – 22:00 Uhr MEZ&lt;/p&gt;
+&lt;p&gt;Wo:  Parkhotel Kolpinghaus Fulda, Goethestraße 13, 36043 Fulda&lt;/p&gt;
+&lt;p&gt;Karten: https://www.eventbrite.de/e/2-fuldaer-netzwerke-abend-tickets-30707573178&lt;/p&gt;
+&lt;div class=&quot;g-group l-lg-mar-bot-6 l-md-mar-bot-4 l-pad-bot-6 &quot;&gt;
+&lt;div class=&quot;g-cell g-cell-10-12 g-cell-md-1-1&quot;&gt;
+&lt;h3 class=&quot;label-primary&quot;&gt;BESCHREIBUNG&lt;/h3&gt;
+&lt;div class=&quot;has-user-generated-content js-d-read-more read-more js-read-more read-more--medium-down read-more--expanded&quot; data-xd-wired=&quot;read-more&quot;&gt;
+&lt;div class=&quot;js-xd-read-more-toggle-view read-more__toggle-view&quot;&gt;
+&lt;div class=&quot;js-xd-read-more-contents l-mar-top-3&quot;&gt;
+&lt;p&gt;2. Netzwerkabend der Fuldaer Netzwerke&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;„Beziehungen schaden nur dem, der keine hat“&lt;/strong&gt;&lt;/em&gt;, sagt ein altes Sprichwort.&lt;/p&gt;
+&lt;p&gt;Die Region Fulda ist bekannt für ihre gut funktionierenden wirtschaftlichen und sozialen Netzwerke. Wir wollen die heimische Netzwerkkultur weiter voranbringen und laden Sie herzlich ein zu einem Netzwerkabend der Netzwerke für Montag, 6. Februar 2017, 19.00 Uhr in das Parkhotel Kolpinghaus in Fulda ein.&lt;/p&gt;
+&lt;p&gt;Die junge Unternehmerin Viktoria Thur wird in einem &lt;strong&gt;Impulsvortrag&lt;/strong&gt; einen Einblick in den „American Way of Networking“ geben. Anschließend ist genügend Raum zum Austausch zwischen den verschiedenen Netzwerken. Bringt bitte genügend Visitenkarten mit. Jedes Netzwerk hat nicht nur die Möglichkeit, sich in einem 30sec. Elevator-Speech auf der Bühne zu präsentieren, sondern kann auch einen kleinen Informationsstand mit Display und Prospektmaterial einrichten.&lt;/p&gt;
+&lt;p&gt;Der &lt;strong&gt;Kostenbeitrag&lt;/strong&gt; für diesen Abend beträgt netto 15 Euro und beinhaltet neben dem Vortrag auch einen Imibss und Getränke. Das Parkhotel Kolpinghaus wird uns hierbei unterstützen. Die Veranstaltungskosten sollen über Eintrittsgelder finanziert werden. Ein eventueller Überschuss wird für einen wohltätigen Zweck im Landkreis Fulda gespendet.&lt;/p&gt;
+&lt;p&gt;Die Organisatoren freuen sich auf Ihre verbindliche Anmeldung.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;g-group&quot;&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 12 Jan 2017 22:05:27 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</guid>
+      </item>
+    
+      <item>
+        <title>First 64-Bit and Enterprise OS Comes to Raspberry Pi 3</title>
+        <description>&lt;p&gt;&quot;What many of us don’t know is that ARM is moving into datacenters and the enterprise world with full force.&quot;&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.linux.com/news/learn/intro-to-linux/first-64-bit-and-enterprise-os-comes-raspberry-pi-3&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Jan 2017 21:14:31 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</guid>
+      </item>
+    
+      <item>
+        <title>Lidl-Gutschein bei Whatsapp? Vorsicht!</title>
+        <description>&lt;p&gt;Die Werbung scheint in der Region Fulda ungewöhnlich erfolgreich zu sein:&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;http://www.n-tv.de/technik/Lidl-Gutschein-bei-Whatsapp-Vorsicht-article19504321.html&quot;]&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Jan 2017 21:02:41 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</guid>
+      </item>
+    
+      <item>
+        <title>Tech-Treff: &quot;Problemlösungen - alleine oder im Kollektiv?</title>
+        <description>&lt;p&gt;Zeit:  Donnerstag, 12. Januar 18:30 - 22:00&lt;br /&gt;
+Ort: Zeitsprung / EHC Fulda e.V.&lt;br /&gt;
+Am Alten Schlachtof 4, 36037 Fulda&lt;/p&gt;
+&lt;p&gt;Tech-Treff Januar: &quot;Problemlösungen - alleine oder im Kollektiv? Was ist Deine Rolle?&quot;&lt;/p&gt;
+&lt;p&gt;Spielerisch beginnen wir das neue Jahr.&lt;br /&gt;
+Die Technologie-Cluster der Region Fulda - Zeitsprung IT-Forum Fulda e.V. und Engineering-High-Tech-Clus&lt;wbr /&gt;ter Fulda e.V. laden zu einem informativen und kreativen Abend ein.&lt;/p&gt;
+&lt;p&gt;Dr. Jan Ries von der Hochschule Fulda wird über verschiedenste (spielerische) Problemstellungen Deine/Ihre&lt;br /&gt;
+kognitiven, kreativen und sozialen Fähigkeiten &quot;fordern&quot; und&lt;br /&gt;
+fördern.&lt;/p&gt;
+&lt;p&gt;Übungen aus dem Bereich des &quot;problembasierten oder auch&lt;br /&gt;
+problemorientierten Lernens&quot; basieren darauf, dass die Lernenden&lt;br /&gt;
+selbstbestimmtes und entdeckendes Lernen (Schulung der Kreativität, Selbsteinschätzung, Empathie) erfahren. &lt;span class=&quot;text_exposed_show&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Die Teilnehmer lernen, eine Problemstellung zu analysieren, geeignete Informationsquellen (Ressourcen) innerhalb des Teams zu finden, zu nutzen und schließlich unterschiedliche Lösungsansätze zu vergleichen, auszuwählen und umzusetzen.&lt;/p&gt;
+&lt;p&gt;Einsatzgebiete:&lt;br /&gt;
+Problemorientiertes Lernen unterstützt bei der Veranschaulichung von gruppendynamischen Prozessen, bietet den einzelnen Individuen die Möglichkeit sich in neuen Kontexten zu erfahren und zu erproben und bringt viel Spaß!&lt;br /&gt;
+Problemorientiertes Lernen wird häufig für neu zu bildende&lt;br /&gt;
+Projektteams, als teamspiritfördernde Maßnahme eingesetzt; dient dem gegenseitigen Kennenlernen in neuen Kontexten; fördert und entwickelt die Frustrationstoleranz; veranschaulicht gruppendynamische Prozesse;&lt;br /&gt;
+....&lt;/p&gt;
+&lt;p&gt;Der Referent:&lt;br /&gt;
+Dr. Jan Ries koordiniert an der Hochschule Fulda den allgemeinen&lt;br /&gt;
+Hochschulsport, lehrt in verschiedensten Fachbereichen die Themen Prävention, Gesundheitsförderung und problemorientiertes Lernen; mit dem interdisziplinären Team von Health Network berät der Sportwissenschaftler Unternehmen in den Bereichen Betriebliches Gesundheitsmanagement und Betriebliche Gesundheitsförderung (model of good practice auf den Seiten des Bundesministeriums für Gesundheit) und&lt;br /&gt;
+damit einhergehenden Organisations- und Personalfragen.&lt;/p&gt;
+&lt;p&gt;Die Veranstaltung ist kostenfrei.&lt;br /&gt;
+Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Verein Zeitsprung e.V. beteiligen.&lt;/span&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2017 20:45:42 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</guid>
+      </item>
+    
+      <item>
+        <title>Build your own NSA</title>
+        <description>&lt;p&gt;Ein wirklich interessanter Vortrag auf dem 33c3 über das wichtigste Problem des Internets.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=yb7BgDBUbP0&amp;amp;index=18#t=585.085792&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2017 19:44:35 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/01/05/build-yout-own-nsa/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/01/05/build-yout-own-nsa/</guid>
+      </item>
+    
+      <item>
+        <title>2. Platz des OSBAR-Awards 2016 geht nach Fulda</title>
+        <description>&lt;p&gt;Herzlichen Glückwunsch Suse Fulda:&lt;/p&gt;
+&lt;p&gt;OpenAttic wurde in Fulda von der IT-novum entwickelt und Ende 2016 von Suse übernommen. Die Entwicklungsabteilung in Fulda blieb bestehen.&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24325/open-source-innovationspreis-osbar-2016-f%C3%BCr-zammad-openattic-und-privacyide.html&quot;]&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Jan 2017 23:49:21 +0100</pubDate>
+        <link>http://localhost:4000/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</guid>
+      </item>
+    
+      <item>
+        <title>Sehr schöne Diskussion über Schule, Jugendliche und Zukunft</title>
+        <description>&lt;p&gt;https://www.youtube.com/watch?v=kEl_Ib4I7OI#t=640.260417&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Jan 2017 04:10:50 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</guid>
+      </item>
+    
+      <item>
+        <title>Happy New Year</title>
+        <description>&lt;p&gt;Ich wünsche Euch allen ein &quot;Frohes neues Jahr 2017&quot;.&lt;/p&gt;
+&lt;p&gt;Hier ganz besonderen Wünsche von mir an die Nerds da draußen:&lt;/p&gt;
+&lt;p&gt;telnet pf.fbs-fulda.info&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Jan 2017 03:09:07 +0100</pubDate>
+        <link>http://localhost:4000/news/2017/01/01/happy-new-year/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2017/01/01/happy-new-year/</guid>
+      </item>
+    
+      <item>
+        <title>ARD-Doku: Schicksale von Whistleblowern</title>
+        <description>&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2016/ard-doku-schicksale-von-whistleblowern/&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Nov 2016 23:31:02 +0100</pubDate>
+        <link>http://localhost:4000/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</guid>
+      </item>
+    
+      <item>
+        <title>Angular JS - Workshop</title>
+        <description>&lt;p&gt;&lt;span class=&quot;_4n-j fsl&quot;&gt;Angular JS ist ein modernes JavaScript-Framework. Es wird für moderne HTML-5 Apps oder Websites verwendet. In dieser Veranstaltung werden die Daten mehrerer Anwendung gemeinsam in einer Oberfläche dargestellt. Die Darstellung erfolgt sowohl tabelarisch wie auch grafisch. Ein Schwerpunkt ist der Zugriff auf Datenbanken und APIs von externen Anwendungen.&lt;br /&gt;
+Anmedlung undbedigt erforderlich.&lt;br /&gt;
+Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Datum: 25.11.2016&lt;/p&gt;
+&lt;p&gt;Ort: Forsthaus Bimbach, 36137 Großenlüder&lt;/p&gt;
+&lt;p&gt;19:00 - 22:00 Uhr&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Nov 2016 13:53:16 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/11/21/angular-js-workshop/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/11/21/angular-js-workshop/</guid>
+      </item>
+    
+      <item>
+        <title>Treffen Linux User Group Fulda</title>
+        <description>&lt;blockquote&gt;Mittwoch, dem 23.11.2016 ab 19 Uhr&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Ort: Office Factory (http://www.office-factory.net/index.php?cat=Unternehmen&amp;amp;page=Anfahrt/)&lt;/p&gt;
+&lt;p&gt;Hier können alle ungezwungen sich (nicht nur) über Themen zu Linux und Open Source austauschen. Meistens sind wir zwischen 4 und 10 Leuten.&lt;/p&gt;
+&lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Nov 2016 13:39:19 +0100</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</guid>
+      </item>
+    
+      <item>
+        <title>TDD mit Lego</title>
+        <description>&lt;p&gt;[link-preview url=&quot;https://www.infoq.com/presentations/tdd-lego&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Mon, 31 Oct 2016 23:13:20 +0100</pubDate>
+        <link>http://localhost:4000/news/2016/10/31/tdd-mit-lego/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/31/tdd-mit-lego/</guid>
+      </item>
+    
+      <item>
+        <title>Freier DevOps-Kurs der Linux Foundation</title>
+        <description>&lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24117/freier-devops-kurs-der-linux-foundation.html&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Oct 2016 09:25:03 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</guid>
+      </item>
+    
+      <item>
+        <title>Treffen Linux User Group Fulda</title>
+        <description>&lt;p&gt;Mittwoch, 26.10.2016 - 19 Uhr&lt;/p&gt;
+&lt;p&gt;Ort: Office Factory (http://www.office-factory.net/index.php?cat=Unternehmen&amp;amp;page=Anfahrt/)&lt;/p&gt;
+&lt;p&gt;Hier können alle ungezwungen sich (nicht nur) über Themen zu Linux und Open Source austauschen. Meistens sind wir zwischen 4 und 10 Leuten.&lt;/p&gt;
+&lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 Oct 2016 20:48:33 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</guid>
+      </item>
+    
+      <item>
+        <title>Global Day of Code Retreat 2016 in Fulda</title>
+        <description>&lt;p&gt;Global Day of Code Retreat 2016 in Fulda&lt;/p&gt;
+&lt;p&gt;In diesem Jahr konnte Dank des Engagements von OPITZ CONSULTING, dem Verein MINTmach-Club e.V. und der Hochschule Fulda in Fulda am 22. Oktober erstmals eine Veranstaltung im Rahmen des &quot;Global Day of Code Retreat&quot; durchgeführt werden, welcher u.a. auch von Zeitsprung im Netz beworben wurde.&lt;/p&gt;
+&lt;p&gt;Organisation und Moderation der Veranstaltung lagen in der Hand&lt;span class=&quot;text_exposed_show&quot;&gt; von Thomas Papendieck.&lt;/p&gt;
+&lt;p&gt;Unter den 6 Teilnehmern waren 4 Studierende der Hochschule, davon 2 im Master-Studiengang, ein Softwareentwickler von IBM und ein Lehrer der &quot;Ferdinand Braun Schule&quot; Fulda. Sie kamen zusammen, um sich in modernen Arbeitstechniken wie TDD und Pairprogramming zu üben oder neue Programmiersprachen kennen zu lernen. Darüber hinaus kam es zu regem Austausch über Lösungsansätze des zu bearbeitenden Problems, welches traditionell eine Teilaufgabe aus der Simulation &quot;Conways Spiel des Lebens&quot; ist.&lt;/p&gt;
+&lt;p&gt;Die Teilnehmer setzten dabei unterschiedlichste Programmiersparen ein, angefangen von Java über JavaScript, C und C++ bis hin zu Phyton und Ruby. Gerade dies Mischung was es, die bei den Teilnehmern besonders gut ankam.&lt;/p&gt;
+&lt;p&gt;Aber auch das Konzept der Veranstaltung, sich bei der Programmierung ausschließlich auf die Umsetzung der &quot;4 rules of simple design&quot; zu konzentrieren, ohne den Druck einer Projekt-Deadline im Nacken zu haben, begeisterte die Teilnehmer. Die Studierenden freuten sich besonders über die intensive Betreuung und den Austausch mit erfahrenen Softwareentwicklern.&lt;/p&gt;
+&lt;p&gt;Alle Teilnehmer hoffen auf eine Wiederholung des &quot;Global Day of Code Retreat&quot; im nächsten Jahr.&lt;/span&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14612449_10154608730828349_7451208976797355683_o.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-143&quot; src=&quot;/assets/14612449_10154608730828349_7451208976797355683_o-300x225.jpg&quot; alt=&quot;14612449_10154608730828349_7451208976797355683_o&quot; width=&quot;300&quot; height=&quot;225&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 Oct 2016 18:32:23 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</guid>
+      </item>
+    
+      <item>
+        <title>Willkommen in der wunderbaren Welt von IoT</title>
+        <description>&lt;p&gt;Wenn das Babyphone und die WebCam Amazon, Twitter, Spotify, Reddit, GitHub etc in die Knie zwingt. Willkommen in der wunderbaren Welt von IoT:&lt;/p&gt;
+&lt;p&gt;https://youtu.be/Sw1shJiuTmg&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 Oct 2016 18:11:26 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</guid>
+      </item>
+    
+      <item>
+        <title>Global Day of Coderetreat in Fulda</title>
+        <description>&lt;ol&gt;
+&lt;li&gt;Oktober, Samstag 9:00 - 17:00 Hochschule Fulda Leipziger Straße 123, 36037 Fulda&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Die Hochschule Fulda beteiligt sich am „Global Day of Coderetreat“.&lt;br /&gt;
+In diesem Jahr wird die Hochschule Fulda (erstmals) eine Veranstaltung im Rahmen des seit 2009 jährlich statt findenden „Global Day of Coderetreat“ durchführen.&lt;/p&gt;
+&lt;p&gt;Am 22. Oktober haben Softwareentwickler der Region die Möglichkeit, kostenlos einen ganzen Tag lang abseits der Zwänge des Tagesgeschäfts gemeinsam mit Gleichgesinnten und unter Anleitung eines erfahrenen Betreuers ihre Fertigkeiten als „Softwarehandwerker“ zu verbessern. Dabei handelt sich aber nicht um eine Schulung. Vielmehr sollen die Teilnehmer mit viel Spaß und eigenverantwortlich ungewohnte Arbeitsweisen trainieren und neue Techniken ausprobieren.&lt;/p&gt;
+&lt;p&gt;Was ist ein Coderetreat:&lt;br /&gt;
+Währe&lt;span class=&quot;text_exposed_show&quot;&gt;nd der Veranstaltung sollen die Teilnehmer praktische Erfahrungen mit modernen Entwicklungstechniken wie „Pair-Programming“ und „Testgetriebener Entwicklung“ sammeln. Dabei wird ein bewusst einfach gehaltenes Problem in mehreren Durchläufen zu je einer Stunde implementiert, wobei für jeden Durchlauf neue Rahmenbedingungen festgelegt werden. Dabei ist der Weg das Ziel, d.h.: Es wird nicht erwartet, dass die Teilnehmer die Aufgabe vollständig umsetzen. Viel mehr wird das Ergebnis eines Durchlaufs konsequent gelöscht bevor sich in der Gruppe über die gemachten Erfahrungen ausgetauscht wird.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Ablauf des Workshops&lt;br /&gt;
+• Ausgangspunkt: Conway´s Game of Life&lt;br /&gt;
+• paarweise Implementierung des Spiels&lt;br /&gt;
+• 6 Iterationen a 60 Minute&lt;br /&gt;
+• Nach jeder Iteration wird der gesamte Quellcode gelöscht • kurze Retrospektiven in der Gruppe • Paare werden gewechselt und das Spiel beginnt wieder von vorne&lt;/p&gt;
+&lt;p&gt;Dank der Unterstützung durch den Verein „MINTmach-Club“ und die Firma „OPITZ CONSULTING Deutschland“ werden für alle Teilnehmer kostenfrei alkoholfreie Getränke und ein Mittagessen gestellt.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.hs-fulda.de/unsere-hochschule/alle-termine/termin/global-day-of-coderetreat/show/&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;https://www.hs-fulda.de/&lt;wbr /&gt;unsere-hochschule/&lt;wbr /&gt;alle-termine/termin/&lt;wbr /&gt;global-day-of-coderetreat/&lt;wbr /&gt;show/&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 20 Oct 2016 15:05:04 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</guid>
+      </item>
+    
+      <item>
+        <title>7. Innovationsabend der Region Fulda</title>
+        <description>&lt;p&gt;Mittwoch, 9. November 17:30 - 20:30 - ITZ Fulda Am Alten Schlachthof 4, 36037 Fulda&lt;/p&gt;
+&lt;p&gt;Die Teilnahme ist kostenlos - eine Anmeldung erforderlich.&lt;br /&gt;
+Das Regionale Standortmarketing lädt in die „Fuldaer Höhle der Löwen“ ein&lt;/p&gt;
+&lt;p&gt;18.30 Uhr: Empfang der Gäste&lt;br /&gt;
+19.00 Uhr: Begrüßung: Christoph Burkard&lt;br /&gt;
+19.10 Uhr: Key-Note: Dr. Thomas Sitte: &quot;Schützen und helfen&quot; - Deutsche Palliativ-Stiftung wird Unternehmer&quot;&lt;br /&gt;
+19.40 Uhr: Elevator-Pitches&lt;/p&gt;
+&lt;p&gt;Dachdecker Mathias Goldbach&lt;br /&gt;
+Stalleinrichtung-Stalltech&lt;wbr /&gt;nik Thomas Goldbach&lt;br /&gt;
+Kinesiologische Naturheilpraxis Kerstin Waider&lt;/p&gt;
+&lt;p&gt;20.00 Uhr: Pause&lt;br /&gt;
+20.10 Uhr: Kurzvortrag: Crowd-Funding, Tanja Ebbing&lt;br /&gt;
+20.20 Uhr: Kurzvortrag: Neue Gründerförderung - Ergebnisse der Gründerbefragung, Christian Vey&lt;br /&gt;
+20.30 Uhr: Erfolgsberichte - 15 Jahre ITZ-Fulda&lt;/p&gt;
+&lt;p&gt;Alexander Baumann - Von Clientfocus zu Jobcluster&lt;br /&gt;
+Thomas Jöckel - Toolstage Software Engineering&lt;br /&gt;
+Nicolas Bredel - Schöne Aussicht Ideenagentur&lt;/p&gt;
+&lt;p&gt;21.00 Uhr: Beginn des Get Together&lt;/p&gt;
+</description>
+        <pubDate>Thu, 20 Oct 2016 10:54:58 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</guid>
+      </item>
+    
+      <item>
+        <title>Geekend Reloaded</title>
+        <description>&lt;p&gt;Start Freitag, 14.10.2016 18:00 GMT+2EndeSonntag, 16.10.2016 15:00 GMT+2&lt;/p&gt;
+&lt;p&gt;[link-preview url=&quot;https://wiki.maglab.space/wiki/Geekend_Reloaded&quot;]&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Oct 2016 12:49:55 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/15/geekend-reloaded/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/15/geekend-reloaded/</guid>
+      </item>
+    
+      <item>
+        <title>Microsoft: Rettendes Ufer Linux</title>
+        <description>&lt;p&gt;Ich denke, der Kommentar von Sempervideo beschreibt die Entwicklung der nächsten 5 Jahre treffend.&lt;/p&gt;
+&lt;p&gt;https://youtu.be/_JjWvo-55JU&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Oct 2016 10:43:05 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/10/15/microsoft-rettendes-ufer-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/15/microsoft-rettendes-ufer-linux/</guid>
+      </item>
+    
+      <item>
+        <title>Berufsschule trifft Wirtschaftkraft</title>
+        <description>&lt;p&gt;Am Abend des 2. November 2016 informiert Sie um 18 Uhr im FBS-Medienzentrum der Schulleiter Thomas Remmert und seiner Stellvertreterin Ulrike Vogler über die Berufsschule und Abteilungsleiter Herrn Happel über die Aktivitäten im Fachbereich Informatik. Natürlich können Sie in diesem Rahmen auch eigene Anforderungen und Vorstellungen formulieren. Zudem ermöglicht Ihnen der Abend die gezielte Kontaktaufnahme zu den Lehrkräften - u.A. wird Ihnen Jörg Reuter das von ihm initiierte Fachinformatiker-Forum Fulda vorstellen. (&lt;a href=&quot;http://www.ferdinand-braun-schule.de/&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;www.ferdinand-braun-schule&lt;wbr /&gt;.de&lt;/a&gt; und &lt;a href=&quot;http://www.fachinformatiker-fulda.de/&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;www.fachinformatiker-fulda&lt;wbr /&gt;.de&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Den Abend ebenfalls bereichern, wird ein Vortrag der geschätzten Business-Trainerin Ortrud Tornow:&lt;/p&gt;
+&lt;p&gt;Vortrag um ca. 19.30 Uhr: &quot;Qua&lt;span class=&quot;text_exposed_show&quot;&gt;lifizierte IT-Fachkräfte finden - und ans Unternehmen binden&quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Als Innovationsberaterin und Businesscoach unterstützt und begleitet Ortrud Tornow Menschen und Organisationen in der sinnvollen Weiterentwicklung und im persönlichen und organisatorischen Wachstum. Ihr theoretischer Ansatz ist systemisch, ihre Herangehensweise flexibel und pragmatisch und ihre innere Haltung respektvoll. Wie entdecken Menschen und Organisationen ihre Stärken? Was ist ihre Motivation für ihre Zukunft? Wie erfinden sie sich neu? Welche Stärke führt&lt;br /&gt;
+zu Befähigung? Welche Herangehensweise stiftet Sinn? Was unterstützt die Organisation und den Menschen in der Zielerreichung?&lt;br /&gt;
+Diese und weitere Fragen bilden für Ortrud Tornow den Kompass, um das jeweilige wirkungsvollste Vorgehen gemeinsam mit ihren Kunden zu bestimmen.(&lt;a href=&quot;http://www.tornow.de/&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;www.tornow.de&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Auch ein kleiner Imbiss in lockerer Atmosphäre trägt zum Gelingen des Abends bei.&lt;/p&gt;
+&lt;p&gt;Wir freuen uns auf einen interessanten und angeregten Austausch!&lt;/p&gt;
+&lt;p&gt;Die Veranstaltung ist kostenfrei, aus organisatorischen Gründen bitten wir um Ihre Anmeldung unter &lt;a href=&quot;http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.eh-cluster.de%2F&amp;amp;h=bAQEgF626&amp;amp;enc=AZN9-nbJN62oOORtgIWcd0BdGiIHdXNkks0tDSJcre_Ft90HQXznFBK9xfJoAI2fHMg&amp;amp;s=1&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;www.eh-cluster.de&lt;/a&gt; oder&lt;a href=&quot;http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.zeitsprung.org%2Ftermine&amp;amp;h=5AQG67NtI&amp;amp;enc=AZO9tEoPyW-XqiEqQdNt-k-eM4zdlobgNGLT2WRbvA7di48oIX3KbhmX8N0SQGG91gY&amp;amp;s=1&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;www.zeitsprung.org/termine&lt;/a&gt;&lt;br /&gt;
+bis zum 28. Oktober 2016. Veranstaltungsort: Ferdinand-Braun-Schule, Goerdelerstraße 7, Medienzentrum, Eingang B.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Oct 2016 21:03:02 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</guid>
+      </item>
+    
+      <item>
+        <title>SUSE und it-novum verbessern Storage-Management in Ceph</title>
+        <description>&lt;p&gt;Ceph ist eine wirklich tolle Technik um die Ausfallsicherheit und Performance von verteilten Dateisystemen zu erhöhen (https://de.wikipedia.org/wiki/Ceph).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.suse.com/de-de/newsroom/post/2016/suse-and-it-novum-collaborate-to-enhance-storage-management-in-ceph&quot;&gt;https://www.suse.com/de-de/newsroom/post/2016/suse-and-it-novum-collaborate-to-enhance-storage-management-in-ceph&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.suse.com/de-de/newsroom/post/2016/suse-and-it-novum-collaborate-to-enhance-storage-management-in-ceph&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-98&quot; src=&quot;/assets/apache3-300x169.png&quot; alt=&quot;apache3&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 11 Oct 2016 02:28:39 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</guid>
+      </item>
+    
+      <item>
+        <title>Einstellung des Editors für Crontab</title>
+        <description>&lt;p&gt;Um den Editor für den Befehl &lt;em&gt;crontab -e&lt;/em&gt; anzupassen gibt es zwei Möglichkeiten.&lt;/p&gt;
+&lt;p&gt;a) Temporäre Anpassung:&lt;/p&gt;
+&lt;p&gt;Einfach das setzen der Umgebungsvariable&lt;/p&gt;
+&lt;p&gt;[code language=&quot;bash&quot;]&lt;br /&gt;
+exportEDITOR=/usr/bin/vi&lt;br /&gt;
+[/code]&lt;/p&gt;
+&lt;p&gt;(es funktionieren natürlich auch nano, joe etc.)&lt;/p&gt;
+&lt;p&gt;b) Permanente Anpassung:&lt;/p&gt;
+&lt;p&gt;[code language=&quot;bash&quot;]&lt;br /&gt;
+update-alternatives --config editor&lt;br /&gt;
+[/code]&lt;/p&gt;
+&lt;p&gt;Copyright Beitragsbild:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3ACrontab_(en_fran%C3%A7ais_-_in_French).png&quot;&gt;https://commons.wikimedia.org/wiki/File%3ACrontab_(en_fran%C3%A7ais_-_in_French).png&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;By Groov3 (Own work) [href=&quot;http://creativecommons.org/licenses/by-sa/4.0&quot;&amp;gt;CC BY-SA 4.0], &lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3ACrontab_(en_fran%C3%A7ais_-_in_French).png&quot;&gt;via Wikimedia Commons&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Oct 2016 11:58:17 +0200</pubDate>
+        <link>http://localhost:4000/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</link>
+        <guid isPermaLink="true">http://localhost:4000/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</guid>
+      </item>
+    
+      <item>
+        <title>50-Euro-Drohne</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://techstage.de/-3328059l&quot;&gt;http://techstage.de/-3328059l&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 23:15:29 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/10/09/50-euro-drohne/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/09/50-euro-drohne/</guid>
+      </item>
+    
+      <item>
+        <title>Fuldas Sonnenwinde erneut unter den Besten</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14463254_1067215403391557_7725897375664111170_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-69&quot; src=&quot;/assets/14463254_1067215403391557_7725897375664111170_n-300x199.jpg&quot; alt=&quot;14463254_1067215403391557_7725897375664111170_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14368755_1067214406724990_747006614694416639_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-71&quot; src=&quot;/assets/14368755_1067214406724990_747006614694416639_n-300x199.jpg&quot; alt=&quot;14368755_1067214406724990_747006614694416639_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14441102_1067214056725025_4634759047833502115_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-72&quot; src=&quot;/assets/14441102_1067214056725025_4634759047833502115_n-300x199.jpg&quot; alt=&quot;14441102_1067214056725025_4634759047833502115_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14390703_1067215233391574_1620960008726092756_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-70&quot; src=&quot;/assets/14390703_1067215233391574_1620960008726092756_n-300x200.jpg&quot; alt=&quot;14390703_1067215233391574_1620960008726092756_n&quot; width=&quot;300&quot; height=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 22:05:42 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</guid>
+      </item>
+    
+      <item>
+        <title>Tag der offen Tür</title>
+        <description>&lt;p&gt;Am &lt;a href=&quot;https://www.facebook.com/events/calendar?adjusted_ts=1479456000&amp;amp;open_popup_on_init=1&quot; rel=&quot;dialog&quot;&gt;Freitag, 18. November&lt;/a&gt; 10:00 - 20:00&lt;/p&gt;
+&lt;p&gt;Ferdinand-Braun-Schule Fulda&lt;/p&gt;
+&lt;p&gt;http://ferdinand-braun-schule.de&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 21:46:06 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/09/tag-der-offen-tuer/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/tag-der-offen-tuer/</guid>
+      </item>
+    
+      <item>
+        <title>Jubiläumstagung des deutschen ingenieurinnenbundes</title>
+        <description>&lt;p&gt;Mit insgesamt 4 Keynotes, 24 Fachvorträgen, 4 Workshops und 5 open space dicussions/round tables in insgesamt drei Sprachen geht die Jahrestagung 4.-6. November 2016 in Freising.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Der deutsche ingenieurinnenbund e.V. (dib), feiert 30 jähriges Jubiläum: Die Jahrestagung im Jubiläumsjahr 2016&lt;/li&gt;
+&lt;li&gt;gleichzeitig: INWES (International Network of Women in Engineerting and Science) Regional Conference Europe, 2016&lt;/li&gt;
+&lt;li&gt;Das gemeinsame Tagungsthema: Wissen schaf(f)t Macht – Science.Knowledge. Power.&lt;/li&gt;
+&lt;li&gt;Vorträge und Workshops in Englisch und Deutsch.&lt;/li&gt;
+&lt;li&gt;250 Teilnehmerinnen – Frauen in MINT-Berufen, Frauen in Führung und Wissenschaft, ExpertInnen, GründerInnen, StudentInnen                                    &lt;a href=&quot;http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en.png&quot;&gt;&lt;img class=&quot;alignright wp-image-1040 size-medium&quot; src=&quot;/assets/patronage_unesco_en-300x146.png&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; srcset=&quot;http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en-300x146.png 300w, http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en-768x374.png 768w, http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en.png 867w&quot; alt=&quot;patronage_unesco_en&quot; width=&quot;300&quot; height=&quot;146&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ein Überblick über die Tagung und was zu buchen ist:&lt;a href=&quot;http://muc.inwes.net/conference-programme/?lang=de&quot; target=&quot;_blank&quot;&gt;Tagungsprogramm, Überblick&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 21:44:06 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</guid>
+      </item>
+    
+      <item>
+        <title>Der vierjährige Jakob braucht unsere Hilfe!</title>
+        <description>&lt;p&gt;Der vierjährige Jakob braucht unsere Hilfe!&lt;br /&gt;
+Er hat Leukämie, sein Zwillingsbruder und die Schwester kommen als Spender nicht in Betracht. Deshalb findet am Samstag 22.10.2016 von 11.00-16.00 Uhr eine Typisierung in Zusammenarbeit mit der DKMS im Gemeindezentrum Neuhof statt.&lt;br /&gt;
+Wer Zeit hat, kann sich gerne typisieren lassen oder einen Beitrag zu diesem Tag leisten, z.B. in Form von Geldspenden, Kuchenspende etc. Für Kinder gibt es viele Attraktionen ( Hüpfburg, Schminken....)&lt;br /&gt;
+Für jede weitere Idee, Anregung , die wir bekommen, sagen wir Danke.&lt;br /&gt;
+Als Ansprechpartner stehen Oliver Staubach (Arbeitskollege des Papas) 01788317651 oder Elena Wiegand 01731965662 zur Verfügung. Gerne kann der erste Kontakt auch über Silke Staubach 01752887889 gemacht werden.&lt;br /&gt;
+Wir organisieren eine Tombola für den Tag der Typisierung und sagen Danke schön für jede Art von Sachspenden.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 21:35:14 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</guid>
+      </item>
+    
+      <item>
+        <title>Thementag: EU-DATENSCHUTZ-GRUNDVERORDNUNG</title>
+        <description>&lt;p&gt;Unser kostenloser Thementag nähert sich rasant: am 13.10. ist es soweit! Unser CEO Christian Heutger zeigt zusammen mit weiteren Referenten auf, was die EU-Datenschutz-Grundverordnungen an Änderungen mit sich bringt.&lt;br /&gt;
+Alle Infos &amp;amp; Anmeldemöglichkeiten hier auf Facebook:&lt;a class=&quot;profileLink&quot; href=&quot;https://www.facebook.com/events/1642423232754677/?ref=3&amp;amp;ref_newsfeed_story_type=regular&amp;amp;action_history=null&amp;amp;source=3&amp;amp;source_newsfeed_story_type=regular&quot; data-hovercard=&quot;/ajax/hovercard/event.php?id=1642423232754677&amp;amp;extragetparams=%7B%22source%22%3A3%2C%22source_newsfeed_story_type%22%3A%22regular%22%2C%22action_history%22%3A%22null%22%7D&quot;&gt;https://www.facebook.com/events/1642423232754677/&lt;/a&gt; sowie auf unserer Website: &lt;a href=&quot;https://www.psw-group.de/thementag&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;https://www.psw-group.de/thementag&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/datenschutz?source=feed_text&amp;amp;story_id=10153994481499639&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;Datenschutz&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/datenschutzgrundverordnung?source=feed_text&amp;amp;story_id=10153994481499639&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;Datenschutzgrundverordnung&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/dsgvo?source=feed_text&amp;amp;story_id=10153994481499639&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;DSGVO&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 21:30:17 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</guid>
+      </item>
+    
+      <item>
+        <title>Fachvortrag &quot;Krisen-PR&quot; von Dr. Andreas Bachmeier</title>
+        <description>&lt;p&gt;Wir laden Sie herzlich ein für Mittwoch, 26. Oktober 2016, 18.00 Uhr in das Verlagsgebäude der Fuldaer Zeitung, Frankfurter Straße 8, 36037 Fulda (Treffen am Haupteingang) zu einem Fachvortrag von Dr. Andreas Bachmeier, Vorstandsmitglied der Engel &amp;amp; Zimmermann AG, zum Thema &quot;Krisen PR&quot;.&lt;/p&gt;
+&lt;p&gt;In Krisen ist alles anders. Dann reicht es nicht mehr aus, allein gute Produkte herzustellen oder zu vertreiben. Es kommt auf jedes Wort an, auf Symbole, auf ein angemessenes Verhalten und die richtige Kommunikation. In schwerwiegenden Fällen geht es um den Fortbestand des gesamten Unternehmens. Die entsprechende interne und externe Kommunikation sowie das richtige Krisenmanagement tragen entscheidend dazu bei, die Krise zu bew&lt;span class=&quot;text_exposed_show&quot;&gt;ältigen und den Schaden für das Unternehmen abzuwenden.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Die Engel &amp;amp; Zimmermann AG ist eine inhabergeführte Unternehmensberatung mit über 25 Jahren Erfahrung in der Krisen-PR und mehr als 60 Unternehmen als feste Beratungskunden. Dr. Andreas Bachmeier ist langjähriger Berater für Unternehmen in regulierten Branchen, Verbänden und Ministerien. Seine Schwerpunkte liegen vor allem in der B2B- und Vertriebskommunikation in komplexen Märkten.&lt;/p&gt;
+&lt;p&gt;Im Anschluss an den Vortrag ist für Speisen und Getränke als guter Rahmen für ein intensives Networking gesorgt. Die Teilnahme ist für Vereinsmitglieder kostenfrei. Gäste zahlen 15,00 Euro.&lt;/p&gt;
+&lt;p&gt;Wir bitten um eine verbindliche Anmeldung über unsere Anmeldeformular unter folgendem Link: &lt;a href=&quot;http://www.region-fulda.de/termine_6655.html?event_id=18670&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;http://&lt;wbr /&gt;www.region-fulda.de/&lt;wbr /&gt;termine_6655.html?event_id=&lt;wbr /&gt;18670&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 21:22:09 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</guid>
+      </item>
+    
+      <item>
+        <title>KI und ihre Gefahren</title>
+        <description>&lt;p&gt;Ein sehr interessanter Vortrag, wie sehr KI unser Leben verändern wird. Wobei ich aktueller die größte Gefahr in Big Data sehe. Ich erwarte nicht in den nächsten 20 Jahren, dass die KI den Menschen einholt. Aber alleine die Schufa zu verstehen und welche Probleme sich draus ergeben und die Schufa ist Big Data aus dem Jahre 1920.&lt;/p&gt;
+&lt;p&gt;Vor allem das jetzt stattfindende erobern der Bereiche Justiz und Sicherheit kann einen mit Sorge erfüllen:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.heise.de/newsticker/meldung/Kriminalitaetsprognose-Berliner-Polizei-setzt-auf-Predictive-Policing-3291880.html&quot;&gt;http://www.heise.de/newsticker/meldung/Kriminalitaetsprognose-Berliner-Polizei-setzt-auf-Predictive-Policing-3291880.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.rand.org/blog/2016/09/cpds-heat-list-and-the-dilemma-of-predictive-policing.html&quot;&gt;http://www.rand.org/blog/2016/09/cpds-heat-list-and-the-dilemma-of-predictive-policing.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Und welche Ausmaße es annimmt, damit die Ordnungsbehörden an die Daten kommen:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.heise.de/newsticker/meldung/Yahoo-Gate-Offenbar-wurden-nicht-nur-Emails-gescannt-3343461.html&quot;&gt;http://www.heise.de/newsticker/meldung/Yahoo-Gate-Offenbar-wurden-nicht-nur-Emails-gescannt-3343461.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[link-preview url=&quot;https://www.ted.com/talks/sam_harris_can_we_build_ai_without_losing_control_over_it&quot;]&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 20:19:36 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/10/09/ki-und-ihre-gefahren/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/09/ki-und-ihre-gefahren/</guid>
+      </item>
+    
+      <item>
+        <title>OER</title>
+        <description>&lt;p&gt;&lt;strong&gt;[link-preview url=&quot;http://open-educational-resources.de/bpb-veroeffentlicht-drei-erklaervideos-zu-oer/&quot;]&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 13:40:00 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/10/09/oer/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/10/09/oer/</guid>
+      </item>
+    
+      <item>
+        <title>21. Oktober - Workshop LabView Haus M, Raum M014</title>
+        <description>&lt;p&gt;LabView ist ein grafisches Programmiersystem. Das Akronym steht für Laboratory Virtual Instrumention Engineering Workbench. Hauptanwendungsgebiete von LabView sind Mess-, Regelungs- und Automatisierungstechnik. Die Programmierung erfolgt mit einer Programmiersprache nach dem Datenfluss-Modell. Datenerfassung sowie -verarbeitung stehen dabei im Vordergrund. Ein großer Vorteil ist, dass mit LabView erstellte Projekte über einfache Wege in andere Programmiersprachen übertragen werden können. Des weiteren ist es möglich, mit wenigen Klicks die erstellten Projekte direkt aus LabView auf diverse Zielhardware zu übertragen. Dies ermöglicht ein schnelles RCP (Rapid Control Prototyping) und ist damit im Bereich der Ingenieurwissenschaften ein sehr hilfreiches Werkzeug.&lt;br /&gt;
+Die Veranstaltung wird sich in Form eines kleinen Workshops gestalten. Es bedarf jedoch, dass die Teilnehmer bereits vor der Veranstaltung LabView auf ihren Computern installieren. Genauere Anleitungen, welche Toolkits benötigt werden, werden später folgen. Eine verbindliche Anmeldung ist notwendig.&lt;/p&gt;
+&lt;p&gt;Ort: &lt;a id=&quot;u_0_1h&quot; class=&quot;_5xhk&quot; href=&quot;https://www.facebook.com/hsfulda/&quot; data-hovercard=&quot;/ajax/hovercard/page.php?id=116389588391878&quot; data-testid=&quot;event-permalink-location&quot;&gt;Hochschule Fulda&lt;/a&gt; Leipziger Straße 123, 36037 Fulda Haus M, Raum M014&lt;/p&gt;
+&lt;p&gt;Uhrzeit: 18:30 - 22:00 Uhr&lt;/p&gt;
+&lt;p&gt;[contact-form][contact-field label='Name' type='name' required='1'/][contact-field label='E-Mail' type='email' required='1'/][contact-field label='Website' type='url'/][contact-field label='Kommentar' type='textarea' required='1'/][/contact-form]&lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Sep 2015 23:21:40 +0200</pubDate>
+        <link>http://localhost:4000/vergangene%20events/2015/09/19/hello-world/</link>
+        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2015/09/19/hello-world/</guid>
+      </item>
+    
+
+    
+      
+    
+      
+        
+      
+    
+      
+        
+          <item>
+            <title>About</title>
+            <description>&lt;p&gt;You love Minimalism, and you also love writing, Maxima is designed for you. Maxima focus on showing your content in a clean and simple way, focus on images, typography, and white space.&lt;/p&gt;
+
+&lt;p&gt;This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyllrb.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing ius ne, ne facer euripidis est. Pro mundi nostrum suavitate et.&lt;/p&gt;
+</description>
+            <link>http://localhost:4000/about.html</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>About</title>
+            <description>&lt;p&gt;This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;jekyllrb.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can find the source code for Minima at GitHub:
+&lt;a href=&quot;https://github.com/jekyll&quot;&gt;jekyll&lt;/a&gt; /
+&lt;a href=&quot;https://github.com/jekyll/minima&quot;&gt;minima&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can find the source code for Jekyll at GitHub:
+&lt;a href=&quot;https://github.com/jekyll&quot;&gt;jekyll&lt;/a&gt; /
+&lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;jekyll&lt;/a&gt;&lt;/p&gt;
+
+</description>
+            <link>http://localhost:4000/about/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+  </channel>
+</rss>
