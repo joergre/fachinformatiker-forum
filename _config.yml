@@ -1,4 +1,4 @@
-2# Welcome to Jekyll!
+# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -6,14 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:              Fachinormatiker-Forum Fulda
-logo:               https://github.com/joergre/fachinformatiker-forum/blob/gh-pages/logo.jpg # Logo image URL
-email:              joerg@reuter.sc 
-description:        Alles zum Thema IT
+title:              Fachinformatiker-Forum Fulda
+logo:               https://github.com/joergre/fachinformatiker-forum/blob/gh-pages/logo.jpg?raw=true# Logo image URL
+email:              joerg@reuter.sc
+description:        Alles über IT.
 baseurl:            '' # The subpath of your site, e.g. /blog
 url:                'https://joergre.github.io/fachinformatiker-forum/' # The base hostname & protocol for your site
 github_username:    joergre
-twitter_username:   joergre
+twitter_username:   joergreu
 instagram_username: jorgreuter
 
 markdown:  kramdown
@@ -50,9 +50,9 @@ defaults:
 authors:
   ahmad:
     name:             Jörg Reuter
-    bio:              Lehrer an der Ferdinand-Braun Schule Fulda
-    gravatar:         https://s.gravatar.com/avatar/f83141edd9e6339e678648596a403fd5?s=150
+    bio:              Author & developer of Aspire Themes. Minimalist. I love creating clean and minimal websites.Technical writer at SitePoint.
+    gravatar:         https://en.gravatar.com/forsthaus
     email:            joerg@reuter.sc
     website:          https://joergre.github.io/fachinformatiker-forum/
     github_username:  joergre
-    twitter_username: joergre
+    twitter_username: joergereu
