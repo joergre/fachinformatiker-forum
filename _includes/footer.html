@@ -10,7 +10,7 @@
             </a>
           </li>
         {% endif %}
-        {% if site.instagram_username %}
+        {%if site.instagram_username %}
           <li class='c-social-nav__item'>
             <a href='https://instagram.com/{{ site.instagram_username }}' target='_blank'>
               <span class='c-social-nav__icon' data-icon='ei-sc-instagram' data-size='s'></span>
@@ -24,12 +24,21 @@
           </a>
         </li>
         {% endif %}
+
         {% if site.email %}
         <li class='c-social-nav__item'>
           <a href='mailto:{{ site.email }}' target='_blank'>
             <span class='c-social-nav__icon' data-icon='ei-envelope' data-size='s'></span>
           </a>
         </li>
+	{% endif %}
+	{% if site.github_username %}
+        <li class='c-social-nav__item'>
+          <a href='https://www.youtube.com/user/fbsfulda/' target='_blank'>
+            	<span class='c-social-nav__icon' data-icon='ei-sc-youtube' data-size='s'></span>
+          </a>
+        </li>
+
         {% endif %}
       </ul>
 
