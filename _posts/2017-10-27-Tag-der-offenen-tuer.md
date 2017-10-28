@@ -3,7 +3,7 @@ layout: post
 title: Tag der offenen Tür 2017
 featured: true
 author: joerg_reuter
-tags: [Tag_der_offenen_Tuer, Ferdinand-Braun-Schule, Veranstaltung]
+tags: [tag_der_offenen_tuer, ferdinand-braun-schule, veranstaltung]
 image: '/images/posts/tdot2017/tdot.jpg'
 ---
 
