@@ -24,4 +24,4 @@ Am Alten Schlachthof 4, 36037 Fulda
 
 Video zur Vorbereitung:
 
-<iframe width="560" height="420" src="http://www.youtube.com/embed/v=icR-df2Olm8?color=white&theme=light"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/icR-df2Olm8" frameborder="0" allowfullscreen></iframe>
