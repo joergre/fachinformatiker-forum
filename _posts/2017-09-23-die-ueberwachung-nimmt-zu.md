@@ -7,7 +7,7 @@ published: true
 status: publish
 categories: []
 tags: [ueberwachung]
-image: '/images/posts/2017-10-28-224814_1364x704_scrot.png'
+image: '/images/posts/manning.png'
 ---
 
 Die Überwachung der Menschen nimmt zu, besonders in Bereichen in denen man es nicht unbedingt erwartet. Aber wir haben ja alle nichts zu verheimlichen ...
