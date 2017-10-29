@@ -5,8 +5,8 @@
     <description>Alles über IT.</description>
     <link>http://localhost:4000/fachinformatiker-forum/</link>
     <atom:link href="http://localhost:4000/fachinformatiker-forum/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Oct 2017 02:07:55 +0200</pubDate>
-    <lastBuildDate>Sun, 29 Oct 2017 02:07:55 +0200</lastBuildDate>
+    <pubDate>Sun, 29 Oct 2017 12:20:48 +0100</pubDate>
+    <lastBuildDate>Sun, 29 Oct 2017 12:20:48 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
 
     
@@ -71,22 +71,25 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
     
       <item>
         <title>Ein Rack für wenig Geld - LackRack</title>
-        <description>&lt;p&gt;Ein Rack für wenig Geld, flexibel im Aufbau und in der Größen, kann notfalls auch als Tisch benutzt werden. Sieht hübsch aus und gibt es in verschiedenen Farben. Und günstiger geht es nur schwer: LackRack von IKEA&lt;/p&gt;
+        <description>&lt;p&gt;Ein Rack für wenig Geld, flexibel im Aufbau und in der Größen, kann notfalls auch als Tisch benutzt werden. Sieht hübsch aus und gibt es in verschiedenen Farben. Und günstiger geht es nur schwer: LackRack von IKEA.&lt;/p&gt;
+
 &lt;p&gt;Mehr Informationen hier:&lt;/p&gt;
-&lt;p&gt;[link-preview url=&quot;https://wiki.eth-0.nl/index.php/LackRack&quot;]&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wiki.eth-0.nl/index.php/LackRack&quot;&gt;https://wiki.eth-0.nl/index.php/LackRack&lt;/a&gt;&lt;/p&gt;
+
 </description>
-        <pubDate>Sat, 09 Sep 2017 15:18:51 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/tipps&amp;tricks/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/tipps&amp;tricks/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</guid>
+        <pubDate>Sat, 09 Sep 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/fachinformatiker-forum/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</link>
+        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</guid>
       </item>
     
       <item>
         <title>Ethik und Programmieren</title>
-        <description>&lt;p&gt;Ein Artikel, der ganz anders verläuft als man zunächst erwartet:&lt;/p&gt;
-&lt;p&gt;[link-preview url=&quot;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&quot;]&lt;/p&gt;
+        <description>Ein Artikel, der ganz anders verläuft als man zunächst erwartet:
+
+&lt;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&gt;
 </description>
-        <pubDate>Sat, 22 Jul 2017 16:50:00 +0200</pubDate>
+        <pubDate>Sat, 22 Jul 2017 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/22/ethik-und-programmieren/</link>
         <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/07/22/ethik-und-programmieren/</guid>
       </item>
@@ -1117,6 +1120,8 @@ Forsthaus Bimbach
             <link>http://localhost:4000/fachinformatiker-forum/impressum.html</link>
           </item>
         
+      
+    
       
     
       
