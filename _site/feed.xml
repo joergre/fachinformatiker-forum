@@ -5,8 +5,8 @@
     <description>Alles über IT.</description>
     <link>http://localhost:4000/fachinformatiker-forum/</link>
     <atom:link href="http://localhost:4000/fachinformatiker-forum/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Oct 2017 12:20:48 +0100</pubDate>
-    <lastBuildDate>Sun, 29 Oct 2017 12:20:48 +0100</lastBuildDate>
+    <pubDate>Sun, 29 Oct 2017 13:08:18 +0100</pubDate>
+    <lastBuildDate>Sun, 29 Oct 2017 13:08:18 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
 
     
@@ -85,9 +85,9 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
     
       <item>
         <title>Ethik und Programmieren</title>
-        <description>Ein Artikel, der ganz anders verläuft als man zunächst erwartet:
+        <description>&lt;p&gt;Ein Artikel, der ganz anders verläuft als man zunächst erwartet:&lt;/p&gt;
 
-&lt;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&quot;&gt;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Jul 2017 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/22/ethik-und-programmieren/</link>
@@ -95,34 +95,35 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
       </item>
     
       <item>
-        <title>460 freie IT-Kurse die im Juli starten</title>
-        <description>&lt;p&gt;Der Sommer ist da und der Urlaub bietet ideale Möglichkeiten seine Wissenslücken zu schließen oder sich in neue Themen einzuarbeiten. Hier sind 460 Kurse im Bereich IT die alle kostenlos sind und im Juli 2017 starten. Sie sind in 3 Bereiche eingeteilt: Anfänger, mit Kenntnissen und Fortgeschrittene. Jeder Kurs ist mit Bewertungen aufgelistet. Kein Kurs hat von Teilnehmern schlechtre Bewertungen erhalten. Die Themen sind extrem weit: Einführung in JS, IT-Sec, AI oder KI, Deep Learning, Relationale Datenbanken ....&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;[link-preview url=&quot;https://medium.freecodecamp.org/460-free-online-programming-computer-science-courses-you-can-start-in-july-ea767bb22092&quot;]&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 07 Jul 2017 09:05:14 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</guid>
-      </item>
-    
-      <item>
         <title>IT Kindern näher bringen mit dem Maus Türöffner</title>
         <description>&lt;p&gt;Interessanter Artikel wie Linux und Programmieren Kinder näher gebracht werden kann:&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;[link-preview url=&quot;https://www.pro-linux.de/artikel/2/1890/der-maust%C3%BCr%C3%B6ffnertag-bei-der-fralug.html&quot;]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.pro-linux.de/artikel/2/1890/der-maust%C3%BCr%C3%B6ffnertag-bei-der-fralug.htm&quot;&gt;https://www.pro-linux.de/artikel/2/1890/der-maust%C3%BCr%C3%B6ffnertag-bei-der-fralug.htm&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 07 Jul 2017 08:13:16 +0200</pubDate>
+        <pubDate>Fri, 07 Jul 2017 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</link>
         <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</guid>
       </item>
     
       <item>
-        <title>KI mit dem Paspberry Pi? Kein Problem!</title>
-        <description>&lt;p&gt;Möchtest Du ein wenig mit künstlicher Intelligenz und dem Raspberry Pi experimentieren? Kein Problem! Die neue Erweiterung erlaubt es, die Google AI auf dem Raspberry Pi einzusetzen. Leider momentan nur mit einer Zeitschrift verfügbar.&lt;/p&gt;
-&lt;p&gt;[link-preview url=&quot;https://www.wired.co.uk/article/google-raspberry-pi-ai?utm_content=buffer3b8f2&amp;amp;utm_medium=social&amp;amp;utm_source=facebook.com&amp;amp;utm_campaign=buffer&quot;]&lt;/p&gt;
+        <title>460 freie IT-Kurse die im Juli starten</title>
+        <description>&lt;p&gt;Der Sommer ist da und der Urlaub bietet ideale Möglichkeiten seine Wissenslücken zu schließen oder sich in neue Themen einzuarbeiten. Hier sind 460 Kurse im Bereich IT die alle kostenlos sind und im Juli 2017 starten. Sie sind in 3 Bereiche eingeteilt: Anfänger, mit Kenntnissen und Fortgeschrittene. Jeder Kurs ist mit Bewertungen aufgelistet. Kein Kurs hat von Teilnehmern schlechtre Bewertungen erhalten. Die Themen sind extrem weit: Einführung in JS, IT-Sec, AI oder KI, Deep Learning, Relationale Datenbanken ….&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/460-free-online-programming-computer-science-courses-you-can-start-in-july-ea767bb22092&quot;&gt;https://medium.freecodecamp.org/460-free-online-programming-computer-science-courses-you-can-start-in-july-ea767bb22092&lt;/a&gt;&lt;/p&gt;
+
 </description>
-        <pubDate>Sun, 02 Jul 2017 12:11:54 +0200</pubDate>
+        <pubDate>Fri, 07 Jul 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</link>
+        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</guid>
+      </item>
+    
+      <item>
+        <title>KI mit dem Paspberry Pi? Kein Problem!</title>
+        <description>&lt;p&gt;Möchtest Du ein wenig mit künstlicher Intelligenz und dem Raspberry Pi experimentieren? Kein Problem! Die neue Erweiterung erlaubt es, die Google AI auf dem Raspberry Pi einzusetzen. Leider momentan nur mit einer Zeitschrift verfügbar.&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.wired.co.uk/article/google-raspberry-pi-ai&quot;&gt;https://www.wired.co.uk/article/google-raspberry-pi-ai&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Jul 2017 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</link>
         <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</guid>
       </item>
@@ -161,16 +162,6 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
         <pubDate>Sun, 25 Jun 2017 17:19:35 +0200</pubDate>
         <link>http://localhost:4000/fachinformatiker-forum/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</link>
         <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</guid>
-      </item>
-    
-      <item>
-        <title>Das nächste Thema für das Fachinformatiker-Treff im Semptember soll sein ...</title>
-        <description>&lt;p&gt;Welches Thema soll im September behandelt werden (Das Fachinformatiker-Forum geht Juli/August in die Sommerferien). Stimme ab:&lt;/p&gt;
-&lt;p&gt;[link-preview url=&quot;https://onlinevoten.de/poll/70392-das-naechste-thema-fuer-das-fachinformatiker-treff-im-semptember-soll-sein/&quot;]&lt;/p&gt;
-</description>
-        <pubDate>Fri, 23 Jun 2017 20:41:27 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/events/2017/06/23/das-naechste-thema-fuer-das-fachinformatiker-treff-im-semptember-soll-sein/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/events/2017/06/23/das-naechste-thema-fuer-das-fachinformatiker-treff-im-semptember-soll-sein/</guid>
       </item>
     
       <item>
@@ -1120,6 +1111,10 @@ Forsthaus Bimbach
             <link>http://localhost:4000/fachinformatiker-forum/impressum.html</link>
           </item>
         
+      
+    
+      
+    
       
     
       
