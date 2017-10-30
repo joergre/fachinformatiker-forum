@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tag der offenen Tür 2017
+title: Screenshot mit dem Raspberry Pi
 featured: true
 author: joerg_reuter
 tags: [tips, raspberry, screenshot]
