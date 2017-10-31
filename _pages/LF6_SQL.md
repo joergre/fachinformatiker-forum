@@ -89,3 +89,76 @@ Jetzt melden wir uns ab von der Datenbank:
 QUIT
 ```
 
+# Tabelle anlegen 
+
+YouTube-Video: <https://www.youtube.com/edit?video_id=8QFks70RsU4>
+
+Anmelden an der Datenbank (wir haben kein PÜasswort für root gesetzt):
+
+```sql
+mysql
+```
+
+Mit dem Befehl
+
+```sql
+SHOW DATABASES;
+```
+
+sehen wir die verfügbaren Datenbanken. In unserem Fall sollten wir die drei System-Datenbanken information_schema, performance_schema und mysql sehen. Desweiteren unsere Datenbank geburtsurkunde.
+
+Wir wählen die Datenbank geburtsurkunde aus um mit Ihr zu arbeiten:
+
+```sql
+USE geburtsurkunde;
+```
+
+Wir sehen uns die vorhandenen Tabellen an:
+
+```sql
+SHOW TABLES;
+```
+
+Leider ist noch keine Tabelle vorhanden. Dies ändern wir mit dem nächsten Befehl:
+
+```sql
+CREATE TABLE tblGeburtsurkunde (NameStandesAmt varchar(50), lfdNr varchar(50), VorNameKind varchar(50),  GeburtsnameKind varchar(50), Geschlecht varchar(1), Geburtsdatum varchar(50), Geburtsort varchar(50), VornameMutter varchar(50), NachnameMutter varchar(50), VornameVater varchar(50), NachnameVater varchar(50), ReligionKind varchar(50), ReligionMutter varchar(50), ReligionVater varchar(50), OrtStandesamt varchar(50), DatumAusstellung varchar(50), NameStandesbeamter varchar(50));
+```
+
+Der Befehl legt die Tabelle für Geburtsurkunden an (<http://www.der-postillon.com/2015/10/eigentlich-in-bad-tolz-geboren-dfb.html>). Der Befehl innerhalb der Klammer ist immer gleich aufgebaut: Spaltenname, Variablentyp und ev. ein Constraint (kommt später). Danach folgt ein Komma und die nächste Spalte. Die Informationen, die in einer Geburtsurkunde erfasst werden, stehen bei Wikipedia: <https://de.wikipedia.org/wiki/Geburtsurkunde>. Sicherlich ist der imme rgleiche Datentyp diskussionswürdig, aber hier geht es erst einmal darum, dass wir überhaupt Daten specihern können.
+
+Die Struktur unserer Tabelle kann mit verschiedenen Befehlen dargestellt werden. Hier eine kleine Auswahl:
+
+```sql
+SHOW CREATE TABLE tblGeburtsurkunde;
+SHOW COLUMNS FROM tblGeburtsurkunde;
+SHOW FIELDS FROM tblGeburtsurkunde;
+```
+
+```sql
+SHOW TABLES;
+```
+
+zeigt uns jetzt unsere neue Tabelle und mit
+
+```sql
+DROP TABLE tblgeburtsurkunde;
+```
+
+löschen wir die TAbelle wieder.
+
+Wir legen die Tabelle wieder an, mit einem Primary Key:
+
+```sql
+CREATE TABLE tblGeburtsurkunde (NameStandesAmt varchar(50), lfdNr varchar(50) PRIMARY KEY VorNameKind varchar(50),  GeburtsnameKind varchar(50), Geschlecht varchar(1), Geburtsdatum varchar(50), Geburtsort varchar(50), VornameMutter varchar(50), NachnameMutter varchar(50), VornameVater varchar(50), NachnameVater varchar(50), ReligionKind varchar(50), ReligionMutter varchar(50), ReligionVater varchar(50), OrtStandesamt varchar(50), DatumAusstellung varchar(50), NameStandesbeamter varchar(50));
+```
+
+Der Primary Key referenziert eine  Eintrag inder Tabelle eindeutig. Der Primary Key muss  bei jedem Eintrag einen anderen Wert haben und darf nicht NULL sein (NULL darf nicht mit Null verwechselt werden. 0 ist ein Wert und NULL ist eben kein Wert.)
+
+## Aufgabe
+
+1.) Schaue Dir bitte die Struktur der Tabelle mit den obigen Befehlen an. Was fällt Dir auf?
+
+2.) Schaue Dir bitte die folgende Seite an und lese Dir durch, welche Constraints es bei SQL gibt:  <http://wikis.gm.fh-koeln.de/wiki_db/Datenbanken/CONSTRAINT>
+
+
