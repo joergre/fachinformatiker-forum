@@ -1,0 +1,513 @@
+---
+layout: page
+title: LF6 1.1 Python
+image: 'images/pages/320px-Python_molurus_molurus-Portrait.jpg'
+---
+
+# Allgemeines
+
+Fragen zum Text oder zu Python: <https://discord.gg/TsaqyAQ>
+
+Videos: <https://www.youtube.com/watch?v=TCwIIs_vwzQ>
+
+# Python-Programm ausführen
+
+Wir möchten ein Pythonprogramm in der Konsole ausführen. Dazu erstellen wir zuerst ein Pythonprogramm (Natürlich könnt Ihr auch einen der vielen Online-Editoren wie <https://www.tutorialspoint.com/execute_python_online.php> verwenden). 
+
+Wir öffnen z.B. nano:
+
+```python
+nano hallo.py
+```
+
+und geben ein:
+
+```python
+print("Hallo Ferdinand-Braun-Schule")
+```
+
+Zum ausführen können wir eingeben:
+
+```python
+python hallo.py
+```
+
+oder aber die Rechte zum ausführen setzen:
+
+```python
+chmod u+x hallo.py
+```
+
+Wir müssen in dem Programm noch den Interpreter einstellen:
+
+```python
+nano hallo.py
+```
+
+
+und folgende Zeile ganz oben einfügen:
+
+```python
+#!/usr/bin/env python
+```
+
+Das Programm wird mit folgendem Befehl aufgerufen:
+
+
+```python
+./hallo.py 
+```
+
+
+# Variablen
+
+Video: <https://youtu.be/TCwIIs_vwzQ?list=PLe2-EUuYYx2dmSq4yQ-AjSbdhFWSceelv>
+
+Variablen sind Speicher für Werte wie Zahlen oder Zeichenketten. Wir ändern unser Programm hallo.py so ab, dass es Variablen verwendet:
+
+```python
+#!/usr/bin/env python
+gruss = "Hallo Ferdinand-Braun-Schule!"
+print(gruss)
+```
+
+## Aufgabe
+Teste folgenden Code:
+
+```python
+#!/usr/bin/env python
+gruss = "Hallo 'Ferdinand-Braun-Schule!'"
+print(gruss)
+```
+
+```python
+#!/usr/bin/env python
+gruss = 'Hallo "Ferdinand-Braun-Schule!"'
+print(gruss)
+```
+
+Zeichen werden immer in " oder ' gesetzt im Gegensatz zu Zahlen:
+
+```python
+#!/usr/bin/env python
+gruss = "Hallo Ferdinand-Braun-Schule!"
+wert = 72
+print(gruss)
+print(wert)
+```
+
+Namen von Variablen dürfen nicht mit einer Zahl beginnen.
+
+## Wert einlesen
+
+Um mit dem Anwender eines Programms zu interagieren, gibt es die Möglichkeit Tastatureingaben in eine Variable einzulesen:
+
+```python
+#!/usr/bin/env python
+gruss = input("Schreibe einen Gruss: ")
+print(gruss)
+```
+
+# Zahlen
+
+Python kann auch interaktiv ausgeführt werden. Einfach in die Konsole python eingen:
+
+```python
+python
+2+5
+```
+
+
+Ergebnis: 7
+
+```python
+a = 2
+b = 5
+a+b
+```
+
+Ergebnis: 7
+
+Den Wert einer Variable kann man sehen, indem der Name in der Konsole eingegeben wird.
+
+```python
+a
+```
+
+Ergebnis: 2
+
+Unterschied zu einem Programm:
+
+```python
+nanao zahl.py
+a = 2
+b = 5
+a+b
+```
+
+Das Programm speichern und ausführen.
+
+Ergebnis: Keine Ausgabe!
+
+Die letzt Zeile muss abgeändert werden:
+
+```python
+print(a+b)
+```
+
+Ausgabe: 7
+
+Für Zahlen gibt es zwei Variablentypen die meistens verwendet werden: int und float. Int sind natürliche Zahlen (also ohne Komma) und float sind Fließkommazahlen (also mit Komma). Beide Typen gab es bereits bei dem ersten Computer der Welt, der Z1 von Konrad Zuse!
+
+```python
+python
+
+a = 2
+type(a)
+```
+
+Ergebnis: <class 'int'>
+
+```python
+python
+a = 2.23
+type(a)
+```
+
+Ergebnsi: <class 'float'>
+
+```python
+a = "2.23"
+
+type(a)
+```
+
+Ergebnis: <class 'str'>
+
+str steht für Stringund bezeichnet eine Zeichenkette. Der Unterschied ist wichtig, da mit Strings nicht gerechnet werden kann:
+
+```python
+python
+a = "2"
+b = 5
+a+b
+```
+
+Ergebnis TypeError
+
+Aber:
+
+```python
+python
+"2" + "5"
+```
+
+Ergebnis: 25
+
+Strings werden durch das Pluszeichen verbunden!
+
+## Programm "alter"
+
+Das Programm soll das Geburtsjahr ausrechnen nachdem das Alter eingegeben wurde. Bitte 2017 durch das aktuelle Jahr ersetzen.
+
+```python
+nano alter.py
+alter = input("Gebe bitte Dein Alter ein: ")
+geburtsJahr = 2017 - alter
+print(geburtsJahr)
+```
+
+Ergebnis: TypeError
+
+2017 ist eine Zahl und der Inhalt der Variable alter ein String.
+
+Lösung: Den Typ der Variable alter konvertieren (umwandeln):
+
+```python
+geburtsJahr = 2017 - int(alter)
+```
+
+Es können auch Zahlen in einen String umgewandelt werden:
+
+```python
+geburtsJahr = str(2017) - int(alter)
+```
+
+Ergebnis: TypeError
+
+Auch eine Umwandlung in Fließkomma ist möglich:
+
+```python
+geburtsJahr = 2017 - float(alter)
+```
+
+
+Ergebnis: Das Ergebnis wird als Fließkommazahl ausgegeben. Python wandelt automatisch den Variiablentyp von 2017 zu float! Damit wird das Ergenis ebenfalls eine Fließkommazahl.
+
+Vergleiche dazu:
+
+```python
+float(20)
+```
+
+
+Ergebnis: 20.0
+
+# Strings und Hilfe
+
+Als String werden in Python Zeichen in Anführungsstriche bezeichnet. Es können sowohl " als auch ' verwendet werden.
+
+```python
+python
+"FBS!"
+'FBS!'
+```
+
+Beides sind Strings. Strings können in Vaiablen gespeichert werden:
+
+```python
+python
+c='FBS'
+c
+```
+
+Es ist möglich, Zeichen in einem String zu ersetzen:
+
+```python
+python
+c='Hallo FBS!'
+c.replace('Hallo', 'Salut')
+```
+
+## Aufgabe
+1.) Speichere das Ergebnis von c.replace('Hallo', 'Salut') in einer neuen Variable ab.
+
+2.) Versuche in dem String "Hallo FBS! Alles klar?" den Buchstaben 'a' durch 'b' zu ersetzen. Werden alle "a" ausgetauscht oder nur das erste "a"?
+
+# Hilfe
+
+Die Übersicht der Befehle zur manipulation von Strings ist vielfältig. Mit dem Befehl
+
+```python
+python
+dir(c)
+```
+
+bekommt man einen ersten Überblick über die Möglichkeiten. 
+
+Ein Beispiel:
+
+```python
+python
+c.upper()
+```
+
+Um Hilfe zu einem Befehl zu bekommen, kann der help-Befehl verwendet werden:
+
+```python
+python
+help("".replace)
+```
+
+Es kann auch verwendet werden:
+
+```python
+python
+help(c.replace)
+```
+
+Parameter in der Hilfe in eckigen Klammern sind optional.
+
+## Aufgabe
+
+Ersetze im String "Hallo FBS! Alles klar?" nur das erste 'a' durch ein 'b'.
+
+## Indizierung von Zeichenketten
+
+Strings ist ein komplexer Datentyp, der sich aus vielen Variablen zusammen setzt mit jeweils einem Zeichen (char). Daher ist es möglich, jedes Zeichen in einem String einzeln anzusprechen (Stichwort Array von Chars):
+
+```python
+python
+c="Hallo Welt!"
+c[4]
+```
+
+Wir fangen immer bei 0 an zu zählen.
+
+## Aufgaben
+
+1.) Schreibe einen Befehl, der das letzt Zeichen "!" ausgibt.
+
+2.) Welche Ausgabe erfolgt bei c[-1] und c[-2]?
+
+Um Zeichenketten zu extrahieren, können die Start und End-Position in die Eckige Klammer eingetragen werden. Wir möchten "Ha" extrahieren:
+
+```python
+c="Hallo Welt!"
+c[0:1]
+```
+
+Die Ausgabe ist "H". Das liegt daran, dass beim auftrennen von Strings immer die Stelle des Schnitts angegeben wird also das Ergebnis immer ein Zeichen zu wenig hat.
+
+```python
+c="Hallo Welt!"
+c[0:2]
+```
+
+## Aufgabe
+Teste die Ausgabe von c[-4:-1]. Erhälst Du das erwartete Ergebniss?
+
+# Listen
+
+Listen speichern mehrere Elemente in einer Variable, ähnlich einer Einkaufsliste die mehrere Eintragungen hat. 
+Das Kennzeichen einer Liste sind die eckigen Klammern mit den Elementen:
+
+```python
+c=["Ferdinand Braun", 1850, 1918,"Physiker"]
+```
+
+Jedes Element lässt sich einzeln ansprechen:
+
+```python
+c[0]
+```
+
+Ausgabe:
+
+'Ferdinand Braun'
+
+Jedes Element hat seinen eigenen Variablentyp:
+
+```python
+type(c[0])
+type(c[1])
+```
+
+## Aufgabe
+
+1. Welches Ergebnis kommt bei c[:2] heraus? 
+
+2. Welchen Variablentyp hat der Listen-Abschnitt?
+
+3. Schaue Dir die Verfügbaren Optinen von "list" mit dir an.
+
+4. Füge mit dem Befehl c.append() "Nobelpreistraeger" an das Ender der Liste an.
+
+5. Schaue Dir mit dem Befehl help(c.remove) den Befehl remove an.
+
+6. Entferne "Physiker" aus der Liste.
+
+# TUPELS
+
+Tupels sind ähnlich zu Listen aber es ist kein schreibender Zugriff möglich. Wir definieren ein Tupel analog zu einer Liste:
+
+```python
+t = ("Hallo", 1, 2.3)
+```
+
+Greifen lesend auf einzelne Elemente zu:
+
+```python
+t[-1]
+```
+
+Ausgabe: 2.3
+
+## Aufagbe
+Vergleich die möglichen Befehle auf die Objekte tupel und list. Was fällt Dir auf? Vergleiche bitte mit dem Befehl dir(list) bzw. dir(tuple).
+
+# Dictonary
+
+Dictonary ordnen Begriff paarweise einander zu:
+
+```python
+d = {"boy":"Junge", "girl":"Mädchen"}
+```
+
+Bei einem Dictonary wird unterschieden zwischen einem Schlüssel (Key) und Wert (value). In dem Beispiel sind die englischen Wörter die Schlüssel und die deutschen Wörter die Werte.
+
+Wir greifen auf die Werte über die Schlüssel zu:
+
+```python
+d["boy"]
+```
+
+Ausgabe: 'Junge'
+
+Die Abfrage ist nur in die Richtung Key -> Value möglich und nicht in die andere Richtung.
+
+Deer Rückgabewert kann auch eine Liste sein:
+
+```python
+d = {"boy":"Junge", "girl":"Mädchen", "eat":("frisst", "isst"), "have":("haben","bin","besitze")}
+```
+
+Ausgabe:
+
+```python
+ d["have"]
+ ('haben', 'bin', 'besitze')
+```
+ 
+ Bei der Liste kann dann auch auf einzelne Elemente zugegriffen werden, wie wir es oben bereits bei den Listen gesehen haben:
+ 
+```python
+ >>> d["have"][1]
+'bin'
+```
+
+
+## Aufgabe
+
+Bitte fürhre diesen Test durch:
+
+<http://fachinformatiker-fulda.de/index.php/2017/09/18/quiz-python-1/>
+Du solltest 100% erreichen!
+
+# Funktionen
+
+Funktionen werden eingesetzt um ein programm zu strukturieren und/oder öfter benötigten Programmcode nur an einer Stelle vorzuhalten. Funktionen werden mit dem Wort def gefolgt vom Funktionnamen gekennzeichnet. Sie werden beim starten des Pythonprogramms erstbei aufruft über den Funktionsnamen ausgeführt. Wir verwenden viele in Python eingebaute Funktionen bereits wie z.B. print() oder input(). Wir programmieren als Beispiel einen Währungsumrechner. Der Umrechner soll Euro in die polnische Währung Zloty umrechnen. Wir benötigen dazu zwei Angaben: dem Umrechnungskurs und die Menge an Euros die umgerechnet werden soll. Momentan liegt der Umrechnungsfaktor bei 4,3: 1 Euro ist also 4,3 Zloty wert. Bitte überprüfe den Wert. Werte werden Funktionen mit Hilfe sogeannter Parameter übergeben, die in Klammern geschrieben werden. Mit dem Befehl return wird das Ergebnis der Funktion zurück gegeben an die aufrufende Stelle. Wenn wir das Programm ausführen werden wir keine Ausgabe erhalten, weil die Fuunktion nicht aufgerufen wird.
+
+```python
+def waehrungsrechner(kurs, euro):
+    zloty = euro*kurs
+    return zloty
+```
+
+Wir ergnzen das Programm um einen Funktionsaufruf. Wir möchten 100 Euro umtauschen:
+
+```python
+def waehrungsrechner(kurs, euro):
+    zloty = euro*kurs
+    return zloty
+    
+print(waehrungsrechner(4.3,100))    
+```
+
+# Fehler
+
+Fehler sind meschlich und nicht schlimm. Es kommt nur drauf an mit Ihnen sinnvoll umzugehen. Ferler werden auch Error oder Bug genannt. Die Bezeichnung Bug kommt daher, dass bei den Computern füher sich kleine Tiere zwischen den elektrischen Kontakten ihr Leben aushauchen konnten und so die Funktionsfähigkeit des Computers beeinträchtigten (siehe z.B. hier: <https://de.wikipedia.org/wiki/Programmfehler#/media/File:H96566k.jpg> oder auch <https://de.wikipedia.org/wiki/Programmfehler>)
+
+In Python gibt es 3 Kategorien von Fehlern: Logische Fehler, Syntax-Fehler und Ausführungsfehler (Exception). Wir konzentrieren uns zuerst auf die Syntax-Fehler, die den größten Teil darstellen. Dazu ein Programm mit dem tollen Namen fehler.py:
+
+```python
+print("1")
+int(10)
+int 9
+print(2)
+print "FBS"
+```
+
+Ausgabe:
+
+```python
+Traceback (most recent call last):
+  File "fehler.py", line 3
+    int 9
+        ^
+SyntaxError: invalid syntax
+```
+
+Die zweite Zeile teilt uns den Namen der betroffenden Datei mit, in diesem Fall fehler.py.
+
+
