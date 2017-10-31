@@ -15,17 +15,17 @@ Skript zum Anlegen der Schüler und Datenhbanken: <https://gist.github.com/joerg
 
 Passwort für einen User ändern:
 
-```SQL
+```sql
 mysql –u schuelerX -p
 SET PASSWORD = PASSWORD('auth_string');
 ```
-# DONE Installation der Arbeitsumgebung
+# Installation der Arbeitsumgebung
 
 Wir installieren zuerst den SQLServer, in unserem Fall den freien SQL-Server mariadb. Als Betriebssystem verwenden wir Ubuntu 17.04.
 
 ```sql
 apt install mariadb-server
-´´´
+```
 
 Für Umgebung die wichtig sind oder im Internet laufen, sollte der SQl-Server auf jeden Fall abgesichert werden. Die erste Massnahme dafür ist das Skript mysql_secure_installation. 
 
