@@ -59,10 +59,9 @@ mysql
 
 Wir lassen uns nun die Datenbanken anzeigen:
 
-#+name: show databases
-#+begin_example
+```sql
 SHOW DATABASES;
-#+end_example
+```
 
 Wir sollten 3 Datenbanken angezeigt bekommen: information_schema, mysql und performance_schema. Diese Datenbanken sind für den reibungslosen Betrieb der Datenbank unverzichtbar.
 
@@ -70,7 +69,7 @@ Zum experimentieren legen wir daher eine neue Datenbank an:
 
 ```sql
 CREATE DATABASE geburtsurkunde;
-``
+```
 
 ## Aufgaben
 
