@@ -162,3 +162,68 @@ Der Primary Key referenziert eine  Eintrag inder Tabelle eindeutig. Der Primary 
 2.) Schaue Dir bitte die folgende Seite an und lese Dir durch, welche Constraints es bei SQL gibt:  <http://wikis.gm.fh-koeln.de/wiki_db/Datenbanken/CONSTRAINT>
 
 
+# INSERT
+
+Mit dem Befehl INSERT können Daten in eine Tabelle eingetragen werden. Dazu sollte die Struktur der Tabelle bekannt sein. 
+
+```sql
+MariaDB [geburtsurkunde]> SHOW FIELDS FROM geburtsurkunde;
+ERROR 1146 (42S02): Table 'geburtsurkunde.geburtsurkunde' doesn't exist
+MariaDB [geburtsurkunde]> SHOW FIELDS FROM tblGeburtsurkunde;                                                               
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| NameStandesAmt     | varchar(50) | YES  |     | NULL    |       |
+| lfdNr              | varchar(50) | YES  |     | NULL    |       |
+| VorNameKind        | varchar(50) | YES  |     | NULL    |       |
+| GeburtsnameKind    | varchar(50) | YES  |     | NULL    |       |
+| Geschlecht         | varchar(1)  | YES  |     | NULL    |       |
+| Geburtsdatum       | varchar(50) | YES  |     | NULL    |       |
+| Geburtsort         | varchar(50) | YES  |     | NULL    |       |
+| VornameMutter      | varchar(50) | YES  |     | NULL    |       |
+| NachnameMutter     | varchar(50) | YES  |     | NULL    |       |
+| VornameVater       | varchar(50) | YES  |     | NULL    |       |
+| NachnameVater      | varchar(50) | YES  |     | NULL    |       |
+| ReligionKind       | varchar(50) | YES  |     | NULL    |       |
+| ReligionMutter     | varchar(50) | YES  |     | NULL    |       |
+| ReligionVater      | varchar(50) | YES  |     | NULL    |       |
+| OrtStandesamt      | varchar(50) | YES  |     | NULL    |       |
+| DatumAusstellung   | varchar(50) | YES  |     | NULL    |       |
+| NameStandesbeamter | varchar(50) | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+17 rows in set (0.00 sec)
+```
+
+Für den INSERT-Befehl gibt es jetzt zwei Möglichkeiten:
+
+1.) Wir schreiben die Werte für die Felder genau in der Reihenfolge auf wie sie in der Tabelle vorhanden sind.
+2.) Wir geben für jeden Wert das dazugehörige Feld an, dann brauchen wir auf die Reihenfolge keine Rücksicht nehmen,
+
+** INSERT einfach
+
+#+name: insert_simple
+#+begin_example
+INSERT INTO tblGeburtsurkunde VALUES('Bad Tölz','9/1988','Robert Siegfried','Lehmann','m','18.08.1988','Bad Tölz', 'Ilse', 'Lehmann', 'Christoph','Lehmann', 'katholisch','katholisch','katholisch','Bad Tölz','18.08.1988','Windmann');
+#+end_example
+
+und überprüfen den Eintag mit dem Befehl
+
+#+name: insert_simple
+#+begin_example
+select * from tblGeburtsurkunde;
+#+end_example
+
+** INSERT
+
+Wir geben Jetzt beim INSERT-Befehl die einzelnen Spalten an. Vorteil bei dieser Schreibweise ist, dass die Werte für die Tabelle in beleibiger Reihenfolge stehen können. Auserdem ist es einfacher, bestimmte Felder nicht auszufüllen.
+
+#+name: insert_simple
+#+begin_example
+INSERT INTO tblGeburtsurkunde VALUES('Bad Tölz','9/1988','Robert Siegfried','Lehmann','m','18.08.1988','Bad Tölz', 'Ilse', 'Lehmann', 'Christoph','Lehmann', 'katholisch','katholisch','katholisch','Bad Tölz','18.08.1988','Windmann');
+#+end_example
+
+** Aufgabe
+
+1.) Sache Dir den Inhalt der Tabelle an. Gibt es unterschiede? Warum?
+2.) Setze das Feld lfdNr auf PRIMARY KEY. Versuche jetzt eine Zeile einzufügen mit gleicher lfdNr. Was passiert?
+
