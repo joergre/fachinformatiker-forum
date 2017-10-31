@@ -1,7 +1,7 @@
 ---
 layout: page
 title: LF6 SQL
-image: 'images/pages/3656302901_af1a9987e4_n.jpg'
+image: '/images/pages/3656302901_af1a9987e4_n.jpg'
 ---
 
 # Allgemeines
@@ -14,7 +14,7 @@ Skript zum Anlegen der Schüler und Datenhbanken: <https://gist.github.com/joerg
 
 Passwort für einen User ändern:
 
-´´´´SQL
+```SQL
 mysql –u schuelerX -p
 SET PASSWORD = PASSWORD('auth_string');
 ```
