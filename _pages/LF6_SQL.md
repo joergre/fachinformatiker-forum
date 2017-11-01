@@ -348,7 +348,7 @@ DELETE FROM CD_Lied WHERE Erscheinungsjahr = '2001' AND Album = 'Anastacia – F
 
 # CREATE INDEX
 
-Ein index ist eine Möglichkeit, den Zugriff einer Datenbank auf einzelne Felder zu beschleunigen. Allerdings werden einige Befehle dadurch verlangsamt wie z.B. update. Da sliegft daran, dass das Index mit aktualisiert werden muss.
+Ein Index ist eine Möglichkeit, den Zugriff einer Datenbank auf einzelne Felder zu beschleunigen. Allerdings werden einige Befehle dadurch verlangsamt wie z.B. update. Das liegf daran, dass das Index mit aktualisiert werden muss.
 
 Anlegen eines Index aus einer Spalte mit Zahlen:
 
@@ -360,5 +360,35 @@ Erstellen eines zusammengestzten Index:
 
 ```sql
 CREATE INDEX Index_Namen ON CD (CD_ID, Track)
+```
+
+# INDEX löschen
+
+Ein Index kann auch gelöscht werden. Der Befehl ist allerdings etwas länger, ein DROP INDEX reicht nicht. Wir legen eines Test-Tabelle mit dem Index idx an um die funktionsweise besser zu verstehen:
+
+```sql
+CREATE TABLE tbltest (col1 varchar(2), col2 varchar(2));
+CREATE INDEX idx ON tbltest (col1, col2);
+```
+
+Der Index idx soll nun wieder entfernt werden:
+
+```sql
+ALTER TABLE tbltest DROP INDEX idx;
+
+```
+
+Bei einem nochmaligen Aufruf des Befehls bekommen wir eine Fehlermeldung (der Index wurde ja bereits gelöscht):
+
+```sql
+MariaDB [test]> ALTER TABLE tbltest DROP INDEX idx;
+ERROR 1091 (42000): Can't DROP 'idx'; check that column/key exists
+```
+
+Alternativ funktioniert auch folgender Befehl:
+
+```sql
+CREATE INDEX idx ON tbltest (col1, col2);
+DROP INDEX idx ON tbltest;
 ```
 
