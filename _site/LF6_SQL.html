@@ -8,8 +8,8 @@
 
   <title>LF6 SQL</title>
   <meta name='description' content="Alles über IT.">
-  <link rel='canonical' href="http://localhost:4000/fachinformatiker-forum/LF6_SQL.html">
-  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://localhost:4000/fachinformatiker-forum/feed.xml">
+  <link rel='canonical' href="https://joergre.github.io/LF6_SQL.html">
+  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="https://joergre.github.io/feed.xml">
 
   <style>
     
@@ -19,7 +19,7 @@
   </style>
 
   <script>
-    var base_url = "/fachinformatiker-forum";
+    var base_url = "";
   </script>
 </head>
 
@@ -44,7 +44,7 @@
           <div class='o-grid__col o-grid__col--2-4-s'>
             <div class='c-logo u-text-center'>
               
-                <a href='/fachinformatiker-forum/'>
+                <a href='/'>
                   <img class='c-logo__img' src='https://github.com/joergre/fachinformatiker-forum/blob/gh-pages/logo.jpg?raw=true# Logo image URL' alt='Fachinformatiker-Forum Fulda'>
                 </a>
               
@@ -73,7 +73,7 @@
   
     
       <li class='c-nav__item' role='presentation'>
-        <a class='c-nav__link' href='/fachinformatiker-forum/LF6_1.1_Python.html'>LF6 1.1 Python</a>
+        <a class='c-nav__link' href='/LF6_1.1_Python.html'>LF6 1.1 Python</a>
       </li>
     
   
@@ -81,7 +81,7 @@
   
     
       <li class='c-nav__item' role='presentation'>
-        <a class='c-nav__link' href='/fachinformatiker-forum/LF6_SQL.html'>LF6 SQL</a>
+        <a class='c-nav__link' href='/LF6_SQL.html'>LF6 SQL</a>
       </li>
     
   
@@ -89,7 +89,7 @@
   
     
       <li class='c-nav__item' role='presentation'>
-        <a class='c-nav__link' href='/fachinformatiker-forum/about/'>About</a>
+        <a class='c-nav__link' href='/about/'>About</a>
       </li>
     
   
@@ -101,8 +101,16 @@
   
     
       <li class='c-nav__item' role='presentation'>
-        <a class='c-nav__link' href='/fachinformatiker-forum/impressum.html'>Impressum</a>
+        <a class='c-nav__link' href='/impressum.html'>Impressum</a>
       </li>
+    
+  
+
+  
+    
+  
+
+  
     
   
 
@@ -265,9 +273,11 @@
 
         <div class='c-content'>
           
-  <img src='/fachinformatiker-forumimages/pages/3656302901_af1a9987e4_n.jpg' class='c-post__image' alt='LF6 SQL'>
+  <img src='/images/pages/3656302901_af1a9987e4_n.jpg' class='c-post__image' alt='LF6 SQL'>
 
-          <h1 id="allgemeines">Allgemeines</h1>
+          <p>Bild von <a href="https://www.flickr.com/photos/mucio/3656302901">https://www.flickr.com/photos/mucio/3656302901</a></p>
+
+<h1 id="allgemeines">Allgemeines</h1>
 
 <p>Fragen zum Text oder zu SQL: <a href="https://discord.gg/TsaqyAQ">https://discord.gg/TsaqyAQ</a></p>
 
@@ -277,10 +287,345 @@
 
 <p>Passwort für einen User ändern:</p>
 
-<p>´´´´SQL
-mysql –u schuelerX -p
-SET PASSWORD = PASSWORD(‘auth_string’);
-```</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mysql</span> <span class="err">–</span><span class="n">u</span> <span class="n">schuelerX</span> <span class="o">-</span><span class="n">p</span>
+<span class="k">SET</span> <span class="n">PASSWORD</span> <span class="o">=</span> <span class="n">PASSWORD</span><span class="p">(</span><span class="s1">'auth_string'</span><span class="p">);</span>
+</code></pre></div></div>
+<h1 id="installation-der-arbeitsumgebung">Installation der Arbeitsumgebung</h1>
+
+<p>Wir installieren zuerst den SQLServer, in unserem Fall den freien SQL-Server mariadb. Als Betriebssystem verwenden wir Ubuntu 17.04.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">apt</span> <span class="n">install</span> <span class="n">mariadb</span><span class="o">-</span><span class="n">server</span>
+</code></pre></div></div>
+
+<p>Für Umgebung die wichtig sind oder im Internet laufen, sollte der SQl-Server auf jeden Fall abgesichert werden. Die erste Massnahme dafür ist das Skript mysql_secure_installation.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mysql_secure_installation</span>
+</code></pre></div></div>
+
+<p>Das Skript ist eigentlich selbsterklärend, daher machen wir hier weiter.</p>
+
+<h1 id="anlegen-und-löschen-einer-datenbank">Anlegen und löschen einer Datenbank</h1>
+
+<p>Video: <a href="https://www.youtube.com/watch?v=EipHtnSYt-o">https://www.youtube.com/watch?v=EipHtnSYt-o</a></p>
+
+<p>Um mit der Datenbank in Verbindung zu treten, brauchen wier noch einen Client. Dafür geben wir ein:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mariadb</span><span class="o">-</span><span class="n">client</span>
+</code></pre></div></div>
+
+<p>Mit dem folgenden Befehl können wir uns auf der Datenbank anmelden:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span>
+</code></pre></div></div>
+
+<p>Nach -u kommt der Benutzername und -p sorgt dafür, dass nach einem Passwort gefragt wird. Habt Ihr kein Passwort vergeben, könnt Ihr Euch auch einfach mit folgendem Befehl anmelden:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mysql</span>
+</code></pre></div></div>
+
+<p>Wir lassen uns nun die Datenbanken anzeigen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">DATABASES</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Wir sollten 3 Datenbanken angezeigt bekommen: information_schema, mysql und performance_schema. Diese Datenbanken sind für den reibungslosen Betrieb der Datenbank unverzichtbar.</p>
+
+<p>Zum experimentieren legen wir daher eine neue Datenbank an:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">geburtsurkunde</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="aufgaben">Aufgaben</h2>
+
+<p>1.) Überprüfe, ob die Datenbank geburtsurkund erfolgreich angelegt wurde.</p>
+
+<p>2.) Lege eine Datenbak mit dem Namen test an.</p>
+
+<p>Mit dem folgenden Befehl löschen wir die Datenbank test:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="k">DATABASE</span> <span class="n">test</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Jetzt melden wir uns ab von der Datenbank:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">QUIT</span>
+</code></pre></div></div>
+
+<h1 id="tabelle-anlegen">Tabelle anlegen</h1>
+
+<p>YouTube-Video: <a href="https://www.youtube.com/edit?video_id=8QFks70RsU4">https://www.youtube.com/edit?video_id=8QFks70RsU4</a></p>
+
+<p>Anmelden an der Datenbank (wir haben kein PÜasswort für root gesetzt):</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mysql</span>
+</code></pre></div></div>
+
+<p>Mit dem Befehl</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">DATABASES</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>sehen wir die verfügbaren Datenbanken. In unserem Fall sollten wir die drei System-Datenbanken information_schema, performance_schema und mysql sehen. Desweiteren unsere Datenbank geburtsurkunde.</p>
+
+<p>Wir wählen die Datenbank geburtsurkunde aus um mit Ihr zu arbeiten:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">USE</span> <span class="n">geburtsurkunde</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Wir sehen uns die vorhandenen Tabellen an:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">TABLES</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Leider ist noch keine Tabelle vorhanden. Dies ändern wir mit dem nächsten Befehl:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">tblGeburtsurkunde</span> <span class="p">(</span><span class="n">NameStandesAmt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">lfdNr</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VorNameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>  <span class="n">GeburtsnameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geschlecht</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">Geburtsdatum</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geburtsort</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">OrtStandesamt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">DatumAusstellung</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NameStandesbeamter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>Der Befehl legt die Tabelle für Geburtsurkunden an (<a href="http://www.der-postillon.com/2015/10/eigentlich-in-bad-tolz-geboren-dfb.html">http://www.der-postillon.com/2015/10/eigentlich-in-bad-tolz-geboren-dfb.html</a>). Der Befehl innerhalb der Klammer ist immer gleich aufgebaut: Spaltenname, Variablentyp und ev. ein Constraint (kommt später). Danach folgt ein Komma und die nächste Spalte. Die Informationen, die in einer Geburtsurkunde erfasst werden, stehen bei Wikipedia: <a href="https://de.wikipedia.org/wiki/Geburtsurkunde">https://de.wikipedia.org/wiki/Geburtsurkunde</a>. Sicherlich ist der imme rgleiche Datentyp diskussionswürdig, aber hier geht es erst einmal darum, dass wir überhaupt Daten specihern können.</p>
+
+<p>Die Struktur unserer Tabelle kann mit verschiedenen Befehlen dargestellt werden. Hier eine kleine Auswahl:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span>
+<span class="k">SHOW</span> <span class="n">COLUMNS</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span>
+<span class="k">SHOW</span> <span class="n">FIELDS</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">TABLES</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>zeigt uns jetzt unsere neue Tabelle und mit</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">tblgeburtsurkunde</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>löschen wir die TAbelle wieder.</p>
+
+<p>Wir legen die Tabelle wieder an, mit einem Primary Key:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">tblGeburtsurkunde</span> <span class="p">(</span><span class="n">NameStandesAmt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">lfdNr</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="n">VorNameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>  <span class="n">GeburtsnameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geschlecht</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">Geburtsdatum</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geburtsort</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">OrtStandesamt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">DatumAusstellung</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NameStandesbeamter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>Der Primary Key referenziert eine  Eintrag inder Tabelle eindeutig. Der Primary Key muss  bei jedem Eintrag einen anderen Wert haben und darf nicht NULL sein (NULL darf nicht mit Null verwechselt werden. 0 ist ein Wert und NULL ist eben kein Wert.)</p>
+
+<h2 id="aufgabe">Aufgabe</h2>
+
+<p>1.) Schaue Dir bitte die Struktur der Tabelle mit den obigen Befehlen an. Was fällt Dir auf?</p>
+
+<p>2.) Schaue Dir bitte die folgende Seite an und lese Dir durch, welche Constraints es bei SQL gibt:  <a href="http://wikis.gm.fh-koeln.de/wiki_db/Datenbanken/CONSTRAINT">http://wikis.gm.fh-koeln.de/wiki_db/Datenbanken/CONSTRAINT</a></p>
+
+<h1 id="insert">INSERT</h1>
+
+<p>Mit dem Befehl INSERT können Daten in eine Tabelle eingetragen werden. Dazu sollte die Struktur der Tabelle bekannt sein.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">geburtsurkunde</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SHOW</span> <span class="n">FIELDS</span> <span class="k">FROM</span> <span class="n">geburtsurkunde</span><span class="p">;</span>
+<span class="n">ERROR</span> <span class="mi">1146</span> <span class="p">(</span><span class="mi">42</span><span class="n">S02</span><span class="p">):</span> <span class="k">Table</span> <span class="s1">'geburtsurkunde.geburtsurkunde'</span> <span class="n">doesn</span><span class="s1">'t exist
+MariaDB [geburtsurkunde]&gt; SHOW FIELDS FROM tblGeburtsurkunde;                                                               
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| NameStandesAmt     | varchar(50) | YES  |     | NULL    |       |
+| lfdNr              | varchar(50) | YES  |     | NULL    |       |
+| VorNameKind        | varchar(50) | YES  |     | NULL    |       |
+| GeburtsnameKind    | varchar(50) | YES  |     | NULL    |       |
+| Geschlecht         | varchar(1)  | YES  |     | NULL    |       |
+| Geburtsdatum       | varchar(50) | YES  |     | NULL    |       |
+| Geburtsort         | varchar(50) | YES  |     | NULL    |       |
+| VornameMutter      | varchar(50) | YES  |     | NULL    |       |
+| NachnameMutter     | varchar(50) | YES  |     | NULL    |       |
+| VornameVater       | varchar(50) | YES  |     | NULL    |       |
+| NachnameVater      | varchar(50) | YES  |     | NULL    |       |
+| ReligionKind       | varchar(50) | YES  |     | NULL    |       |
+| ReligionMutter     | varchar(50) | YES  |     | NULL    |       |
+| ReligionVater      | varchar(50) | YES  |     | NULL    |       |
+| OrtStandesamt      | varchar(50) | YES  |     | NULL    |       |
+| DatumAusstellung   | varchar(50) | YES  |     | NULL    |       |
+| NameStandesbeamter | varchar(50) | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+17 rows in set (0.00 sec)
+</span></code></pre></div></div>
+
+<p>Für den INSERT-Befehl gibt es jetzt zwei Möglichkeiten:</p>
+
+<p>1.) Wir schreiben die Werte für die Felder genau in der Reihenfolge auf wie sie in der Tabelle vorhanden sind.
+2.) Wir geben für jeden Wert das dazugehörige Feld an, dann brauchen wir auf die Reihenfolge keine Rücksicht nehmen,</p>
+
+<h2 id="insert-einfach">INSERT einfach</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblGeburtsurkunde</span> <span class="k">VALUES</span><span class="p">(</span><span class="s1">'Bad Tölz'</span><span class="p">,</span><span class="s1">'9/1988'</span><span class="p">,</span><span class="s1">'Robert Siegfried'</span><span class="p">,</span><span class="s1">'Lehmann'</span><span class="p">,</span><span class="s1">'m'</span><span class="p">,</span><span class="s1">'18.08.1988'</span><span class="p">,</span><span class="s1">'Bad Tölz'</span><span class="p">,</span> <span class="s1">'Ilse'</span><span class="p">,</span> <span class="s1">'Lehmann'</span><span class="p">,</span> <span class="s1">'Christoph'</span><span class="p">,</span><span class="s1">'Lehmann'</span><span class="p">,</span> <span class="s1">'katholisch'</span><span class="p">,</span><span class="s1">'katholisch'</span><span class="p">,</span><span class="s1">'katholisch'</span><span class="p">,</span><span class="s1">'Bad Tölz'</span><span class="p">,</span><span class="s1">'18.08.1988'</span><span class="p">,</span><span class="s1">'Windmann'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>und überprüfen den Eintag mit dem Befehl</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="insert-1">INSERT</h2>
+
+<p>Wir geben Jetzt beim INSERT-Befehl die einzelnen Spalten an. Vorteil bei dieser Schreibweise ist, dass die Werte für die Tabelle in beleibiger Reihenfolge stehen können. Auserdem ist es einfacher, bestimmte Felder nicht auszufüllen.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblGeburtsurkunde</span> <span class="k">VALUES</span><span class="p">(</span><span class="s1">'Bad Tölz'</span><span class="p">,</span><span class="s1">'9/1988'</span><span class="p">,</span><span class="s1">'Robert Siegfried'</span><span class="p">,</span><span class="s1">'Lehmann'</span><span class="p">,</span><span class="s1">'m'</span><span class="p">,</span><span class="s1">'18.08.1988'</span><span class="p">,</span><span class="s1">'Bad Tölz'</span><span class="p">,</span> <span class="s1">'Ilse'</span><span class="p">,</span> <span class="s1">'Lehmann'</span><span class="p">,</span> <span class="s1">'Christoph'</span><span class="p">,</span><span class="s1">'Lehmann'</span><span class="p">,</span> <span class="s1">'katholisch'</span><span class="p">,</span><span class="s1">'katholisch'</span><span class="p">,</span><span class="s1">'katholisch'</span><span class="p">,</span><span class="s1">'Bad Tölz'</span><span class="p">,</span><span class="s1">'18.08.1988'</span><span class="p">,</span><span class="s1">'Windmann'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="aufgabe-1">Aufgabe</h2>
+
+<p>1.) Sache Dir den Inhalt der Tabelle an. Gibt es unterschiede? Warum?</p>
+
+<p>2.) Setze das Feld lfdNr auf PRIMARY KEY. Versuche jetzt eine Zeile einzufügen mit gleicher lfdNr. Was passiert?</p>
+
+<h1 id="select">SELECT</h1>
+
+<p>Vevor wir einen sinnvollen SELECT-Befehl schreiben können, müssen wir immer die Datenbankstruktur kennen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">FIELDS</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="aufgabe-2">Aufgabe</h2>
+<p>Wir möchten unsere CD-Sammlung digitalisieren. Dieses Projekt führen wir Schritt für Schritt durch.
+1.) Lege eine Tabelle CD_Lied mit folgenden Spalten an: CD_ID, Album, Erscheinungsjahr, Titelliste. Wähle sinnvolle Einstellungen für die jeweiligen Spalten.</p>
+
+<p>2.) Trage in die Tabelle bitte folgende Daten ein:</p>
+
+<p>4711 	Anastacia – Not That Kind 	2000 	{1. Not That Kind, 2. I’m Outta Love, 3. Cowboys &amp; Kisses}</p>
+
+<p>4712 	Pink Floyd – Wish You Were Here 	1975 	{1. Shine On You Crazy Diamond}</p>
+
+<p>4713 	Anastacia – Freak of Nature 	2001 	{1. Paid my Dues}</p>
+
+<p>Wir können uns alle Einträge in einer Tabelle anschauen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">CD_Lied</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Oder nur bestimmte Spalten:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span>  <span class="n">Album</span><span class="p">,</span> <span class="n">Titelliste</span> <span class="k">FROM</span> <span class="n">CD_Lied</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Wir können auch bestimmte Einträge selektieren:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">Album</span><span class="p">,</span> <span class="n">Titelliste</span> <span class="k">FROM</span> <span class="n">CD_Lied</span> <span class="k">WHERE</span> <span class="n">Album</span><span class="o">=</span><span class="s1">'Anastacia – Not That Kind'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Wenn wir nicht den genauen Eintrag kennen, dann können wir mit LIKE nach Teilen eines Eintags suchen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">Album</span><span class="p">,</span> <span class="n">Titelliste</span> <span class="k">FROM</span> <span class="n">CD_Lied</span> <span class="k">WHERE</span> <span class="n">Album</span> <span class="k">LIKE</span> <span class="s1">'Anastacia'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Wir können auch suchen nach Einträgen die nicht gleich sind:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">Album</span><span class="p">,</span> <span class="n">Titelliste</span> <span class="k">FROM</span> <span class="n">CD_Lied</span> <span class="k">WHERE</span> <span class="n">Album</span><span class="o">!=</span><span class="s1">'Anastacia – Not That Kind'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Ungleich kann man auch schreiben als</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">Album</span><span class="p">,</span> <span class="n">Titelliste</span> <span class="k">FROM</span> <span class="n">CD_Lied</span> <span class="k">WHERE</span> <span class="n">Album</span><span class="o">&lt;&gt;</span><span class="s1">'Anastacia – Not That Kind'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h1 id="alter-table">Alter TABLE</h1>
+
+<p>Die Tabelle oben hat einige Probleme:</p>
+
+<ul>
+  <li>Das Feld Album enthält die Attributwertebereiche Interpret und Albumtitel.</li>
+  <li>Das Feld Titelliste enthält eine Menge von Titeln.</li>
+</ul>
+
+<p>Dadurch hat man ohne Aufspaltung folgende Probleme bei Abfragen:</p>
+
+<ul>
+  <li>Zur Sortierung nach Albumtitel muss das Feld Album in Interpret und Albumtitel aufgeteilt werden.</li>
+  <li>Die Titel können (mit einfachen Mitteln) nur alle gleichzeitig als Titelliste oder gar nicht dargestellt werden.</li>
+</ul>
+
+<p>Wir fügen als erstes eine Spalte ‘Interpret’ der Tabelle hinzu:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">CD_Lied</span> <span class="k">ADD</span> <span class="n">Interpret</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="aufgabe-3">Aufgabe</h2>
+
+<p>Füge bitte ncoh die Spalte ‘Track’ der Tabelle hinzu varchar(10).</p>
+
+<p>Wir möchten die Spalte Track jetzt auf den Variablentyp int ändern:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">CD_Lied</span> <span class="k">MODIFY</span> <span class="n">Track</span> <span class="n">int</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>oder</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">CD_Lied</span> <span class="k">ALTER</span> <span class="k">COLUMN</span> <span class="n">Track</span> <span class="n">int</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Die Befehle hängen von der eingesetzten MySQL-Version ab.</p>
+
+<h2 id="aufgabe-4">Aufgabe</h2>
+
+<p>Ändere den Spaltentyp bei Erschinungsjahr von var auf year um. Was fällt Dir auf? Warum reagiert die Datenbank so?</p>
+
+<h1 id="delete-from">DELETE FROM</h1>
+
+<p>Um alle Daten aus einer Tabelle zu löschen könne wir folgenden Befehl ausführen (bitte nicht wirklich ausführen):</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DELETE</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">CD_Lied</span>
+</code></pre></div></div>
+
+<p>Der Befehl löscht nur die Daten, nicht aber die Tabelle an sich. Dieser Befehl wird sehr selt genutzt, meist wird ein Drop table verwendet.</p>
+
+<p>Meistens wird der Delte-Befehl eingeschränkt mit Hilfe von Bedingngen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">CD_Lied</span> <span class="k">WHERE</span> <span class="n">Erscheinungsjahr</span> <span class="o">=</span> <span class="s1">'2000'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Der Befehl löscht ‘Anastacia – Not That Kind’.</p>
+
+<p>Wir können mit AND und OR auch komplexere Befehle aufbauen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">CD_Lied</span> <span class="k">WHERE</span> <span class="n">Erscheinungsjahr</span> <span class="o">=</span> <span class="s1">'2001'</span> <span class="k">AND</span> <span class="n">Album</span> <span class="o">=</span> <span class="s1">'Anastacia – Freak of Nature'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h1 id="create-index">CREATE INDEX</h1>
+
+<p>Ein Index ist eine Möglichkeit, den Zugriff einer Datenbank auf einzelne Felder zu beschleunigen. Allerdings werden einige Befehle dadurch verlangsamt wie z.B. update. Das liegf daran, dass das Index mit aktualisiert werden muss.</p>
+
+<p>Anlegen eines Index aus einer Spalte mit Zahlen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">CDIndex</span> <span class="k">ON</span> <span class="n">CD</span> <span class="p">(</span><span class="n">CD_ID</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Erstellen eines zusammengestzten Index:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">Index_Namen</span> <span class="k">ON</span> <span class="n">CD</span> <span class="p">(</span><span class="n">CD_ID</span><span class="p">,</span> <span class="n">Track</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="index-löschen">INDEX löschen</h1>
+
+<p>Bitte beachte, dass die Wiederherstellung eines Index bei großen Datenbanken sehr lange dauern kann!</p>
+
+<p>Ein Index kann auch gelöscht werden. Der Befehl ist allerdings etwas länger, ein DROP INDEX reicht nicht. Wir legen eines Test-Tabelle mit dem Index idx an um die funktionsweise besser zu verstehen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">tbltest</span> <span class="p">(</span><span class="n">col1</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">col2</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>
+<span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">idx</span> <span class="k">ON</span> <span class="n">tbltest</span> <span class="p">(</span><span class="n">col1</span><span class="p">,</span> <span class="n">col2</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Der Index idx soll nun wieder entfernt werden:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">tbltest</span> <span class="k">DROP</span> <span class="k">INDEX</span> <span class="n">idx</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<p>Bei einem nochmaligen Aufruf des Befehls bekommen wir eine Fehlermeldung (der Index wurde ja bereits gelöscht):</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">test</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">tbltest</span> <span class="k">DROP</span> <span class="k">INDEX</span> <span class="n">idx</span><span class="p">;</span>
+<span class="n">ERROR</span> <span class="mi">1091</span> <span class="p">(</span><span class="mi">42000</span><span class="p">):</span> <span class="n">Can</span><span class="s1">'t DROP '</span><span class="n">idx</span><span class="s1">'; check that column/key exists
+</span></code></pre></div></div>
+
+<p>Alternativ funktioniert auch folgender Befehl:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">idx</span> <span class="k">ON</span> <span class="n">tbltest</span> <span class="p">(</span><span class="n">col1</span><span class="p">,</span> <span class="n">col2</span><span class="p">);</span>
+<span class="k">DROP</span> <span class="k">INDEX</span> <span class="n">idx</span> <span class="k">ON</span> <span class="n">tbltest</span><span class="p">;</span>
+</code></pre></div></div>
+
 
         </div>
       </article>
@@ -342,14 +687,14 @@ SET PASSWORD = PASSWORD(‘auth_string’);
 </footer>
   </div>
 
-  <script src="/fachinformatiker-forum/js/jquery-3.1.1.min.js">            </script>
-  <script src="/fachinformatiker-forum/js/masonry.pkgd.min.js">            </script>
-  <script src="/fachinformatiker-forum/js/imagesloaded.pkgd.min.js">       </script>
-  <script src="/fachinformatiker-forum/js/jquery.viewportchecker.min.js">  </script>
-  <script src="/fachinformatiker-forum/js/jquery.ghostHunter.min.js">      </script>
-  <script src="/fachinformatiker-forum/js/evil-icons.min.js">              </script>
-  <script src="/fachinformatiker-forum/js/jquery.fitvids.js">              </script>
-  <script src="/fachinformatiker-forum/js/app.js">                         </script>
+  <script src="/js/jquery-3.1.1.min.js">            </script>
+  <script src="/js/masonry.pkgd.min.js">            </script>
+  <script src="/js/imagesloaded.pkgd.min.js">       </script>
+  <script src="/js/jquery.viewportchecker.min.js">  </script>
+  <script src="/js/jquery.ghostHunter.min.js">      </script>
+  <script src="/js/evil-icons.min.js">              </script>
+  <script src="/js/jquery.fitvids.js">              </script>
+  <script src="/js/app.js">                         </script>
 </body>
 
 </html>

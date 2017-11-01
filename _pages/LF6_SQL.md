@@ -364,6 +364,8 @@ CREATE INDEX Index_Namen ON CD (CD_ID, Track)
 
 # INDEX löschen
 
+Bitte beachte, dass die Wiederherstellung eines Index bei großen Datenbanken sehr lange dauern kann!
+
 Ein Index kann auch gelöscht werden. Der Befehl ist allerdings etwas länger, ein DROP INDEX reicht nicht. Wir legen eines Test-Tabelle mit dem Index idx an um die funktionsweise besser zu verstehen:
 
 ```sql

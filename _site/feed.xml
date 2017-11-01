@@ -3,12 +3,42 @@
   <channel>
     <title>Fachinformatiker-Forum Fulda</title>
     <description>Alles über IT.</description>
-    <link>http://localhost:4000/fachinformatiker-forum/</link>
-    <atom:link href="http://localhost:4000/fachinformatiker-forum/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 Oct 2017 18:15:47 +0100</pubDate>
-    <lastBuildDate>Tue, 31 Oct 2017 18:15:47 +0100</lastBuildDate>
+    <link>https://joergre.github.io/</link>
+    <atom:link href="https://joergre.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 01 Nov 2017 03:52:01 +0100</pubDate>
+    <lastBuildDate>Wed, 01 Nov 2017 03:52:01 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
 
+    
+      <item>
+        <title>Eigenen Domän-Namen für Github-Projekt-Seite</title>
+        <description>&lt;p&gt;Quelle Bild: &lt;a href=&quot;https://de.wikipedia.org/wiki/Domain_(Internet)#/media/File:Dns-raum.svg&quot;&gt;https://de.wikipedia.org/wiki/Domain_(Internet)#/media/File:Dns-raum.svg&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Es ist möglich, mit Hilfe von Github kostenlos eine Internetseite zu hosten (siehe &lt;a href=&quot;https://pages.github.com/&quot;&gt;https://pages.github.com/&lt;/a&gt;). Ebrenso kann ein eigener Domän-Namen verwendet werden. Bei der Verwendung eines eigenen Namens kann allerdings kein SSL verwendet werden.&lt;/p&gt;
+
+&lt;p&gt;Zur Einrichtung:&lt;/p&gt;
+
+&lt;p&gt;1.) Richte bitte bei Deinem DNS-Anbierter einen A-Record ein, der Deine Domän auf 192.30.252.153 und/oder 192.30.252.154 umleitet. IPv6 wird nicht unterstützt!&lt;/p&gt;
+
+&lt;p&gt;2.) In den Zweig ‘gh-pages’ kommt in das oberste Verzeichnis eine Datei mit dem Namen ‘CNAME’ (bitte ebenfalls groß schreiben). In diese Datei kommt nur Deine Domäne (ohne http oder https und ohne Verzeichnis).&lt;/p&gt;
+
+&lt;p&gt;Dann warte bitte ein paar Minuten bis der Befehl die entsprechende Eintragung ausgibt:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pi@pi-desktop:~/fachinformatiker-forum &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;dig fachinformatiker-forum.de +nostats +nocomments +nocmd
+
+&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &amp;lt;&amp;lt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; DiG 9.10.3-P4-Raspbian &amp;lt;&amp;lt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; fachinformatiker-forum.de +nostats +nocomments +nocmd
+&lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt; global options: +cmd
+&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;fachinformatiker-forum.de.	IN	A
+fachinformatiker-forum.de. 1947	IN	A	192.30.252.153
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Hier siehst Du eine Besipiel-Datei: &lt;a href=&quot;https://github.com/joergre/fachinformatiker-forum/&quot;&gt;https://github.com/joergre/fachinformatiker-forum/&lt;/a&gt; und die dazugehörige Webseite: &lt;a href=&quot;http://fachinformatiker-forum.de&quot;&gt;http://fachinformatiker-forum.de&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Nov 2017 00:00:00 +0100</pubDate>
+        <link>https://joergre.github.io/2017/11/01/eigene_domain_fuer_github_projekt_seiten/</link>
+        <guid isPermaLink="true">https://joergre.github.io/2017/11/01/eigene_domain_fuer_github_projekt_seiten/</guid>
+      </item>
     
       <item>
         <title>Screenshot mit dem Raspberry Pi</title>
@@ -31,8 +61,8 @@
 &lt;p&gt;cd steht für eine Verzögerung der Aufnahme von 10 Sekunden. Mit -u wird nur das aktive Fenster aufgenommen. Eine schöne Übersicht der möglichen Paramter findert Ihr &lt;a href=&quot;https://wiki.ubuntuusers.de/Scrot/&quot;&gt;hier&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Oct 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/2017/10/30/Screenshot_Raspberry_Pi/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/2017/10/30/Screenshot_Raspberry_Pi/</guid>
+        <link>https://joergre.github.io/2017/10/30/Screenshot_Raspberry_Pi/</link>
+        <guid isPermaLink="true">https://joergre.github.io/2017/10/30/Screenshot_Raspberry_Pi/</guid>
       </item>
     
       <item>
@@ -46,8 +76,8 @@
 &lt;p&gt;Ferdinand-Braun-Schule Fulda&lt;/p&gt;
 </description>
         <pubDate>Fri, 27 Oct 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/2017/10/27/Tag-der-offenen-tuer/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/2017/10/27/Tag-der-offenen-tuer/</guid>
+        <link>https://joergre.github.io/2017/10/27/Tag-der-offenen-tuer/</link>
+        <guid isPermaLink="true">https://joergre.github.io/2017/10/27/Tag-der-offenen-tuer/</guid>
       </item>
     
       <item>
@@ -58,8 +88,8 @@
 
 </description>
         <pubDate>Sat, 23 Sep 2017 09:42:01 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/2017/09/23/die-ueberwachung-nimmt-zu/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/2017/09/23/die-ueberwachung-nimmt-zu/</guid>
+        <link>https://joergre.github.io/2017/09/23/die-ueberwachung-nimmt-zu/</link>
+        <guid isPermaLink="true">https://joergre.github.io/2017/09/23/die-ueberwachung-nimmt-zu/</guid>
       </item>
     
       <item>
@@ -78,8 +108,8 @@ Um Anmeldung wird gebeten (joerg@reuter.sc).&lt;/p&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/icR-df2Olm8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Mon, 18 Sep 2017 13:45:07 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/09/18/einfuehrung-ansible/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/09/18/einfuehrung-ansible/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/09/18/einfuehrung-ansible/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/09/18/einfuehrung-ansible/</guid>
       </item>
     
       <item>
@@ -90,8 +120,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;a href=&quot;https://netzpolitik.org/2017/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/&quot;&gt;https://netzpolitik.org/2017/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 12 Sep 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</guid>
+        <link>https://joergre.github.io/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</guid>
       </item>
     
       <item>
@@ -104,8 +134,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 
 </description>
         <pubDate>Sat, 09 Sep 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</guid>
+        <link>https://joergre.github.io/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</link>
+        <guid isPermaLink="true">https://joergre.github.io/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</guid>
       </item>
     
       <item>
@@ -115,8 +145,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;a href=&quot;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&quot;&gt;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/22/ethik-und-programmieren/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/07/22/ethik-und-programmieren/</guid>
+        <link>https://joergre.github.io/news/2017/07/22/ethik-und-programmieren/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/07/22/ethik-und-programmieren/</guid>
       </item>
     
       <item>
@@ -126,8 +156,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;a href=&quot;https://www.pro-linux.de/artikel/2/1890/der-maust%C3%BCr%C3%B6ffnertag-bei-der-fralug.htm&quot;&gt;https://www.pro-linux.de/artikel/2/1890/der-maust%C3%BCr%C3%B6ffnertag-bei-der-fralug.htm&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 07 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</guid>
+        <link>https://joergre.github.io/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</guid>
       </item>
     
       <item>
@@ -138,8 +168,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 
 </description>
         <pubDate>Fri, 07 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</guid>
+        <link>https://joergre.github.io/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</guid>
       </item>
     
       <item>
@@ -149,8 +179,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;a href=&quot;https://www.wired.co.uk/article/google-raspberry-pi-ai&quot;&gt;https://www.wired.co.uk/article/google-raspberry-pi-ai&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</guid>
+        <link>https://joergre.github.io/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</guid>
       </item>
     
       <item>
@@ -159,8 +189,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Datenschutzgrundverordnung-Boeses-Erwachen-der-Domainverwaltung-ICANN-3757415.html&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Jun 2017 11:18:12 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/06/28/bye-bye-whois/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/06/28/bye-bye-whois/</guid>
+        <link>https://joergre.github.io/news/2017/06/28/bye-bye-whois/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/06/28/bye-bye-whois/</guid>
       </item>
     
       <item>
@@ -169,8 +199,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;[link-preview url=&quot;https://youtu.be/hSnbp4CXKT0&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Jun 2017 10:13:26 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/06/28/windows-vor-petya-2-schuetzen/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/06/28/windows-vor-petya-2-schuetzen/</guid>
+        <link>https://joergre.github.io/news/2017/06/28/windows-vor-petya-2-schuetzen/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/06/28/windows-vor-petya-2-schuetzen/</guid>
       </item>
     
       <item>
@@ -182,11 +212,11 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Danke an den Verein Zeitsprung e.V. für die Bereitstellung der Räumlichkeiten :-).&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Wir, das Fachinformatiker-Forum &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Fulda&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;, treffen uns in regelmäßigen Abständen im &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Technologiezentrum &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;ITZ. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Nach den Sommerferien &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;freuen&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; wir uns &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;auf einen spannenden Workshop&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt; zum Thema &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;&lt;b&gt;„IT Security“ &lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;und hoffen, Euch dort begrüßen zu können. &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Bis dahin eine gute Zeit!&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Die &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Termine &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;könnt Ihr auf unserer Website &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;&lt;a href=&quot;http://fachinformatiker-forum.de/&quot;&gt;http://fachinformatiker-forum.de&lt;/a&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;einsehen&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_205333.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-354&quot; src=&quot;/fachinformatiker-forum/assets/20170623_205333-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_205245.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-353&quot; src=&quot;/fachinformatiker-forum/assets/20170623_205245-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_203646.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-352&quot; src=&quot;/fachinformatiker-forum/assets/20170623_203646-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_195022.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-351&quot; src=&quot;/fachinformatiker-forum/assets/20170623_195022-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_195004.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-350&quot; src=&quot;/fachinformatiker-forum/assets/20170623_195004-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_194953-1.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-349&quot; src=&quot;/fachinformatiker-forum/assets/20170623_194953-1-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_192741.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-348&quot; src=&quot;/fachinformatiker-forum/assets/20170623_192741-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_191509.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-347&quot; src=&quot;/fachinformatiker-forum/assets/20170623_191509-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_184239-1.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-346&quot; src=&quot;/fachinformatiker-forum/assets/20170623_184239-1-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Die &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Termine &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;könnt Ihr auf unserer Website &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;&lt;a href=&quot;http://fachinformatiker-forum.de/&quot;&gt;http://fachinformatiker-forum.de&lt;/a&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;einsehen&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_205333.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-354&quot; src=&quot;/assets/20170623_205333-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_205245.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-353&quot; src=&quot;/assets/20170623_205245-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_203646.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-352&quot; src=&quot;/assets/20170623_203646-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_195022.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-351&quot; src=&quot;/assets/20170623_195022-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_195004.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-350&quot; src=&quot;/assets/20170623_195004-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_194953-1.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-349&quot; src=&quot;/assets/20170623_194953-1-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_192741.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-348&quot; src=&quot;/assets/20170623_192741-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_191509.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-347&quot; src=&quot;/assets/20170623_191509-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_184239-1.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-346&quot; src=&quot;/assets/20170623_184239-1-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Jun 2017 17:19:35 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</guid>
+        <link>https://joergre.github.io/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</guid>
       </item>
     
       <item>
@@ -195,8 +225,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;[link-preview url=&quot;https://www.pro-linux.de/news/1/24861/synchronisationsprogramm-casync-in-erster-version.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 22 Jun 2017 08:26:37 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/06/22/synchronisationsprogramm-casync/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/06/22/synchronisationsprogramm-casync/</guid>
+        <link>https://joergre.github.io/news/2017/06/22/synchronisationsprogramm-casync/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/06/22/synchronisationsprogramm-casync/</guid>
       </item>
     
       <item>
@@ -205,8 +235,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;[link-preview url=&quot;https://youtu.be/qHsbzTbjcX4&quot;]&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Jun 2017 20:20:17 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</guid>
+        <link>https://joergre.github.io/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</link>
+        <guid isPermaLink="true">https://joergre.github.io/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</guid>
       </item>
     
       <item>
@@ -224,8 +254,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 20 Jun 2017 19:54:49 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</guid>
       </item>
     
       <item>
@@ -244,8 +274,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
 &lt;p&gt;Bis bald im Kurs! (kostenlos aber nicht umsonst)&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Jun 2017 07:50:14 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</guid>
+        <link>https://joergre.github.io/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</guid>
       </item>
     
       <item>
@@ -254,8 +284,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
 &lt;p&gt;[link-preview url=&quot;http://www.n-tv.de/technik/Freifunk-muss-keine-Vorratsdaten-speichern-article19897165.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Jun 2017 20:37:22 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</guid>
+        <link>https://joergre.github.io/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</guid>
       </item>
     
       <item>
@@ -264,8 +294,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
 &lt;p&gt;[link-preview url=&quot;https://youtu.be/bQe_ViGxVTo&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 23:33:09 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</guid>
+        <link>https://joergre.github.io/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</link>
+        <guid isPermaLink="true">https://joergre.github.io/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</guid>
       </item>
     
       <item>
@@ -274,8 +304,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Unreparierbar-Surface-Laptop-faellt-bei-iFixit-durch-3746123.html?wt_mc=rss.ho.beitrag.atom&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 23:26:49 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</guid>
+        <link>https://joergre.github.io/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</guid>
       </item>
     
       <item>
@@ -283,8 +313,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
         <description>&lt;p&gt;[link-preview url=&quot;https://www.pro-linux.de/news/1/24811/humble-book-bundle-linux-amp-open-source.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Jun 2017 22:23:26 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/06/07/humble-book-bundle-linux-open-source/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/06/07/humble-book-bundle-linux-open-source/</guid>
+        <link>https://joergre.github.io/news/2017/06/07/humble-book-bundle-linux-open-source/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/06/07/humble-book-bundle-linux-open-source/</guid>
       </item>
     
       <item>
@@ -292,8 +322,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
         <description>&lt;p&gt;[link-preview url=&quot;https://www.overleaf.com/blog/441-how-to-write-in-markdown-on-overleaf#.WQz6LYjyjmH&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Jun 2017 19:20:29 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</guid>
+        <link>https://joergre.github.io/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</link>
+        <guid isPermaLink="true">https://joergre.github.io/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</guid>
       </item>
     
       <item>
@@ -314,8 +344,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Fri, 02 Jun 2017 10:56:21 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/06/02/einfuehrung-in-react/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/06/02/einfuehrung-in-react/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/06/02/einfuehrung-in-react/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/06/02/einfuehrung-in-react/</guid>
       </item>
     
       <item>
@@ -325,8 +355,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=7aaAmULP_rA&amp;amp;feature=push-u&amp;amp;attr_tag=Js9OeHCpCAV3fK0B-6&quot;]&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Apr 2017 11:19:54 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/04/14/welche-daten-windows-10-uebertraegt/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/04/14/welche-daten-windows-10-uebertraegt/</guid>
+        <link>https://joergre.github.io/news/2017/04/14/welche-daten-windows-10-uebertraegt/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/04/14/welche-daten-windows-10-uebertraegt/</guid>
       </item>
     
       <item>
@@ -338,8 +368,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 10 Apr 2017 12:29:16 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</guid>
+        <link>https://joergre.github.io/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</guid>
       </item>
     
       <item>
@@ -347,8 +377,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24622/android-verdr%C3%A4ngt-windows-vom-ersten-platz-der-marktanteile.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Apr 2017 06:30:32 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</guid>
+        <link>https://joergre.github.io/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</guid>
       </item>
     
       <item>
@@ -356,8 +386,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=jUibaPTXSHk&quot;]&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 Apr 2017 23:00:33 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/04/04/292/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/04/04/292/</guid>
+        <link>https://joergre.github.io/news/2017/04/04/292/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/04/04/292/</guid>
       </item>
     
       <item>
@@ -368,8 +398,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Mar 2017 08:04:15 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</guid>
       </item>
     
       <item>
@@ -378,8 +408,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Freifunk-Bundesrat-befuerwortet-Gemeinnuetzigkeit-3650176.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Mar 2017 10:37:16 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</guid>
+        <link>https://joergre.github.io/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</guid>
       </item>
     
       <item>
@@ -387,8 +417,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;http://www.n-tv.de/wirtschaft/Amazon-transportiert-Daten-per-LKW-article19691380.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Mar 2017 02:16:01 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/03/03/das-ist-also-die-datenautobahn/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/03/03/das-ist-also-die-datenautobahn/</guid>
+        <link>https://joergre.github.io/news/2017/03/03/das-ist-also-die-datenautobahn/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/03/03/das-ist-also-die-datenautobahn/</guid>
       </item>
     
       <item>
@@ -396,8 +426,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://www.gedys-intraware.de/ausbildungsplatz/fachinformatiker/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Feb 2017 09:13:06 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/23/ausbildung-zum-informatiker-ae/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/23/ausbildung-zum-informatiker-ae/</guid>
+        <link>https://joergre.github.io/news/2017/02/23/ausbildung-zum-informatiker-ae/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/23/ausbildung-zum-informatiker-ae/</guid>
       </item>
     
       <item>
@@ -405,8 +435,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://goo.gl/I1QatD&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Feb 2017 08:46:36 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</guid>
       </item>
     
       <item>
@@ -417,8 +447,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 Feb 2017 11:26:32 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</guid>
       </item>
     
       <item>
@@ -428,8 +458,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24466/airsim-microsoft-stellt-simulator-f%C3%BCr-drohnen-und-roboter-vor.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Feb 2017 07:31:30 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</guid>
+        <link>https://joergre.github.io/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</guid>
       </item>
     
       <item>
@@ -438,8 +468,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2017/schnueffelpuppe-my-friend-cayla-in-deutschland-verboten/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Feb 2017 10:43:27 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</guid>
+        <link>https://joergre.github.io/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</guid>
       </item>
     
       <item>
@@ -447,8 +477,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2017/democracy-im-rausch-der-daten-in-der-arte-mediathek/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Feb 2017 07:44:30 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</guid>
+        <link>https://joergre.github.io/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</guid>
       </item>
     
       <item>
@@ -459,8 +489,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://youtu.be/xG9vhTHwH4w&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 13 Feb 2017 05:23:56 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</guid>
+        <link>https://joergre.github.io/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</guid>
       </item>
     
       <item>
@@ -469,8 +499,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Sicherheitsforscher-an-AV-Hersteller-Finger-weg-von-HTTPS-3620159.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Feb 2017 16:29:15 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</guid>
+        <link>https://joergre.github.io/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</guid>
       </item>
     
       <item>
@@ -479,8 +509,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Pilotprojekt-Britische-Lehrer-tragen-Body-Cams-3622814.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Feb 2017 16:24:40 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/12/britische-lehrer-tragen-body-cams/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/12/britische-lehrer-tragen-body-cams/</guid>
+        <link>https://joergre.github.io/news/2017/02/12/britische-lehrer-tragen-body-cams/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/12/britische-lehrer-tragen-body-cams/</guid>
       </item>
     
       <item>
@@ -489,8 +519,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=i4UndCCqRu8&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Feb 2017 22:20:20 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</guid>
+        <link>https://joergre.github.io/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</guid>
       </item>
     
       <item>
@@ -502,8 +532,8 @@ Chemnitzer Linux-Tage vorgestellt.&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://chemnitzer.linux-tage.de/2017/de/programm&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Feb 2017 08:02:43 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</guid>
+        <link>https://joergre.github.io/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</guid>
       </item>
     
       <item>
@@ -512,8 +542,8 @@ Chemnitzer Linux-Tage vorgestellt.&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Hannover-Explosion-von-E-Bike-Akku-loest-Parkhausbrand-aus-3619564.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Feb 2017 07:52:45 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</guid>
+        <link>https://joergre.github.io/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</guid>
       </item>
     
       <item>
@@ -522,8 +552,8 @@ Chemnitzer Linux-Tage vorgestellt.&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/security/meldung/Erpressungs-Trojaner-Spora-Der-Kunde-ist-Koenig-3618984.html&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Feb 2017 07:39:16 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</guid>
+        <link>https://joergre.github.io/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</guid>
       </item>
     
       <item>
@@ -532,8 +562,8 @@ Chemnitzer Linux-Tage vorgestellt.&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;http://www.konrad-zuse-schule.de/index.php?id=568&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 08 Feb 2017 08:36:25 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</guid>
       </item>
     
       <item>
@@ -543,8 +573,8 @@ Samstag, 11.02.2017, von 10:00 bis 14:30 Uhr ein zum Tag der offenen Tür.&lt;br
 Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vor.&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Feb 2017 01:49:21 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</guid>
       </item>
     
       <item>
@@ -553,8 +583,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=3GJ2Jqk8wD4&quot;]&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Feb 2017 01:07:40 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/02/07/pi-hole/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/02/07/pi-hole/</guid>
+        <link>https://joergre.github.io/news/2017/02/07/pi-hole/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/02/07/pi-hole/</guid>
       </item>
     
       <item>
@@ -563,8 +593,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Zuse-Computer-Museum-ZCOM-in-Hoyerswerda-eroeffnet-3609845.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Jan 2017 23:37:39 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/01/29/neues-zuse-computer-museum-zcom/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/01/29/neues-zuse-computer-museum-zcom/</guid>
+        <link>https://joergre.github.io/news/2017/01/29/neues-zuse-computer-museum-zcom/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/01/29/neues-zuse-computer-museum-zcom/</guid>
       </item>
     
       <item>
@@ -574,8 +604,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Milliarden-Foerderprogramm-fuer-digitale-Klassenzimmer-3609761.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Jan 2017 23:20:12 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</guid>
+        <link>https://joergre.github.io/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</guid>
       </item>
     
       <item>
@@ -586,8 +616,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;http://mscommunity.cloud/community/2102-safe-the-date-02-02-2017-community-spring-event-in-fulda?utm_content=buffer02391&amp;amp;utm_medium=social&amp;amp;utm_source=linkedin.com&amp;amp;utm_campaign=buffer&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Jan 2017 22:09:58 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</guid>
       </item>
     
       <item>
@@ -598,8 +628,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/tr/artikel/Digital-Health-Pioneers-sind-ausgewaehlt-3454865.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Jan 2017 16:29:18 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/01/25/smartphone-misst-den-herzschlag/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/01/25/smartphone-misst-den-herzschlag/</guid>
+        <link>https://joergre.github.io/news/2017/01/25/smartphone-misst-den-herzschlag/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/01/25/smartphone-misst-den-herzschlag/</guid>
       </item>
     
       <item>
@@ -610,8 +640,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Jan 2017 16:18:42 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</guid>
       </item>
     
       <item>
@@ -620,8 +650,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://igikorn.com/sshfs-windows-10/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Jan 2017 19:10:33 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</guid>
+        <link>https://joergre.github.io/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</link>
+        <guid isPermaLink="true">https://joergre.github.io/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</guid>
       </item>
     
       <item>
@@ -631,8 +661,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2016/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Jan 2017 11:07:31 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</guid>
+        <link>https://joergre.github.io/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</guid>
       </item>
     
       <item>
@@ -660,8 +690,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;div class=&quot;g-group&quot;&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 12 Jan 2017 22:05:27 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</guid>
       </item>
     
       <item>
@@ -670,8 +700,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.linux.com/news/learn/intro-to-linux/first-64-bit-and-enterprise-os-comes-raspberry-pi-3&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jan 2017 21:14:31 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</guid>
+        <link>https://joergre.github.io/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</guid>
       </item>
     
       <item>
@@ -681,8 +711,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jan 2017 21:02:41 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</guid>
+        <link>https://joergre.github.io/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</guid>
       </item>
     
       <item>
@@ -713,8 +743,8 @@ damit einhergehenden Organisations- und Personalfragen.&lt;/p&gt;
 Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Verein Zeitsprung e.V. beteiligen.&lt;/span&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Jan 2017 20:45:42 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</guid>
       </item>
     
       <item>
@@ -723,8 +753,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
 &lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=yb7BgDBUbP0&amp;amp;index=18#t=585.085792&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Jan 2017 19:44:35 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/01/05/build-yout-own-nsa/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/01/05/build-yout-own-nsa/</guid>
+        <link>https://joergre.github.io/news/2017/01/05/build-yout-own-nsa/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/01/05/build-yout-own-nsa/</guid>
       </item>
     
       <item>
@@ -735,8 +765,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Jan 2017 23:49:21 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</guid>
+        <link>https://joergre.github.io/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</link>
+        <guid isPermaLink="true">https://joergre.github.io/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</guid>
       </item>
     
       <item>
@@ -744,8 +774,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
         <description>&lt;p&gt;https://www.youtube.com/watch?v=kEl_Ib4I7OI#t=640.260417&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Jan 2017 04:10:50 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</guid>
+        <link>https://joergre.github.io/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</guid>
       </item>
     
       <item>
@@ -755,8 +785,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
 &lt;p&gt;telnet pf.fbs-fulda.info&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Jan 2017 03:09:07 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2017/01/01/happy-new-year/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2017/01/01/happy-new-year/</guid>
+        <link>https://joergre.github.io/news/2017/01/01/happy-new-year/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2017/01/01/happy-new-year/</guid>
       </item>
     
       <item>
@@ -764,8 +794,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
         <description>&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2016/ard-doku-schicksale-von-whistleblowern/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Nov 2016 23:31:02 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</guid>
+        <link>https://joergre.github.io/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</guid>
       </item>
     
       <item>
@@ -778,8 +808,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;19:00 - 22:00 Uhr&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Nov 2016 13:53:16 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/11/21/angular-js-workshop/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/11/21/angular-js-workshop/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/11/21/angular-js-workshop/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/11/21/angular-js-workshop/</guid>
       </item>
     
       <item>
@@ -790,8 +820,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Nov 2016 13:39:19 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</guid>
       </item>
     
       <item>
@@ -799,8 +829,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://www.infoq.com/presentations/tdd-lego&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 31 Oct 2016 23:13:20 +0100</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/31/tdd-mit-lego/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/31/tdd-mit-lego/</guid>
+        <link>https://joergre.github.io/news/2016/10/31/tdd-mit-lego/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/31/tdd-mit-lego/</guid>
       </item>
     
       <item>
@@ -808,8 +838,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24117/freier-devops-kurs-der-linux-foundation.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Oct 2016 09:25:03 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</guid>
+        <link>https://joergre.github.io/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</guid>
       </item>
     
       <item>
@@ -821,8 +851,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Oct 2016 20:48:33 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</guid>
       </item>
     
       <item>
@@ -833,11 +863,11 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Unter den 6 Teilnehmern waren 4 Studierende der Hochschule, davon 2 im Master-Studiengang, ein Softwareentwickler von IBM und ein Lehrer der &quot;Ferdinand Braun Schule&quot; Fulda. Sie kamen zusammen, um sich in modernen Arbeitstechniken wie TDD und Pairprogramming zu üben oder neue Programmiersprachen kennen zu lernen. Darüber hinaus kam es zu regem Austausch über Lösungsansätze des zu bearbeitenden Problems, welches traditionell eine Teilaufgabe aus der Simulation &quot;Conways Spiel des Lebens&quot; ist.&lt;/p&gt;
 &lt;p&gt;Die Teilnehmer setzten dabei unterschiedlichste Programmiersparen ein, angefangen von Java über JavaScript, C und C++ bis hin zu Phyton und Ruby. Gerade dies Mischung was es, die bei den Teilnehmern besonders gut ankam.&lt;/p&gt;
 &lt;p&gt;Aber auch das Konzept der Veranstaltung, sich bei der Programmierung ausschließlich auf die Umsetzung der &quot;4 rules of simple design&quot; zu konzentrieren, ohne den Druck einer Projekt-Deadline im Nacken zu haben, begeisterte die Teilnehmer. Die Studierenden freuten sich besonders über die intensive Betreuung und den Austausch mit erfahrenen Softwareentwicklern.&lt;/p&gt;
-&lt;p&gt;Alle Teilnehmer hoffen auf eine Wiederholung des &quot;Global Day of Code Retreat&quot; im nächsten Jahr.&lt;/span&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14612449_10154608730828349_7451208976797355683_o.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-143&quot; src=&quot;/fachinformatiker-forum/assets/14612449_10154608730828349_7451208976797355683_o-300x225.jpg&quot; alt=&quot;14612449_10154608730828349_7451208976797355683_o&quot; width=&quot;300&quot; height=&quot;225&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Alle Teilnehmer hoffen auf eine Wiederholung des &quot;Global Day of Code Retreat&quot; im nächsten Jahr.&lt;/span&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14612449_10154608730828349_7451208976797355683_o.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-143&quot; src=&quot;/assets/14612449_10154608730828349_7451208976797355683_o-300x225.jpg&quot; alt=&quot;14612449_10154608730828349_7451208976797355683_o&quot; width=&quot;300&quot; height=&quot;225&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Oct 2016 18:32:23 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</guid>
+        <link>https://joergre.github.io/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</guid>
       </item>
     
       <item>
@@ -846,8 +876,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;https://youtu.be/Sw1shJiuTmg&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Oct 2016 18:11:26 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</guid>
+        <link>https://joergre.github.io/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</guid>
       </item>
     
       <item>
@@ -869,8 +899,8 @@ Währe&lt;span class=&quot;text_exposed_show&quot;&gt;nd der Veranstaltung solle
 &lt;p&gt;&lt;a href=&quot;https://www.hs-fulda.de/unsere-hochschule/alle-termine/termin/global-day-of-coderetreat/show/&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;https://www.hs-fulda.de/&lt;wbr /&gt;unsere-hochschule/&lt;wbr /&gt;alle-termine/termin/&lt;wbr /&gt;global-day-of-coderetreat/&lt;wbr /&gt;show/&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 20 Oct 2016 15:05:04 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</guid>
       </item>
     
       <item>
@@ -895,8 +925,8 @@ Nicolas Bredel - Schöne Aussicht Ideenagentur&lt;/p&gt;
 &lt;p&gt;21.00 Uhr: Beginn des Get Together&lt;/p&gt;
 </description>
         <pubDate>Thu, 20 Oct 2016 10:54:58 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</guid>
       </item>
     
       <item>
@@ -906,8 +936,8 @@ Nicolas Bredel - Schöne Aussicht Ideenagentur&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Oct 2016 12:49:55 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/15/geekend-reloaded/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/15/geekend-reloaded/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/15/geekend-reloaded/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/15/geekend-reloaded/</guid>
       </item>
     
       <item>
@@ -916,8 +946,8 @@ Nicolas Bredel - Schöne Aussicht Ideenagentur&lt;/p&gt;
 &lt;p&gt;https://youtu.be/_JjWvo-55JU&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Oct 2016 10:43:05 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/15/microsoft-rettendes-ufer-linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/15/microsoft-rettendes-ufer-linux/</guid>
+        <link>https://joergre.github.io/news/2016/10/15/microsoft-rettendes-ufer-linux/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/15/microsoft-rettendes-ufer-linux/</guid>
       </item>
     
       <item>
@@ -934,20 +964,20 @@ Diese und weitere Fragen bilden für Ortrud Tornow den Kompass, um das jeweilige
 bis zum 28. Oktober 2016. Veranstaltungsort: Ferdinand-Braun-Schule, Goerdelerstraße 7, Medienzentrum, Eingang B.&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Oct 2016 21:03:02 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</guid>
       </item>
     
       <item>
         <title>SUSE und it-novum verbessern Storage-Management in Ceph</title>
         <description>&lt;p&gt;Ceph ist eine wirklich tolle Technik um die Ausfallsicherheit und Performance von verteilten Dateisystemen zu erhöhen (https://de.wikipedia.org/wiki/Ceph).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.suse.com/de-de/newsroom/post/2016/suse-and-it-novum-collaborate-to-enhance-storage-management-in-ceph&quot;&gt;https://www.suse.com/de-de/newsroom/post/2016/suse-and-it-novum-collaborate-to-enhance-storage-management-in-ceph&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.suse.com/de-de/newsroom/post/2016/suse-and-it-novum-collaborate-to-enhance-storage-management-in-ceph&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-98&quot; src=&quot;/fachinformatiker-forum/assets/apache3-300x169.png&quot; alt=&quot;apache3&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.suse.com/de-de/newsroom/post/2016/suse-and-it-novum-collaborate-to-enhance-storage-management-in-ceph&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-98&quot; src=&quot;/assets/apache3-300x169.png&quot; alt=&quot;apache3&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Tue, 11 Oct 2016 02:28:39 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</guid>
+        <link>https://joergre.github.io/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</guid>
       </item>
     
       <item>
@@ -968,8 +998,8 @@ update-alternatives --config editor&lt;br /&gt;
 &lt;p&gt;By Groov3 (Own work) [href=&quot;http://creativecommons.org/licenses/by-sa/4.0&quot;&amp;gt;CC BY-SA 4.0], &lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3ACrontab_(en_fran%C3%A7ais_-_in_French).png&quot;&gt;via Wikimedia Commons&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 10 Oct 2016 11:58:17 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</guid>
+        <link>https://joergre.github.io/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</link>
+        <guid isPermaLink="true">https://joergre.github.io/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</guid>
       </item>
     
       <item>
@@ -977,17 +1007,17 @@ update-alternatives --config editor&lt;br /&gt;
         <description>&lt;p&gt;&lt;a href=&quot;http://techstage.de/-3328059l&quot;&gt;http://techstage.de/-3328059l&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 23:15:29 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/09/50-euro-drohne/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/09/50-euro-drohne/</guid>
+        <link>https://joergre.github.io/news/2016/10/09/50-euro-drohne/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/09/50-euro-drohne/</guid>
       </item>
     
       <item>
         <title>Fuldas Sonnenwinde erneut unter den Besten</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14463254_1067215403391557_7725897375664111170_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-69&quot; src=&quot;/fachinformatiker-forum/assets/14463254_1067215403391557_7725897375664111170_n-300x199.jpg&quot; alt=&quot;14463254_1067215403391557_7725897375664111170_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14368755_1067214406724990_747006614694416639_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-71&quot; src=&quot;/fachinformatiker-forum/assets/14368755_1067214406724990_747006614694416639_n-300x199.jpg&quot; alt=&quot;14368755_1067214406724990_747006614694416639_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14441102_1067214056725025_4634759047833502115_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-72&quot; src=&quot;/fachinformatiker-forum/assets/14441102_1067214056725025_4634759047833502115_n-300x199.jpg&quot; alt=&quot;14441102_1067214056725025_4634759047833502115_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14390703_1067215233391574_1620960008726092756_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-70&quot; src=&quot;/fachinformatiker-forum/assets/14390703_1067215233391574_1620960008726092756_n-300x200.jpg&quot; alt=&quot;14390703_1067215233391574_1620960008726092756_n&quot; width=&quot;300&quot; height=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14463254_1067215403391557_7725897375664111170_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-69&quot; src=&quot;/assets/14463254_1067215403391557_7725897375664111170_n-300x199.jpg&quot; alt=&quot;14463254_1067215403391557_7725897375664111170_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14368755_1067214406724990_747006614694416639_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-71&quot; src=&quot;/assets/14368755_1067214406724990_747006614694416639_n-300x199.jpg&quot; alt=&quot;14368755_1067214406724990_747006614694416639_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14441102_1067214056725025_4634759047833502115_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-72&quot; src=&quot;/assets/14441102_1067214056725025_4634759047833502115_n-300x199.jpg&quot; alt=&quot;14441102_1067214056725025_4634759047833502115_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14390703_1067215233391574_1620960008726092756_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-70&quot; src=&quot;/assets/14390703_1067215233391574_1620960008726092756_n-300x200.jpg&quot; alt=&quot;14390703_1067215233391574_1620960008726092756_n&quot; width=&quot;300&quot; height=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 22:05:42 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</guid>
+        <link>https://joergre.github.io/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</guid>
       </item>
     
       <item>
@@ -997,8 +1027,8 @@ update-alternatives --config editor&lt;br /&gt;
 &lt;p&gt;http://ferdinand-braun-schule.de&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:46:06 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/tag-der-offen-tuer/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/tag-der-offen-tuer/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/09/tag-der-offen-tuer/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/09/tag-der-offen-tuer/</guid>
       </item>
     
       <item>
@@ -1009,13 +1039,13 @@ update-alternatives --config editor&lt;br /&gt;
 &lt;li&gt;gleichzeitig: INWES (International Network of Women in Engineerting and Science) Regional Conference Europe, 2016&lt;/li&gt;
 &lt;li&gt;Das gemeinsame Tagungsthema: Wissen schaf(f)t Macht – Science.Knowledge. Power.&lt;/li&gt;
 &lt;li&gt;Vorträge und Workshops in Englisch und Deutsch.&lt;/li&gt;
-&lt;li&gt;250 Teilnehmerinnen – Frauen in MINT-Berufen, Frauen in Führung und Wissenschaft, ExpertInnen, GründerInnen, StudentInnen                                    &lt;a href=&quot;http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en.png&quot;&gt;&lt;img class=&quot;alignright wp-image-1040 size-medium&quot; src=&quot;/fachinformatiker-forum/assets/patronage_unesco_en-300x146.png&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; srcset=&quot;http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en-300x146.png 300w, http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en-768x374.png 768w, http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en.png 867w&quot; alt=&quot;patronage_unesco_en&quot; width=&quot;300&quot; height=&quot;146&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;250 Teilnehmerinnen – Frauen in MINT-Berufen, Frauen in Führung und Wissenschaft, ExpertInnen, GründerInnen, StudentInnen                                    &lt;a href=&quot;http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en.png&quot;&gt;&lt;img class=&quot;alignright wp-image-1040 size-medium&quot; src=&quot;/assets/patronage_unesco_en-300x146.png&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; srcset=&quot;http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en-300x146.png 300w, http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en-768x374.png 768w, http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en.png 867w&quot; alt=&quot;patronage_unesco_en&quot; width=&quot;300&quot; height=&quot;146&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ein Überblick über die Tagung und was zu buchen ist:&lt;a href=&quot;http://muc.inwes.net/conference-programme/?lang=de&quot; target=&quot;_blank&quot;&gt;Tagungsprogramm, Überblick&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:44:06 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</guid>
       </item>
     
       <item>
@@ -1028,8 +1058,8 @@ Als Ansprechpartner stehen Oliver Staubach (Arbeitskollege des Papas) 0178831765
 Wir organisieren eine Tombola für den Tag der Typisierung und sagen Danke schön für jede Art von Sachspenden.&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:35:14 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</guid>
       </item>
     
       <item>
@@ -1039,8 +1069,8 @@ Alle Infos &amp;amp; Anmeldemöglichkeiten hier auf Facebook:&lt;a class=&quot;p
 &lt;p&gt;&lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/datenschutz?source=feed_text&amp;amp;story_id=10153994481499639&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;Datenschutz&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/datenschutzgrundverordnung?source=feed_text&amp;amp;story_id=10153994481499639&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;Datenschutzgrundverordnung&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/dsgvo?source=feed_text&amp;amp;story_id=10153994481499639&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;DSGVO&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:30:17 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</guid>
       </item>
     
       <item>
@@ -1052,8 +1082,8 @@ Alle Infos &amp;amp; Anmeldemöglichkeiten hier auf Facebook:&lt;a class=&quot;p
 &lt;p&gt;Wir bitten um eine verbindliche Anmeldung über unsere Anmeldeformular unter folgendem Link: &lt;a href=&quot;http://www.region-fulda.de/termine_6655.html?event_id=18670&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;http://&lt;wbr /&gt;www.region-fulda.de/&lt;wbr /&gt;termine_6655.html?event_id=&lt;wbr /&gt;18670&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:22:09 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</guid>
       </item>
     
       <item>
@@ -1067,8 +1097,8 @@ Alle Infos &amp;amp; Anmeldemöglichkeiten hier auf Facebook:&lt;a class=&quot;p
 &lt;p&gt;&lt;strong&gt;[link-preview url=&quot;https://www.ted.com/talks/sam_harris_can_we_build_ai_without_losing_control_over_it&quot;]&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 20:19:36 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/09/ki-und-ihre-gefahren/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/09/ki-und-ihre-gefahren/</guid>
+        <link>https://joergre.github.io/news/2016/10/09/ki-und-ihre-gefahren/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/09/ki-und-ihre-gefahren/</guid>
       </item>
     
       <item>
@@ -1076,8 +1106,8 @@ Alle Infos &amp;amp; Anmeldemöglichkeiten hier auf Facebook:&lt;a class=&quot;p
         <description>&lt;p&gt;&lt;strong&gt;[link-preview url=&quot;http://open-educational-resources.de/bpb-veroeffentlicht-drei-erklaervideos-zu-oer/&quot;]&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 13:40:00 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/news/2016/10/09/oer/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/news/2016/10/09/oer/</guid>
+        <link>https://joergre.github.io/news/2016/10/09/oer/</link>
+        <guid isPermaLink="true">https://joergre.github.io/news/2016/10/09/oer/</guid>
       </item>
     
       <item>
@@ -1089,8 +1119,8 @@ Die Veranstaltung wird sich in Form eines kleinen Workshops gestalten. Es bedarf
 &lt;p&gt;[contact-form][contact-field label='Name' type='name' required='1'/][contact-field label='E-Mail' type='email' required='1'/][contact-field label='Website' type='url'/][contact-field label='Kommentar' type='textarea' required='1'/][/contact-form]&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Sep 2015 23:21:40 +0200</pubDate>
-        <link>http://localhost:4000/fachinformatiker-forum/vergangene%20events/2015/09/19/hello-world/</link>
-        <guid isPermaLink="true">http://localhost:4000/fachinformatiker-forum/vergangene%20events/2015/09/19/hello-world/</guid>
+        <link>https://joergre.github.io/vergangene%20events/2015/09/19/hello-world/</link>
+        <guid isPermaLink="true">https://joergre.github.io/vergangene%20events/2015/09/19/hello-world/</guid>
       </item>
     
 
@@ -1105,7 +1135,8 @@ Die Veranstaltung wird sich in Form eines kleinen Workshops gestalten. Es bedarf
         
           <item>
             <title>LF6 1.1 Python</title>
-            <description>&lt;h1 id=&quot;allgemeines&quot;&gt;Allgemeines&lt;/h1&gt;
+            <description>&lt;p&gt;Bild von &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Python_molurus_molurus-Portrait.jpg&quot;&gt;https://commons.wikimedia.org/wiki/File:Python_molurus_molurus-Portrait.jpg&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;allgemeines&quot;&gt;Allgemeines&lt;/h1&gt;
 
 &lt;p&gt;Fragen zum Text oder zu Python: &lt;a href=&quot;https://discord.gg/TsaqyAQ&quot;&gt;https://discord.gg/TsaqyAQ&lt;/a&gt;&lt;/p&gt;
 
@@ -1563,7 +1594,7 @@ Du solltest 100% erreichen!&lt;/p&gt;
 &lt;p&gt;Die zweite Zeile teilt uns den Namen der betroffenden Datei mit, in diesem Fall fehler.py.&lt;/p&gt;
 
 </description>
-            <link>http://localhost:4000/fachinformatiker-forum/LF6_1.1_Python.html</link>
+            <link>https://joergre.github.io/LF6_1.1_Python.html</link>
           </item>
         
       
@@ -1572,7 +1603,9 @@ Du solltest 100% erreichen!&lt;/p&gt;
         
           <item>
             <title>LF6 SQL</title>
-            <description>&lt;h1 id=&quot;allgemeines&quot;&gt;Allgemeines&lt;/h1&gt;
+            <description>&lt;p&gt;Bild von &lt;a href=&quot;https://www.flickr.com/photos/mucio/3656302901&quot;&gt;https://www.flickr.com/photos/mucio/3656302901&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;allgemeines&quot;&gt;Allgemeines&lt;/h1&gt;
 
 &lt;p&gt;Fragen zum Text oder zu SQL: &lt;a href=&quot;https://discord.gg/TsaqyAQ&quot;&gt;https://discord.gg/TsaqyAQ&lt;/a&gt;&lt;/p&gt;
 
@@ -1582,12 +1615,347 @@ Du solltest 100% erreichen!&lt;/p&gt;
 
 &lt;p&gt;Passwort für einen User ändern:&lt;/p&gt;
 
-&lt;p&gt;´´´´SQL
-mysql –u schuelerX -p
-SET PASSWORD = PASSWORD(‘auth_string’);
-```&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;–&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;schuelerX&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PASSWORD&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'auth_string'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;installation-der-arbeitsumgebung&quot;&gt;Installation der Arbeitsumgebung&lt;/h1&gt;
+
+&lt;p&gt;Wir installieren zuerst den SQLServer, in unserem Fall den freien SQL-Server mariadb. Als Betriebssystem verwenden wir Ubuntu 17.04.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mariadb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Für Umgebung die wichtig sind oder im Internet laufen, sollte der SQl-Server auf jeden Fall abgesichert werden. Die erste Massnahme dafür ist das Skript mysql_secure_installation.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mysql_secure_installation&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Das Skript ist eigentlich selbsterklärend, daher machen wir hier weiter.&lt;/p&gt;
+
+&lt;h1 id=&quot;anlegen-und-löschen-einer-datenbank&quot;&gt;Anlegen und löschen einer Datenbank&lt;/h1&gt;
+
+&lt;p&gt;Video: &lt;a href=&quot;https://www.youtube.com/watch?v=EipHtnSYt-o&quot;&gt;https://www.youtube.com/watch?v=EipHtnSYt-o&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Um mit der Datenbank in Verbindung zu treten, brauchen wier noch einen Client. Dafür geben wir ein:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mariadb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;client&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mit dem folgenden Befehl können wir uns auf der Datenbank anmelden:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Nach -u kommt der Benutzername und -p sorgt dafür, dass nach einem Passwort gefragt wird. Habt Ihr kein Passwort vergeben, könnt Ihr Euch auch einfach mit folgendem Befehl anmelden:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir lassen uns nun die Datenbanken anzeigen:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DATABASES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir sollten 3 Datenbanken angezeigt bekommen: information_schema, mysql und performance_schema. Diese Datenbanken sind für den reibungslosen Betrieb der Datenbank unverzichtbar.&lt;/p&gt;
+
+&lt;p&gt;Zum experimentieren legen wir daher eine neue Datenbank an:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;aufgaben&quot;&gt;Aufgaben&lt;/h2&gt;
+
+&lt;p&gt;1.) Überprüfe, ob die Datenbank geburtsurkund erfolgreich angelegt wurde.&lt;/p&gt;
+
+&lt;p&gt;2.) Lege eine Datenbak mit dem Namen test an.&lt;/p&gt;
+
+&lt;p&gt;Mit dem folgenden Befehl löschen wir die Datenbank test:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Jetzt melden wir uns ab von der Datenbank:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;QUIT&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;tabelle-anlegen&quot;&gt;Tabelle anlegen&lt;/h1&gt;
+
+&lt;p&gt;YouTube-Video: &lt;a href=&quot;https://www.youtube.com/edit?video_id=8QFks70RsU4&quot;&gt;https://www.youtube.com/edit?video_id=8QFks70RsU4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Anmelden an der Datenbank (wir haben kein PÜasswort für root gesetzt):&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mit dem Befehl&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DATABASES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;sehen wir die verfügbaren Datenbanken. In unserem Fall sollten wir die drei System-Datenbanken information_schema, performance_schema und mysql sehen. Desweiteren unsere Datenbank geburtsurkunde.&lt;/p&gt;
+
+&lt;p&gt;Wir wählen die Datenbank geburtsurkunde aus um mit Ihr zu arbeiten:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;USE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir sehen uns die vorhandenen Tabellen an:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TABLES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Leider ist noch keine Tabelle vorhanden. Dies ändern wir mit dem nächsten Befehl:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblGeburtsurkunde&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NameStandesAmt&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lfdNr&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VorNameKind&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;GeburtsnameKind&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Geschlecht&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Geburtsdatum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Geburtsort&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VornameMutter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NachnameMutter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VornameVater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NachnameVater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ReligionKind&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ReligionMutter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ReligionVater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OrtStandesamt&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DatumAusstellung&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NameStandesbeamter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Der Befehl legt die Tabelle für Geburtsurkunden an (&lt;a href=&quot;http://www.der-postillon.com/2015/10/eigentlich-in-bad-tolz-geboren-dfb.html&quot;&gt;http://www.der-postillon.com/2015/10/eigentlich-in-bad-tolz-geboren-dfb.html&lt;/a&gt;). Der Befehl innerhalb der Klammer ist immer gleich aufgebaut: Spaltenname, Variablentyp und ev. ein Constraint (kommt später). Danach folgt ein Komma und die nächste Spalte. Die Informationen, die in einer Geburtsurkunde erfasst werden, stehen bei Wikipedia: &lt;a href=&quot;https://de.wikipedia.org/wiki/Geburtsurkunde&quot;&gt;https://de.wikipedia.org/wiki/Geburtsurkunde&lt;/a&gt;. Sicherlich ist der imme rgleiche Datentyp diskussionswürdig, aber hier geht es erst einmal darum, dass wir überhaupt Daten specihern können.&lt;/p&gt;
+
+&lt;p&gt;Die Struktur unserer Tabelle kann mit verschiedenen Befehlen dargestellt werden. Hier eine kleine Auswahl:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblGeburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;COLUMNS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblGeburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FIELDS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblGeburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TABLES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;zeigt uns jetzt unsere neue Tabelle und mit&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblgeburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;löschen wir die TAbelle wieder.&lt;/p&gt;
+
+&lt;p&gt;Wir legen die Tabelle wieder an, mit einem Primary Key:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblGeburtsurkunde&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NameStandesAmt&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lfdNr&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VorNameKind&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;GeburtsnameKind&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Geschlecht&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Geburtsdatum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Geburtsort&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VornameMutter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NachnameMutter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VornameVater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NachnameVater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ReligionKind&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ReligionMutter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ReligionVater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OrtStandesamt&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DatumAusstellung&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NameStandesbeamter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Der Primary Key referenziert eine  Eintrag inder Tabelle eindeutig. Der Primary Key muss  bei jedem Eintrag einen anderen Wert haben und darf nicht NULL sein (NULL darf nicht mit Null verwechselt werden. 0 ist ein Wert und NULL ist eben kein Wert.)&lt;/p&gt;
+
+&lt;h2 id=&quot;aufgabe&quot;&gt;Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;1.) Schaue Dir bitte die Struktur der Tabelle mit den obigen Befehlen an. Was fällt Dir auf?&lt;/p&gt;
+
+&lt;p&gt;2.) Schaue Dir bitte die folgende Seite an und lese Dir durch, welche Constraints es bei SQL gibt:  &lt;a href=&quot;http://wikis.gm.fh-koeln.de/wiki_db/Datenbanken/CONSTRAINT&quot;&gt;http://wikis.gm.fh-koeln.de/wiki_db/Datenbanken/CONSTRAINT&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;insert&quot;&gt;INSERT&lt;/h1&gt;
+
+&lt;p&gt;Mit dem Befehl INSERT können Daten in eine Tabelle eingetragen werden. Dazu sollte die Struktur der Tabelle bekannt sein.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;MariaDB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FIELDS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ERROR&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1146&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;Table&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'geburtsurkunde.geburtsurkunde'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doesn&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'t exist
+MariaDB [geburtsurkunde]&amp;gt; SHOW FIELDS FROM tblGeburtsurkunde;                                                               
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| NameStandesAmt     | varchar(50) | YES  |     | NULL    |       |
+| lfdNr              | varchar(50) | YES  |     | NULL    |       |
+| VorNameKind        | varchar(50) | YES  |     | NULL    |       |
+| GeburtsnameKind    | varchar(50) | YES  |     | NULL    |       |
+| Geschlecht         | varchar(1)  | YES  |     | NULL    |       |
+| Geburtsdatum       | varchar(50) | YES  |     | NULL    |       |
+| Geburtsort         | varchar(50) | YES  |     | NULL    |       |
+| VornameMutter      | varchar(50) | YES  |     | NULL    |       |
+| NachnameMutter     | varchar(50) | YES  |     | NULL    |       |
+| VornameVater       | varchar(50) | YES  |     | NULL    |       |
+| NachnameVater      | varchar(50) | YES  |     | NULL    |       |
+| ReligionKind       | varchar(50) | YES  |     | NULL    |       |
+| ReligionMutter     | varchar(50) | YES  |     | NULL    |       |
+| ReligionVater      | varchar(50) | YES  |     | NULL    |       |
+| OrtStandesamt      | varchar(50) | YES  |     | NULL    |       |
+| DatumAusstellung   | varchar(50) | YES  |     | NULL    |       |
+| NameStandesbeamter | varchar(50) | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+17 rows in set (0.00 sec)
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Für den INSERT-Befehl gibt es jetzt zwei Möglichkeiten:&lt;/p&gt;
+
+&lt;p&gt;1.) Wir schreiben die Werte für die Felder genau in der Reihenfolge auf wie sie in der Tabelle vorhanden sind.
+2.) Wir geben für jeden Wert das dazugehörige Feld an, dann brauchen wir auf die Reihenfolge keine Rücksicht nehmen,&lt;/p&gt;
+
+&lt;h2 id=&quot;insert-einfach&quot;&gt;INSERT einfach&lt;/h2&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblGeburtsurkunde&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Bad Tölz'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'9/1988'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Robert Siegfried'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Lehmann'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'m'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'18.08.1988'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Bad Tölz'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Ilse'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Lehmann'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Christoph'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Lehmann'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'katholisch'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'katholisch'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'katholisch'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Bad Tölz'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'18.08.1988'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Windmann'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und überprüfen den Eintag mit dem Befehl&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblGeburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;insert-1&quot;&gt;INSERT&lt;/h2&gt;
+
+&lt;p&gt;Wir geben Jetzt beim INSERT-Befehl die einzelnen Spalten an. Vorteil bei dieser Schreibweise ist, dass die Werte für die Tabelle in beleibiger Reihenfolge stehen können. Auserdem ist es einfacher, bestimmte Felder nicht auszufüllen.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblGeburtsurkunde&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Bad Tölz'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'9/1988'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Robert Siegfried'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Lehmann'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'m'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'18.08.1988'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Bad Tölz'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Ilse'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Lehmann'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Christoph'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Lehmann'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'katholisch'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'katholisch'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'katholisch'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Bad Tölz'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'18.08.1988'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Windmann'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;aufgabe-1&quot;&gt;Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;1.) Sache Dir den Inhalt der Tabelle an. Gibt es unterschiede? Warum?&lt;/p&gt;
+
+&lt;p&gt;2.) Setze das Feld lfdNr auf PRIMARY KEY. Versuche jetzt eine Zeile einzufügen mit gleicher lfdNr. Was passiert?&lt;/p&gt;
+
+&lt;h1 id=&quot;select&quot;&gt;SELECT&lt;/h1&gt;
+
+&lt;p&gt;Vevor wir einen sinnvollen SELECT-Befehl schreiben können, müssen wir immer die Datenbankstruktur kennen:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FIELDS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblGeburtsurkunde&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;aufgabe-2&quot;&gt;Aufgabe&lt;/h2&gt;
+&lt;p&gt;Wir möchten unsere CD-Sammlung digitalisieren. Dieses Projekt führen wir Schritt für Schritt durch.
+1.) Lege eine Tabelle CD_Lied mit folgenden Spalten an: CD_ID, Album, Erscheinungsjahr, Titelliste. Wähle sinnvolle Einstellungen für die jeweiligen Spalten.&lt;/p&gt;
+
+&lt;p&gt;2.) Trage in die Tabelle bitte folgende Daten ein:&lt;/p&gt;
+
+&lt;p&gt;4711 	Anastacia – Not That Kind 	2000 	{1. Not That Kind, 2. I’m Outta Love, 3. Cowboys &amp;amp; Kisses}&lt;/p&gt;
+
+&lt;p&gt;4712 	Pink Floyd – Wish You Were Here 	1975 	{1. Shine On You Crazy Diamond}&lt;/p&gt;
+
+&lt;p&gt;4713 	Anastacia – Freak of Nature 	2001 	{1. Paid my Dues}&lt;/p&gt;
+
+&lt;p&gt;Wir können uns alle Einträge in einer Tabelle anschauen:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Oder nur bestimmte Spalten:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Titelliste&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir können auch bestimmte Einträge selektieren:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Titelliste&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Anastacia – Not That Kind'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wenn wir nicht den genauen Eintrag kennen, dann können wir mit LIKE nach Teilen eines Eintags suchen:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Titelliste&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Anastacia'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir können auch suchen nach Einträgen die nicht gleich sind:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Titelliste&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Anastacia – Not That Kind'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ungleich kann man auch schreiben als&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Titelliste&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Anastacia – Not That Kind'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;alter-table&quot;&gt;Alter TABLE&lt;/h1&gt;
+
+&lt;p&gt;Die Tabelle oben hat einige Probleme:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Das Feld Album enthält die Attributwertebereiche Interpret und Albumtitel.&lt;/li&gt;
+  &lt;li&gt;Das Feld Titelliste enthält eine Menge von Titeln.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dadurch hat man ohne Aufspaltung folgende Probleme bei Abfragen:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Zur Sortierung nach Albumtitel muss das Feld Album in Interpret und Albumtitel aufgeteilt werden.&lt;/li&gt;
+  &lt;li&gt;Die Titel können (mit einfachen Mitteln) nur alle gleichzeitig als Titelliste oder gar nicht dargestellt werden.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Wir fügen als erstes eine Spalte ‘Interpret’ der Tabelle hinzu:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Interpret&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;aufgabe-3&quot;&gt;Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;Füge bitte ncoh die Spalte ‘Track’ der Tabelle hinzu varchar(10).&lt;/p&gt;
+
+&lt;p&gt;Wir möchten die Spalte Track jetzt auf den Variablentyp int ändern:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MODIFY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Track&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;oder&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COLUMN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Track&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Die Befehle hängen von der eingesetzten MySQL-Version ab.&lt;/p&gt;
+
+&lt;h2 id=&quot;aufgabe-4&quot;&gt;Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;Ändere den Spaltentyp bei Erschinungsjahr von var auf year um. Was fällt Dir auf? Warum reagiert die Datenbank so?&lt;/p&gt;
+
+&lt;h1 id=&quot;delete-from&quot;&gt;DELETE FROM&lt;/h1&gt;
+
+&lt;p&gt;Um alle Daten aus einer Tabelle zu löschen könne wir folgenden Befehl ausführen (bitte nicht wirklich ausführen):&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Der Befehl löscht nur die Daten, nicht aber die Tabelle an sich. Dieser Befehl wird sehr selt genutzt, meist wird ein Drop table verwendet.&lt;/p&gt;
+
+&lt;p&gt;Meistens wird der Delte-Befehl eingeschränkt mit Hilfe von Bedingngen:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Erscheinungsjahr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'2000'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Der Befehl löscht ‘Anastacia – Not That Kind’.&lt;/p&gt;
+
+&lt;p&gt;Wir können mit AND und OR auch komplexere Befehle aufbauen:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD_Lied&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Erscheinungsjahr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'2001'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Album&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Anastacia – Freak of Nature'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;create-index&quot;&gt;CREATE INDEX&lt;/h1&gt;
+
+&lt;p&gt;Ein Index ist eine Möglichkeit, den Zugriff einer Datenbank auf einzelne Felder zu beschleunigen. Allerdings werden einige Befehle dadurch verlangsamt wie z.B. update. Das liegf daran, dass das Index mit aktualisiert werden muss.&lt;/p&gt;
+
+&lt;p&gt;Anlegen eines Index aus einer Spalte mit Zahlen:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CDIndex&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CD_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Erstellen eines zusammengestzten Index:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Index_Namen&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CD&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CD_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Track&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;index-löschen&quot;&gt;INDEX löschen&lt;/h1&gt;
+
+&lt;p&gt;Bitte beachte, dass die Wiederherstellung eines Index bei großen Datenbanken sehr lange dauern kann!&lt;/p&gt;
+
+&lt;p&gt;Ein Index kann auch gelöscht werden. Der Befehl ist allerdings etwas länger, ein DROP INDEX reicht nicht. Wir legen eines Test-Tabelle mit dem Index idx an um die funktionsweise besser zu verstehen:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tbltest&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tbltest&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Der Index idx soll nun wieder entfernt werden:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tbltest&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bei einem nochmaligen Aufruf des Befehls bekommen wir eine Fehlermeldung (der Index wurde ja bereits gelöscht):&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;MariaDB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tbltest&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ERROR&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1091&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Can&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'t DROP '&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'; check that column/key exists
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Alternativ funktioniert auch folgender Befehl:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tbltest&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tbltest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 </description>
-            <link>http://localhost:4000/fachinformatiker-forum/LF6_SQL.html</link>
+            <link>https://joergre.github.io/LF6_SQL.html</link>
           </item>
         
       
@@ -1607,7 +1975,7 @@ SET PASSWORD = PASSWORD(‘auth_string’);
 &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;jekyll&lt;/a&gt;&lt;/p&gt;
 
 </description>
-            <link>http://localhost:4000/fachinformatiker-forum/about/</link>
+            <link>https://joergre.github.io/about/</link>
           </item>
         
       
@@ -1624,9 +1992,13 @@ Forsthaus Bimbach
 
 36137 Großenlüder
 </description>
-            <link>http://localhost:4000/fachinformatiker-forum/impressum.html</link>
+            <link>https://joergre.github.io/impressum.html</link>
           </item>
         
+      
+    
+      
+    
       
     
       
