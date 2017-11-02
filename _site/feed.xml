@@ -5,10 +5,23 @@
     <description>Alles über IT.</description>
     <link>https://joergre.github.io/</link>
     <atom:link href="https://joergre.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Nov 2017 03:52:01 +0100</pubDate>
-    <lastBuildDate>Wed, 01 Nov 2017 03:52:01 +0100</lastBuildDate>
+    <pubDate>Thu, 02 Nov 2017 14:02:37 +0100</pubDate>
+    <lastBuildDate>Thu, 02 Nov 2017 14:02:37 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
 
+    
+      <item>
+        <title>CR238 - Beitrag Zur Ausbildung und Studium</title>
+        <description>&lt;p&gt;Kritischer Beitrag zum Studium und Ausbildung im Bereich Informatik in Deutschland. Leider wird nicht der Schritt getan um aus der Kritik Verbesserungen zu erarbeiten. Aber die Situationsbeschreibung ist sicherlich zum großen Teil treffend. Die Ausbldung kommt leider, trotz Ihrer Bedeutung, zu kurz. Es gibt die Diskussion als Audio und als Video.&lt;/p&gt;
+
+&lt;p&gt;Audio: &lt;a href=&quot;https://chaosradio.ccc.de/cr238.html&quot;&gt;https://chaosradio.ccc.de/cr238.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Video: &lt;a href=&quot;https://media.ccc.de/v/cr238/oembed&quot;&gt;https://media.ccc.de/v/cr238/oembed&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Nov 2017 00:00:00 +0100</pubDate>
+        <link>https://joergre.github.io/2017/11/02/cr238/</link>
+        <guid isPermaLink="true">https://joergre.github.io/2017/11/02/cr238/</guid>
+      </item>
     
       <item>
         <title>Eigenen Domän-Namen für Github-Projekt-Seite</title>
@@ -1995,6 +2008,8 @@ Forsthaus Bimbach
             <link>https://joergre.github.io/impressum.html</link>
           </item>
         
+      
+    
       
     
       
