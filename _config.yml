@@ -11,7 +11,7 @@ logo:               https://github.com/joergre/fachinformatiker-forum/blob/gh-pa
 email:              joerg@reuter.sc
 description:        Alles über IT.
 baseurl:            '' # The subpath of your site, e.g. /blog
-url:                'https://joergre.github.io' # The base hostname & protocol for your site
+url:                'http://fachinformatiker-fulda.de' # The base hostname & protocol for your site
 github_username:    joergre
 twitter_username:   joergreu
 instagram_username: jorgreuter
