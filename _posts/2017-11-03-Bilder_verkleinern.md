@@ -6,7 +6,7 @@ author: joerg_reuter
 tags: [Bilder]
 image: '/images/posts/verkl.jpg'
 ---
-Bildquelle: https://www.flickr.com/photos/60614290@N08/14848580426
+Bildquelle: <https://www.flickr.com/photos/60614290@N08/14848580426>
 
 Immer wieder müssen Bilder an bestimmte Größen angepasst werden. Wie z.B. die Bilder der Artikel in diesem Blog. Dies fnktioniert auf dem Raspberry Pi am besten mit dem Tool ImageMagick.
 
