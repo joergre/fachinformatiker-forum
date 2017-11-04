@@ -16,7 +16,7 @@ Das Tool installieren wir mit:
 sudo apt install imagemagick
 ```
 
-Wir möchten ein Bild z. B. auf 300 Pixel reduzieren:
+Wir möchten ein Bild z. B. auf 320 Pixel reduzieren:
 
 ```bash
 mogrify -resize  320 test.png 
