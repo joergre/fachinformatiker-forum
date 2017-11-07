@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Docker
+title: docker
 image: '/images/pages/docker.png'
 ---
 
