@@ -82,10 +82,42 @@ Wir stellen nun sicher, dass die Dinste beim start eines Containers starten:
 
 ```bash
 docker run -i -t ubuntu:web /bin/bash
-* Starting Apache httpd web server apache2                                     AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+* Starting Apache httpd web server apache2                                     
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
  * 
  * Starting OpenBSD Secure Shell server sshd 
 ```
+Mit einem exit verlassen wir den Container. Wir brauchen jetzt noch einen Inhalt für unsere Seite. Wir gehen dazu auf <http://www.oswd.org/> und suchen uns ein Design aus.
 
+Wir laden das Design herunter und gehen im Browser auf die Downloads um die URL zum Download zu bekommen. Wir legen auf unserem Server ein Verzeichnis an und laden das Design in das Verzeichnis.
 
+```bash
+cd ~
+mkdir web
+wget http://static.oswd.org/designs/3699/Red.zip
+```
+
+In dem Verzeichnis web legen wir den statschen Anteil unserer Webseite ab. Also entpacken wir unser Template:
+
+```bash
+unzip Red.zip
+```
+
+Wir kopieren die entpackten Dateien eine Ebene höher und löschen das Verzeichnis:
+
+```bash
+mv Red/* .
+rmdir Red
+```
+
+## Test des Images mit statischem Webinhalt
+
+Wir startn jetzt einen neuen Container:
+
+```bash
+docker run --name=webtest -p 80:80 -v /root/web:/var/www/html -i -t ubuntu:web /bin/bash
+```
+
+Mit dem Befehl binden wir das lokale Verzeichnis /root/web  in den Container unter /var/www/html ein und öffnen den Port 80.
+Der Server sollte jetzt unter http://IP-Adresse die entsprechende Seite ausliefern.
 
