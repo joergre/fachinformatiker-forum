@@ -37,7 +37,7 @@ apt -y dist-upgrade
 Installation der benötigten Programme:
 
 ```bash
-apt install -y sudo apache2 apache2-utils php php-common openssh-server vim-nox
+apt install -y sudo apache2 apache2-utils php php-common openssh-server vim-nox git
 ```
 
 Di beiden Server openssh und apache2 sollen beim start des Systems automatisch starten. Der einfachste Weg ist der Eintrag in die Datei .bashrc. Dazu müsen wir zuerst den Installationspfad von  service herausfinden:
@@ -120,4 +120,119 @@ docker run --name=webtest -p 80:80 -v /root/web:/var/www/html -i -t ubuntu:web /
 
 Mit dem Befehl binden wir das lokale Verzeichnis /root/web  in den Container unter /var/www/html ein und öffnen den Port 80.
 Der Server sollte jetzt unter http://IP-Adresse die entsprechende Seite ausliefern.
+
+## Git-Repository
+
+Wir können jetzt ein Git-Repository erzeugen. Dazu verlassen wir den Container. Im Verzeichnis /root/web geben wir ein:
+
+```bash
+git init .
+```
+
+und überprüfen den Erfolg:
+
+```bash
+git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	RedTie.zip
+	images/
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+Wir bekommen den Hinweis, dass wir ein git add ausführen sollten:
+
+```bash
+git add *
+```
+
+und überprüfen den Erfolg wieder mit einem git status:
+
+```bash
+root@proxmox:~/web# git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   RedTie.zip
+	new file:   images/bg_menu.gif
+	new file:   images/bg_submenu.gif
+	new file:   images/style.css
+	new file:   images/tie_logo.gif
+	new file:   index.html
+```
+
+Wir führen ein git commit durch:
+
+```bash
+root@proxmox:~/web# git commit -m "Erste Seite"
+[master (root-commit) 7e7e763] Erste Seite
+ Committer: root <root@proxmox.fritz.box>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 6 files changed, 166 insertions(+)
+ create mode 100644 RedTie.zip
+ create mode 100644 images/bg_menu.gif
+ create mode 100644 images/bg_submenu.gif
+ create mode 100644 images/style.css
+ create mode 100644 images/tie_logo.gif
+ create mode 100644 index.html
+```
+
+und überprüfen den Erfolg:
+
+```bash
+root@proxmox:~/web# git status
+On branch master
+nothing to commit, working tree clean
+```
+
+Jetzt wäre der Zeitpunkt für einen Account bei github und der Angabe von Name und E-Mail. Wir überspringen den Schritt.
+
+Wir könnten jetzt auch über den oben installierten git-Client das Repository direkt in das Filesystem des Container laden ohne das wir das lokale Filesystem brauchen!
+
+Wir starten unseren Container:
+
+```bash
+docker start webtest
+```
+
+Wir melden uns auf den Container an:
+
+```bash
+docker attach webtest
+```
+
+Wir können über das Git-Repository die Wbsite in jedem Container oder auf dem Muttrtsystem ändern und diese durch das Tolkit von git nachvollziehbar ändern und auch evntuelle Änderungen rückgängig machen. Aussrdem haben wir ein externes Backup der Inhalte.
+
+Wir wechseln in das Verzeichnis /var/www/html:
+
+```bash
+cd /var/www/html
+git status
+```
+
+Und sehen mit dem zwiten Befehl, dass das Repository "sauber" ist.
+
+
+
 
