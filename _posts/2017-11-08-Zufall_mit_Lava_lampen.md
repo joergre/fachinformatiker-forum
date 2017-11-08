@@ -3,7 +3,7 @@ layout: post
 title: Zufall mit Lava Lampen bei Cloudflare
 featured: true
 author: joerg_reuter
-tags: [Bilder]
+tags: [IT-Sec]
 image: '/images/posts/lava.PNG'
 ---
 
