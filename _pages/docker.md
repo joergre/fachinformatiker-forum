@@ -233,6 +233,113 @@ git status
 
 Und sehen mit dem zwiten Befehl, dass das Repository "sauber" ist.
 
+## git clone
 
+Wir bereiten unser System auf einen zweiten Container vor. Dafür kopieren wir das Repository um die Websites der Produktion von der Entwicklung zu trennen.
 
+```bash
+mkdir dockergit
+git clone root@localhost:/root/web/ dockergit
+```
+
+Wir haben jetzt eine Kopie des Verzeichnisses web in dockergit. Beides sind getrennte Git-Repositories.
+
+Wir starten einen neuen Container:
+
+```bash
+docker run -d -i -t --name=webdev -p 8081:80 -v /root/dockergit:/var/www/html ubuntu:web /bin/bash
+```
+Wir überprüfen, dass der Container läuft:
+
+```bash
+root@proxmox:~/dockergit# docker ps
+CONTAINER ID        IMAGE                   COMMAND                  CREATED              STATUS                PORTS                                                NAMES
+5f3964eaabf6        ubuntu:web              "/bin/bash"              About a minute ago   Up About a minute     0.0.0.0:8081->80/tcp                                 webdev
+```
+Wir starten noch einen witeren Container auf Port 8083 und dem Namen webdev2:
+
+```bash
+docker run -d -i -t --name=webdev2 -p 8082:80 -v /root/dockergit:/var/www/html ubuntu:web /bin/bash
+```
+
+Und überprüfen, dass beide Container laufen:
+
+```bash
+root@proxmox:~/dockergit# docker ps
+CONTAINER ID        IMAGE                   COMMAND                  CREATED             STATUS                PORTS                                                NAMES
+e93677ab35a8        ubuntu:web              "/bin/bash"              2 minutes ago       Up 2 minutes          0.0.0.0:8082->80/tcp                                 webdev2
+5f3964eaabf6        ubuntu:web              "/bin/bash"              6 minutes ago       Up 6 minutes          0.0.0.0:8081->80/tcp                                 webdev
+
+```
+Überprüfe auch über den Browser, dass beide Maschinn erreichbar sind (http://192.168.1.50:8082 und http://192.168.1.50:8081).
+
+# Nginx
+
+Wir möchten jetzt gerne beide Container unter Port 80 zur Verfügung stellen. Dafür starten wir einen weitern Container mit nginx:
+
+```bash
+docker run -i -t --name nginx -p 80:80 nginx /bin/bash
+```
+
+Wir starten Nginx:
+
+```bash
+service nginx start 
+```
+
+und überprüfen im Browser, ob Nginx auf Port 80 erreichbar ist.
+
+Wir wechseln in das Konfigurationsverzeichnis:
+
+```bash
+cd /etc/nginx/conf.d
+```
+Wir spielen die Updates ein und installieren unseren Lieblings-Editor:
+
+```bash
+apt update
+apt dist-upgrade
+apt install vim-nox
+```
+Und öffnen die Datei "default.conf":
+
+```bash
+vim default.conf
+```
+Wir richten nun einen sogenannten Round Robin Proxy ein (siehe: <https://de.wikipedia.org/wiki/Round_Robin_(Informatik)>).
+
+Wir ändern die Konfiguration wie folgt ab:
+
+```bash
+upstream container{
+	server 192.168.1.50:8081;
+	server 192.168.1.50:8082;
+}
+server {
+    listen       80;
+    server_name  localhost;
+
+    #charset koi8-r;
+    #access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+	proxy_pass http://container;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+}
+
+```
+Hinzugefügt wurden die ersten 4 Zeilen. Sie sagen aus, das die angegenen Ports des Servers über Port 80 ausgeliefert werden sollen. Und der Abschnitt location wurd angepasst, um die Vorbereitungen zu aktivieren.
+
+Dann starten wir nginx neu:
+
+```bash
+service nginx restart
+```
+Wenn wir jetzt im Browser http://192.168.1.50 eingeben, dann sollte einer der beidn Container die Anfrage beantworten und unsere vertraute Webseite erscheinen.
 
