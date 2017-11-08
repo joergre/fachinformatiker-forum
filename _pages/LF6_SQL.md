@@ -150,7 +150,7 @@ löschen wir die TAbelle wieder.
 Wir legen die Tabelle wieder an, mit einem Primary Key:
 
 ```sql
-CREATE TABLE tblGeburtsurkunde (NameStandesAmt varchar(50), lfdNr varchar(50) PRIMARY KEY VorNameKind varchar(50),  GeburtsnameKind varchar(50), Geschlecht varchar(1), Geburtsdatum varchar(50), Geburtsort varchar(50), VornameMutter varchar(50), NachnameMutter varchar(50), VornameVater varchar(50), NachnameVater varchar(50), ReligionKind varchar(50), ReligionMutter varchar(50), ReligionVater varchar(50), OrtStandesamt varchar(50), DatumAusstellung varchar(50), NameStandesbeamter varchar(50));
+CREATE TABLE tblGeburtsurkunde (NameStandesAmt varchar(50), lfdNr varchar(50) PRIMARY KEY, VorNameKind varchar(50),  GeburtsnameKind varchar(50), Geschlecht varchar(1), Geburtsdatum varchar(50), Geburtsort varchar(50), VornameMutter varchar(50), NachnameMutter varchar(50), VornameVater varchar(50), NachnameVater varchar(50), ReligionKind varchar(50), ReligionMutter varchar(50), ReligionVater varchar(50), OrtStandesamt varchar(50), DatumAusstellung varchar(50), NameStandesbeamter varchar(50));
 ```
 
 Der Primary Key referenziert eine  Eintrag inder Tabelle eindeutig. Der Primary Key muss  bei jedem Eintrag einen anderen Wert haben und darf nicht NULL sein (NULL darf nicht mit Null verwechselt werden. 0 ist ein Wert und NULL ist eben kein Wert.)
@@ -393,4 +393,8 @@ Alternativ funktioniert auch folgender Befehl:
 CREATE INDEX idx ON tbltest (col1, col2);
 DROP INDEX idx ON tbltest;
 ```
+# TRUNCATE TABLE
+
+Truncate wird eingesetzt, wenn der Inhalt einer Tabelle gelöscht werden soll, aber nicht Die Tabelle und Ihre Struktur wie Spaltennamen etc. an sich.
+
 
