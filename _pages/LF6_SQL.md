@@ -397,4 +397,32 @@ DROP INDEX idx ON tbltest;
 
 Truncate wird eingesetzt, wenn der Inhalt einer Tabelle gelöscht werden soll, aber nicht Die Tabelle und Ihre Struktur wie Spaltennamen etc. an sich.
 
+```sql
+SELECT * FROM tblGeburtsurkunde; SELECT * FROM tblGeburtsurkunde;
+```
+Hier die Ausgabe:
+
+```sql
+MariaDB [schueler22]> SELECT * FROM tblGeburtsurkunde;
++----------------+--------+------------------+-----------------+------------+--------------+--------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+
+| NameStandesAmt | lfdNr  | VorNameKind      | GeburtsnameKind | Geschlecht | Geburtsdatum | Geburtsort   | VornameMutter | NachnameMutter | VornameVater | NachnameVater | ReligionKind | ReligionMutter | ReligionVater | OrtStandesamt | DatumAusstellung | NameStandesbeamter |
++----------------+--------+------------------+-----------------+------------+--------------+--------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+
+| Bad Tllllllz   | 9/1988 | Robert Siegfried | Lehmann         | m          | 18.08.1988   | Bad Tllllllz | Ilse          | Lehmann        | Christoph    | Lehmann       | katholisch   | katholisch     | katholisch    | Bad Tllllllz  | 18.08.1988       | Windmann           |
++----------------+--------+------------------+-----------------+------------+--------------+--------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+
+1 row in set (0.00 sec)
+```
+
+Wir mlöschen jetzt den Inhalt mit TRUNCATE:
+
+```sql
+MariaDB [schueler22]> TRUNCATE TABLE tblGeburtsurkunde;
+Query OK, 0 rows affected (0.03 sec)
+```
+
+Und führen den obigen SELECT-Befehl nochmals aus:
+
+```sql
+MariaDB [schueler22]> SELECT * FROM tblGeburtsurkunde;
+Empty set (0.00 sec)
+```
 
