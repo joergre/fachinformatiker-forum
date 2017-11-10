@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Docker
+title: LF7 Docker
 image: '/images/pages/docker.png'
 ---
 
