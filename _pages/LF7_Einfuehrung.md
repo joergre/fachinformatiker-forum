@@ -7,10 +7,12 @@ Von <a rel="nofollow" class="external text" href="http://www.isc.tamu.edu/~lewin
 
 # Bind installieren
 
+Ein ergänzender Artikel ist hier zu finden <https://wiki.ubuntuusers.de/DNS-Server_Bind/>
+
 ```bash
 apt update
 apt dist-upgrade
-apt-get install bind9 bind9utils vim-nox
+apt-get install bind9 bind9utils vim-nox host telnet dnsutils
 ```
 
 Wir löschen den kompletten Inhalt der Datei  /etc/bind/named.conf.options und fügen folgendes ein:
@@ -65,22 +67,170 @@ Wie ändern die Datei so ab, dass sie wir folgt aussieht:
 ; BIND data file for local loopback interface
 ;
 $TTL    604800
-@       IN      SOA     ns.test.lab. root.(
+@       IN      SOA     test.lab. root.test.lab. (
                               2         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
-test.lab.       IN      NS      ns.test.lab.
-test.lab.       IN      A       192.168.1.50
-test2.lab.      IN      A       192.168.1.51
+@       IN      NS      test
+test    IN      A       192.168.1.50
+test2   IN      A       192.168.1.51
 ```
 
 # Reversezone anlegen
 
-Auch für die Reversezone kopieren wir uns eine Corlage in das Verzeichnis /etc/bind/zones:
+Auch für die Reversezone kopieren wir uns eine Vorlage in das Verzeichnis /etc/bind/zones:
 ```bash
 cp ../db.127 db.192
 ```
 
+Wir editieren jetzt die Datei db.192:
+
+```bash
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     test.lab. root.(
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      test.labs.
+50      IN      PTR     test.labs.
+51      IN      PTR     test2.labs.
+```
+
+# resolve.conf
+
+Die Einrichtung des Servers ist soweit abgeschlossen. Jetzt müssen wir den DNS-Server unserem System bekannt machen, damit unser Server auch etwas zu tun bekommt. Dies geschieht in der Datei  /etc/resolv.conf, die wir wie folgt abändern:
+
+```bash
+nameserver 192.168.1.50 # Unser Nameserver
+nameserver 192.168.1.1 # Der Nameserver im Netz oder z.B. 8.8.8.8
+search          test.lab
+domain test.lab
+```
+
+# Testen der Koniguration
+
+Testen der Forward-Auflösung:
+
+```bash
+root@acde03affad0:/etc/bind/zones# named-checkzone lab /etc/bind/zones/db.test.lab
+zone lab/IN: loaded serial 2
+OK
+```
+
+Testen der Reverse-Auflösung:
+
+```bash
+ named-checkzone test.lab /etc/bind/zones/db.192
+zone test.lab/IN: loaded serial 1
+OK
+```
+Und zum Abschluss:
+
+```bash
+root@acde03affad0:/etc/bind/zones# named-checkconf -zj
+zone test.lab/IN: loaded serial 2
+zone 1.168.192.in-addr.arpa/IN: loaded serial 1
+zone localhost/IN: loaded serial 2
+zone 127.in-addr.arpa/IN: loaded serial 1
+zone 0.in-addr.arpa/IN: loaded serial 1
+zone 255.in-addr.arpa/IN: loaded serial 1
+```
+Wir starten den Bind neu, damit alle Konfigurationsdateien neu eingelesen werden:
+
+```bash
+root@acde03affad0:/etc/bind/zones# service bind9 restart
+ * Stopping domain name service... bind9                                        waiting for pid 3988 to die
+                                                                         [ OK ]
+ * Starting domain name service... bind9                                 [ OK ]
+```
+
+Wir überprüfen, dass der Dienst auch wirklich läuft:
+
+```bash
+root@acde03affad0:/etc/bind/zones# service bind9 status
+ * bind9 is running
+```
+
+## rndc: connect failed: 127.0.0.1#953: connection refused
+
+Diese Fehlermeldung weist darauf hin, das Bind nicht gestartet wurde. Es ist extrem unwahrscheinlich, dass der Fehler im Programm rndc liegt. Vielmehr benötigt rndc einen laufenden Bind und da er nicht richtig gestartet ist kommt die Fehlermeldung.
+
+# Tests
+
+Forward-Auflösung testen:
+
+```bash
+root@acde03affad0:/etc/bind/zones# host test.lab
+test.lab has address 192.168.1.50
+root@acde03affad0:/etc/bind/zones# host test2.lab
+test2.lab has address 192.168.1.51
+```
+
+Rückwärtsauflösung:
+
+```bash
+root@acde03affad0:/etc/bind/zones# host 192.168.1.50
+50.1.168.192.in-addr.arpa domain name pointer test.labs.
+root@acde03affad0:/etc/bind/zones# host 192.168.1.51
+51.1.168.192.in-addr.arpa domain name pointer test2.labs.
+```
+
+## Test mit nslookup
+
+```bash
+root@acde03affad0:/etc/bind/zones# nslookup test.lab
+Server:         192.168.1.50
+Address:        192.168.1.50#53
+
+Name:   test.lab
+Address: 192.168.1.50
+```
+
+oder
+
+```bash
+root@acde03affad0:/etc/bind/zones# nslookup test2.lab
+Server:         192.168.1.50
+Address:        192.168.1.50#53
+
+Name:   test2.lab
+Address: 192.168.1.51
+```
+
+Und Reverse:
+
+```bash
+root@acde03affad0:/etc/bind/zones# nslookup 192.168.1.50
+Server:         192.168.1.50
+Address:        192.168.1.50#53
+
+50.1.168.192.in-addr.arpa       name = test.labs.
+```
+
+oder
+
+```bash
+root@acde03affad0:/etc/bind/zones# nslookup 192.168.1.51
+Server:         192.168.1.50
+Address:        192.168.1.50#53
+
+51.1.168.192.in-addr.arpa       name = test2.labs.
+```
+
+Wir können auch eine Anwendung verwenden um die Auflösung zu überprüfen wie telnet:
+
+```bash
+root@acde03affad0:/etc/bind/zones# telnet test2.lab
+Trying 192.168.1.51...
+telnet: Unable to connect to remote host: No route to host
+```
+Der befehl bricht mit einem Fehler ab, da kein Telnet-Server auf dem System läuft bzw. der Computer nicht existiert. Aber die Namensauflösung ware erfolgreicht, da die IP-Adresse korrekt angezeigt wird.
