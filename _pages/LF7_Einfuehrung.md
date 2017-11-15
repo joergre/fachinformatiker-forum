@@ -233,4 +233,4 @@ root@acde03affad0:/etc/bind/zones# telnet test2.lab
 Trying 192.168.1.51...
 telnet: Unable to connect to remote host: No route to host
 ```
-Der befehl bricht mit einem Fehler ab, da kein Telnet-Server auf dem System läuft bzw. der Computer nicht existiert. Aber die Namensauflösung ware erfolgreicht, da die IP-Adresse korrekt angezeigt wird.
+Der Befehl bricht mit einem Fehler ab, da kein Telnet-Server auf dem System läuft bzw. der Computer nicht existiert. Aber die Namensauflösung ware erfolgreicht, da die IP-Adresse korrekt angezeigt wird.
