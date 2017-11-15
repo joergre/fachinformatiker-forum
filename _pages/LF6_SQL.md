@@ -426,3 +426,83 @@ MariaDB [schueler22]> SELECT * FROM tblGeburtsurkunde;
 Empty set (0.00 sec)
 ```
 
+# Auto Increment
+
+Wir schauen uns jetzt noch einmal den Primary key an und versuchen ihn ein wenig komfortabler zu gestalten. Dazu legenw ir eine neu Tabelle an:
+
+```sql
+CREATE TABLE tblGeburtsurkunde2 (NameStandesAmt varchar(50), lfdNr int AUTO_INCREMENT PRIMARY KEY, VorNameKind varchar(50),  GeburtsnameKind varchar(50), Geschlecht varchar(1), Geburtsdatum varchar(50), Geburtsort varchar(50), VornameMutter varchar(50), NachnameMutter varchar(50), VornameVater varchar(50), NachnameVater varchar(50), ReligionKind varchar(50), ReligionMutter varchar(50), ReligionVater varchar(50), OrtStandesamt varchar(50), DatumAusstellung varchar(50), NameStandesbeamter varchar(50));
+```
+
+Wir tragen jetzt einen Datensatz ein:
+
+```sql
+INSERT INTO tblGeburtsurkunde2 (VorNameKind, GeburtsnameKind) VALUES ('Kasper','Mueller');
+```
+
+Wir schauen uns den Eintrag an:
+
+```sql
+MariaDB [schueler22]> SELECT * FROM  tblGeburtsurkunde2;
++----------------+-------+-------------+-----------------+------------+---------                                                                             -----+------------+---------------+----------------+--------------+-------------                                                                             --+--------------+----------------+---------------+---------------+-------------                                                                             -----+--------------------+
+| NameStandesAmt | lfdNr | VorNameKind | GeburtsnameKind | Geschlecht | Geburtsd                                                                             atum | Geburtsort | VornameMutter | NachnameMutter | VornameVater | NachnameVate                                                                             r | ReligionKind | ReligionMutter | ReligionVater | OrtStandesamt | DatumAusstel                                                                             lung | NameStandesbeamter |
++----------------+-------+-------------+-----------------+------------+---------                                                                             -----+------------+---------------+----------------+--------------+-------------                                                                             --+--------------+----------------+---------------+---------------+-------------                                                                             -----+--------------------+
+| NULL           |     1 | Kasper      | Mueller         | NULL       | NULL                                                                                      | NULL       | NULL          | NULL           | NULL         | NULL                                                                                       | NULL         | NULL           | NULL          | NULL          | NULL                                                                                          | NULL               |
++----------------+-------+-------------+-----------------+------------+---------                                                                             -----+------------+---------------+----------------+--------------+-------------                                                                             --+--------------+----------------+---------------+---------------+-------------                                                                             -----+--------------------+
+1 row in set (0.00 sec)
+```
+
+und sehen, dass das Feld 'lfdNr' automatisch mit dem Wert 1 versehen worden ist.
+
+Wir schauen uns die Struktur der Tabelle an:
+
+```sql
+MariaDB [schueler22]> SHOW FIELDS FROM tblGeburtsurkunde2;
++--------------------+-------------+------+-----+---------+----------------+
+| Field              | Type        | Null | Key | Default | Extra          |
++--------------------+-------------+------+-----+---------+----------------+
+| NameStandesAmt     | varchar(50) | YES  |     | NULL    |                |
+| lfdNr              | int(11)     | NO   | PRI | NULL    | auto_increment |
+| VorNameKind        | varchar(50) | YES  |     | NULL    |                |
+| GeburtsnameKind    | varchar(50) | YES  |     | NULL    |                |
+| Geschlecht         | varchar(1)  | YES  |     | NULL    |                |
+| Geburtsdatum       | varchar(50) | YES  |     | NULL    |                |
+| Geburtsort         | varchar(50) | YES  |     | NULL    |                |
+| VornameMutter      | varchar(50) | YES  |     | NULL    |                |
+| NachnameMutter     | varchar(50) | YES  |     | NULL    |                |
+| VornameVater       | varchar(50) | YES  |     | NULL    |                |
+| NachnameVater      | varchar(50) | YES  |     | NULL    |                |
+| ReligionKind       | varchar(50) | YES  |     | NULL    |                |
+| ReligionMutter     | varchar(50) | YES  |     | NULL    |                |
+| ReligionVater      | varchar(50) | YES  |     | NULL    |                |
+| OrtStandesamt      | varchar(50) | YES  |     | NULL    |                |
+| DatumAusstellung   | varchar(50) | YES  |     | NULL    |                |
+| NameStandesbeamter | varchar(50) | YES  |     | NULL    |                |
++--------------------+-------------+------+-----+---------+----------------+
+17 rows in set (0.04 sec)
+```
+
+Und sehen bei 'lfdNr' den PRIMARY_KEY und das auto_increment. Der Eintag auto_increment dient dazu, dass dieses Feld automatisch hochgezählt wird.
+
+Wir tragen noch einen Datensatz ein:
+
+```sql
+INSERT INTO tblGeburtsurkunde2 (VorNameKind, GeburtsnameKind) VALUES ('Martin','Neuer');
+```
+
+und schauen uns das Ergebnis an:
+
+```sql
+MariaDB [schueler22]> SELECT * FROM tblGeburtsurkunde2;
++----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+
+| NameStandesAmt | lfdNr | VorNameKind | GeburtsnameKind | Geschlecht | Geburtsdatum | Geburtsort | VornameMutter | NachnameMutter | VornameVater | NachnameVater | ReligionKind | ReligionMutter | ReligionVater | OrtStandesamt | DatumAusstellung | NameStandesbeamter |
++----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+
+| NULL           |     1 | Kasper      | Mueller         | NULL       | NULL         | NULL       | NULL          | NULL           | NULL         | NULL          | NULL         | NULL           | NULL          | NULL          | NULL             | NULL               |
+| NULL           |     2 | Martin      | Neuer           | NULL       | NULL         | NULL       | NULL          | NULL           | NULL         | NULL          | NULL         | NULL           | NULL          | NULL          | NULL             | NULL               |
++----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+
+2 rows in set (0.00 sec)
+
+```
+
+Und sehen, wie erwartet, beim zweiten Eintag die 2 bei lfdNr.
+
