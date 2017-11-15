@@ -37,7 +37,50 @@ zone "test.lab"{
 # Reserve lookup and server info
 zone "1.168.192.in-addr.arpa" {
         type master;
-        file "/etc/bind/zones/db.10";
+        file "/etc/bind/zones/db.192";
 };
+```
+
+Wir haben jetzt zwei Dateien definiert für die Namensauflösung. Einmal für die Vorwärtsauflösung (IP-Adresse -> Name) und die Reverseauflösung (Name -> IP-Adresse). Die eine Datei ist für die Domain test.lab zuständig und die zweite Datei für das IP-Netz 192.168.1.0.
+
+# Zone anlegen
+
+Wir müssen jetzt das Unterverzeichnis anlegen, dass wir in der Datei named.conf.local angegeben haben:
+
+```bash
+mkdir /etc/bind/zones
+cd /etc/bind/zones
+```
+
+und es mach auch Sinn in das Verzeichnis mit cd zu wechseln, damit wir dort in Ruhe die Konfigurationsdateien anlegen können. Wir können eine Vorlage in das Verzeichnis kopieren oder die Datei komplett neu anlegen. Wir verwenden eine Vorlage:
+
+```bash
+cp ../db.local db.test.lab
+```
+
+Wie ändern die Datei so ab, dass sie wir folgt aussieht:
+
+```bash
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     ns.test.lab. root.(
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+test.lab.       IN      NS      ns.test.lab.
+test.lab.       IN      A       192.168.1.50
+test2.lab.      IN      A       192.168.1.51
+```
+
+# Reversezone anlegen
+
+Auch für die Reversezone kopieren wir uns eine Corlage in das Verzeichnis /etc/bind/zones:
+```bash
+cp ../db.127 db.192
 ```
 
