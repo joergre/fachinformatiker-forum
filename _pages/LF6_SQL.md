@@ -579,6 +579,30 @@ MariaDB [schueler22]> SELECT VorNameKind FROM tblGeburtsurkunde2;
 4 rows in set (0.00 sec)
 ```
 
-Wir sehen 4 Einträge, aber Kasper ist doppelt. Durch den DISTINCT-befehl werden die doppelten Einträge herausgefildert.
+Wir sehen 4 Einträge, aber Kasper ist doppelt. Durch den DISTINCT-Befehl werden die doppelten Einträge herausgefildert. Wir können die Anzahl der Einträge auch mit COUNT zählen:
+
+```sql
+MariaDB [schueler22]> SELECT COUNT(VorNameKind) FROM tblGeburtsurkunde2;
++--------------------+
+| COUNT(VorNameKind) |
++--------------------+
+|                  4 |
++--------------------+
+1 row in set (0.00 sec)
+```
+
+Wir möchten die Anazhl der Einträge zählen bei denen der Vorname des Kindes 'Kasper' lautet:
+
+```sql
+MariaDB [schueler22]> SELECT COUNT(VorNameKind) FROM tblGeburtsurkunde2 WHERE VorNameKind = 'Kasper';
++--------------------+
+| COUNT(VorNameKind) |
++--------------------+
+|                  2 |
++--------------------+
+1 row in set (0.00 sec)
+```
+
+# Durchschnitt und Summe
 
 
