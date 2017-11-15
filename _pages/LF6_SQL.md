@@ -506,3 +506,79 @@ MariaDB [schueler22]> SELECT * FROM tblGeburtsurkunde2;
 
 Und sehen, wie erwartet, beim zweiten Eintag die 2 bei lfdNr.
 
+Wir setzen den Startwert des auto_inkrement auf 10000:
+
+```sql
+ALTER TABLE tblGeburtsurkunde2 AUTO_INCREMENT=10000;
+```
+
+und tragen einen weiteren Datensatz ein:
+
+```sql
+INSERT INTO tblGeburtsurkunde2 (VorNameKind, GeburtsnameKind) VALUES ('Norbert','Obama');
+```
+
+Und sehen, das der Ein tag in der Spalte 'lfdNR' bei 1000 weiterzählt:
+
+```sql
+MariaDB [schueler22]> SELECT * FROM tblGeburtsurkunde2;
++----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+
+| NameStandesAmt | lfdNr | VorNameKind | GeburtsnameKind | Geschlecht | Geburtsdatum | Geburtsort | VornameMutter | NachnameMutter | VornameVater | NachnameVater | ReligionKind | ReligionMutter | ReligionVater | OrtStandesamt | DatumAusstellung | NameStandesbeamter |
++----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+
+| NULL           |     1 | Kasper      | Mueller         | NULL       | NULL         | NULL       | NULL          | NULL           | NULL         | NULL          | NULL         | NULL           | NULL          | NULL          | NULL             | NULL               |
+| NULL           |     2 | Martin      | Neuer           | NULL       | NULL         | NULL       | NULL          | NULL           | NULL         | NULL          | NULL         | NULL           | NULL          | NULL          | NULL             | NULL               |
+| NULL           | 10000 | Norbert     | Obama           | NULL       | NULL         | NULL       | NULL          | NULL           | NULL         | NULL          | NULL         | NULL           | NULL          | NULL          | NULL             | NULL               |
++----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+
+3 rows in set (0.00 sec)
+```
+
+# Zählen
+
+Oft müssen Sachen gezählt werden. Wir sehen bei 'Select * From' unten die Anzahl der Zeilen, aber wir möchtend iese jetzt exlizit mit der Count-Funktion ghezählt bekommen:
+
+```sql
+MariaDB [schueler22]> SELECT COUNT(*) FROM tblGeburtsurkunde2;
++----------+
+| COUNT(*) |
++----------+
+|        3 |
++----------+
+1 row in set (0.05 sec)
+```
+
+Wir fügen inn unserer Tabelle einen weiteren Datensatz hinzu:
+
+```sql
+INSERT INTO tblGeburtsurkunde2 (VorNameKind, GeburtsnameKind) VALUES ('Kasper','Neuer');
+```
+
+Und zählen jetzt die vornamen ohne Dopplung (DISTINCT):
+
+```sql
+MariaDB [schueler22]> SELECT COUNT(DISTINCT VorNameKind) FROM tblGeburtsurkunde2;
++-----------------------------+
+| COUNT(DISTINCT VorNameKind) |
++-----------------------------+
+|                           3 |
++-----------------------------+
+1 row in set (0.00 sec)
+```
+
+Wir schauen uns die Tabelle an:
+
+```sql
+MariaDB [schueler22]> SELECT VorNameKind FROM tblGeburtsurkunde2;
++-------------+
+| VorNameKind |
++-------------+
+| Kasper      |
+| Martin      |
+| Norbert     |
+| Kasper      |
++-------------+
+4 rows in set (0.00 sec)
+```
+
+Wir sehen 4 Einträge, aber Kasper ist doppelt. Durch den DISTINCT-befehl werden die doppelten Einträge herausgefildert.
+
+
