@@ -32,10 +32,9 @@ Für Umgebung die wichtig sind oder im Internet laufen, sollte der SQl-Server au
 ```sql
 mysql_secure_installation
 ```
+# Anlegen und löschen einer Datenbank
 
 Das Skript ist eigentlich selbsterklärend, daher machen wir hier weiter.
-
-# Anlegen und löschen einer Datenbank
 
 Video: <https://www.youtube.com/watch?v=EipHtnSYt-o>
 
@@ -606,3 +605,22 @@ MariaDB [schueler22]> SELECT COUNT(VorNameKind) FROM tblGeburtsurkunde2 WHERE Vo
 # Durchschnitt und Summe
 
 
+Wir legen eine neue Tabelle für diesen Abschnitt an:
+
+```sql
+CREATE TABLE tblKlasse (lfdNr int AUTO_INCREMENT PRIMARY KEY, Klassen_Bezeichnung varchar(6), Anzahl_Schueler int);
+```
+
+und fügen ein paar Einträge hinzu:
+
+```sql
+INSERT INTO tblKlasse (Klassen_Bezeichnung, Anzahl_Schueler) VALUES ('11B380', 22);
+INSERT INTO tblKlasse (Klassen_Bezeichnung, Anzahl_Schueler) VALUES ('11B391', 24);
+INSERT INTO tblKlasse (Klassen_Bezeichnung, Anzahl_Schueler) VALUES ('11B392', 15);
+INSERT INTO tblKlasse (Klassen_Bezeichnung, Anzahl_Schueler) VALUES ('10B391', 24);
+INSERT INTO tblKlasse (Klassen_Bezeichnung, Anzahl_Schueler) VALUES ('10B380', 29);
+INSERT INTO tblKlasse (Klassen_Bezeichnung, Anzahl_Schueler) VALUES ('10B392', 18);
+INSERT INTO tblKlasse (Klassen_Bezeichnung, Anzahl_Schueler) VALUES ('12B380', 24);
+INSERT INTO tblKlasse (Klassen_Bezeichnung, Anzahl_Schueler) VALUES ('12B391', 22);
+INSERT INTO tblKlasse (Klassen_Bezeichnung, Anzahl_Schueler) VALUES ('12B392', 22);
+```
