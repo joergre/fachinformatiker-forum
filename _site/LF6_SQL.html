@@ -8,8 +8,8 @@
 
   <title>LF6 SQL</title>
   <meta name='description' content="Alles über IT.">
-  <link rel='canonical' href="http://localhost:4000/LF6_SQL.html">
-  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://localhost:4000/feed.xml">
+  <link rel='canonical' href="http://fachinformatiker-fulda.de/LF6_SQL.html">
+  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://fachinformatiker-fulda.de/feed.xml">
 
   <style>
     
@@ -73,7 +73,23 @@
   
     
       <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/LF10.html'>LF10 Projekt</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='/LF6_1.1_Python.html'>LF6 1.1 Python</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/LF6_2.1_Python.html'>LF6 2.1 Python</a>
       </li>
     
   
@@ -89,7 +105,23 @@
   
     
       <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/LF7_Einfuehrung.html'>LF7 Einführung</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='/about/'>About</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/docker.html'>LF7 Docker</a>
       </li>
     
   
@@ -103,6 +135,14 @@
       <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='/impressum.html'>Impressum</a>
       </li>
+    
+  
+
+  
+    
+  
+
+  
     
   
 
@@ -309,10 +349,9 @@
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mysql_secure_installation</span>
 </code></pre></div></div>
+<h1 id="anlegen-und-löschen-einer-datenbank">Anlegen und löschen einer Datenbank</h1>
 
 <p>Das Skript ist eigentlich selbsterklärend, daher machen wir hier weiter.</p>
-
-<h1 id="anlegen-und-löschen-einer-datenbank">Anlegen und löschen einer Datenbank</h1>
 
 <p>Video: <a href="https://www.youtube.com/watch?v=EipHtnSYt-o">https://www.youtube.com/watch?v=EipHtnSYt-o</a></p>
 
@@ -411,7 +450,7 @@
 
 <p>Wir legen die Tabelle wieder an, mit einem Primary Key:</p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">tblGeburtsurkunde</span> <span class="p">(</span><span class="n">NameStandesAmt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">lfdNr</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="n">VorNameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>  <span class="n">GeburtsnameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geschlecht</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">Geburtsdatum</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geburtsort</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">OrtStandesamt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">DatumAusstellung</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NameStandesbeamter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">tblGeburtsurkunde</span> <span class="p">(</span><span class="n">NameStandesAmt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">lfdNr</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span> <span class="n">VorNameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>  <span class="n">GeburtsnameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geschlecht</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">Geburtsdatum</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geburtsort</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">OrtStandesamt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">DatumAusstellung</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NameStandesbeamter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span>
 </code></pre></div></div>
 
 <p>Der Primary Key referenziert eine  Eintrag inder Tabelle eindeutig. Der Primary Key muss  bei jedem Eintrag einen anderen Wert haben und darf nicht NULL sein (NULL darf nicht mit Null verwechselt werden. 0 ist ein Wert und NULL ist eben kein Wert.)</p>
@@ -633,7 +672,216 @@ MariaDB [geburtsurkunde]&gt; SHOW FIELDS FROM tblGeburtsurkunde;
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">idx</span> <span class="k">ON</span> <span class="n">tbltest</span> <span class="p">(</span><span class="n">col1</span><span class="p">,</span> <span class="n">col2</span><span class="p">);</span>
 <span class="k">DROP</span> <span class="k">INDEX</span> <span class="n">idx</span> <span class="k">ON</span> <span class="n">tbltest</span><span class="p">;</span>
 </code></pre></div></div>
+<h1 id="truncate-table">TRUNCATE TABLE</h1>
 
+<p>Truncate wird eingesetzt, wenn der Inhalt einer Tabelle gelöscht werden soll, aber nicht Die Tabelle und Ihre Struktur wie Spaltennamen etc. an sich.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span>
+</code></pre></div></div>
+<p>Hier die Ausgabe:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----------------+--------+------------------+-----------------+------------+--------------+--------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+</span>
+<span class="o">|</span> <span class="n">NameStandesAmt</span> <span class="o">|</span> <span class="n">lfdNr</span>  <span class="o">|</span> <span class="n">VorNameKind</span>      <span class="o">|</span> <span class="n">GeburtsnameKind</span> <span class="o">|</span> <span class="n">Geschlecht</span> <span class="o">|</span> <span class="n">Geburtsdatum</span> <span class="o">|</span> <span class="n">Geburtsort</span>   <span class="o">|</span> <span class="n">VornameMutter</span> <span class="o">|</span> <span class="n">NachnameMutter</span> <span class="o">|</span> <span class="n">VornameVater</span> <span class="o">|</span> <span class="n">NachnameVater</span> <span class="o">|</span> <span class="n">ReligionKind</span> <span class="o">|</span> <span class="n">ReligionMutter</span> <span class="o">|</span> <span class="n">ReligionVater</span> <span class="o">|</span> <span class="n">OrtStandesamt</span> <span class="o">|</span> <span class="n">DatumAusstellung</span> <span class="o">|</span> <span class="n">NameStandesbeamter</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------------+--------+------------------+-----------------+------------+--------------+--------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+</span>
+<span class="o">|</span> <span class="n">Bad</span> <span class="n">Tllllllz</span>   <span class="o">|</span> <span class="mi">9</span><span class="o">/</span><span class="mi">1988</span> <span class="o">|</span> <span class="n">Robert</span> <span class="n">Siegfried</span> <span class="o">|</span> <span class="n">Lehmann</span>         <span class="o">|</span> <span class="n">m</span>          <span class="o">|</span> <span class="mi">18</span><span class="p">.</span><span class="mi">08</span><span class="p">.</span><span class="mi">1988</span>   <span class="o">|</span> <span class="n">Bad</span> <span class="n">Tllllllz</span> <span class="o">|</span> <span class="n">Ilse</span>          <span class="o">|</span> <span class="n">Lehmann</span>        <span class="o">|</span> <span class="n">Christoph</span>    <span class="o">|</span> <span class="n">Lehmann</span>       <span class="o">|</span> <span class="n">katholisch</span>   <span class="o">|</span> <span class="n">katholisch</span>     <span class="o">|</span> <span class="n">katholisch</span>    <span class="o">|</span> <span class="n">Bad</span> <span class="n">Tllllllz</span>  <span class="o">|</span> <span class="mi">18</span><span class="p">.</span><span class="mi">08</span><span class="p">.</span><span class="mi">1988</span>       <span class="o">|</span> <span class="n">Windmann</span>           <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------------+--------+------------------+-----------------+------------+--------------+--------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Wir mlöschen jetzt den Inhalt mit TRUNCATE:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">TRUNCATE</span> <span class="k">TABLE</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">03</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Und führen den obigen SELECT-Befehl nochmals aus:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde</span><span class="p">;</span>
+<span class="n">Empty</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="auto-increment">Auto Increment</h1>
+
+<p>Wir schauen uns jetzt noch einmal den Primary key an und versuchen ihn ein wenig komfortabler zu gestalten. Dazu legenw ir eine neu Tabelle an:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">tblGeburtsurkunde2</span> <span class="p">(</span><span class="n">NameStandesAmt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">lfdNr</span> <span class="n">int</span> <span class="n">AUTO_INCREMENT</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span> <span class="n">VorNameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>  <span class="n">GeburtsnameKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geschlecht</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">Geburtsdatum</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">Geburtsort</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">VornameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NachnameVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionKind</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionMutter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">ReligionVater</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">OrtStandesamt</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">DatumAusstellung</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">NameStandesbeamter</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>Wir tragen jetzt einen Datensatz ein:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblGeburtsurkunde2</span> <span class="p">(</span><span class="n">VorNameKind</span><span class="p">,</span> <span class="n">GeburtsnameKind</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'Kasper'</span><span class="p">,</span><span class="s1">'Mueller'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Wir schauen uns den Eintrag an:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span>  <span class="n">tblGeburtsurkunde2</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----------------+-------+-------------+-----------------+------------+---------                                                                             -----+------------+---------------+----------------+--------------+-------------                                                                             --+--------------+----------------+---------------+---------------+-------------                                                                             -----+--------------------+</span>
+<span class="o">|</span> <span class="n">NameStandesAmt</span> <span class="o">|</span> <span class="n">lfdNr</span> <span class="o">|</span> <span class="n">VorNameKind</span> <span class="o">|</span> <span class="n">GeburtsnameKind</span> <span class="o">|</span> <span class="n">Geschlecht</span> <span class="o">|</span> <span class="n">Geburtsd</span>                                                                             <span class="n">atum</span> <span class="o">|</span> <span class="n">Geburtsort</span> <span class="o">|</span> <span class="n">VornameMutter</span> <span class="o">|</span> <span class="n">NachnameMutter</span> <span class="o">|</span> <span class="n">VornameVater</span> <span class="o">|</span> <span class="n">NachnameVate</span>                                                                             <span class="n">r</span> <span class="o">|</span> <span class="n">ReligionKind</span> <span class="o">|</span> <span class="n">ReligionMutter</span> <span class="o">|</span> <span class="n">ReligionVater</span> <span class="o">|</span> <span class="n">OrtStandesamt</span> <span class="o">|</span> <span class="n">DatumAusstel</span>                                                                             <span class="n">lung</span> <span class="o">|</span> <span class="n">NameStandesbeamter</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------------+-------+-------------+-----------------+------------+---------                                                                             -----+------------+---------------+----------------+--------------+-------------                                                                             --+--------------+----------------+---------------+---------------+-------------                                                                             -----+--------------------+</span>
+<span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span>     <span class="mi">1</span> <span class="o">|</span> <span class="n">Kasper</span>      <span class="o">|</span> <span class="n">Mueller</span>         <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>                                                                                      <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>                                                                                       <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>                                                                                          <span class="o">|</span> <span class="k">NULL</span>               <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------------+-------+-------------+-----------------+------------+---------                                                                             -----+------------+---------------+----------------+--------------+-------------                                                                             --+--------------+----------------+---------------+---------------+-------------                                                                             -----+--------------------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>und sehen, dass das Feld ‘lfdNr’ automatisch mit dem Wert 1 versehen worden ist.</p>
+
+<p>Wir schauen uns die Struktur der Tabelle an:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SHOW</span> <span class="n">FIELDS</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde2</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">--------------------+-------------+------+-----+---------+----------------+</span>
+<span class="o">|</span> <span class="n">Field</span>              <span class="o">|</span> <span class="k">Type</span>        <span class="o">|</span> <span class="k">Null</span> <span class="o">|</span> <span class="k">Key</span> <span class="o">|</span> <span class="k">Default</span> <span class="o">|</span> <span class="n">Extra</span>          <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+-------------+------+-----+---------+----------------+</span>
+<span class="o">|</span> <span class="n">NameStandesAmt</span>     <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">lfdNr</span>              <span class="o">|</span> <span class="n">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>     <span class="o">|</span> <span class="k">NO</span>   <span class="o">|</span> <span class="n">PRI</span> <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span> <span class="n">auto_increment</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">VorNameKind</span>        <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">GeburtsnameKind</span>    <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">Geschlecht</span>         <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">Geburtsdatum</span>       <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">Geburtsort</span>         <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">VornameMutter</span>      <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">NachnameMutter</span>     <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">VornameVater</span>       <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">NachnameVater</span>      <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">ReligionKind</span>       <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">ReligionMutter</span>     <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">ReligionVater</span>      <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">OrtStandesamt</span>      <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">DatumAusstellung</span>   <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">NameStandesbeamter</span> <span class="o">|</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="k">NULL</span>    <span class="o">|</span>                <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+-------------+------+-----+---------+----------------+</span>
+<span class="mi">17</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">04</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Und sehen bei ‘lfdNr’ den PRIMARY_KEY und das auto_increment. Der Eintag auto_increment dient dazu, dass dieses Feld automatisch hochgezählt wird.</p>
+
+<p>Wir tragen noch einen Datensatz ein:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblGeburtsurkunde2</span> <span class="p">(</span><span class="n">VorNameKind</span><span class="p">,</span> <span class="n">GeburtsnameKind</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'Martin'</span><span class="p">,</span><span class="s1">'Neuer'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>und schauen uns das Ergebnis an:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde2</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+</span>
+<span class="o">|</span> <span class="n">NameStandesAmt</span> <span class="o">|</span> <span class="n">lfdNr</span> <span class="o">|</span> <span class="n">VorNameKind</span> <span class="o">|</span> <span class="n">GeburtsnameKind</span> <span class="o">|</span> <span class="n">Geschlecht</span> <span class="o">|</span> <span class="n">Geburtsdatum</span> <span class="o">|</span> <span class="n">Geburtsort</span> <span class="o">|</span> <span class="n">VornameMutter</span> <span class="o">|</span> <span class="n">NachnameMutter</span> <span class="o">|</span> <span class="n">VornameVater</span> <span class="o">|</span> <span class="n">NachnameVater</span> <span class="o">|</span> <span class="n">ReligionKind</span> <span class="o">|</span> <span class="n">ReligionMutter</span> <span class="o">|</span> <span class="n">ReligionVater</span> <span class="o">|</span> <span class="n">OrtStandesamt</span> <span class="o">|</span> <span class="n">DatumAusstellung</span> <span class="o">|</span> <span class="n">NameStandesbeamter</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+</span>
+<span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span>     <span class="mi">1</span> <span class="o">|</span> <span class="n">Kasper</span>      <span class="o">|</span> <span class="n">Mueller</span>         <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>             <span class="o">|</span> <span class="k">NULL</span>               <span class="o">|</span>
+<span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span>     <span class="mi">2</span> <span class="o">|</span> <span class="n">Martin</span>      <span class="o">|</span> <span class="n">Neuer</span>           <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>             <span class="o">|</span> <span class="k">NULL</span>               <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>Und sehen, wie erwartet, beim zweiten Eintag die 2 bei lfdNr.</p>
+
+<p>Wir setzen den Startwert des auto_inkrement auf 10000:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">tblGeburtsurkunde2</span> <span class="n">AUTO_INCREMENT</span><span class="o">=</span><span class="mi">10000</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>und tragen einen weiteren Datensatz ein:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblGeburtsurkunde2</span> <span class="p">(</span><span class="n">VorNameKind</span><span class="p">,</span> <span class="n">GeburtsnameKind</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'Norbert'</span><span class="p">,</span><span class="s1">'Obama'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Und sehen, das der Ein tag in der Spalte ‘lfdNR’ bei 1000 weiterzählt:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde2</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+</span>
+<span class="o">|</span> <span class="n">NameStandesAmt</span> <span class="o">|</span> <span class="n">lfdNr</span> <span class="o">|</span> <span class="n">VorNameKind</span> <span class="o">|</span> <span class="n">GeburtsnameKind</span> <span class="o">|</span> <span class="n">Geschlecht</span> <span class="o">|</span> <span class="n">Geburtsdatum</span> <span class="o">|</span> <span class="n">Geburtsort</span> <span class="o">|</span> <span class="n">VornameMutter</span> <span class="o">|</span> <span class="n">NachnameMutter</span> <span class="o">|</span> <span class="n">VornameVater</span> <span class="o">|</span> <span class="n">NachnameVater</span> <span class="o">|</span> <span class="n">ReligionKind</span> <span class="o">|</span> <span class="n">ReligionMutter</span> <span class="o">|</span> <span class="n">ReligionVater</span> <span class="o">|</span> <span class="n">OrtStandesamt</span> <span class="o">|</span> <span class="n">DatumAusstellung</span> <span class="o">|</span> <span class="n">NameStandesbeamter</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+</span>
+<span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span>     <span class="mi">1</span> <span class="o">|</span> <span class="n">Kasper</span>      <span class="o">|</span> <span class="n">Mueller</span>         <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>             <span class="o">|</span> <span class="k">NULL</span>               <span class="o">|</span>
+<span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span>     <span class="mi">2</span> <span class="o">|</span> <span class="n">Martin</span>      <span class="o">|</span> <span class="n">Neuer</span>           <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>             <span class="o">|</span> <span class="k">NULL</span>               <span class="o">|</span>
+<span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="mi">10000</span> <span class="o">|</span> <span class="n">Norbert</span>     <span class="o">|</span> <span class="n">Obama</span>           <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>       <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>         <span class="o">|</span> <span class="k">NULL</span>           <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>          <span class="o">|</span> <span class="k">NULL</span>             <span class="o">|</span> <span class="k">NULL</span>               <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------------+-------+-------------+-----------------+------------+--------------+------------+---------------+----------------+--------------+---------------+--------------+----------------+---------------+---------------+------------------+--------------------+</span>
+<span class="mi">3</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="zählen">Zählen</h1>
+
+<p>Oft müssen Sachen gezählt werden. Wir sehen bei ‘Select * From’ unten die Anzahl der Zeilen, aber wir möchtend iese jetzt exlizit mit der Count-Funktion ghezählt bekommen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde2</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----------+</span>
+<span class="o">|</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------+</span>
+<span class="o">|</span>        <span class="mi">3</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">05</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Wir fügen inn unserer Tabelle einen weiteren Datensatz hinzu:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblGeburtsurkunde2</span> <span class="p">(</span><span class="n">VorNameKind</span><span class="p">,</span> <span class="n">GeburtsnameKind</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'Kasper'</span><span class="p">,</span><span class="s1">'Neuer'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Und zählen jetzt die vornamen ohne Dopplung (DISTINCT):</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span> <span class="n">VorNameKind</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde2</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">-----------------------------+</span>
+<span class="o">|</span> <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span> <span class="n">VorNameKind</span><span class="p">)</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">-----------------------------+</span>
+<span class="o">|</span>                           <span class="mi">3</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">-----------------------------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Wir schauen uns die Tabelle an:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="n">VorNameKind</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde2</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">-------------+</span>
+<span class="o">|</span> <span class="n">VorNameKind</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">-------------+</span>
+<span class="o">|</span> <span class="n">Kasper</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="n">Martin</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="n">Norbert</span>     <span class="o">|</span>
+<span class="o">|</span> <span class="n">Kasper</span>      <span class="o">|</span>
+<span class="o">+</span><span class="c1">-------------+</span>
+<span class="mi">4</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Wir sehen 4 Einträge, aber Kasper ist doppelt. Durch den DISTINCT-Befehl werden die doppelten Einträge herausgefildert. Wir können die Anzahl der Einträge auch mit COUNT zählen:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="n">VorNameKind</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde2</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="k">COUNT</span><span class="p">(</span><span class="n">VorNameKind</span><span class="p">)</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span>                  <span class="mi">4</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Wir möchten die Anazhl der Einträge zählen bei denen der Vorname des Kindes ‘Kasper’ lautet:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MariaDB</span> <span class="p">[</span><span class="n">schueler22</span><span class="p">]</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="n">VorNameKind</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">tblGeburtsurkunde2</span> <span class="k">WHERE</span> <span class="n">VorNameKind</span> <span class="o">=</span> <span class="s1">'Kasper'</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="k">COUNT</span><span class="p">(</span><span class="n">VorNameKind</span><span class="p">)</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span>                  <span class="mi">2</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="durchschnitt-und-summe">Durchschnitt und Summe</h1>
+
+<p>Wir legen eine neue Tabelle für diesen Abschnitt an:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">lfdNr</span> <span class="n">int</span> <span class="n">AUTO_INCREMENT</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span> <span class="n">Klassen_Bezeichnung</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span> <span class="n">Anzahl_Schueler</span> <span class="n">int</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>und fügen ein paar Einträge hinzu:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">Klassen_Bezeichnung</span><span class="p">,</span> <span class="n">Anzahl_Schueler</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'11B380'</span><span class="p">,</span> <span class="mi">22</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">Klassen_Bezeichnung</span><span class="p">,</span> <span class="n">Anzahl_Schueler</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'11B391'</span><span class="p">,</span> <span class="mi">24</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">Klassen_Bezeichnung</span><span class="p">,</span> <span class="n">Anzahl_Schueler</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'11B392'</span><span class="p">,</span> <span class="mi">15</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">Klassen_Bezeichnung</span><span class="p">,</span> <span class="n">Anzahl_Schueler</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'10B391'</span><span class="p">,</span> <span class="mi">24</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">Klassen_Bezeichnung</span><span class="p">,</span> <span class="n">Anzahl_Schueler</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'10B380'</span><span class="p">,</span> <span class="mi">29</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">Klassen_Bezeichnung</span><span class="p">,</span> <span class="n">Anzahl_Schueler</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'10B392'</span><span class="p">,</span> <span class="mi">18</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">Klassen_Bezeichnung</span><span class="p">,</span> <span class="n">Anzahl_Schueler</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'12B380'</span><span class="p">,</span> <span class="mi">24</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">Klassen_Bezeichnung</span><span class="p">,</span> <span class="n">Anzahl_Schueler</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'12B391'</span><span class="p">,</span> <span class="mi">22</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tblKlasse</span> <span class="p">(</span><span class="n">Klassen_Bezeichnung</span><span class="p">,</span> <span class="n">Anzahl_Schueler</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">'12B392'</span><span class="p">,</span> <span class="mi">22</span><span class="p">);</span>
+</code></pre></div></div>
 
         </div>
       </article>

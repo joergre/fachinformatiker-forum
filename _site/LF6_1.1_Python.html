@@ -8,8 +8,8 @@
 
   <title>LF6 1.1 Python</title>
   <meta name='description' content="Alles über IT.">
-  <link rel='canonical' href="http://localhost:4000/LF6_1.1_Python.html">
-  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://localhost:4000/feed.xml">
+  <link rel='canonical' href="http://fachinformatiker-fulda.de/LF6_1.1_Python.html">
+  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://fachinformatiker-fulda.de/feed.xml">
 
   <style>
     
@@ -73,7 +73,23 @@
   
     
       <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/LF10.html'>LF10 Projekt</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='/LF6_1.1_Python.html'>LF6 1.1 Python</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/LF6_2.1_Python.html'>LF6 2.1 Python</a>
       </li>
     
   
@@ -89,7 +105,23 @@
   
     
       <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/LF7_Einfuehrung.html'>LF7 Einführung</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='/about/'>About</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/docker.html'>LF7 Docker</a>
       </li>
     
   
@@ -103,6 +135,14 @@
       <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='/impressum.html'>Impressum</a>
       </li>
+    
+  
+
+  
+    
+  
+
+  
     
   
 
@@ -701,14 +741,14 @@ Du solltest 100% erreichen!</p>
 
 <h1 id="funktionen">Funktionen</h1>
 
-<p>Funktionen werden eingesetzt um ein programm zu strukturieren und/oder öfter benötigten Programmcode nur an einer Stelle vorzuhalten. Funktionen werden mit dem Wort def gefolgt vom Funktionnamen gekennzeichnet. Sie werden beim starten des Pythonprogramms erstbei aufruft über den Funktionsnamen ausgeführt. Wir verwenden viele in Python eingebaute Funktionen bereits wie z.B. print() oder input(). Wir programmieren als Beispiel einen Währungsumrechner. Der Umrechner soll Euro in die polnische Währung Zloty umrechnen. Wir benötigen dazu zwei Angaben: dem Umrechnungskurs und die Menge an Euros die umgerechnet werden soll. Momentan liegt der Umrechnungsfaktor bei 4,3: 1 Euro ist also 4,3 Zloty wert. Bitte überprüfe den Wert. Werte werden Funktionen mit Hilfe sogeannter Parameter übergeben, die in Klammern geschrieben werden. Mit dem Befehl return wird das Ergebnis der Funktion zurück gegeben an die aufrufende Stelle. Wenn wir das Programm ausführen werden wir keine Ausgabe erhalten, weil die Fuunktion nicht aufgerufen wird.</p>
+<p>Funktionen werden eingesetzt um ein Programm zu strukturieren und/oder öfter benötigten Programmcode nur an einer Stelle vorzuhalten. Funktionen werden mit dem Wort def gefolgt vom Funktionnamen gekennzeichnet. Sie werden beim starten des Pythonprogramms erstbei aufruft über den Funktionsnamen ausgeführt. Wir verwenden viele in Python eingebaute Funktionen bereits wie z.B. print() oder input(). Wir programmieren als Beispiel einen Währungsumrechner. Der Umrechner soll Euro in die polnische Währung Zloty umrechnen. Wir benötigen dazu zwei Angaben: dem Umrechnungskurs und die Menge an Euros die umgerechnet werden soll. Momentan liegt der Umrechnungsfaktor bei 4,3: 1 Euro ist also 4,3 Zloty wert. Bitte überprüfe den Wert. Werte werden Funktionen mit Hilfe sogeannter Parameter übergeben, die in Klammern geschrieben werden. Mit dem Befehl return wird das Ergebnis der Funktion zurück gegeben an die aufrufende Stelle. Wenn wir das Programm ausführen werden wir keine Ausgabe erhalten, weil die Fuunktion nicht aufgerufen wird.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">waehrungsrechner</span><span class="p">(</span><span class="n">kurs</span><span class="p">,</span> <span class="n">euro</span><span class="p">):</span>
     <span class="n">zloty</span> <span class="o">=</span> <span class="n">euro</span><span class="o">*</span><span class="n">kurs</span>
     <span class="k">return</span> <span class="n">zloty</span>
 </code></pre></div></div>
 
-<p>Wir ergnzen das Programm um einen Funktionsaufruf. Wir möchten 100 Euro umtauschen:</p>
+<p>Wir ergänzen das Programm um einen Funktionsaufruf. Wir möchten 100 Euro umtauschen:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">waehrungsrechner</span><span class="p">(</span><span class="n">kurs</span><span class="p">,</span> <span class="n">euro</span><span class="p">):</span>
     <span class="n">zloty</span> <span class="o">=</span> <span class="n">euro</span><span class="o">*</span><span class="n">kurs</span>
@@ -740,6 +780,218 @@ Du solltest 100% erreichen!</p>
 </code></pre></div></div>
 
 <p>Die zweite Zeile teilt uns den Namen der betroffenden Datei mit, in diesem Fall fehler.py.</p>
+
+<h1 id="syntaxfehler">Syntaxfehler</h1>
+<p>Der Fehler beruht darauf, dass int() eine Funktion ist und damit die Argumente in Klammer geschrieben werden. Wir korrigieren Die Zeile und führen das Programm erneut aus.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span> 
+<span class="nb">int</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
+<span class="nb">int</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> 
+<span class="k">print</span> <span class="s">"FBS"</span> 
+</code></pre></div></div>
+<p>Wir treffen auf den nächsten Fehler (die Anzeige hier stammt von QPython unter Android):</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">File</span> <span class="s">"/storage/emulated/0/qpython/.last_tmp.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">5</span> 
+<span class="k">print</span> <span class="s">"FBS"</span> 
+          <span class="o">^</span> <span class="nb">SyntaxError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">syntax</span> 
+</code></pre></div></div>
+
+<p>Wir sehen an der veränderten Zeilennummer, dass der vorhergehende Fehler behoben wurde. Print ist ebenfalls eine Funktion und muss daher in Klammern geschrieben werden. Bei der ausführung unter Anaconda wird direkt auf die fehlenden Klammern hingewiesen.</p>
+
+<p>Wir korrigieren auch diesen Fehler:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span> 
+<span class="nb">int</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
+<span class="nb">int</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS"</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>und das Programm läuft fehlerlos durch:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span> 
+<span class="mi">2</span> 
+<span class="n">FBS</span> 
+</code></pre></div></div>
+
+<p>Wir bauen noch einen Fehler in das Programm ein:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span> 
+<span class="nb">int</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
+<span class="nb">int</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS"</span><span class="p">)</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> 
+</code></pre></div></div>
+<p>Das Programm erzeugt bei Ausführung einen Fehler:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">File</span> <span class="s">"/storage/emulated/0/qpython/.lasttmp.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">6</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> 
+          <span class="o">^</span> <span class="nb">SyntaxError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">syntax</span> 
+<span class="mi">1</span><span class="o">|</span><span class="n">u0a76</span><span class="nd">@sofia3gr</span><span class="p">:</span><span class="o">/</span> <span class="err">$</span>
+
+</code></pre></div></div>
+
+<p>Der Fehler ist leicht zu beheben:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span> 
+<span class="nb">int</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
+<span class="nb">int</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS"</span><span class="p">)</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span> 
+</code></pre></div></div>
+<p>Und das Programm läuft problemlos durch.</p>
+
+<p>Wir ändern das Programm nochmals ab:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="s">"2"</span> 
+<span class="k">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS"</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>Und wir bekommen eine Fehlermeldung:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">File</span> <span class="s">"/storage/emulated/0/qpython/.lasttmp.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">5</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS"</span><span class="p">)</span> 
+<span class="o">^</span> <span class="nb">SyntaxError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">syntax</span> <span class="mi">1</span><span class="o">|</span>
+<span class="n">u0a76</span><span class="nd">@sofia3gr</span><span class="p">:</span><span class="o">/</span> <span class="err">$</span> 
+</code></pre></div></div>
+
+<p>In der Zeile 5 ist aber kein Fehler. Der Fehler ist in Zeile 4. Dort wurde vergessen, eine Klammer zu schließen. Python fällt das aber erst in der nächsten Zeile auf, weil für den Interpreter völlig überraschend ein weiterer Befehl kommt, der nicht in den Kontext passt.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="s">"2"</span> 
+<span class="k">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS"</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>Syntaxfehler gehören meist zu den einfach zu behebenen Fehlern. Meistens ist der Fehler an der angegebenen Stelle. Selten kann es vorkommen, dass der Fehler eine Zeile vorher entsteht.</p>
+
+<p>Python überprüft vor der Ausführung den Quellcode auf Syntaxfehler, erst danach wird das Programm ausgeführt und es kann zu Ausführungsfehlern kommen.</p>
+
+<h1 id="ausführungsfehler">Ausführungsfehler</h1>
+<p>Wir führen das Programm von oben aus und treffen bekommen eine weitere Fehlermeldung:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span> 
+<span class="mi">2</span> 
+<span class="n">FBS</span> 
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span> 
+<span class="n">File</span> <span class="s">"/storage/emulated/0/qpython/.lasttmp.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">6</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span> 
+ <span class="nb">TypeError</span><span class="p">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="o">+</span><span class="p">:</span> <span class="s">'int'</span> <span class="ow">and</span> <span class="s">'str'</span> <span class="mi">1</span><span class="o">|</span>
+ <span class="n">u0a76</span><span class="nd">@sofia3gr</span><span class="p">:</span><span class="o">/</span> <span class="err">$</span> 
+</code></pre></div></div>
+
+<p>Wir sehen an der Ausgabe, dass das Programm bereits zum Teil abgearbeitet worden ist. Auch der Hinweis auf einen Syntaxfehlers fehlt. Beides Hinweise auf einen Ausführungsfehler. Das bedeutet, dass die Syntax eingehalten worden ist und ein Problem der Variablenwerte vorliegt. Die Meldung gibt uns auch den entsprechenden Hinweis.</p>
+
+<p>Wir korrigieren das Programm:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="mi">2</span> 
+<span class="k">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS"</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>Es gibt noch viele andere Ausführungsfehler neben dem Ty-Fehler. Ein weiterer häufiger Fehler ist der Bezeichner-Fehler (name error):</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">print</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="mi">2</span> 
+<span class="k">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS"</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">c</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>Bei der Ausführung bekommen wir den Hinweis:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="mi">1</span> 
+<span class="mi">2</span> 
+<span class="n">FBS</span> 
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span> 
+<span class="n">File</span> <span class="s">"/storage/emulated/0/qpython/.lasttmp.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">6</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">c</span><span class="p">)</span> 
+<span class="nb">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s">'c'</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span> <span class="mi">1</span><span class="o">|</span>
+<span class="n">u0a76</span><span class="nd">@sofia3gr</span><span class="p">:</span><span class="o">/</span> <span class="err">$</span> 
+</code></pre></div></div>
+
+<p>Python kann zum Zeitpunkt der Ausführung die Variable c nicht ansprechen. Es kann durchaus sein, dass die Variable später existiert oder in einem lokalen Kontext. Zum Zeitpunkt der Ausführung der Zeile 6 existiert die Variable aber nicht!</p>
+
+<p>Ein weiter beliebter Ausführungsfehler ist der einer nicht definierten mathematischen Berechnung.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> 
+<span class="n">c</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="k">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS"</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">/</span><span class="n">c</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>Es kommt zu folgender Fehlermeldung:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span> 
+<span class="mi">2</span> 
+<span class="n">FBS</span> 
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span> 
+<span class="n">File</span> <span class="s">"/storage/emulated/0/qpython/.lasttmp.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">6</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">/</span><span class="n">c</span><span class="p">)</span> 
+<span class="nb">ZeroDivisionError</span><span class="p">:</span> <span class="n">division</span> <span class="n">by</span> <span class="n">zero</span> <span class="mi">1</span><span class="o">|</span>
+<span class="n">u0a76</span><span class="nd">@sofia3gr</span><span class="p">:</span><span class="o">/</span> <span class="err">$</span> 
+</code></pre></div></div>
+
+<h1 id="zahlenraten">Zahlenraten</h1>
+
+<p>Wir schreiben unser erstes eigene Programm: Zahlenraten</p>
+
+<p>Der Computer denkt sich eine Zahl zwischen 0 und 100 aus. Der Mensch soll die Zahl erraten und hat die Möglichkeit die Zahl mit 6 Versuchen zu erraten. Der Computer kennt drei Reaktionen auf eine Eingabe: “Meine Zahl ist größer!”, “Meine Zahl ist kleiner!” und “Gewonnen!”. Durch geschicktes raten sollte es möglich sein, jede Zahl mit 6 Versuchen zu erraten.</p>
+
+<p>Wir verwednen dafür die Testgetriebene Entwicklung (TDD, vgl. <a href="https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung">https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung</a>) und legen 2 Dateien an mit den Namen test.py und zahlenraten.py</p>
+
+<p>Die Datei test.py führt sogenannte Unity Tests aus auf die Dateie zahlenraten und gibt uns Rückmeldung ob die Funktionen der Datei ordnungsgemäß arbeiten. Später können die Unity Test durch automatisierte Verfahren automatisch nach Codeänderungen ausgeführt werden und verhindern so, dass sich durch nachträglich Veränderungen am Quellcode Fehler eingeschlichen haben.</p>
+
+<p>test.py:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">import</span> <span class="nn">zahlenraten</span>
+<span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">pass</span>
+</code></pre></div></div>
+
+<p>Wir importieren zuerst die Klasse Unittest, die die entasprechende Befehle für einen Test bereitstellt und wir importieren in der zweiten Zeile den zu testenden Programmcode.In der dritten Zeile erstellen wir eine Klasse (was immer das ist), die den Programmcode dann testet.</p>
+
+<p>Die Datei zahlenraten.py:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">ueberpruefung</span><span class="p">(</span><span class="n">eingabe</span><span class="p">,</span> <span class="n">testwert</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">zufallszahl</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="n">zahl</span> <span class="o">=</span> <span class="n">zufallszahl</span><span class="p">()</span>
+
+<span class="n">eingabewert</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Bitte eine Zahl eingeben: "</span><span class="p">)</span>
+<span class="n">ueberpruefung</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">,</span> <span class="n">zahl</span><span class="p">)</span>    
+
+    
+<span class="k">print</span><span class="p">(</span><span class="s">"Das Spiel ist zu Ende"</span><span class="p">)</span>    
+</code></pre></div></div>
+
+<p>Wir definieren eine Funktion ueberpruefung mit 2 Parametern: eingabe und testwert. Die Funktion macht noch überhaupt nichts, pass bedeutet: “nichts machen”. Ebenso bei der Funktion zufallszahl. Die erste Zeile, die beim start des Programms ausgeführt wird ist “zahl=zufallszahl” in der die Funtkion Zufallszahl aufgerufen wird und das Ergebnis nach zahl gespeichert wird.</p>
+
+<p>Die nächste Zeile fordert den benutzer zu einer Einagbe auf und speichert diese in die Variable eingabewert ab. Danach wird die Funktion ueberpruefung aufgerufen, die später die Ausgabe “größer”, “kleiner” oder “treffer” ausgeben soll.</p>
+
+<p>Die letzte Zeile zeigt uns an, dass das Programm bis zum Ende abgearbeitet worden ist.</p>
 
 
         </div>
