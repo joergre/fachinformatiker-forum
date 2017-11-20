@@ -1,0 +1,17 @@
+<p>Quelle Bild: https://commons.wikimedia.org/wiki/File:2008-01-06-125534_1680x1050_scrot.png</p>
+
+<p>In dem Artikel geht es um das Problem, einen Screenshot schnell und effektiv zu erstellen. Das Problem verschärft sich in abetracht der hier eingesetzten Plattform: ein Raspberry Pi. <a href="http://en.wikipedia.org/wiki/Scrot">Scrot</a> Ist ein Tool für die Shell, die diese Aufgabe perfekt mit minimalen Ressourcenaufwand erfüllt. Der Name Scrot wurde von dem Wort Screenhot abgeleited.</p>
+
+<h1 id="installation">Installation</h1>
+
+<p>Die Installation geht einfach von der Hand:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get install scrot
+</code></pre></div></div>
+
+<p>Ein Beispiel für die Anwendung ist:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scrot <span class="nt">-cd</span> 10 screenshot.png
+</code></pre></div></div>
+
+<p>cd steht für eine Verzögerung der Aufnahme von 10 Sekunden. Mit -u wird nur das aktive Fenster aufgenommen. Eine schöne Übersicht der möglichen Paramter findert Ihr <a href="https://wiki.ubuntuusers.de/Scrot/">hier</a>.</p>

@@ -1,0 +1,22 @@
+<p>Quelle Bild: <a href="https://de.wikipedia.org/wiki/Domain_(Internet)#/media/File:Dns-raum.svg">https://de.wikipedia.org/wiki/Domain_(Internet)#/media/File:Dns-raum.svg</a></p>
+
+<p>Es ist möglich, mit Hilfe von Github kostenlos eine Internetseite zu hosten (siehe <a href="https://pages.github.com/">https://pages.github.com/</a>). Ebrenso kann ein eigener Domän-Namen verwendet werden. Bei der Verwendung eines eigenen Namens kann allerdings kein SSL verwendet werden.</p>
+
+<p>Zur Einrichtung:</p>
+
+<p>1.) Richte bitte bei Deinem DNS-Anbierter einen A-Record ein, der Deine Domän auf 192.30.252.153 und/oder 192.30.252.154 umleitet. IPv6 wird nicht unterstützt!</p>
+
+<p>2.) In den Zweig ‘gh-pages’ kommt in das oberste Verzeichnis eine Datei mit dem Namen ‘CNAME’ (bitte ebenfalls groß schreiben). In diese Datei kommt nur Deine Domäne (ohne http oder https und ohne Verzeichnis).</p>
+
+<p>Dann warte bitte ein paar Minuten bis der Befehl die entsprechende Eintragung ausgibt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pi@pi-desktop:~/fachinformatiker-forum <span class="nv">$ </span>dig fachinformatiker-forum.de +nostats +nocomments +nocmd
+
+<span class="p">;</span> &lt;&lt;<span class="o">&gt;&gt;</span> DiG 9.10.3-P4-Raspbian &lt;&lt;<span class="o">&gt;&gt;</span> fachinformatiker-forum.de +nostats +nocomments +nocmd
+<span class="p">;;</span> global options: +cmd
+<span class="p">;</span>fachinformatiker-forum.de.	IN	A
+fachinformatiker-forum.de. 1947	IN	A	192.30.252.153
+
+</code></pre></div></div>
+
+<p>Hier siehst Du eine Besipiel-Datei: <a href="https://github.com/joergre/fachinformatiker-forum/">https://github.com/joergre/fachinformatiker-forum/</a> und die dazugehörige Webseite: <a href="http://fachinformatiker-forum.de">http://fachinformatiker-forum.de</a></p>

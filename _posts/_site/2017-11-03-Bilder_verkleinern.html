@@ -1,0 +1,13 @@
+<p>Bildquelle: <a href="https://www.flickr.com/photos/60614290@N08/14848580426">https://www.flickr.com/photos/60614290@N08/14848580426</a></p>
+
+<p>Immer wieder müssen Bilder an bestimmte Größen angepasst werden. Wie z.B. die Bilder der Artikel in diesem Blog. Dies fnktioniert auf dem Raspberry Pi am besten mit dem Tool ImageMagick.</p>
+
+<p>Das Tool installieren wir mit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt install imagemagick
+</code></pre></div></div>
+
+<p>Wir möchten ein Bild z. B. auf 320 Pixel reduzieren:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mogrify <span class="nt">-resize</span>  320 test.png 
+</code></pre></div></div>
