@@ -6,6 +6,8 @@ image: '/images/pages/docker.png'
 
 Bildquelle: Von dotCloud, Inc. - <https://github.com/docker/docker/blob/master/docs/static_files/docker-logo-compressed.png>, Apache License 2.0, <https://commons.wikimedia.org/w/index.php?curid=28456942>
 
+Bei Fragen: <https://discord.gg/TsaqyAQ>
+
 # Installation Webserver für Entwicklung
 
 ## Installation
