@@ -125,7 +125,7 @@ domain test.lab
 Testen der Forward-Auflösung:
 
 ```bash
-root@acde03affad0:/etc/bind/zones# named-checkzone lab /etc/bind/zones/db.test.lab
+named-checkzone lab /etc/bind/zones/db.test.lab
 zone lab/IN: loaded serial 2
 OK
 ```
