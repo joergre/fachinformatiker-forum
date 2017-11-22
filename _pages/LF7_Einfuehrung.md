@@ -20,10 +20,12 @@ apt-get install bind9 bind9utils vim-nox host telnet dnsutils
 Wir löschen den kompletten Inhalt der Datei  /etc/bind/named.conf.options und fügen folgendes ein:
 
 ```bind
+options {
 forwarders {
 # Your ISP DNS IP(s) Here
 10.0.0.2; # EC2 DNS for network
 8.8.8.8; # Google DNS
+};
 };
 ```
 
@@ -102,9 +104,9 @@ $TTL    604800
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
-@       IN      NS      test.labs.
-50      IN      PTR     test.labs.
-51      IN      PTR     test2.labs.
+@       IN      NS      test.lab.
+50      IN      PTR     test.lab.
+51      IN      PTR     test2.lab.
 ```
 
 # resolve.conf
