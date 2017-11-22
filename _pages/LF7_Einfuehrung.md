@@ -133,7 +133,7 @@ OK
 Testen der Reverse-Auflösung:
 
 ```bash
- named-checkzone test.lab /etc/bind/zones/db.192
+named-checkzone test.lab /etc/bind/zones/db.192
 zone test.lab/IN: loaded serial 1
 OK
 ```
