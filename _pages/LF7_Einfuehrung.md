@@ -114,8 +114,8 @@ $TTL    604800
 Die Einrichtung des Servers ist soweit abgeschlossen. Jetzt müssen wir den DNS-Server unserem System bekannt machen, damit unser Server auch etwas zu tun bekommt. Dies geschieht in der Datei  /etc/resolv.conf, die wir wie folgt abändern:
 
 ```bash
-nameserver 192.168.1.50 # Unser Nameserver
-nameserver 192.168.1.1 # Der Nameserver im Netz oder z.B. 8.8.8.8
+nameserver 127.0.0.1 # Unser Nameserver
+nameserver 8.8.8.8 # Der Nameserver im Netz oder z.B. 8.8.8.8
 search          test.lab
 domain test.lab
 ```
@@ -151,7 +151,7 @@ zone 255.in-addr.arpa/IN: loaded serial 1
 Wir starten den Bind neu, damit alle Konfigurationsdateien neu eingelesen werden:
 
 ```bash
-root@acde03affad0:/etc/bind/zones# service bind9 restart
+service bind9 restart
  * Stopping domain name service... bind9                                        waiting for pid 3988 to die
                                                                          [ OK ]
  * Starting domain name service... bind9                                 [ OK ]
