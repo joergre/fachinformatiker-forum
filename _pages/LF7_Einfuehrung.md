@@ -35,7 +35,7 @@ Die nächste Datei ist  /etc/bind/named.conf.local. Auch hier löschen wir den g
 # Forwarding zone
 zone "test.lab"{
         type master;
-        file "etc/bind/zones/db.test.lab";
+        file "/etc/bind/zones/db.test.lab";
 };
 
 # Reserve lookup and server info
