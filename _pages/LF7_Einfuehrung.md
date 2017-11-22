@@ -140,7 +140,7 @@ OK
 Und zum Abschluss:
 
 ```bash
-root@acde03affad0:/etc/bind/zones# named-checkconf -zj
+named-checkconf -zj
 zone test.lab/IN: loaded serial 2
 zone 1.168.192.in-addr.arpa/IN: loaded serial 1
 zone localhost/IN: loaded serial 2
