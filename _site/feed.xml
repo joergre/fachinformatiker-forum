@@ -5,10 +5,22 @@
     <description>Alles über IT.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Nov 2017 02:48:08 +0100</pubDate>
-    <lastBuildDate>Mon, 20 Nov 2017 02:48:08 +0100</lastBuildDate>
+    <pubDate>Sat, 25 Nov 2017 13:45:47 +0100</pubDate>
+    <lastBuildDate>Sat, 25 Nov 2017 13:45:47 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
 
+    
+      <item>
+        <title>6000 Lehrer ohne pädagogische Ausbildung an hessischen Schulen</title>
+        <description>&lt;p&gt;In Hessen sind fast 6000 Lehrer eingestellt ohne pädagogische Ausbildung. Bei 500 Lehrern ist die Qualifizierung völlig unbekannt. Dies zeigt in erschreckender Weise, wie wichtig die Ausbildung der Kinder und Jugendlichen und damit die Zukunft der Politik ist. Lieber sparen als in die Zukunft des Landes zu investieren.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://assets03.hessenspd.net/docs/doc_69950_2017828113132.pdf&quot;&gt;https://assets03.hessenspd.net/docs/doc_69950_2017828113132.pdf&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 25 Nov 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2017/11/25/verschleierung/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/25/verschleierung/</guid>
+      </item>
     
       <item>
         <title>Bundesnetzagentur verbietet bestimmte Smartwatches</title>
@@ -24,6 +36,19 @@
         <pubDate>Mon, 20 Nov 2017 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2017/11/20/watches/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/11/20/watches/</guid>
+      </item>
+    
+      <item>
+        <title>AI für die Business Strategie</title>
+        <description>&lt;p&gt;Bild-Quelle: &lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg&quot;&gt;https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Das MIT bietet eine sechswöchige kostenlose Online-Fortbildung an zum Thema: AI in ihrer Firma integrieren. Der Kurs ist vom Stundenumfang mit 6 Stunden/Woche angegeben.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getsmarter.mit.edu/mit-artificial-intelligence-online-short-course-hm/&quot;&gt;https://getsmarter.mit.edu/mit-artificial-intelligence-online-short-course-hm/&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Nov 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2017/11/20/mit/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/20/mit/</guid>
       </item>
     
       <item>
