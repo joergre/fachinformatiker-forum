@@ -5,6 +5,8 @@ image: '/images/posts/Tux.png'
 ---
 Von <a rel="nofollow" class="external text" href="http://www.isc.tamu.edu/~lewing/">Larry Ewing</a>, <a rel="nofollow" class="external text" href="http://www.home.unix-ag.org/simon/">Simon Budig</a>, <a rel="nofollow" class="external text" href="https://github.com/garrett/Tux">Garrett LeSage</a> - <a rel="nofollow" class="external free" href="http://www.home.unix-ag.org/simon/penguin/">http://www.home.unix-ag.org/simon/penguin/</a>, <a rel="nofollow" class="external text" href="https://github.com/garrett/Tux">garrett/Tux</a> on GitHub, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=753970">Link</a>
 
+Bei fragen <https://discord.gg/TsaqyAQ>
+
 # Bind installieren
 
 Ein ergänzender Artikel ist hier zu finden <https://wiki.ubuntuusers.de/DNS-Server_Bind/>
@@ -18,10 +20,12 @@ apt-get install bind9 bind9utils vim-nox host telnet dnsutils
 Wir löschen den kompletten Inhalt der Datei  /etc/bind/named.conf.options und fügen folgendes ein:
 
 ```bind
+options {
 forwarders {
 # Your ISP DNS IP(s) Here
 10.0.0.2; # EC2 DNS for network
 8.8.8.8; # Google DNS
+};
 };
 ```
 
@@ -33,7 +37,7 @@ Die nächste Datei ist  /etc/bind/named.conf.local. Auch hier löschen wir den g
 # Forwarding zone
 zone "test.lab"{
         type master;
-        file "etc/bind/zones/db.test.lab";
+        file "/etc/bind/zones/db.test.lab";
 };
 
 # Reserve lookup and server info
@@ -100,9 +104,9 @@ $TTL    604800
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
-@       IN      NS      test.labs.
-50      IN      PTR     test.labs.
-51      IN      PTR     test2.labs.
+@       IN      NS      test.lab.
+50      IN      PTR     test.lab.
+51      IN      PTR     test2.lab.
 ```
 
 # resolve.conf
@@ -110,8 +114,8 @@ $TTL    604800
 Die Einrichtung des Servers ist soweit abgeschlossen. Jetzt müssen wir den DNS-Server unserem System bekannt machen, damit unser Server auch etwas zu tun bekommt. Dies geschieht in der Datei  /etc/resolv.conf, die wir wie folgt abändern:
 
 ```bash
-nameserver 192.168.1.50 # Unser Nameserver
-nameserver 192.168.1.1 # Der Nameserver im Netz oder z.B. 8.8.8.8
+nameserver 127.0.0.1 # Unser Nameserver
+nameserver 8.8.8.8 # Der Nameserver im Netz oder z.B. 8.8.8.8
 search          test.lab
 domain test.lab
 ```
@@ -121,7 +125,7 @@ domain test.lab
 Testen der Forward-Auflösung:
 
 ```bash
-root@acde03affad0:/etc/bind/zones# named-checkzone lab /etc/bind/zones/db.test.lab
+named-checkzone lab /etc/bind/zones/db.test.lab
 zone lab/IN: loaded serial 2
 OK
 ```
@@ -129,14 +133,14 @@ OK
 Testen der Reverse-Auflösung:
 
 ```bash
- named-checkzone test.lab /etc/bind/zones/db.192
+named-checkzone test.lab /etc/bind/zones/db.192
 zone test.lab/IN: loaded serial 1
 OK
 ```
 Und zum Abschluss:
 
 ```bash
-root@acde03affad0:/etc/bind/zones# named-checkconf -zj
+named-checkconf -zj
 zone test.lab/IN: loaded serial 2
 zone 1.168.192.in-addr.arpa/IN: loaded serial 1
 zone localhost/IN: loaded serial 2
@@ -147,7 +151,7 @@ zone 255.in-addr.arpa/IN: loaded serial 1
 Wir starten den Bind neu, damit alle Konfigurationsdateien neu eingelesen werden:
 
 ```bash
-root@acde03affad0:/etc/bind/zones# service bind9 restart
+service bind9 restart
  * Stopping domain name service... bind9                                        waiting for pid 3988 to die
                                                                          [ OK ]
  * Starting domain name service... bind9                                 [ OK ]

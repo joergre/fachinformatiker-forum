@@ -6,6 +6,8 @@ image: '/images/pages/docker.png'
 
 Bildquelle: Von dotCloud, Inc. - <https://github.com/docker/docker/blob/master/docs/static_files/docker-logo-compressed.png>, Apache License 2.0, <https://commons.wikimedia.org/w/index.php?curid=28456942>
 
+Bei Fragen: <https://discord.gg/TsaqyAQ>
+
 # Installation Webserver für Entwicklung
 
 ## Installation
@@ -342,4 +344,386 @@ Dann starten wir nginx neu:
 service nginx restart
 ```
 Wenn wir jetzt im Browser http://192.168.1.50 eingeben, dann sollte einer der beidn Container die Anfrage beantworten und unsere vertraute Webseite erscheinen.
+
+# Git
+
+Erklärung für was das Versionierungssystem git benötigt wird: <https://de.wikipedia.org/wiki/Git>
+
+## Installation und erste Einrichtung
+
+Die Installation von git verläuft wie erwartet:
+
+```bash
+apt install git
+```
+
+Wir legen bei <https://github.com/> ein kostenlosen Account an, wenn nicht vorhanden.
+
+Mit folgendem Befehl können wir eine erste Übersicht über den Befehl git bekommen:
+
+```bash
+git --help
+```
+
+Wir können uns auch, wie bei fast allen Linux-Befehlen, die Version anschauen:
+
+```bash
+root@proxmox:~# git --version
+git version 2.11.0
+```
+
+### Globale Parameter setzen
+
+In der globalen Konfiguration legen wir unsere E-Mail und Benutzernamen fest, damit nachvollzogen werden kann wer welchen Code geschrieben hat:
+
+```bash
+git config --global user.name "Jörg Reuter"
+git config --global user.email "joerg@reuter.sc"
+```
+
+Als nächstes legen wir den Standardeditor fest um mit git zu interagieren. Dies kann vim, emacs, nano oder ein anderer Editor sein. Als ersten Schritt stellen wir den Installationspfad fest:
+
+```bash
+root@proxmox:~# which vim
+/usr/bin/vim
+```
+
+Und konfigurieren ihn für git:
+
+```bash
+ git config --system core.editor "/usr/bin/vim"
+ ```
+ 
+ Der letzte Befehl ist nur als Root oder mit sudo möglich, da eine Datei im Verzeichnis /etc verändert wird. Wir schauen uns die Datei an:
+ 
+ ```bash
+ root@proxmox:~# cat /etc/gitconfig
+[core]
+        editor = /usr/bin/vim
+ ```
+
+Und der Eintrag mit unserem Standard-Editor ist zu sehen. Selbstverständlich kann jeder User eine lokale Konfiguration anlegen, dazu kommen wir im nächsten Abschnitt.
+
+## Repository anlegen und Inhalte hinzufügen
+
+Wir legen ein Verzeichnis an, das unser neues Repository ist:
+
+```bash
+mkdir test-repo
+cd test-repo
+```
+
+Wir müssen jetzt die Datenbank  und Dateien erstellen, damit Git mit diesem Verzeichnis arbeiten kann:
+
+```bash
+root@proxmox:~/test-repo# git init .
+Initialized empty Git repository in /root/test-repo/.git/
+```
+
+Statt dem '.' könnten wir auch den Pfad zu unserem Verzeichnis angeben.
+
+```bash
+git init /path'/to/dir
+```
+
+Schauen wir uns das Verzeichnis mit ls an, werden wir keine Veränderung sehen. Die ganzen Dateien liegen im Verzeichnis '.git' und Verzeichnisse oder Dateien die mit einem '.' beginnen sind sogenannte versteckte Dateien. Die sehen wir erst mit dem Parameter '-a':
+
+```bash
+root@proxmox:~/test-repo# ls -a
+.  ..  .git
+```
+
+Wir wechseln in das Verzeichnis und sehen ganz viele Dateien und Ordner, die für die Verwaltung von git nötig sind:
+
+```bash
+root@proxmox:~/test-repo/.git# ls -a
+.  ..  branches  config  description  HEAD  hooks  info  objects  refs
+```
+
+Das Verzeichnis '.git' wird nicht übertragen bei einer synchronisation mit einem Server. Wenn wir das Verzeichnis aus der Kontrolle von git lösen möchten, können wir einfach das Verzeicchnis löschen:
+
+```bash
+cd ..
+rm -r .git
+```
+
+Aber wir wollen ja mit dem Verzeichnis arbeiten:
+
+```bash
+git init .
+```
+
+Die einzelnen Dateien von .git werden wir uns nicht anschauen, auch wenn der Aufbau sehr interessant ist. Für das praktische Arbeiten werden wir die Kenntniss kaum gebrauchen können.
+
+Wir legen eine leere Datei an und überprüfen die Erstellung der Datei:
+
+```bash
+root@proxmox:~/test-repo# touch datei.txt
+root@proxmox:~/test-repo# ls
+datei.txt
+```
+
+Empfohlen wir für jedes Repository eine Datei mit der Bezeichnung README.MD. Die Endung MD steht für Markdown, dass ist eine Auszeichnungssprache ind er auch diese Seitemgeschrieben worden ist. Wir legen ein README an mit dem Inhalt: "Dies ist ein Test Repository und es wird keine sinnvollen Dateien enthalten."
+
+Wir schauen uns jetzt den Zustand unseres Repository an:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.MD
+        datei.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+Wir sehen, dass unsere zwei Dateien noch nicht getrackt wurden, also noch nicht von git verwaltet werden.
+
+Mit 
+
+```bash
+git add [Datreiname]
+```
+
+können wir die Dateien für git vorbereiten. Aber zuerst möchten wir die globale Konfiguration überschreiben, indem wir für dieses Repository den Namen ändern:
+
+```bash
+git config user.name "FBS"
+```
+
+Der Befehl zum ändern der E-Mail-Adresse ist dann entsprechend aufgebaut.
+
+
+Mit einem Wildcard könne wir alle Dateien für git vorbereiten:
+
+```bash
+git add *
+```
+
+Ein Status des Repository sieht jetzt wesentlich freundlicher aus:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.MD
+        new file:   datei.txt
+```
+Als nächstes fügen wir die Dateien git hinnzu. Die geschieht mit einem kurzen Erklärungstext (Message):
+
+```bash
+root@proxmox:~/test-repo# git commit -m "Dies ist der erste commit"
+[master (root-commit) cd30aa4] Dies ist der erste commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 README.MD
+ create mode 100644 datei.txt
+```
+
+Ein git-Status zeigt uns die Veränderung:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+nothing to commit, working tree clean
+```
+
+Wir verändern jetzt die Datei README.MD und fügen die Zeile ein: "Dies ist ein Kommentar."
+
+Wir schauen uns den Status an:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.MD
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        +
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Und sehen, dass das Versions-Kontrollsystem seine arbeit macht. Die Änderung an der Datei wurde detektiert.
+
+Wir legen eine weitere leere Datei an:
+
+```bash
+touch datei2.c
+```
+
+Der Status sagt nun:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.MD
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        +
+        datei2.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Wir führen jetzt ein Commit durch:
+
+```bash
+root@proxmox:~/test-repo# git commit -a
+[master 6323adb] fg
+ 1 file changed, 2 insertions(+)
+```
+
+Und geben in dem Texteditor eine kurze Info über unsere Veränderungen ein.  Commit -a fügt den aktuellen Stand git hinzu für alle Dateien die unter Beobachtung stehen. Die Datei 'datei2.c' gehört noch nicht dazu:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        +
+        datei2.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+Um die Datei 'datei2.c' git hinzuzufügen sind zwei Befehle notwendig:
+
+```bash
+git add .
+git commit -m "Neue Datei datei2.c"
+```
+
+Und der Status zeigt uns den Erfolg:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+nothing to commit, working tree clean
+```
+Wir können auch Verzeichnisse in unserem Repository anlegen:
+
+```bash
+mkdir Verzeichnis
+mkdir Verzeichnis2
+touch Verzeichnis/test.txt
+```
+
+Git status zeigt uns die Datei test.txt an:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Verzeichnis/
+
+nothing added to commit but untracked files present (use "git add" to track
+```
+
+Wir fügen die neue Datei git hinzu:
+
+```bash
+git add .
+```
+
+und sehen uns den Status an:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Verzeichnis/
+
+nothing added to commit but untracked files present (use "git add" to track
+```
+
+Wir führen ein commit aus:
+
+```bash
+root@proxmox:~/test-repo# git commit -m "Neues Verzeichnis mit Datei"
+[master 7a7b138] Neues Verzeichnis mit Datei
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Verzeichnis/test.txt
+```
+
+Und 'git status' gibt aus:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+nothing to commit, working tree clean
+```
+
+Wir löschen jetzt eine Datei:
+
+```bash
+rm datei2.c
+```
+Wir müssen die Datei jetzt aus den zu beobachteten Dateien herausnehmen. Dies funktioniert entweder über ein 'git rm' oder aber über 'git add':
+
+```bash
+git add .
+```
+
+Und schauen uns den Status an:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    datei2.c
+```
+
+Git hat den Löschvorgang als registriert.
+
+Wir bestätigen die Änderung:
+
+```bash
+root@proxmox:~/test-repo# git commit -m "Datei datei2c gelöscht"
+[master 859f3c7] Datei datei2c gelöscht
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 datei2.c
+```
+
+Ein 'git status' bestätigt, dass alle Veränderungen übernommen wurden:
+
+```bash
+root@proxmox:~/test-repo# git status
+On branch master
+nothing to commit, working tree clean
+```
+
+Wir müssen git also sowohl das Hinzufügen wie das Entfernen von Dateien mitteilen.
+
+
+
+
+
 
