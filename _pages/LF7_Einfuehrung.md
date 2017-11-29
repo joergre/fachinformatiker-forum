@@ -20,13 +20,9 @@ apt-get install bind9 bind9utils vim-nox host telnet dnsutils
 Wir löschen den kompletten Inhalt der Datei  /etc/bind/named.conf.options und fügen folgendes ein:
 
 ```bind
-options {
-forwarders {
-# Your ISP DNS IP(s) Here
-10.0.0.2; # EC2 DNS for network
-8.8.8.8; # Google DNS
-};
-};
+options{forwarders {# Your ISP DNS IP(s) Here8.8.8.8; # Google DNS8.8.4.4; # Google DNS #2};
+
+
 ```
 
 Der Eintrag sorgt dafür, dass alle Anfragen zur Namensauflösung die der lokale DNS-Server nicht auflösen kann, an die DNS-Server von Amazon und Google weitergeleitet werden.
