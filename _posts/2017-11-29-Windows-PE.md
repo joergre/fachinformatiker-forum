@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows PE: Das Schweizer Taschenmesser 
+title: Windows PE - Das Schweizer Taschenmesser 
 featured: true
 author: joerg_reuter
 tags: [event]
