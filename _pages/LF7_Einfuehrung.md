@@ -20,9 +20,13 @@ apt-get install bind9 bind9utils vim-nox host telnet dnsutils
 Wir löschen den kompletten Inhalt der Datei  /etc/bind/named.conf.options und fügen folgendes ein:
 
 ```bind
-options{forwarders {# Your ISP DNS IP(s) Here8.8.8.8; # Google DNS8.8.4.4; # Google DNS #2};
-
-
+options{
+forwarders {
+# Your ISP DNS IP(s) Here
+8.8.8.8; # Google DNS
+8.8.4.4; # Google DNS #2
+};
+};
 ```
 
 Der Eintrag sorgt dafür, dass alle Anfragen zur Namensauflösung die der lokale DNS-Server nicht auflösen kann, an die DNS-Server von Amazon und Google weitergeleitet werden.
@@ -39,7 +43,7 @@ zone "test.lab"{
 # Reserve lookup and server info
 zone "1.168.192.in-addr.arpa" {
         type master;
-        file "/etc/bind/zones/db.192";
+        file "/etc/bind/zones/db.192.168.1";
 };
 ```
 
@@ -67,16 +71,18 @@ Wie ändern die Datei so ab, dass sie wir folgt aussieht:
 ; BIND data file for local loopback interface
 ;
 $TTL    604800
-@       IN      SOA     test.lab. root.test.lab. (
-                              2         ; Serial
+@       IN      SOA     ns1.test.lab. admin.test.lab. (
+                              3         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
-@       IN      NS      test
+        IN      NS      ns1.test.lab.
+ns1     IN      A       127.0.0.1
 test    IN      A       192.168.1.50
 test2   IN      A       192.168.1.51
+test3   IN      A       192.168.1.52
 ```
 
 # Reversezone anlegen
@@ -86,23 +92,25 @@ Auch für die Reversezone kopieren wir uns eine Vorlage in das Verzeichnis /etc/
 cp ../db.127 db.192
 ```
 
-Wir editieren jetzt die Datei db.192:
+Wir editieren jetzt die Datei db.192.168.1:
 
 ```bash
 ;
 ; BIND reverse data file for local loopback interface
 ;
 $TTL    604800
-@       IN      SOA     test.lab. root.(
+@       IN      SOA     ns1.test.lab. admin.test.lab. (
                               1         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
-@       IN      NS      test.lab.
-50      IN      PTR     test.lab.
-51      IN      PTR     test2.lab.
+        IN      NS      ns1.test.lab.
+
+50      IN      PTR     test.test.lab.
+51      IN      PTR     test2.test.lab.
+52      IN      PTR     test3.test.lab.
 ```
 
 # resolve.conf
@@ -111,9 +119,6 @@ Die Einrichtung des Servers ist soweit abgeschlossen. Jetzt müssen wir den DNS-
 
 ```bash
 nameserver 127.0.0.1 # Unser Nameserver
-nameserver 8.8.8.8 # Der Nameserver im Netz oder z.B. 8.8.8.8
-search          test.lab
-domain test.lab
 ```
 
 # Testen der Koniguration
