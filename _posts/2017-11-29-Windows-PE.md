@@ -4,7 +4,7 @@ title: Windows PE - Das Schweizer Taschenmesser
 featured: true
 author: joerg_reuter
 tags: [event]
-image: '/images/posts/administrator-1188494_640.jpg'
+image: 'images/posts/administrator-1188494_640.jpg'
 ---
 
 # Windows PE: Das Schweizer Taschenmesser für den PC: Daten retten, Partitionierung, Notfall-System, Passwort auslesen und noch vieles mehr...
