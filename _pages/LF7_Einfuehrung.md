@@ -126,7 +126,7 @@ nameserver 127.0.0.1 # Unser Nameserver
 Testen der Forward-Auflösung:
 
 ```bash
-named-checkzone lab /etc/bind/zones/db.test.lab
+named-checkzone test.lab /etc/bind/zones/db.test.lab
 zone lab/IN: loaded serial 2
 OK
 ```
