@@ -174,9 +174,9 @@ Diese Fehlermeldung weist darauf hin, das Bind nicht gestartet wurde. Es ist ext
 Forward-Auflösung testen:
 
 ```bash
-root@acde03affad0:/etc/bind/zones# host test.lab
+root@acde03affad0:/etc/bind/zones# host test.test.lab
 test.lab has address 192.168.1.50
-root@acde03affad0:/etc/bind/zones# host test2.lab
+root@acde03affad0:/etc/bind/zones# host test2.test.lab
 test2.lab has address 192.168.1.51
 ```
 
@@ -184,26 +184,26 @@ Rückwärtsauflösung:
 
 ```bash
 root@acde03affad0:/etc/bind/zones# host 192.168.1.50
-50.1.168.192.in-addr.arpa domain name pointer test.labs.
+50.1.168.192.in-addr.arpa domain name pointer test.test.labs.
 root@acde03affad0:/etc/bind/zones# host 192.168.1.51
-51.1.168.192.in-addr.arpa domain name pointer test2.labs.
+51.1.168.192.in-addr.arpa domain name pointer test2.test.labs.
 ```
 
 ## Test mit nslookup
 
 ```bash
-root@acde03affad0:/etc/bind/zones# nslookup test.lab
+root@acde03affad0:/etc/bind/zones# nslookup test.test.lab
 Server:         192.168.1.50
 Address:        192.168.1.50#53
 
-Name:   test.lab
+Name:   test.test.lab
 Address: 192.168.1.50
 ```
 
 oder
 
 ```bash
-root@acde03affad0:/etc/bind/zones# nslookup test2.lab
+root@acde03affad0:/etc/bind/zones# nslookup test2.test.lab
 Server:         192.168.1.50
 Address:        192.168.1.50#53
 
@@ -218,7 +218,7 @@ root@acde03affad0:/etc/bind/zones# nslookup 192.168.1.50
 Server:         192.168.1.50
 Address:        192.168.1.50#53
 
-50.1.168.192.in-addr.arpa       name = test.labs.
+50.1.168.192.in-addr.arpa       name = test.test.labs.
 ```
 
 oder
@@ -228,13 +228,13 @@ root@acde03affad0:/etc/bind/zones# nslookup 192.168.1.51
 Server:         192.168.1.50
 Address:        192.168.1.50#53
 
-51.1.168.192.in-addr.arpa       name = test2.labs.
+51.1.168.192.in-addr.arpa       name = test2.test.labs.
 ```
 
 Wir können auch eine Anwendung verwenden um die Auflösung zu überprüfen wie telnet:
 
 ```bash
-root@acde03affad0:/etc/bind/zones# telnet test2.lab
+root@acde03affad0:/etc/bind/zones# telnet test2.test.lab
 Trying 192.168.1.51...
 telnet: Unable to connect to remote host: No route to host
 ```
