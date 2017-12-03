@@ -64,7 +64,7 @@ und es mach auch Sinn in das Verzeichnis mit cd zu wechseln, damit wir dort in R
 cp ../db.local db.test.lab
 ```
 
-Wie ändern die Datei so ab, dass sie wir folgt aussieht:
+Wie ändern die Datei db.test.lab so ab, dass sie wie folgt aussieht:
 
 ```bash
 ;
@@ -89,7 +89,7 @@ test3   IN      A       192.168.1.52
 
 Auch für die Reversezone kopieren wir uns eine Vorlage in das Verzeichnis /etc/bind/zones:
 ```bash
-cp ../db.127 db.192
+cp ../db.127 db.192.168.1
 ```
 
 Wir editieren jetzt die Datei db.192.168.1:
