@@ -722,6 +722,198 @@ nothing to commit, working tree clean
 
 Wir müssen git also sowohl das Hinzufügen wie das Entfernen von Dateien mitteilen.
 
+## Log
+
+Eine Möglichkeit, die Übersicht über ein Repository zu behalten, insbesondere wenn mehrer Leute bzw. Computer in ein Repository schreiben ist es,sich die Log-Dateien anzuschauen:
+
+```bash
+git log
+```
+
+Wir sehen eine Auflistung aller comits dieses Repository und können sehen, wer was wann geändert hat und die entsprechende Beschreibung der Veränderung lesen. Ebenso werden die Dateien angezeigt, die durch das commit verändert wurden.
+
+Oft ist die Ausgabe von 'git log' ein wenig unübersichtlich. Daher gibt es den Parameter `oneline`, der jeden commit in einer Zeile darstellt:
+
+```bash
+tim@Tim-Laptop:~/test-1$ git log --oneline
+cc7a960 (HEAD -> master, origin/master, origin/HEAD) meineDatei.txt hinzugefügt
+dc5e87c Initial commit
+```
+
+Einen Blick auf die genauen Veränderungen an dem Repository bekommen wir durch:
+
+```bash
+git log -p
+```
+
+Daraufhin geht unser Texteditor auf und zeigt jede Veränderung innerhalb unseren Repository an. Mit q verlassen wir den Editor.
+
+Hier eine Beispielausgabe:
+
+```bash
+tim@Tim-Laptop:~/test-1$ git log -p
+commit 41baf4be5f8bb60afe639c7194f406174fd3a542 (HEAD -> master)
+Author: Joerg Reuter <joerg@reuter.sc>
+Date:   Tue Dec 5 06:00:47 2017 +0100
+
+    Drei Zeilen hinzugefügt
+
+diff --git a/meineDatei.txt b/meineDatei.txt
+index e69de29..d70f6df 100644
+--- a/meineDatei.txt
++++ b/meineDatei.txt
+@@ -0,0 +1,4 @@
++1
++2
++3
++
+```
+
+Wir sehen den Branch,was das genau ist, klären wir gleich. Betroffen ist hier der Branch 'master'. Wir sehen den Autor und das Dastum der letzten Änderung. Dann die Beschreibung des commit "Drei Zeilen hinzugefügt" und eine Auflistung der betroffenden Dateien: meineDatei.txt. Durch das + wird angezeigt, dass 3 Zeichen hinzugefügt wurden: 1,2 und 3. Ein - würde entsprechend eine Löschung anzeigen.
+
+Wenn wir nur die Veränderung an einer speziellen Datei anschauen möchten, ist dies einfach möglich:
+
+```bash
+git log -- meineDatei.log
+```
+
+Natürlich können wir mehrere Parameter kombinieren. Wenn wir z.B. die Änderungen an einer Datei sehen möchten und für jede Änderung soll nur eine Zeile verwendet werden:
+
+```bash
+git log --oneline -- meineDatei.txt
+```
+
+Wir können die Ausgabe auch nach Zeichenketten durchsuchen. Wir möchten z.B. alle Änderungen sehen, die durch einen bestimmten Benutzer vorgenommen worden sind:
+
+```bash
+git log --author="Joerg Reuter"
+```
+
+Oder wir möchten alle Zeilen angezeigt bekommen, in dessen Beschreibung das Wort Drei vorkommt:
+
+```bash
+git log --grep="Drei"
+```
+
+Es gibt gerade bei dem Befehl 'git log' sehr viele unterschiedliche Parameter wie z.B. eine graphische Darstellung der Veränderungen etc. Mit folgendem Befehl kann man sich alle Optionen anschauen:
+
+```bash
+man git log
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
