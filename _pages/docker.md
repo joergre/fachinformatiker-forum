@@ -801,7 +801,21 @@ Es gibt gerade bei dem Befehl 'git log' sehr viele unterschiedliche Parameter wi
 man git log
 ```
 
+# Repository klonen
 
+Oft arbeitet man zum entwickeln nicht im Master-Verzeichnis weil der CDode in diesem Verzeichnis die letzte funktionierende version darstellt. Der einfachste Weg ist es, von ndiesem Verzeichnis eine Kopie anzufertigen. Dafür legen wir oberhalb unseren Git-Repopsitory-Ordners einen neuen Ordner an und wehcseln in diesen:
+
+```bash
+mkdir arbeitsverzeichnis
+cd arbeitsverzeichnis/
+```
+
+Es gibt jetzt viele Möglichkeiten, eine Kopie des Repository anzulegen. Eine, die nicht gut fuinktioniert ist mit dem Befehl 'cp' zuarbeiten. Stattsessen verwednen wir:
+
+```bash
+git clone ../test-1/ .
+```
+Bitte den Punkt hinten nicht vergessen.
 
 
 
