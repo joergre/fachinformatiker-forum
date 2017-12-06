@@ -13,6 +13,8 @@ In diesem Workshop geht es um das Erstellen eines Windows PE USB-Sticks und es w
 
 Datum 15.12.2017, 19:00 Uhr
 
-Ort: ITZ Fulda
+Ort: ITZ Fulda Karte zum Veranstaltungsort: https://goo.gl/hed9q1
+
+Bitte Laptop und USB-Stick mitbringen (wenn möglich). Teilnahme auch ohne Laptop und USB-Stick möglich.
 
 Referent: Thomas Wenk
