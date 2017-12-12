@@ -239,3 +239,6 @@ Trying 192.168.1.51...
 telnet: Unable to connect to remote host: No route to host
 ```
 Der Befehl bricht mit einem Fehler ab, da kein Telnet-Server auf dem System läuft bzw. der Computer nicht existiert. Aber die Namensauflösung ware erfolgreicht, da die IP-Adresse korrekt angezeigt wird.
+
+# Apache
+
