@@ -8,8 +8,8 @@
 
   <title>LF6 2.1 Python</title>
   <meta name='description' content="Alles über IT.">
-  <link rel='canonical' href="http://localhost:4000/LF6_2.1_Python.html">
-  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://localhost:4000/feed.xml">
+  <link rel='canonical' href="http://fachinformatiker-fulda.de/LF6_2.1_Python.html">
+  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://fachinformatiker-fulda.de/feed.xml">
 
   <style>
     
@@ -278,6 +278,18 @@
     
   
 
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
               </ul>
 
               
@@ -345,6 +357,75 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">yesterday</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">683626</span><span class="p">)</span>
 </code></pre></div></div>
 
+<h1 id="pandas">Pandas</h1>
+
+<p>Pandas ist eine sehr mächtige Bibliothek um Daten aus verschiedenen Quellen einzulesen, wissenschaftlich mathematisch zu bearbeiten und das Ergbnis graphisch oder textlisch darzustellen. Wir werden Pandas vor allem in der iPython-Konsole verwenden. Bei Anaconda ist iPython und Pandas bereits vorinstalliert.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span>
+</code></pre></div></div>
+
+<p>Einzelne Objekte in Panda werden DataFrames genannt. Wir legen zuerst ein eignes DataFrame an, dass eine Tabelle enthält:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
+</code></pre></div></div>
+
+<p>Wir schauen uns die Tabelle an:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> 
+   <span class="mi">0</span>  <span class="mi">1</span>  <span class="mi">2</span>
+<span class="mi">0</span>  <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>
+<span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>
+</code></pre></div></div>
+<p>Wir können in Pandas sehr  einfach die Spalten benennen:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]],</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">"Spalte1"</span><span class="p">,</span><span class="s">"Spalte2"</span><span class="p">,</span><span class="s">"Spalte3"</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>Und das Ergebnis:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span> 
+   <span class="n">Spalte1</span>  <span class="n">Spalte2</span>  <span class="n">Spalte3</span>
+<span class="mi">0</span>        <span class="mi">1</span>        <span class="mi">2</span>        <span class="mi">3</span>
+<span class="mi">1</span>        <span class="mi">4</span>        <span class="mi">5</span>        <span class="mi">6</span>
+</code></pre></div></div>
+
+<p>Wir können auch die Zeilen benennen:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]],</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">"Spalte1"</span><span class="p">,</span><span class="s">"Spalte2"</span><span class="p">,</span><span class="s">"Spalte3"</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s">"Zeile1"</span><span class="p">,</span><span class="s">"Zeile2"</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>Und das Ergebnis:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]:</span> 
+        <span class="n">Spalte1</span>  <span class="n">Spalte2</span>  <span class="n">Spalte3</span>
+<span class="n">Zeile1</span>        <span class="mi">1</span>        <span class="mi">2</span>        <span class="mi">3</span>
+<span class="n">Zeile2</span>        <span class="mi">4</span>        <span class="mi">5</span>        <span class="mi">6</span>
+</code></pre></div></div>
+
+<p>Wir schauen uns alle Befehle für eien Dataframe an:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Die Liste ist sehr lang und hat sehr viele mathematische Berechnungen im Angebot.</p>
+
+<p>Wir berechnen den Durchschnitt pro Spalte:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Wir können auch nur eine Spalte ansprechen:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="o">.</span><span class="n">Spalte1</span>
+</code></pre></div></div>
+
+<p>Das Maximum von Spalte3:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="o">.</span><span class="n">Spalte3</span><span class="o">.</span><span class="nb">max</span><span class="p">()</span>
+</code></pre></div></div>
 
         </div>
       </article>
@@ -398,7 +479,7 @@
       </ul>
 
       <div class='u-text-center'>
-        <span class='u-font-small u-font-sans-serif'>&copy; 2017 Fachinformatiker-Forum Fulda</span>
+        <span class='u-font-small u-font-sans-serif'>&copy; 2018 Fachinformatiker-Forum Fulda</span>
       </div>
 
     </div>

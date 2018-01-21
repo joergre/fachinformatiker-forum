@@ -8,8 +8,8 @@
 
   <title>LF7 Docker</title>
   <meta name='description' content="Alles über IT.">
-  <link rel='canonical' href="http://localhost:4000/docker.html">
-  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://localhost:4000/feed.xml">
+  <link rel='canonical' href="http://fachinformatiker-fulda.de/docker.html">
+  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://fachinformatiker-fulda.de/feed.xml">
 
   <style>
     
@@ -278,6 +278,18 @@
     
   
 
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
               </ul>
 
               
@@ -325,6 +337,8 @@
 
           <p>Bildquelle: Von dotCloud, Inc. - <a href="https://github.com/docker/docker/blob/master/docs/static_files/docker-logo-compressed.png">https://github.com/docker/docker/blob/master/docs/static_files/docker-logo-compressed.png</a>, Apache License 2.0, <a href="https://commons.wikimedia.org/w/index.php?curid=28456942">https://commons.wikimedia.org/w/index.php?curid=28456942</a></p>
 
+<p>Bei Fragen: <a href="https://discord.gg/TsaqyAQ">https://discord.gg/TsaqyAQ</a></p>
+
 <h1 id="installation-webserver-für-entwicklung">Installation Webserver für Entwicklung</h1>
 
 <h2 id="installation">Installation</h2>
@@ -351,7 +365,7 @@ apt <span class="nt">-y</span> dist-upgrade
 </code></pre></div></div>
 <p>Installation der benötigten Programme:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt install <span class="nt">-y</span> <span class="nb">sudo </span>apache2 apache2-utils php php-common openssh-server vim-nox git
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install</span> <span class="nt">-y</span> <span class="nb">sudo </span>apache2 apache2-utils php php-common openssh-server vim-nox git
 </code></pre></div></div>
 
 <p>Di beiden Server openssh und apache2 sollen beim start des Systems automatisch starten. Der einfachste Weg ist der Eintrag in die Datei .bashrc. Dazu müsen wir zuerst den Installationspfad von  service herausfinden:</p>
@@ -400,7 +414,7 @@ AH00558: apache2: Could not reliably determine the server<span class="s1">'s ful
 <p>Wir laden das Design herunter und gehen im Browser auf die Downloads um die URL zum Download zu bekommen. Wir legen auf unserem Server ein Verzeichnis an und laden das Design in das Verzeichnis.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~
-mkdir web
+<span class="nb">mkdir </span>web
 wget http://static.oswd.org/designs/3699/Red.zip
 </code></pre></div></div>
 
@@ -411,8 +425,8 @@ wget http://static.oswd.org/designs/3699/Red.zip
 
 <p>Wir kopieren die entpackten Dateien eine Ebene höher und löschen das Verzeichnis:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv Red/<span class="k">*</span> <span class="nb">.</span>
-rmdir Red
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mv </span>Red/<span class="k">*</span> <span class="nb">.</span>
+<span class="nb">rmdir </span>Red
 </code></pre></div></div>
 
 <h2 id="test-des-images-mit-statischem-webinhalt">Test des Images mit statischem Webinhalt</h2>
@@ -532,7 +546,7 @@ git status
 
 <p>Wir bereiten unser System auf einen zweiten Container vor. Dafür kopieren wir das Repository um die Websites der Produktion von der Entwicklung zu trennen.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir dockergit
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>dockergit
 git clone root@localhost:/root/web/ dockergit
 </code></pre></div></div>
 
@@ -585,7 +599,7 @@ e93677ab35a8        ubuntu:web              <span class="s2">"/bin/bash"</span> 
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
 apt dist-upgrade
-apt install vim-nox
+apt <span class="nb">install </span>vim-nox
 </code></pre></div></div>
 <p>Und öffnen die Datei “default.conf”:</p>
 
@@ -625,6 +639,426 @@ server <span class="o">{</span>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service nginx restart
 </code></pre></div></div>
 <p>Wenn wir jetzt im Browser http://192.168.1.50 eingeben, dann sollte einer der beidn Container die Anfrage beantworten und unsere vertraute Webseite erscheinen.</p>
+
+<h1 id="git">Git</h1>
+
+<p>Erklärung für was das Versionierungssystem git benötigt wird: <a href="https://de.wikipedia.org/wiki/Git">https://de.wikipedia.org/wiki/Git</a></p>
+
+<h2 id="installation-und-erste-einrichtung">Installation und erste Einrichtung</h2>
+
+<p>Die Installation von git verläuft wie erwartet:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>git
+</code></pre></div></div>
+
+<p>Wir legen bei <a href="https://github.com/">https://github.com/</a> ein kostenlosen Account an, wenn nicht vorhanden.</p>
+
+<p>Mit folgendem Befehl können wir eine erste Übersicht über den Befehl git bekommen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nt">--help</span>
+</code></pre></div></div>
+
+<p>Wir können uns auch, wie bei fast allen Linux-Befehlen, die Version anschauen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~# git <span class="nt">--version</span>
+git version 2.11.0
+</code></pre></div></div>
+
+<h3 id="globale-parameter-setzen">Globale Parameter setzen</h3>
+
+<p>In der globalen Konfiguration legen wir unsere E-Mail und Benutzernamen fest, damit nachvollzogen werden kann wer welchen Code geschrieben hat:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"Jörg Reuter"</span>
+git config <span class="nt">--global</span> user.email <span class="s2">"joerg@reuter.sc"</span>
+</code></pre></div></div>
+
+<p>Als nächstes legen wir den Standardeditor fest um mit git zu interagieren. Dies kann vim, emacs, nano oder ein anderer Editor sein. Als ersten Schritt stellen wir den Installationspfad fest:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~# which vim
+/usr/bin/vim
+</code></pre></div></div>
+
+<p>Und konfigurieren ihn für git:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git config <span class="nt">--system</span> core.editor <span class="s2">"/usr/bin/vim"</span>
+</code></pre></div></div>
+
+<p>Der letzte Befehl ist nur als Root oder mit sudo möglich, da eine Datei im Verzeichnis /etc verändert wird. Wir schauen uns die Datei an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> root@proxmox:~# <span class="nb">cat</span> /etc/gitconfig
+<span class="o">[</span>core]
+        editor <span class="o">=</span> /usr/bin/vim
+</code></pre></div></div>
+
+<p>Und der Eintrag mit unserem Standard-Editor ist zu sehen. Selbstverständlich kann jeder User eine lokale Konfiguration anlegen, dazu kommen wir im nächsten Abschnitt.</p>
+
+<h2 id="repository-anlegen-und-inhalte-hinzufügen">Repository anlegen und Inhalte hinzufügen</h2>
+
+<p>Wir legen ein Verzeichnis an, das unser neues Repository ist:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>test-repo
+<span class="nb">cd </span>test-repo
+</code></pre></div></div>
+
+<p>Wir müssen jetzt die Datenbank  und Dateien erstellen, damit Git mit diesem Verzeichnis arbeiten kann:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git init <span class="nb">.</span>
+Initialized empty Git repository <span class="k">in</span> /root/test-repo/.git/
+</code></pre></div></div>
+
+<p>Statt dem ‘.’ könnten wir auch den Pfad zu unserem Verzeichnis angeben.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init /path<span class="s1">'/to/dir
+</span></code></pre></div></div>
+
+<p>Schauen wir uns das Verzeichnis mit ls an, werden wir keine Veränderung sehen. Die ganzen Dateien liegen im Verzeichnis ‘.git’ und Verzeichnisse oder Dateien die mit einem ‘.’ beginnen sind sogenannte versteckte Dateien. Die sehen wir erst mit dem Parameter ‘-a’:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# <span class="nb">ls</span> <span class="nt">-a</span>
+<span class="nb">.</span>  ..  .git
+</code></pre></div></div>
+
+<p>Wir wechseln in das Verzeichnis und sehen ganz viele Dateien und Ordner, die für die Verwaltung von git nötig sind:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo/.git# <span class="nb">ls</span> <span class="nt">-a</span>
+<span class="nb">.</span>  ..  branches  config  description  HEAD  hooks  info  objects  refs
+</code></pre></div></div>
+
+<p>Das Verzeichnis ‘.git’ wird nicht übertragen bei einer synchronisation mit einem Server. Wenn wir das Verzeichnis aus der Kontrolle von git lösen möchten, können wir einfach das Verzeicchnis löschen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ..
+<span class="nb">rm</span> <span class="nt">-r</span> .git
+</code></pre></div></div>
+
+<p>Aber wir wollen ja mit dem Verzeichnis arbeiten:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>Die einzelnen Dateien von .git werden wir uns nicht anschauen, auch wenn der Aufbau sehr interessant ist. Für das praktische Arbeiten werden wir die Kenntniss kaum gebrauchen können.</p>
+
+<p>Wir legen eine leere Datei an und überprüfen die Erstellung der Datei:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# <span class="nb">touch </span>datei.txt
+root@proxmox:~/test-repo# <span class="nb">ls
+</span>datei.txt
+</code></pre></div></div>
+
+<p>Empfohlen wir für jedes Repository eine Datei mit der Bezeichnung README.MD. Die Endung MD steht für Markdown, dass ist eine Auszeichnungssprache ind er auch diese Seitemgeschrieben worden ist. Wir legen ein README an mit dem Inhalt: “Dies ist ein Test Repository und es wird keine sinnvollen Dateien enthalten.”</p>
+
+<p>Wir schauen uns jetzt den Zustand unseres Repository an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to include <span class="k">in </span>what will be committed<span class="o">)</span>
+
+        README.MD
+        datei.txt
+
+nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">"git add"</span> to track<span class="o">)</span>
+</code></pre></div></div>
+
+<p>Wir sehen, dass unsere zwei Dateien noch nicht getrackt wurden, also noch nicht von git verwaltet werden.</p>
+
+<p>Mit</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="o">[</span>Datreiname]
+</code></pre></div></div>
+
+<p>können wir die Dateien für git vorbereiten. Aber zuerst möchten wir die globale Konfiguration überschreiben, indem wir für dieses Repository den Namen ändern:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config user.name <span class="s2">"FBS"</span>
+</code></pre></div></div>
+
+<p>Der Befehl zum ändern der E-Mail-Adresse ist dann entsprechend aufgebaut.</p>
+
+<p>Mit einem Wildcard könne wir alle Dateien für git vorbereiten:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="k">*</span>
+</code></pre></div></div>
+
+<p>Ein Status des Repository sieht jetzt wesentlich freundlicher aus:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  <span class="o">(</span>use <span class="s2">"git rm --cached &lt;file&gt;..."</span> to unstage<span class="o">)</span>
+
+        new file:   README.MD
+        new file:   datei.txt
+</code></pre></div></div>
+<p>Als nächstes fügen wir die Dateien git hinnzu. Die geschieht mit einem kurzen Erklärungstext (Message):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git commit <span class="nt">-m</span> <span class="s2">"Dies ist der erste commit"</span>
+<span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> cd30aa4] Dies ist der erste commit
+ 2 files changed, 1 insertion<span class="o">(</span>+<span class="o">)</span>
+ create mode 100644 README.MD
+ create mode 100644 datei.txt
+</code></pre></div></div>
+
+<p>Ein git-Status zeigt uns die Veränderung:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+nothing to commit, working tree clean
+</code></pre></div></div>
+
+<p>Wir verändern jetzt die Datei README.MD und fügen die Zeile ein: “Dies ist ein Kommentar.”</p>
+
+<p>Wir schauen uns den Status an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+Changes not staged <span class="k">for </span>commit:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to update what will be committed<span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">"git checkout -- &lt;file&gt;..."</span> to discard changes <span class="k">in </span>working directory<span class="o">)</span>
+
+        modified:   README.MD
+
+Untracked files:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to include <span class="k">in </span>what will be committed<span class="o">)</span>
+
+        +
+
+no changes added to commit <span class="o">(</span>use <span class="s2">"git add"</span> and/or <span class="s2">"git commit -a"</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Und sehen, dass das Versions-Kontrollsystem seine arbeit macht. Die Änderung an der Datei wurde detektiert.</p>
+
+<p>Wir legen eine weitere leere Datei an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">touch </span>datei2.c
+</code></pre></div></div>
+
+<p>Der Status sagt nun:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+Changes not staged <span class="k">for </span>commit:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to update what will be committed<span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">"git checkout -- &lt;file&gt;..."</span> to discard changes <span class="k">in </span>working directory<span class="o">)</span>
+
+        modified:   README.MD
+
+Untracked files:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to include <span class="k">in </span>what will be committed<span class="o">)</span>
+
+        +
+        datei2.c
+
+no changes added to commit <span class="o">(</span>use <span class="s2">"git add"</span> and/or <span class="s2">"git commit -a"</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Wir führen jetzt ein Commit durch:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git commit <span class="nt">-a</span>
+<span class="o">[</span>master 6323adb] <span class="nb">fg
+ </span>1 file changed, 2 insertions<span class="o">(</span>+<span class="o">)</span>
+</code></pre></div></div>
+
+<p>Und geben in dem Texteditor eine kurze Info über unsere Veränderungen ein.  Commit -a fügt den aktuellen Stand git hinzu für alle Dateien die unter Beobachtung stehen. Die Datei ‘datei2.c’ gehört noch nicht dazu:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+Untracked files:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to include <span class="k">in </span>what will be committed<span class="o">)</span>
+
+        +
+        datei2.c
+
+nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">"git add"</span> to track<span class="o">)</span>
+</code></pre></div></div>
+
+<p>Um die Datei ‘datei2.c’ git hinzuzufügen sind zwei Befehle notwendig:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Neue Datei datei2.c"</span>
+</code></pre></div></div>
+
+<p>Und der Status zeigt uns den Erfolg:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+nothing to commit, working tree clean
+</code></pre></div></div>
+<p>Wir können auch Verzeichnisse in unserem Repository anlegen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>Verzeichnis
+<span class="nb">mkdir </span>Verzeichnis2
+<span class="nb">touch </span>Verzeichnis/test.txt
+</code></pre></div></div>
+
+<p>Git status zeigt uns die Datei test.txt an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+Untracked files:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to include <span class="k">in </span>what will be committed<span class="o">)</span>
+
+        Verzeichnis/
+
+nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">"git add"</span> to track
+</code></pre></div></div>
+
+<p>Wir fügen die neue Datei git hinzu:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>und sehen uns den Status an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+Untracked files:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to include <span class="k">in </span>what will be committed<span class="o">)</span>
+
+        Verzeichnis/
+
+nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">"git add"</span> to track
+</code></pre></div></div>
+
+<p>Wir führen ein commit aus:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git commit <span class="nt">-m</span> <span class="s2">"Neues Verzeichnis mit Datei"</span>
+<span class="o">[</span>master 7a7b138] Neues Verzeichnis mit Datei
+ 1 file changed, 0 insertions<span class="o">(</span>+<span class="o">)</span>, 0 deletions<span class="o">(</span>-<span class="o">)</span>
+ create mode 100644 Verzeichnis/test.txt
+</code></pre></div></div>
+
+<p>Und ‘git status’ gibt aus:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+nothing to commit, working tree clean
+</code></pre></div></div>
+
+<p>Wir löschen jetzt eine Datei:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm </span>datei2.c
+</code></pre></div></div>
+<p>Wir müssen die Datei jetzt aus den zu beobachteten Dateien herausnehmen. Dies funktioniert entweder über ein ‘git rm’ oder aber über ‘git add’:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>Und schauen uns den Status an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+Changes to be committed:
+  <span class="o">(</span>use <span class="s2">"git reset HEAD &lt;file&gt;..."</span> to unstage<span class="o">)</span>
+
+        deleted:    datei2.c
+</code></pre></div></div>
+
+<p>Git hat den Löschvorgang als registriert.</p>
+
+<p>Wir bestätigen die Änderung:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git commit <span class="nt">-m</span> <span class="s2">"Datei datei2c gelöscht"</span>
+<span class="o">[</span>master 859f3c7] Datei datei2c gelöscht
+ 1 file changed, 0 insertions<span class="o">(</span>+<span class="o">)</span>, 0 deletions<span class="o">(</span>-<span class="o">)</span>
+ delete mode 100644 datei2.c
+</code></pre></div></div>
+
+<p>Ein ‘git status’ bestätigt, dass alle Veränderungen übernommen wurden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@proxmox:~/test-repo# git status
+On branch master
+nothing to commit, working tree clean
+</code></pre></div></div>
+
+<p>Wir müssen git also sowohl das Hinzufügen wie das Entfernen von Dateien mitteilen.</p>
+
+<h2 id="log">Log</h2>
+
+<p>Eine Möglichkeit, die Übersicht über ein Repository zu behalten, insbesondere wenn mehrer Leute bzw. Computer in ein Repository schreiben ist es,sich die Log-Dateien anzuschauen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log
+</code></pre></div></div>
+
+<p>Wir sehen eine Auflistung aller comits dieses Repository und können sehen, wer was wann geändert hat und die entsprechende Beschreibung der Veränderung lesen. Ebenso werden die Dateien angezeigt, die durch das commit verändert wurden.</p>
+
+<p>Oft ist die Ausgabe von ‘git log’ ein wenig unübersichtlich. Daher gibt es den Parameter <code class="highlighter-rouge">oneline</code>, der jeden commit in einer Zeile darstellt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tim@Tim-Laptop:~/test-1<span class="nv">$ </span>git log <span class="nt">--oneline</span>
+cc7a960 <span class="o">(</span>HEAD -&gt; master, origin/master, origin/HEAD<span class="o">)</span> meineDatei.txt hinzugefügt
+dc5e87c Initial commit
+</code></pre></div></div>
+
+<p>Einen Blick auf die genauen Veränderungen an dem Repository bekommen wir durch:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">-p</span>
+</code></pre></div></div>
+
+<p>Daraufhin geht unser Texteditor auf und zeigt jede Veränderung innerhalb unseren Repository an. Mit q verlassen wir den Editor.</p>
+
+<p>Hier eine Beispielausgabe:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tim@Tim-Laptop:~/test-1<span class="nv">$ </span>git log <span class="nt">-p</span>
+commit 41baf4be5f8bb60afe639c7194f406174fd3a542 <span class="o">(</span>HEAD -&gt; master<span class="o">)</span>
+Author: Joerg Reuter &lt;joerg@reuter.sc&gt;
+Date:   Tue Dec 5 06:00:47 2017 +0100
+
+    Drei Zeilen hinzugefügt
+
+diff <span class="nt">--git</span> a/meineDatei.txt b/meineDatei.txt
+index e69de29..d70f6df 100644
+<span class="nt">---</span> a/meineDatei.txt
++++ b/meineDatei.txt
+@@ <span class="nt">-0</span>,0 +1,4 @@
++1
++2
++3
++
+</code></pre></div></div>
+
+<p>Wir sehen den Branch,was das genau ist, klären wir gleich. Betroffen ist hier der Branch ‘master’. Wir sehen den Autor und das Dastum der letzten Änderung. Dann die Beschreibung des commit “Drei Zeilen hinzugefügt” und eine Auflistung der betroffenden Dateien: meineDatei.txt. Durch das + wird angezeigt, dass 3 Zeichen hinzugefügt wurden: 1,2 und 3. Ein - würde entsprechend eine Löschung anzeigen.</p>
+
+<p>Wenn wir nur die Veränderung an einer speziellen Datei anschauen möchten, ist dies einfach möglich:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">--</span> meineDatei.log
+</code></pre></div></div>
+
+<p>Natürlich können wir mehrere Parameter kombinieren. Wenn wir z.B. die Änderungen an einer Datei sehen möchten und für jede Änderung soll nur eine Zeile verwendet werden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">--oneline</span> <span class="nt">--</span> meineDatei.txt
+</code></pre></div></div>
+
+<p>Wir können die Ausgabe auch nach Zeichenketten durchsuchen. Wir möchten z.B. alle Änderungen sehen, die durch einen bestimmten Benutzer vorgenommen worden sind:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">--author</span><span class="o">=</span><span class="s2">"Joerg Reuter"</span>
+</code></pre></div></div>
+
+<p>Oder wir möchten alle Zeilen angezeigt bekommen, in dessen Beschreibung das Wort Drei vorkommt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">--grep</span><span class="o">=</span><span class="s2">"Drei"</span>
+</code></pre></div></div>
+
+<p>Es gibt gerade bei dem Befehl ‘git log’ sehr viele unterschiedliche Parameter wie z.B. eine graphische Darstellung der Veränderungen etc. Mit folgendem Befehl kann man sich alle Optionen anschauen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man git log
+</code></pre></div></div>
+
+<h1 id="repository-klonen">Repository klonen</h1>
+
+<p>Oft arbeitet man zum entwickeln nicht im Master-Verzeichnis weil der CDode in diesem Verzeichnis die letzte funktionierende version darstellt. Der einfachste Weg ist es, von ndiesem Verzeichnis eine Kopie anzufertigen. Dafür legen wir oberhalb unseren Git-Repopsitory-Ordners einen neuen Ordner an und wehcseln in diesen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>arbeitsverzeichnis
+<span class="nb">cd </span>arbeitsverzeichnis/
+</code></pre></div></div>
+
+<p>Es gibt jetzt viele Möglichkeiten, eine Kopie des Repository anzulegen. Eine, die nicht gut fuinktioniert ist mit dem Befehl ‘cp’ zuarbeiten. Stattsessen verwednen wir:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone ../test-1/ <span class="nb">.</span>
+</code></pre></div></div>
+<p>Bitte den Punkt hinten nicht vergessen.</p>
 
 
         </div>
@@ -679,7 +1113,7 @@ server <span class="o">{</span>
       </ul>
 
       <div class='u-text-center'>
-        <span class='u-font-small u-font-sans-serif'>&copy; 2017 Fachinformatiker-Forum Fulda</span>
+        <span class='u-font-small u-font-sans-serif'>&copy; 2018 Fachinformatiker-Forum Fulda</span>
       </div>
 
     </div>

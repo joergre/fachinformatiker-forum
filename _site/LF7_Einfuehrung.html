@@ -8,8 +8,8 @@
 
   <title>LF7 Einführung</title>
   <meta name='description' content="Alles über IT.">
-  <link rel='canonical' href="http://localhost:4000/LF7_Einfuehrung.html">
-  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://localhost:4000/feed.xml">
+  <link rel='canonical' href="http://fachinformatiker-fulda.de/LF7_Einfuehrung.html">
+  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://fachinformatiker-fulda.de/feed.xml">
 
   <style>
     
@@ -278,6 +278,18 @@
     
   
 
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
               </ul>
 
               
@@ -325,21 +337,25 @@
 
           <p>Von <a rel="nofollow" class="external text" href="http://www.isc.tamu.edu/~lewing/">Larry Ewing</a>, <a rel="nofollow" class="external text" href="http://www.home.unix-ag.org/simon/">Simon Budig</a>, <a rel="nofollow" class="external text" href="https://github.com/garrett/Tux">Garrett LeSage</a> - <a rel="nofollow" class="external free" href="http://www.home.unix-ag.org/simon/penguin/">http://www.home.unix-ag.org/simon/penguin/</a>, <a rel="nofollow" class="external text" href="https://github.com/garrett/Tux">garrett/Tux</a> on GitHub, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=753970">Link</a></p>
 
+<p>Bei fragen <a href="https://discord.gg/TsaqyAQ">https://discord.gg/TsaqyAQ</a></p>
+
 <h1 id="bind-installieren">Bind installieren</h1>
 
 <p>Ein ergänzender Artikel ist hier zu finden <a href="https://wiki.ubuntuusers.de/DNS-Server_Bind/">https://wiki.ubuntuusers.de/DNS-Server_Bind/</a></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
 apt dist-upgrade
-apt-get install bind9 bind9utils vim-nox host telnet dnsutils
+apt-get <span class="nb">install </span>bind9 bind9utils vim-nox host telnet dnsutils
 </code></pre></div></div>
 
 <p>Wir löschen den kompletten Inhalt der Datei  /etc/bind/named.conf.options und fügen folgendes ein:</p>
 
-<pre><code class="language-bind">forwarders {
+<pre><code class="language-bind">options{
+forwarders {
 # Your ISP DNS IP(s) Here
-10.0.0.2; # EC2 DNS for network
 8.8.8.8; # Google DNS
+8.8.4.4; # Google DNS #2
+};
 };
 </code></pre>
 
@@ -350,13 +366,13 @@ apt-get install bind9 bind9utils vim-nox host telnet dnsutils
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Forwarding zone</span>
 zone <span class="s2">"test.lab"</span><span class="o">{</span>
         <span class="nb">type </span>master<span class="p">;</span>
-        file <span class="s2">"etc/bind/zones/db.test.lab"</span><span class="p">;</span>
+        file <span class="s2">"/etc/bind/zones/db.test.lab"</span><span class="p">;</span>
 <span class="o">}</span><span class="p">;</span>
 
 <span class="c"># Reserve lookup and server info</span>
 zone <span class="s2">"1.168.192.in-addr.arpa"</span> <span class="o">{</span>
         <span class="nb">type </span>master<span class="p">;</span>
-        file <span class="s2">"/etc/bind/zones/db.192"</span><span class="p">;</span>
+        file <span class="s2">"/etc/bind/zones/db.192.168.1"</span><span class="p">;</span>
 <span class="o">}</span><span class="p">;</span>
 </code></pre></div></div>
 
@@ -366,85 +382,86 @@ zone <span class="s2">"1.168.192.in-addr.arpa"</span> <span class="o">{</span>
 
 <p>Wir müssen jetzt das Unterverzeichnis anlegen, dass wir in der Datei named.conf.local angegeben haben:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir /etc/bind/zones
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> /etc/bind/zones
 <span class="nb">cd</span> /etc/bind/zones
 </code></pre></div></div>
 
 <p>und es mach auch Sinn in das Verzeichnis mit cd zu wechseln, damit wir dort in Ruhe die Konfigurationsdateien anlegen können. Wir können eine Vorlage in das Verzeichnis kopieren oder die Datei komplett neu anlegen. Wir verwenden eine Vorlage:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp ../db.local db.test.lab
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cp</span> ../db.local db.test.lab
 </code></pre></div></div>
 
-<p>Wie ändern die Datei so ab, dass sie wir folgt aussieht:</p>
+<p>Wie ändern die Datei db.test.lab so ab, dass sie wie folgt aussieht:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">;</span>
 <span class="p">;</span> BIND data file <span class="k">for </span><span class="nb">local </span>loopback interface
 <span class="p">;</span>
 <span class="nv">$TTL</span>    604800
-@       IN      SOA     test.lab. root.test.lab. <span class="o">(</span>
-                              2         <span class="p">;</span> Serial
+@       IN      SOA     ns1.test.lab. admin.test.lab. <span class="o">(</span>
+                              3         <span class="p">;</span> Serial
                          604800         <span class="p">;</span> Refresh
                           86400         <span class="p">;</span> Retry
                         2419200         <span class="p">;</span> Expire
                          604800 <span class="o">)</span>       <span class="p">;</span> Negative Cache TTL
 <span class="p">;</span>
-@       IN      NS      <span class="nb">test
-test    </span>IN      A       192.168.1.50
+        IN      NS      ns1.test.lab.
+ns1     IN      A       127.0.0.1
+<span class="nb">test    </span>IN      A       192.168.1.50
 test2   IN      A       192.168.1.51
+test3   IN      A       192.168.1.52
 </code></pre></div></div>
 
 <h1 id="reversezone-anlegen">Reversezone anlegen</h1>
 
 <p>Auch für die Reversezone kopieren wir uns eine Vorlage in das Verzeichnis /etc/bind/zones:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp ../db.127 db.192
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cp</span> ../db.127 db.192.168.1
 </code></pre></div></div>
 
-<p>Wir editieren jetzt die Datei db.192:</p>
+<p>Wir editieren jetzt die Datei db.192.168.1:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">;</span>
 <span class="p">;</span> BIND reverse data file <span class="k">for </span><span class="nb">local </span>loopback interface
 <span class="p">;</span>
 <span class="nv">$TTL</span>    604800
-@       IN      SOA     test.lab. root.<span class="o">(</span>
+@       IN      SOA     ns1.test.lab. admin.test.lab. <span class="o">(</span>
                               1         <span class="p">;</span> Serial
                          604800         <span class="p">;</span> Refresh
                           86400         <span class="p">;</span> Retry
                         2419200         <span class="p">;</span> Expire
                          604800 <span class="o">)</span>       <span class="p">;</span> Negative Cache TTL
 <span class="p">;</span>
-@       IN      NS      test.labs.
-50      IN      PTR     test.labs.
-51      IN      PTR     test2.labs.
+        IN      NS      ns1.test.lab.
+
+50      IN      PTR     test.test.lab.
+51      IN      PTR     test2.test.lab.
+52      IN      PTR     test3.test.lab.
 </code></pre></div></div>
 
 <h1 id="resolveconf">resolve.conf</h1>
 
 <p>Die Einrichtung des Servers ist soweit abgeschlossen. Jetzt müssen wir den DNS-Server unserem System bekannt machen, damit unser Server auch etwas zu tun bekommt. Dies geschieht in der Datei  /etc/resolv.conf, die wir wie folgt abändern:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nameserver 192.168.1.50 <span class="c"># Unser Nameserver</span>
-nameserver 192.168.1.1 <span class="c"># Der Nameserver im Netz oder z.B. 8.8.8.8</span>
-search          test.lab
-domain test.lab
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nameserver 127.0.0.1 <span class="c"># Unser Nameserver</span>
 </code></pre></div></div>
 
 <h1 id="testen-der-koniguration">Testen der Koniguration</h1>
 
 <p>Testen der Forward-Auflösung:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# named-checkzone lab /etc/bind/zones/db.test.lab
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>named-checkzone test.lab /etc/bind/zones/db.test.lab
 zone lab/IN: loaded serial 2
 OK
 </code></pre></div></div>
 
 <p>Testen der Reverse-Auflösung:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> named-checkzone test.lab /etc/bind/zones/db.192
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>named-checkzone 1.168.192.in-addr-arpa /etc/bind/zones/db.192.168.1
 zone test.lab/IN: loaded serial 1
 OK
 </code></pre></div></div>
 <p>Und zum Abschluss:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# named-checkconf <span class="nt">-zj</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>named-checkconf <span class="nt">-zj</span>
 zone test.lab/IN: loaded serial 2
 zone 1.168.192.in-addr.arpa/IN: loaded serial 1
 zone localhost/IN: loaded serial 2
@@ -454,7 +471,7 @@ zone 255.in-addr.arpa/IN: loaded serial 1
 </code></pre></div></div>
 <p>Wir starten den Bind neu, damit alle Konfigurationsdateien neu eingelesen werden:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# service bind9 restart
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service bind9 restart
  <span class="k">*</span> Stopping domain name service... bind9                                        waiting <span class="k">for </span>pid 3988 to die
                                                                          <span class="o">[</span> OK <span class="o">]</span>
  <span class="k">*</span> Starting domain name service... bind9                                 <span class="o">[</span> OK <span class="o">]</span>
@@ -474,33 +491,33 @@ zone 255.in-addr.arpa/IN: loaded serial 1
 
 <p>Forward-Auflösung testen:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# host test.lab
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# host test.test.lab
 test.lab has address 192.168.1.50
-root@acde03affad0:/etc/bind/zones# host test2.lab
+root@acde03affad0:/etc/bind/zones# host test2.test.lab
 test2.lab has address 192.168.1.51
 </code></pre></div></div>
 
 <p>Rückwärtsauflösung:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# host 192.168.1.50
-50.1.168.192.in-addr.arpa domain name pointer test.labs.
+50.1.168.192.in-addr.arpa domain name pointer test.test.labs.
 root@acde03affad0:/etc/bind/zones# host 192.168.1.51
-51.1.168.192.in-addr.arpa domain name pointer test2.labs.
+51.1.168.192.in-addr.arpa domain name pointer test2.test.labs.
 </code></pre></div></div>
 
 <h2 id="test-mit-nslookup">Test mit nslookup</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# nslookup test.lab
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# nslookup test.test.lab
 Server:         192.168.1.50
 Address:        192.168.1.50#53
 
-Name:   test.lab
+Name:   test.test.lab
 Address: 192.168.1.50
 </code></pre></div></div>
 
 <p>oder</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# nslookup test2.lab
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# nslookup test2.test.lab
 Server:         192.168.1.50
 Address:        192.168.1.50#53
 
@@ -514,7 +531,7 @@ Address: 192.168.1.51
 Server:         192.168.1.50
 Address:        192.168.1.50#53
 
-50.1.168.192.in-addr.arpa       name <span class="o">=</span> test.labs.
+50.1.168.192.in-addr.arpa       name <span class="o">=</span> test.test.labs.
 </code></pre></div></div>
 
 <p>oder</p>
@@ -523,16 +540,19 @@ Address:        192.168.1.50#53
 Server:         192.168.1.50
 Address:        192.168.1.50#53
 
-51.1.168.192.in-addr.arpa       name <span class="o">=</span> test2.labs.
+51.1.168.192.in-addr.arpa       name <span class="o">=</span> test2.test.labs.
 </code></pre></div></div>
 
 <p>Wir können auch eine Anwendung verwenden um die Auflösung zu überprüfen wie telnet:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# telnet test2.lab
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@acde03affad0:/etc/bind/zones# telnet test2.test.lab
 Trying 192.168.1.51...
 telnet: Unable to connect to remote host: No route to host
 </code></pre></div></div>
 <p>Der Befehl bricht mit einem Fehler ab, da kein Telnet-Server auf dem System läuft bzw. der Computer nicht existiert. Aber die Namensauflösung ware erfolgreicht, da die IP-Adresse korrekt angezeigt wird.</p>
+
+<h1 id="apache">Apache</h1>
+
 
         </div>
       </article>
@@ -586,7 +606,7 @@ telnet: Unable to connect to remote host: No route to host
       </ul>
 
       <div class='u-text-center'>
-        <span class='u-font-small u-font-sans-serif'>&copy; 2017 Fachinformatiker-Forum Fulda</span>
+        <span class='u-font-small u-font-sans-serif'>&copy; 2018 Fachinformatiker-Forum Fulda</span>
       </div>
 
     </div>

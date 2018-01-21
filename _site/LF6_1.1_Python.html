@@ -8,8 +8,8 @@
 
   <title>LF6 1.1 Python</title>
   <meta name='description' content="Alles über IT.">
-  <link rel='canonical' href="http://localhost:4000/LF6_1.1_Python.html">
-  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://localhost:4000/feed.xml">
+  <link rel='canonical' href="http://fachinformatiker-fulda.de/LF6_1.1_Python.html">
+  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://fachinformatiker-fulda.de/feed.xml">
 
   <style>
     
@@ -135,6 +135,18 @@
       <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='/impressum.html'>Impressum</a>
       </li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
     
   
 
@@ -952,7 +964,7 @@ Du solltest 100% erreichen!</p>
 
 <h1 id="zahlenraten">Zahlenraten</h1>
 
-<p>Wir schreiben unser erstes eigene Programm: Zahlenraten</p>
+<p>Wir schreiben unser erstes eigenes Programm: Zahlenraten</p>
 
 <p>Der Computer denkt sich eine Zahl zwischen 0 und 100 aus. Der Mensch soll die Zahl erraten und hat die Möglichkeit die Zahl mit 6 Versuchen zu erraten. Der Computer kennt drei Reaktionen auf eine Eingabe: “Meine Zahl ist größer!”, “Meine Zahl ist kleiner!” und “Gewonnen!”. Durch geschicktes raten sollte es möglich sein, jede Zahl mit 6 Versuchen zu erraten.</p>
 
@@ -963,9 +975,12 @@ Du solltest 100% erreichen!</p>
 <p>test.py:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">unittest</span>
-<span class="kn">import</span> <span class="nn">zahlenraten</span>
-<span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+<span class="kn">from</span> <span class="nn">zahlenraten</span> <span class="kn">import</span> <span class="n">ueberpruefung</span>
+<span class="k">class</span> <span class="nc">zahlenraten_ueberpruefung</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
     <span class="k">pass</span>
+    
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
 </code></pre></div></div>
 
 <p>Wir importieren zuerst die Klasse Unittest, die die entasprechende Befehle für einen Test bereitstellt und wir importieren in der zweiten Zeile den zu testenden Programmcode.In der dritten Zeile erstellen wir eine Klasse (was immer das ist), die den Programmcode dann testet.</p>
@@ -981,7 +996,7 @@ Du solltest 100% erreichen!</p>
 <span class="n">zahl</span> <span class="o">=</span> <span class="n">zufallszahl</span><span class="p">()</span>
 
 <span class="n">eingabewert</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Bitte eine Zahl eingeben: "</span><span class="p">)</span>
-<span class="n">ueberpruefung</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">,</span> <span class="n">zahl</span><span class="p">)</span>    
+<span class="n">ueberpruefung</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">)</span>    
 
     
 <span class="k">print</span><span class="p">(</span><span class="s">"Das Spiel ist zu Ende"</span><span class="p">)</span>    
@@ -989,9 +1004,323 @@ Du solltest 100% erreichen!</p>
 
 <p>Wir definieren eine Funktion ueberpruefung mit 2 Parametern: eingabe und testwert. Die Funktion macht noch überhaupt nichts, pass bedeutet: “nichts machen”. Ebenso bei der Funktion zufallszahl. Die erste Zeile, die beim start des Programms ausgeführt wird ist “zahl=zufallszahl” in der die Funtkion Zufallszahl aufgerufen wird und das Ergebnis nach zahl gespeichert wird.</p>
 
-<p>Die nächste Zeile fordert den benutzer zu einer Einagbe auf und speichert diese in die Variable eingabewert ab. Danach wird die Funktion ueberpruefung aufgerufen, die später die Ausgabe “größer”, “kleiner” oder “treffer” ausgeben soll.</p>
+<p>Die nächste Zeile fordert den Benutzer zu einer Eingabe auf und speichert diese in die Variable eingabewert ab. Danach wird die Funktion ueberpruefung aufgerufen, die später die Ausgabe “größer”, “kleiner” oder “treffer” ausgeben soll.</p>
 
 <p>Die letzte Zeile zeigt uns an, dass das Programm bis zum Ende abgearbeitet worden ist.</p>
+
+<p>Wir definieren jetz einen Test um in der Funktion ueberpreuefung negative Zahlen abzufangen:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">zahlenraten</span> <span class="kn">import</span> <span class="n">ueberpruefung</span>
+<span class="k">class</span> <span class="nc">zahlenraten_ueberpruefung</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    
+    <span class="k">def</span> <span class="nf">testCalculation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s">"""Wird eine negative Zahl abgelehnt?"""</span>
+        <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
+            
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Der Test schlägt natürlich Fehl, da wir noch nichts programmiert haben:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Bitte</span> <span class="n">eine</span> <span class="n">Zahl</span> <span class="n">eingeben</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Das</span> <span class="n">Spiel</span> <span class="n">ist</span> <span class="n">zu</span> <span class="n">Ende</span>
+<span class="o">.</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Ran</span> <span class="mi">1</span> <span class="n">test</span> <span class="ow">in</span> <span class="mf">0.002</span><span class="n">s</span>
+
+<span class="n">OK</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"/home/pi/python/test.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">11</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+  <span class="n">File</span> <span class="s">"/usr/lib/python3.5/unittest/main.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">94</span><span class="p">,</span> <span class="ow">in</span> <span class="n">__init__</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">runTests</span><span class="p">()</span>
+  <span class="n">File</span> <span class="s">"/usr/lib/python3.5/unittest/main.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">257</span><span class="p">,</span> <span class="ow">in</span> <span class="n">runTests</span>
+    <span class="n">sys</span><span class="o">.</span><span class="nb">exit</span><span class="p">(</span><span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">wasSuccessful</span><span class="p">())</span>
+<span class="nb">SystemExit</span><span class="p">:</span> <span class="bp">False</span>
+</code></pre></div></div>
+
+<p>Was ist der einfachste Weg, den Test zu erfüllen? Genau, wir geben ein False zurück:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">ueberpruefung</span><span class="p">(</span><span class="n">eingabe</span><span class="p">,</span> <span class="n">testwert</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">zufallszahl</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="n">zahl</span> <span class="o">=</span> <span class="n">zufallszahl</span><span class="p">()</span>
+
+<span class="n">eingabewert</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Bitte eine Zahl eingeben: "</span><span class="p">)</span>
+<span class="n">ueberpruefung</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">,</span> <span class="n">zahl</span><span class="p">)</span>    
+
+    
+<span class="k">print</span><span class="p">(</span><span class="s">"Das Spiel ist zu Ende"</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>Und wir bekommen einen positiven Testdurchlauf:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="n">Run</span> <span class="n">test</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Bitte</span> <span class="n">eine</span> <span class="n">Zahl</span> <span class="n">eingeben</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Das</span> <span class="n">Spiel</span> <span class="n">ist</span> <span class="n">zu</span> <span class="n">Ende</span>
+<span class="o">.</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Ran</span> <span class="mi">1</span> <span class="n">test</span> <span class="ow">in</span> <span class="mf">0.001</span><span class="n">s</span>
+
+<span class="n">OK</span>
+</code></pre></div></div>
+
+<p>Manche Editoren geben leider auch einen Trace zurück, wenn kein Fehler aufgetreten ist. Dies können wir unterbinden, indem wir die letzten beiden Zeilen durch diesen Code ersetzen:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+    <span class="k">except</span> <span class="nb">SystemExit</span> <span class="k">as</span> <span class="n">inst</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">inst</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span> 
+            <span class="k">raise</span>
+</code></pre></div></div>
+<p>Damit wird nur im Fehlerfalle ein Trace ausgegeben. Dieses verhalten zeigt das Programm auch beid er Ausführung innerhalb der Konsole.</p>
+
+<p>Wir testen jetzt, ob Zahlen größer 100 abgelehnt werden. Das schöne ist, dass wir hier ebenfalls ein False als Rückgabewert erwarten.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">zahlenraten</span> <span class="kn">import</span> <span class="n">ueberpruefung</span>
+<span class="k">class</span> <span class="nc">zahlenraten_ueberpruefung</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    
+    <span class="k">def</span> <span class="nf">testCalculation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s">"""Wird eine negative Zahl abgelehnt?"""</span>
+        <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
+        <span class="s">"""Wird eine Zahl größer 100 abgelehnt"""</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="mi">101</span><span class="p">))</span>
+        
+<span class="c"># Diese komplizierte Struktur ermöglicht es auch bei IDEs, die immer einen Trece ausgeben, diesen zu unterbinden, wenn kein Fehler aufgetreten ist.        </span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+    <span class="k">except</span> <span class="nb">SystemExit</span> <span class="k">as</span> <span class="n">inst</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">inst</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span> 
+            <span class="k">raise</span>
+</code></pre></div></div>
+
+<p>Und wir bekommen wieder einen positiven Durchlauf:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="n">Run</span> <span class="n">test</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Bitte</span> <span class="n">eine</span> <span class="n">Zahl</span> <span class="n">eingeben</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Das</span> <span class="n">Spiel</span> <span class="n">ist</span> <span class="n">zu</span> <span class="n">Ende</span>
+<span class="o">.</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Ran</span> <span class="mi">1</span> <span class="n">test</span> <span class="ow">in</span> <span class="mf">0.001</span><span class="n">s</span>
+
+<span class="n">OK</span>
+</code></pre></div></div>
+
+<p>Jetzt überprüfen wir die Zahlen zwischen 0 und 100, die ein True zurückgeben sollen:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">zahlenraten</span> <span class="kn">import</span> <span class="n">ueberpruefung</span>
+<span class="k">class</span> <span class="nc">zahlenraten_ueberpruefung</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    
+    <span class="k">def</span> <span class="nf">testCalculation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Negative Zahlen"</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="mi">101</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Zahlen größer 100"</span><span class="p">)</span>
+    
+        <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Zahlen zwischen 0 und 100"</span><span class="p">)</span>
+<span class="c"># Diese komplizierte Struktur ermöglicht es auch bei IDEs, die immer einen Trece ausgeben, diesen zu unterbinden, wenn kein Fehler aufgetreten ist.        </span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+    <span class="k">except</span> <span class="nb">SystemExit</span> <span class="k">as</span> <span class="n">inst</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">inst</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span> 
+            <span class="k">raise</span>
+</code></pre></div></div>
+
+<p>Jetzt müsste eigentlich ein Fehler gemeldet werden und er wird auch angezeigt:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">zahlenraten</span> <span class="kn">import</span> <span class="n">ueberpruefung</span>
+<span class="k">class</span> <span class="nc">zahlenraten_ueberpruefung</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    
+    <span class="k">def</span> <span class="nf">testCalculation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Negative Zahlen"</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="mi">101</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Zahlen größer 100"</span><span class="p">)</span>
+    
+        <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Zahlen zwischen 0 und 100"</span><span class="p">)</span>
+<span class="c"># Diese komplizierte Struktur ermöglicht es auch bei IDEs, die immer einen Trece ausgeben, diesen zu unterbinden, wenn kein Fehler aufgetreten ist.        </span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+    <span class="k">except</span> <span class="nb">SystemExit</span> <span class="k">as</span> <span class="n">inst</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">inst</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span> 
+            <span class="k">raise</span>
+</code></pre></div></div>
+
+<p>Und hier der Fehler:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Bitte</span> <span class="n">eine</span> <span class="n">Zahl</span> <span class="n">eingeben</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Das</span> <span class="n">Spiel</span> <span class="n">ist</span> <span class="n">zu</span> <span class="n">Ende</span>
+<span class="n">Negative</span> <span class="n">Zahlen</span>
+<span class="n">Zahlen</span> <span class="n">gr</span><span class="err">öß</span><span class="n">er</span> <span class="mi">100</span>
+<span class="n">F</span>
+<span class="o">======================================================================</span>
+<span class="n">FAIL</span><span class="p">:</span> <span class="n">testCalculation</span> <span class="p">(</span><span class="n">__main__</span><span class="o">.</span><span class="n">zahlenraten_ueberpruefung</span><span class="p">)</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"/home/pi/python/test.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">14</span><span class="p">,</span> <span class="ow">in</span> <span class="n">testCalculation</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
+<span class="nb">AssertionError</span><span class="p">:</span> <span class="bp">False</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">true</span>
+
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Ran</span> <span class="mi">1</span> <span class="n">test</span> <span class="ow">in</span> <span class="mf">0.003</span><span class="n">s</span>
+
+<span class="n">FAILED</span> <span class="p">(</span><span class="n">failures</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"/home/pi/python/test.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">19</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+  <span class="n">File</span> <span class="s">"/usr/lib/python3.5/unittest/main.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">94</span><span class="p">,</span> <span class="ow">in</span> <span class="n">__init__</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">runTests</span><span class="p">()</span>
+  <span class="n">File</span> <span class="s">"/usr/lib/python3.5/unittest/main.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">257</span><span class="p">,</span> <span class="ow">in</span> <span class="n">runTests</span>
+    <span class="n">sys</span><span class="o">.</span><span class="nb">exit</span><span class="p">(</span><span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">wasSuccessful</span><span class="p">())</span>
+<span class="nb">SystemExit</span><span class="p">:</span> <span class="bp">True</span>
+</code></pre></div></div>
+
+<p>Wir passen unser Programm entsprechend an:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">ueberpruefung</span><span class="p">(</span><span class="n">eingabe</span><span class="p">):</span>
+    <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span> <span class="n">eingabe</span> <span class="o">&lt;=</span><span class="mi">100</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">zufallszahl</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="n">zahl</span> <span class="o">=</span> <span class="n">zufallszahl</span><span class="p">()</span>
+
+<span class="n">eingabewert</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Bitte eine Zahl eingeben: "</span><span class="p">)</span>
+<span class="n">ueberpruefung</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">)</span>    
+
+    
+<span class="k">print</span><span class="p">(</span><span class="s">"Das Spiel ist zu Ende"</span><span class="p">)</span>    
+</code></pre></div></div>
+
+<p>Wir bekommen nun eine Fehlermeldung:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Bitte</span> <span class="n">eine</span> <span class="n">Zahl</span> <span class="n">eingeben</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"/home/pi/python/test.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">2</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span> <span class="nn">zahlenraten</span> <span class="kn">import</span> <span class="n">ueberpruefung</span>
+  <span class="n">File</span> <span class="s">"/home/pi/python/zahlenraten.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">13</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="n">ueberpruefung</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">)</span>
+  <span class="n">File</span> <span class="s">"/home/pi/python/zahlenraten.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">2</span><span class="p">,</span> <span class="ow">in</span> <span class="n">ueberpruefung</span>
+    <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span> <span class="n">eingabe</span> <span class="o">&lt;=</span><span class="mi">100</span><span class="p">:</span>
+<span class="nb">TypeError</span><span class="p">:</span> <span class="n">unorderable</span> <span class="n">types</span><span class="p">:</span> <span class="nb">int</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="nb">str</span><span class="p">()</span>
+</code></pre></div></div>
+<p>Der Fehler leigt daran, das der befehl input immer einen String einliest. Den Fehler verbessern wir jetzt indem wir den Typ umwandeln:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">ueberpruefung</span><span class="p">(</span><span class="n">eingabe</span><span class="p">):</span>
+    <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span> <span class="n">eingabe</span> <span class="o">&lt;=</span><span class="mi">100</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">zufallszahl</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="n">zahl</span> <span class="o">=</span> <span class="n">zufallszahl</span><span class="p">()</span>
+
+<span class="n">eingabewert</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Bitte eine Zahl eingeben: "</span><span class="p">)</span>
+<span class="n">eingabewert</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">)</span>
+<span class="n">ueberpruefung</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">)</span>    
+
+    
+<span class="k">print</span><span class="p">(</span><span class="s">"Das Spiel ist zu Ende"</span><span class="p">)</span>    
+</code></pre></div></div>
+
+<p>Wir geben beim start des Programms einen Buchstaben ein und das Programm stürzt ab:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="n">Run</span> <span class="n">zahlenraten</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Bitte</span> <span class="n">eine</span> <span class="n">Zahl</span> <span class="n">eingeben</span><span class="p">:</span> <span class="n">m</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"/home/pi/python/zahlenraten.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">13</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="n">eingabewert</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">)</span>
+<span class="nb">ValueError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">literal</span> <span class="k">for</span> <span class="nb">int</span><span class="p">()</span> <span class="k">with</span> <span class="n">base</span> <span class="mi">10</span><span class="p">:</span> <span class="s">'m'</span>
+</code></pre></div></div>
+
+<p>Wir führen die Typumwandlung in der Funktion überprüfen aus um den Fehler abzufangen. Dafür schreiben wir erst eine Testfunktion:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">zahlenraten</span> <span class="kn">import</span> <span class="n">ueberpruefung</span>
+<span class="k">class</span> <span class="nc">zahlenraten_ueberpruefung</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    
+    <span class="k">def</span> <span class="nf">testCalculation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="mi">101</span><span class="p">))</span>
+    
+        <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">ueberpruefung</span><span class="p">(</span><span class="s">"m"</span><span class="p">))</span>
+<span class="c"># Diese komplizierte Struktur ermöglicht es auch bei IDEs, die immer einen Trece ausgeben, diesen zu unterbinden, wenn kein Fehler aufgetreten ist.        </span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span> 
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+    <span class="k">except</span> <span class="nb">SystemExit</span> <span class="k">as</span> <span class="n">inst</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">inst</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span> 
+            <span class="k">raise</span>
+</code></pre></div></div>
+
+<p>Jetzt passen wir das Programm an, damit kein Fehler mehr auftritt:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">ueberpruefung</span><span class="p">(</span><span class="n">eingabe</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">eingabe</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">eingabe</span><span class="p">)</span>
+        <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span> <span class="n">eingabe</span> <span class="o">&lt;=</span><span class="mi">100</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">False</span>
+    <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+    
+
+<span class="k">def</span> <span class="nf">zufallszahl</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="n">zahl</span> <span class="o">=</span> <span class="n">zufallszahl</span><span class="p">()</span>
+
+<span class="n">eingabewert</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Bitte eine Zahl eingeben: "</span><span class="p">)</span>
+<span class="n">ueberpruefung</span><span class="p">(</span><span class="n">eingabewert</span><span class="p">)</span>    
+
+    
+<span class="k">print</span><span class="p">(</span><span class="s">"Das Spiel ist zu Ende"</span><span class="p">)</span>    
+</code></pre></div></div>
+
+<p>Schreibe eine Testfunktion, dass die Funktion zufallszahl nur Zahlen zwischen 0 und 100 liefert. Schreibe dann die Funktion zufallszahl.</p>
+
+<p>Schreibe eine Funktion auswertung, die feststellt ob die eingegebene Zahl größer, kleiner oder gleich der Zufallszahl ist. Die Funktion wird mit 2 Parametern aufgerufen: eingegebene Zahl und die Zufallszahl. Selbstverständlich schreiben wir zuerst einen test.</p>
+
+<p>Wir setzen die Zeile mit dem Befehl input in eine geeignete Schleife, so dass diese maximal 10 mal durchlaufen wird. Wurde die Zahl erraten, wird die Schleife mit einer entsprechenden Meldung beendet. Wird die maximale Zahl überschritten, kommt ebenfalls eine entsprechende Meldung.</p>
+
+<h1 id="schleifen">Schleifen</h1>
+
+<p>Es gibt einmal die “for-Schleife” und auf der anderen Seite die “while-Schleife”. Die “for-schleife” ist dafür gedacht, bestimmte Befehle n mal auszuführen. N ist bei Eintritt in die Schleife ein fester Wert. Die “While-Schleife” wird verwendet um einen Code-Block solange auszuführen, solange eine Bedingung wahr ist.</p>
+
+<h2 id="for-schleife">For-Schleife</h2>
 
 
         </div>
@@ -1046,7 +1375,7 @@ Du solltest 100% erreichen!</p>
       </ul>
 
       <div class='u-text-center'>
-        <span class='u-font-small u-font-sans-serif'>&copy; 2017 Fachinformatiker-Forum Fulda</span>
+        <span class='u-font-small u-font-sans-serif'>&copy; 2018 Fachinformatiker-Forum Fulda</span>
       </div>
 
     </div>
