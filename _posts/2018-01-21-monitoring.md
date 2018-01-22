@@ -15,4 +15,7 @@ Die Veranstaltung ist ein Workshop an dem jeder Teilnehmen kann. Endzeitpunkt is
 
 Weitere Informationen: https://gist.github.com/joergre/8ab081b2ac383c7acd28917a743dcaea
 
+Datum: Samstag, 24. Februar 10:00 - 15:00
+Ort: Fulda, genaue Adresse wird noch bekannt gegeben.
+
 Moderation: Michael Ziegler
