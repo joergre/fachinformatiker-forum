@@ -134,9 +134,33 @@ get-command
 
 Wir bekommen eine Liste aller verfügbaren CMDlets in der Powershell angezeit.
 
-Cmdlets können von anderen Quellen istaliert oder selbst programmiert werden. Sogenannte Snapins können sehr viele Cmdlets beinhalten (teilweise tausende). Verfügbar sind Snapins z.B. für VirtualBox, AWS, Azure etc.
+Cmdlets können von anderen Quellen installiert oder selbst programmiert werden. Sogenannte Snapins können sehr viele Cmdlets beinhalten (teilweise tausende). Verfügbar sind Snapins z.B. für VirtualBox, AWS, Azure etc.
 
+Wir haben oben das Cmdlet Get-Process kennengelernt. Cmdlets können Parameter mit "-" angehängt werden, erfordern aber niemal zwingend einen Parameter. Wir möchten z.B. nur die Prozessinformationen über die offenen Shells wissen:
 
+````bash
+Get-Process -name bash
+````
+
+Probiere den Befehl auch mit "Bash" aus. Ist die Powershell Casesensitive? Beachtet die Linux-Konsole Groß- und Kleinschreibung?
+
+# Verketten von Befehlen
+
+wir haben gesehen, dass wir mit
+
+````bash
+Get-Process -name bash
+````
+
+die aktiven Konsolen angezeigt bekommen. Jetzt möchten wie diese beenden:
+
+````bash
+Get-Process -name bash | Stop-Process
+````
+
+Unsere Sitzung wird beendet, weil wir den Prozess beendet haben. Das Zeichen "|" nennt man "pipe" und bedeutet Röhre. Die Ausgabe vom ersten Befehl wird wie in einer Röhre nicht auf dem Bildschirm angezeigt sondern an dem nachfolgeneden Befehl weitergeleitet.
+
+# Variable
 
 
 
