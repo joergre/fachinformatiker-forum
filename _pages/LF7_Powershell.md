@@ -112,7 +112,7 @@ Die Hilfe ist noch umfangreicher als die installierte Hilfe.
 
 # Die 4 Arten von Befehlen
 
-Es gibt 4 Arten von Befehlen bei der Powersherll:
+Es gibt 4 Arten von Befehlen bei der Powershell:
 
 1.) Administrative Befehle des Betriebssystems (ifconfig, ipconfig)
 
@@ -121,6 +121,24 @@ Es gibt 4 Arten von Befehlen bei der Powersherll:
 3.) Skripte
 
 4.) Cmdlets
+
+## Cmdlets
+
+Aussprache: Command Lets
+
+Cmdlets sind eine neue Kategorie von Befehlen die es so bisher weder unter Windows noch Unix gab.  Sie sind daran zu erkennen, dass erst ein Verb kommt und dann ein Nomen. Wir schauen uns ein CMDlet an:
+
+````bash
+get-command
+````
+
+Wir bekommen eine Liste aller verfügbaren CMDlets in der Powershell angezeit.
+
+Cmdlets können von anderen Quellen istaliert oder selbst programmiert werden. Sogenannte Snapins können sehr viele Cmdlets beinhalten (teilweise tausende). Verfügbar sind Snapins z.B. für VirtualBox, AWS, Azure etc.
+
+
+
+
 
 
 
