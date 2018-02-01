@@ -110,4 +110,13 @@ get-help get-process -online
 
 Die Hilfe ist noch umfangreicher als die installierte Hilfe.
 
+# Die 4 Arten von Befehlen
+
+Es gibt 4 Arten von Befehlen bei der Powersherll:
+
+1.) Administrative Befehle des Betriebssystems (ifconfig, ipconfig)
+2.) Aliases wie dir und ls
+3.) Skripte
+4.) Cmdlets
+
 
