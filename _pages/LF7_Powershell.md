@@ -96,6 +96,7 @@ REMARKS
 
 ````
 
+
 Dort ist einmal der Hinweis, dass die Hilfe nicht komplett auf unserem System installiert ist und wir dies mit dem Befehl
 
 ````bash
@@ -121,6 +122,16 @@ Es gibt 4 Arten von Befehlen bei der Powershell:
 3.) Skripte
 
 4.) Cmdlets
+
+## Alias
+
+Alias sind Verweise oder Verlinkungen auf andere Befehle. Beispielsweise verweise ls und dir auf den Befehl Get-ChildItem. Eine Liste aller Aliases kann angezeigt werden mit:
+
+````bash
+Get-Alias
+````
+Wir bekommen eine Liste aller Alliases und das Ziel des verweises angezeigt. Bitte beachte, dass bei Scripten auf Aliases verzichtet werden sollte, weil die Fehlersuche durch diese sehr erschwert wird.
+
 
 ## Cmdlets
 
