@@ -97,7 +97,7 @@ REMARKS
 ````
 
 
-Dort ist einmal der Hinweis, dass die Hilfe nicht komplett auf unserem System installiert ist und wir dies mit dem Befehl
+gDort ist einmal der Hinweis, dass die Hilfe nicht komplett auf unserem System installiert ist und wir dies mit dem Befehl
 
 ````bash
 update-help -force
@@ -143,7 +143,7 @@ Cmdlets sind eine neue Kategorie von Befehlen die es so bisher weder unter Windo
 get-command
 ````
 
-Wir bekommen eine Liste aller verfügbaren CMDlets in der Powershell angezeit.
+Wir bekommen eine Liste aller verfügbaren CMDlets in der Powershell angezeigt.
 
 Cmdlets können von anderen Quellen installiert oder selbst programmiert werden. Sogenannte Snapins können sehr viele Cmdlets beinhalten (teilweise tausende). Verfügbar sind Snapins z.B. für VirtualBox, AWS, Azure etc.
 
@@ -169,7 +169,19 @@ die aktiven Konsolen angezeigt bekommen. Jetzt möchten wie diese beenden:
 Get-Process -name bash | Stop-Process
 ````
 
-Unsere Sitzung wird beendet, weil wir den Prozess beendet haben. Das Zeichen "|" nennt man "pipe" und bedeutet Röhre. Die Ausgabe vom ersten Befehl wird wie in einer Röhre nicht auf dem Bildschirm angezeigt sondern an dem nachfolgeneden Befehl weitergeleitet.
+Unsere Sitzung wird beendet, weil wir den Prozess beendet haben. Das Zeichen "|" nennt man "pipe" und bedeutet Röhre. Die Ausgabe vom ersten Befehl wird wie in einer Röhre nicht auf dem Bildschirm angezeigt sondern an dem nachfolgeneden Befehl weitergeleitet. Der Unterschied zur Linuxkonsole ist, dass dies ein Objekt ist nicht die einfache Textausgabe. Dies erhöht die Flexibilität ernorm:
+
+````bash
+Get-Process  | Select-Object -property CPU
+````
+
+Property bedeutet Eigenschaft und zeigt in diesem Fall vom Objekt Get-Process die Eigenschaft der CPU an. Um das ganze lesbarer zu gestalten lassen wir uns den Namen ausgeben:
+
+````bash
+Get-Process  | Select-Object -property name, CPU
+````
+
+
 
 # Variable
 
