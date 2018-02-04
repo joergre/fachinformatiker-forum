@@ -187,7 +187,23 @@ Wir können auch mehere Pipes hintereinander fügen. Es soll jetzt beispielsweis
  Get-Process | Select-Object -property name, CPU|Sort-Object -descending CPU|Select-Object -first 10
 ````
 
+Um sinnvolle Konstrukte aufzubauen, brauchen wir eine Übersicht über die Einzelheiten des Objekts:
 
+````bash
+Get-Process | Get-Member
+````
+
+Wir können das Objekt auch in einer Variable speichern. Eine Variable beginnt immer mit $:
+
+````bash
+$variable = Get-Process
+````
+
+Und auf die Variable, die das gesamte Objekt beinhaltet, den obigen Befehl anwenden;
+
+````bash
+$variable | Select-Object -property name, CPU|Sort-Object -descending CPU|Select-Object -first 10
+````
 
 # Variable
 
