@@ -193,6 +193,8 @@ Um sinnvolle Konstrukte aufzubauen, brauchen wir eine Übersicht über die Einze
 Get-Process | Get-Member
 ````
 
+# Variable
+
 Wir können das Objekt auch in einer Variable speichern. Eine Variable beginnt immer mit $:
 
 ````bash
@@ -205,7 +207,13 @@ Und auf die Variable, die das gesamte Objekt beinhaltet, den obigen Befehl anwen
 $variable | Select-Object -property name, CPU|Sort-Object -descending CPU|Select-Object -first 10
 ````
 
-# Variable
+# Module
+
+Wir können auch Module bzw. SnapIns installieren, die den Befehlsvorrat der PowerShell-Installation deutlich erweitern:
+
+````bash
+Install-Package -Name AzureRM.NetCore
+````
 
 
 
