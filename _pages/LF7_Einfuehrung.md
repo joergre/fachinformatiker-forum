@@ -44,7 +44,7 @@ Wir starten den Web-Server:
 service httpd start
 ````
 
-und nüberprüfen die Funktionalität in dem wir auf die Webseite wechseln: http://[IP-Adresse].
+und nüberprüfen die Funktionalität in dem wir auf die Webseite wechseln: <http://[IP-Adresse]>.
 
 Auch die Abhängigkeiten des Pakets wie Libaries können wir uns anzeigen lassen:
 
@@ -103,7 +103,7 @@ Jetzt holen wir die aktuellen Listen:
 yum update
 ```
 
-Wir installieren jetzt PowerShell: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#centos-7
+Wir installieren jetzt PowerShell: <https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#centos-7>
 
 
 # Bind installieren
