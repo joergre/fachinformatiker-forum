@@ -103,8 +103,7 @@ Jetzt holen wir die aktuellen Listen:
 yum update
 ```
 
-
-
+Wir installieren jetzt PowerShell: https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#centos-7
 
 
 # Bind installieren
