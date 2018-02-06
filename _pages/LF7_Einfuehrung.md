@@ -91,7 +91,7 @@ Wir schauen uns eine Datei an:
 less CentOS-Base.repo
 ```
 
-Wir möchten jetzt die aktuellen Updates einspielen. Dzu löschen wir zuerst die alten Repo-Dateien:
+Wir möchten jetzt die aktuellen Updates einspielen. Dazu löschen wir zuerst die alten Repo-Dateien:
 
 ```bash
 yum clean all
