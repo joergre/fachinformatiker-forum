@@ -169,7 +169,7 @@ die aktiven Konsolen angezeigt bekommen. Jetzt möchten wie diese beenden:
 Get-Process -name bash | Stop-Process
 ````
 
-Unsere Sitzung wird beendet, weil wir den Prozess beendet haben. Das Zeichen "|" nennt man "pipe" und bedeutet Röhre. Die Ausgabe vom ersten Befehl wird wie in einer Röhre nicht auf dem Bildschirm angezeigt sondern an dem nachfolgeneden Befehl weitergeleitet. Der Unterschied zur Linuxkonsole ist, dass dies ein Objekt ist nicht die einfache Textausgabe. Dies erhöht die Flexibilität ernorm:
+Unsere Sitzung wird beendet, weil wir den Prozess beendet haben. Das Zeichen "\|" nennt man "pipe" und bedeutet Röhre. Die Ausgabe vom ersten Befehl wird wie in einer Röhre nicht auf dem Bildschirm angezeigt sondern an dem nachfolgeneden Befehl weitergeleitet. Der Unterschied zur Linuxkonsole ist, dass dies ein Objekt ist nicht die einfache Textausgabe. Dies erhöht die Flexibilität ernorm:
 
 ````bash
 Get-Process  | Select-Object -property CPU
