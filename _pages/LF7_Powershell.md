@@ -190,7 +190,7 @@ Get-Process  | Select-Object -property name, CPU
 Wir können auch mehere Pipes hintereinander fügen. Es soll jetzt beispielsweise die Prozesse nach der CPU-Belastung sortiert werden und nur die 10 Prozesse angezeigt werden, die die CPU am meisten belasten:
 
 ````bash
- Get-Process | Select-Object -property name, CPU|Sort-Object -descending CPU|Select-Object -first 10
+Get-Process | Select-Object -property name, CPU|Sort-Object -descending CPU|Select-Object -first 10
 ````
 
 Um sinnvolle Konstrukte aufzubauen, brauchen wir eine Übersicht über die Einzelheiten des Objekts:
