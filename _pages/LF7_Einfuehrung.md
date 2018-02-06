@@ -7,6 +7,98 @@ Von <a rel="nofollow" class="external text" href="http://www.isc.tamu.edu/~lewin
 
 Bei fragen <https://discord.gg/TsaqyAQ>
 
+# Installation von Programmen
+
+Bei Windows wird eine Datei im Format .exi oder .msi bespielsweise aus dem Internet geladen und ausgeführt. Bei Linux gibt es für die meisten Programme ein Repository und zwar für jede Disribution ein eigenes. Das Repository sorgt auch für die Update-Versorgung sowohl der Gerätetreiber wie der Anwendungssoftware.
+
+Es gibt Repositories die aus Quellcode bestehen (Gentoo, Slack) oder aus bereits fertig kompilierten Paketen (CentOS, Fedora, SuSe, OpenSuSe und RedHat Enterprise Linux mit .rpm und Debeian, Elementary OS. Linux Mint und Ubuntu mit .deb).
+
+## YUM Package Managment
+
+Wir möchten auf einem CentOS einen WebServer installieren. Dazu suchen wir im Repository nach dem Paket:
+
+```bash
+yum search http
+```
+
+Wir finden in der Ausgabe das Paket httpd und schauen und die Informationen zu dem Paket an um festzustellen, ob dies ein Webserver beinhaltet:
+
+```bash
+yum info httpd
+```
+
+Wir installieren das Paket:
+
+```bash
+yum install httpd
+```
+Die erfolgreiche Installation können wir überprüfen:
+
+```bash
+yum list installed httpd
+```
+
+Auch die Abhängigkeiten des Pakets wie Libaries können wir uns anzeigen lassen:
+
+```bash
+yum deplist httpd
+```
+
+Wir möchten den Webserver wieder deinstallieren:
+
+```bash
+yum remove httpd
+```
+
+Der Befehl löscht nur den Webserver aber nicht die Abhängigkeiten. Um diese zu löschen, verwenden wir diesen Befehl:
+
+```bash
+yum autoremove httpd
+```
+
+Yum stellt dabei sicher, dass keine Abhängigkeiten gelöscht werden die von anderen Paketen noch gebraucht werden.
+
+Wir können uns eine Liste der Repositories ausgen lassen, die von unserem System verwendet werden:
+
+```bash
+yum repolist
+```
+
+Die Informationen werden als Textdateien abgelegt. Wir wechseln in das Verzeichnis:
+
+```bash
+cd /etc/yum.repos.d
+```
+
+Mit 
+
+```bash
+ls
+```
+können wir uns die Dateien dort anschauen. Pro Repository gibt es eine Datei.
+
+Wir schauen uns eine Datei an:
+
+```bash
+less CentOS-Base.repo
+```
+
+Wir möchten jetzt die aktuellen Updates einspielen. Dzu löschen wir zuerst die alten Repo-Dateien:
+
+```bash
+yum clean all
+```
+
+Jetzt holen wir die aktuellen Listen:
+
+```bash
+yum update
+```
+
+
+
+
+
 # Bind installieren
 
 Ein ergänzender Artikel ist hier zu finden <https://wiki.ubuntuusers.de/DNS-Server_Bind/>
