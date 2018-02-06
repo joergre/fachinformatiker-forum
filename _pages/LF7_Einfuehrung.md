@@ -38,6 +38,14 @@ Die erfolgreiche Installation können wir überprüfen:
 yum list installed httpd
 ```
 
+Wir starten den Web-Server:
+
+````bash
+service httpd start
+````
+
+und nüberprüfen die Funktionalität in dem wir auf die Webseite wechseln: http://[IP-Adresse].
+
 Auch die Abhängigkeiten des Pakets wie Libaries können wir uns anzeigen lassen:
 
 ```bash
