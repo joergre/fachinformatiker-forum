@@ -97,7 +97,7 @@ REMARKS
 ````
 
 
-gDort ist einmal der Hinweis, dass die Hilfe nicht komplett auf unserem System installiert ist und wir dies mit dem Befehl
+Dort ist einmal der Hinweis, dass die Hilfe nicht komplett auf unserem System installiert ist und wir dies mit dem Befehl
 
 ````bash
 update-help -force
