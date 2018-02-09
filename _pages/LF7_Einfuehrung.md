@@ -105,6 +105,109 @@ yum update
 
 Wir installieren jetzt PowerShell: <https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#centos-7>
 
+# RPM Pakete
+
+Yum arbeitet mit Repositories, der Befehl rpm wird hingegen verwendet um einzelne Programme zu installieren, deren Paket lokal vorliegt (z.B. über download). 
+
+Zum installieren eines Pakets wird der Parameter -i verwendet (rpm -i <rpmDateiName.rpm>). Weitere typische Parameter sind -v für die Ausgabe des Programs und -h für einen Statusbalken. Es macht jetzt wenig Sinn, den Apache über rpm zu installieren da dieser ja über die Repositories zu installieren ist. Eine typische Verwendung ist die Installation von Sun Java, dass wir hier herunterladen: <https://www.java.com/de/download/linux_manual.jsp> Leider erlauben die Lizenzbestimmungen nicht das direkte herunterladen, weshalb die Datei erst manuell auf den Desktop geladen werden muss und dann mitFilezilla oder SCP auf den Server kopiert wird. Kürzer geht es mit folgendem Befehl:
+
+```bash
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm"
+```
+
+Und installieren wir es mit dem Befehl:
+
+```bash
+sudo rpm -ivh jdk-8u131-linux-x64.rpm
+```
+
+Mit dem Befehl
+
+```bash
+java -version
+```
+
+können wir die Installation überprüfen und mit folgendem Befehl den Ort der Installation:
+
+```bash
+which java
+```
+
+Mit dem Befehl sehen wir die Abhängigkeiten des Programms
+
+```bash
+rpm -qpR jdk-8u131-linux-x64.rpm
+```
+
+Es ist ein Update erschienen, dass unbedingt eingespielt werden muss:
+
+```bash
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.rpm"
+```
+
+Und mit dem folgenden Befehl spielen wir das Update ein:
+
+```bash
+ rpm -Uvh jdk-8u161-linux-x64.rpm
+```
+
+Wir überprüfen nun die installierte Version:
+
+```bash
+[user@joergreuter4 ~]$ sudo rpm -qi jdk1.8
+Name        : jdk1.8
+Epoch       : 2000
+Version     : 1.8.0_161
+Release     : fcs
+Architecture: x86_64
+Install Date: Fri 09 Feb 2018 01:22:12 AM UTC
+Group       : Development/Tools
+Size        : 289899092
+License     : http://java.com/license
+Signature   : (none)
+Source RPM  : jdk1.8-1.8.0_161-fcs.src.rpm
+Build Date  : Wed 20 Dec 2017 12:29:52 AM UTC
+Build Host  : sc11137389.us.oracle.com
+Relocations : /usr/java
+Packager    : Java Software <jre-comments@java.sun.com>
+Vendor      : Oracle Corporation
+URL         : URL_REF
+Summary     : Java Platform Standard Edition Development Kit
+Description :
+The Java Platform Standard Edition Development Kit (JDK) includes both
+the runtime environment (Java virtual machine, the Java platform classes
+and supporting files) and development tools (compilers, debuggers,
+tool libraries and other tools).
+
+The JDK is a development environment for building applications, applets
+and components that can be deployed with the Java Platform Standard
+Edition Runtime Environment.
+```
+
+Und bekommen das erfolgreiche Update durch die Versionsnummer 161 bestätigt.
+
+Mit dem Parameter -e deinstallieren wir das Paket
+
+```bash
+rpm -e jdk1.8
+```
+
+Und überprüfen die Deinstallation mit dem Befehl:
+
+```bash
+[user@joergreuter4 ~]$ sudo rpm -qi jdk1.8
+package jdk1.8 is not installed
+```
+
+Es gibt auch die Möglichkeit, mit dem Parameter --test eine Ausführung zu simulieren (der Befehl wird also nicht richtig ausgeführt aber Fehlermeldungen angezeigt:
+
+```bash
+rpm -e --test jdk1.8
+```
+
+## APT
+
+
 
 # Bind installieren
 
