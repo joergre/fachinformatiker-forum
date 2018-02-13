@@ -207,7 +207,7 @@ rpm -e --test jdk1.8
 
 ## APT
 
-Die Ropositories stehen hier in der Datei /etc/apt/source.list und dem Verzeichnis /etc/apt/source.list.d.
+Die Repositories stehen hier in der Datei /etc/apt/source.list und dem Verzeichnis /etc/apt/source.list.d.
 
 ## Aufgabe
 
