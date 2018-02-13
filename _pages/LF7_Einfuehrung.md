@@ -5,11 +5,11 @@ image: '/images/posts/Tux.png'
 ---
 Von <a rel="nofollow" class="external text" href="http://www.isc.tamu.edu/~lewing/">Larry Ewing</a>, <a rel="nofollow" class="external text" href="http://www.home.unix-ag.org/simon/">Simon Budig</a>, <a rel="nofollow" class="external text" href="https://github.com/garrett/Tux">Garrett LeSage</a> - <a rel="nofollow" class="external free" href="http://www.home.unix-ag.org/simon/penguin/">http://www.home.unix-ag.org/simon/penguin/</a>, <a rel="nofollow" class="external text" href="https://github.com/garrett/Tux">garrett/Tux</a> on GitHub, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=753970">Link</a>
 
-Bei fragen <https://discord.gg/TsaqyAQ>
+Bei Fragen, bitte die Diskussionsmöglichkeit unten verwenden.
 
 # Installation von Programmen
 
-Bei Windows wird eine Datei im Format .exi oder .msi bespielsweise aus dem Internet geladen und ausgeführt. Bei Linux gibt es für die meisten Programme ein Repository und zwar für jede Disribution ein eigenes. Das Repository sorgt auch für die Update-Versorgung sowohl der Gerätetreiber wie der Anwendungssoftware.
+Bei Windows wird eine Datei im Format .exe oder .msi bespielsweise aus dem Internet geladen und ausgeführt. Bei Linux gibt es für die meisten Programme ein Repository und zwar für jede Disribution ein eigenes. Das Repository sorgt auch für die Update-Versorgung sowohl der Gerätetreiber wie der Anwendungssoftware.
 
 Es gibt Repositories die aus Quellcode bestehen (Gentoo, Slack) oder aus bereits fertig kompilierten Paketen (CentOS, Fedora, SuSe, OpenSuSe und RedHat Enterprise Linux mit .rpm und Debian, Elementary OS. Linux Mint und Ubuntu mit .deb).
 
@@ -44,7 +44,7 @@ Wir starten den Web-Server:
 service httpd start
 ````
 
-und nüberprüfen die Funktionalität in dem wir auf die Webseite wechseln: <http://[IP-Adresse]>.
+und überprüfen die Funktionalität in dem wir auf die Webseite wechseln: <http://[IP-Adresse]>.
 
 Auch die Abhängigkeiten des Pakets wie Libaries können wir uns anzeigen lassen:
 
@@ -109,7 +109,7 @@ Wir installieren jetzt PowerShell: <https://github.com/PowerShell/PowerShell/blo
 
 Yum arbeitet mit Repositories, der Befehl rpm wird hingegen verwendet um einzelne Programme zu installieren, deren Paket lokal vorliegt (z.B. über download). 
 
-Zum installieren eines Pakets wird der Parameter -i verwendet (rpm -i <rpmDateiName.rpm>). Weitere typische Parameter sind -v für die Ausgabe des Programs und -h für einen Statusbalken. Es macht jetzt wenig Sinn, den Apache über rpm zu installieren da dieser ja über die Repositories zu installieren ist. Eine typische Verwendung ist die Installation von Sun Java, dass wir hier herunterladen: <https://www.java.com/de/download/linux_manual.jsp> Leider erlauben die Lizenzbestimmungen nicht das direkte herunterladen, weshalb die Datei erst manuell auf den Desktop geladen werden muss und dann mitFilezilla oder SCP auf den Server kopiert wird. Kürzer geht es mit folgendem Befehl:
+Zum installieren eines Pakets wird der Parameter -i verwendet (rpm -i <rpmDateiName.rpm>). Weitere typische Parameter sind -v für die Ausgabe des Programs und -h für einen Statusbalken. Es macht jetzt wenig Sinn, den Apache über rpm zu installieren da dieser ja über die Repositories zu installieren ist. Eine typische Verwendung ist die Installation von Sun Java, dass wir hier herunterladen: <https://www.java.com/de/download/linux_manual.jsp> Leider erlauben die Lizenzbestimmungen nicht das direkte herunterladen, weshalb die Datei erst manuell auf den Desktop geladen werden muss und dann mit Filezilla oder SCP auf den Server kopiert wird. Kürzer geht es mit folgendem Befehl:
 
 ```bash
 wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm"
@@ -207,7 +207,191 @@ rpm -e --test jdk1.8
 
 ## APT
 
+Die Ropositories stehen hier in der Datei /etc/apt/source.list und dem Verzeichnis /etc/apt/source.list.d.
 
+## Aufgabe
+
+Schaue die bitte die Datei source.list und das Verzeichnis /etc/apt/source.list.d an.
+
+## apt update
+
+Die Repositories (die Metadaten der einzelnen Programme wie Versionsnummern etc.) müssen mit dem System abgeglichen werden:
+
+````bash
+apt update
+````
+
+## apt search
+
+Wir möchten den Apache Webserver installieren und schauen dafür nach den passenden Paketnamen:
+
+````bash
+apt search apache
+````
+
+oder
+
+````bash
+apt-cache search apache
+````
+
+Zu beachten ist hierbei, dass nicht online gesucht wird sondern nur im sogenannten Cache. Als Cache bezeichnen wir in diesem zusammenhang die Kopie der Metadaten des Online-Repositories auf unserem lokalen System. Bei vielen Cloud-Anbietern führt dies dazu, dass ohne ein 'apt update' keine Pakete gefunden werden können.
+
+## apt install
+
+Wir installieren jetzt den Webserver:
+
+````bash
+apt install apache2
+````
+
+Wir starten den Web-Server:
+
+````bash
+service apache2 start
+````
+
+und überprüfen die Funktionalität in dem wir auf die Webseite wechseln: <http://[IP-Adresse]>.
+
+## apt remove
+
+Wir löschen den Webserver wieder:
+
+````bash
+apt remove apache2
+````
+
+Wir sehen allerdings, dass unter /etc/apache2 noch die Konfigurationsdateien vorhanden sind. Diese löschen wir mit einem anderen Befehl, der sowohl das Apache2 als auch alle Konfigurations-Dateien löscht! Dieser Unterschied ist vor z.B. im Zusammenhang mit Datenbanken nicht unerheblich: Bei remove sollten die Inhalte der Datenbank noch vorhanden sein und nach der Neuinstalaltion wieder eingebunden werden können (bitte trotzdem vorher ein Backup machen!!). Bei purge ist die Datenbank dann gelöscht.
+
+```bash
+apt purge apache2
+````
+
+oder
+
+````bash
+apt remove --purge apache2
+````
+
+Purge bedeutet übrigens Säuberung, insbesondere auch politische. 
+
+Wir sehen den Hinweis, dass im Falle des Webservers die HTML-Seiten nicht glöscht worden sind. Das ist sehr nett von der Routine, auf dieses Verhalten sollte man sich allerdings keinesfalls verlassen, es gehört eher zu den Ausnahmen. Desweiteren sehen wir, das Abhängigkeiten istallirt wurden, die nicht mehr benötigt werden. Also deinstallieren wir diese:
+
+````bash
+apt autoremove
+````
+
+## apt upgrade
+
+Um ein System einem Update zu unterziehen werden die Metadaten des Repositories mit denen der installierten Pakete verglichen. Bei einer Divergenz wird das aktuellere Paket installiert. Ist das installierte Paket aktueller (wurde also manuell eingespielt), gibt es eine Fehlermeldung:
+
+````
+apt upgrade
+````
+
+Upgrade installiert keine neuen Pakete (z.B. durch Abhängigkeiten) und führt keine operationen durch, die die stabilität des Systems gefährten könnte. Um alle Pakete zu installieren gibt es zwei Möglichkeiten:
+
+````bash
+apt dist-upgrade
+````
+
+oder
+
+````bash
+apt full-upgrade
+````
+
+Um auf eine neue Version zu kommen (z.B. von Ubuntu 17.04 auf Ubuntu 17.10) wird ein Skript verwendet:
+
+````bash
+do-release-upgrade
+````
+
+Das Skript hält den Upgrade-Pfad ein, also von LTS-Version zur nächsten LTS-Version oder aber von der regulären Version zur nächsten. Das Skript wird nciht zeitnah zur Veröffentlichung aktiviert, sondern hat einen Schutz dass es erst mit Verögerung das Upgrade anbietet. Dies wird gemacht um die Stabilität des Systems sicher zu stellen. bei LTS-Versionen wird es z.B. erst bei ersten Update (z.B. Ubuntu 16.04.1) freigeschaltet.
+
+# dpkg
+
+Um alle installierten Pakete anzeigen zu lassen:
+
+````bash
+dpkg --get-selections
+````
+
+Die Hauptbedeutung kommt dpkg allerding zu, um einzelne Pakete zu installieren. Wir möchten bespielsweise einen Webserver in einer Version installieren, der noch nicht im Repository aufgenommen wurde.
+
+Achtung: Das manuelle installieren von Paketen ist mit einem erheblichen Risiko für das System verbunden und kann im schlimmsten Falle zu inkonsistwenten Systemen mit nicht erfüllten Abhängigkeiten führen. Die manuelle Instalaltion von .deb-Paketen ist eine Notlösung, insbesondere wenn Abhängigkeiten im Verlauf der Instalaltion manuell nachgezogen werden müssen!
+
+Wir laden das Paket von der Seite <https://pkgs.org/download/apache2>:
+
+````bash
+wget http://archive.ubuntu.com/ubuntu/pool/main/a/apache2/apache2_2.4.18-2ubuntu3_amd64.deb
+````
+
+Wir schauen uns die Informationen zu dem Paket an:
+
+````bash
+dpkg-deb -I apache2_2.4.18-2ubuntu3_amd64.deb
+````
+
+Wir schauen nach, ob das Paket bereits installiert ist:
+
+````bash
+user@joergreuter3:~$ dpkg --get-selections apache2_2.4.18-2ubuntu3_amd64
+dpkg: no packages found matching apache2_2.4.18-2ubuntu3_amd64
+````
+
+Und stellen fest, dass wir das Paket noch nicht installiert haben.
+
+Den Inhalt des Pakets können wir uns ebenfalls anzeigen lassen:
+
+````bash
+dpkg-deb --contents apache2_2.4.18-2ubuntu3_amd64.deb
+````
+
+Wir versuchen das Paket zu installieren:
+
+````bash
+dpkg -i apache2_2.4.18-2ubuntu3_amd64.deb
+````
+
+Die installation scheitert, weil die Abhängigkeiten nicht erfüllt sind! 
+Wir installieren die Abhängigkeiten:
+
+````bash
+apt -f upgrade
+````
+
+Jetzt starten wir Apache wie gewohnt und besuchen die Website:
+
+````bash
+service apache2 start
+````
+
+Um das Paket wieder zu deinstallieren:
+
+````bash
+dpkg -r apache2
+````
+
+Wir sehen, dass das Paket noch als isntalliert erscheint:
+
+````bash
+dpkg -l apache2
+````
+
+und die Start-Skripte sind ebenfalls noch vorhanden. 
+
+Daher löschen wir das Paket mit allen Konfigurationen (purge):
+
+````bash
+dpkg -P apache2
+````
+
+Jetzt wird das Paket als gelöscht angezeigt:
+
+````bash
+dpkg -l apache2
+````
 
 # Bind installieren
 
@@ -215,7 +399,7 @@ Ein ergänzender Artikel ist hier zu finden <https://wiki.ubuntuusers.de/DNS-Ser
 
 ```bash
 apt update
-apt dist-upgrade
+>apt dist-upgrade
 apt-get install bind9 bind9utils vim-nox host telnet dnsutils
 ```
 

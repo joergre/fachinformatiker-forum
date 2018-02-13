@@ -5,9 +5,9 @@
     <description>Alles über IT.</description>
     <link>http://fachinformatiker-fulda.de/</link>
     <atom:link href="http://fachinformatiker-fulda.de/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Jan 2018 00:10:37 +0100</pubDate>
-    <lastBuildDate>Mon, 22 Jan 2018 00:10:37 +0100</lastBuildDate>
-    <generator>Jekyll v3.7.0</generator>
+    <pubDate>Tue, 13 Feb 2018 04:47:00 +0100</pubDate>
+    <lastBuildDate>Tue, 13 Feb 2018 04:47:00 +0100</lastBuildDate>
+    <generator>Jekyll v3.7.2</generator>
 
     
       <item>
@@ -20,7 +20,12 @@
 
 &lt;p&gt;Weitere Informationen: https://gist.github.com/joergre/8ab081b2ac383c7acd28917a743dcaea&lt;/p&gt;
 
+&lt;p&gt;Datum: Samstag, 24. Februar 10:00 - 15:00
+Ort: Fulda, ITZ (alter Schlachthof)&lt;/p&gt;
+
 &lt;p&gt;Moderation: Michael Ziegler&lt;/p&gt;
+
+&lt;p&gt;Unterstützt von &lt;a href=&quot;http://zeitsprung.org&quot;&gt;Zeitsprung e.V.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Jan 2018 00:00:00 +0100</pubDate>
         <link>http://fachinformatiker-fulda.de/2018/01/21/monitoring/</link>
@@ -34,6 +39,8 @@
 &lt;p&gt;Die Lernplattform des Hasso Plattner Instituts, OpenHPI, hat für den kommenden Monat einen kostenlosen Linux-Kurs angekündigt. Die Vortragsreihe richtet sich an Linux-Neulinge und erklärt unter anderem die Installation, Konfiguration und die Nutzung des freien Betriebssystems&lt;/p&gt;
 
 &lt;p&gt;Der Kurs ist für alle Interessierten offen und wird seitens des Anbieters kostenfrei gehalten. Eine Voraussetzung zur Teilnahme ist lediglich eine Registrierung mit vollständigen Namen und einer gültigen E-Mail-Adresse. Der Name wird später unter anderem auf dem individuellen OpenHPI-Zeugnis erscheinen und in Diskussionen eingeblendet. Weitere Informationen sowie eine Biografie der Vortragenden können der Seite des Anbieters entnommen werden.&lt;/p&gt;
+
+&lt;p&gt;https://open.hpi.de/courses/linux2018&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 21 Jan 2018 00:00:00 +0100</pubDate>
@@ -3054,14 +3061,350 @@ MariaDB [geburtsurkunde]&amp;gt; SHOW FIELDS FROM tblGeburtsurkunde;
             <title>LF7 Einführung</title>
             <description>&lt;p&gt;Von &lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;http://www.isc.tamu.edu/~lewing/&quot;&gt;Larry Ewing&lt;/a&gt;, &lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;http://www.home.unix-ag.org/simon/&quot;&gt;Simon Budig&lt;/a&gt;, &lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;https://github.com/garrett/Tux&quot;&gt;Garrett LeSage&lt;/a&gt; - &lt;a rel=&quot;nofollow&quot; class=&quot;external free&quot; href=&quot;http://www.home.unix-ag.org/simon/penguin/&quot;&gt;http://www.home.unix-ag.org/simon/penguin/&lt;/a&gt;, &lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;https://github.com/garrett/Tux&quot;&gt;garrett/Tux&lt;/a&gt; on GitHub, &lt;a href=&quot;http://creativecommons.org/publicdomain/zero/1.0/deed.en&quot; title=&quot;Creative Commons Zero, Public Domain Dedication&quot;&gt;CC0&lt;/a&gt;, &lt;a href=&quot;https://commons.wikimedia.org/w/index.php?curid=753970&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Bei fragen &lt;a href=&quot;https://discord.gg/TsaqyAQ&quot;&gt;https://discord.gg/TsaqyAQ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bei Fragen, bitte die Diskussionsmöglichkeit unten verwenden.&lt;/p&gt;
+
+&lt;h1 id=&quot;installation-von-programmen&quot;&gt;Installation von Programmen&lt;/h1&gt;
+
+&lt;p&gt;Bei Windows wird eine Datei im Format .exe oder .msi bespielsweise aus dem Internet geladen und ausgeführt. Bei Linux gibt es für die meisten Programme ein Repository und zwar für jede Disribution ein eigenes. Das Repository sorgt auch für die Update-Versorgung sowohl der Gerätetreiber wie der Anwendungssoftware.&lt;/p&gt;
+
+&lt;p&gt;Es gibt Repositories die aus Quellcode bestehen (Gentoo, Slack) oder aus bereits fertig kompilierten Paketen (CentOS, Fedora, SuSe, OpenSuSe und RedHat Enterprise Linux mit .rpm und Debian, Elementary OS. Linux Mint und Ubuntu mit .deb).&lt;/p&gt;
+
+&lt;h2 id=&quot;yum-package-managment&quot;&gt;YUM Package Managment&lt;/h2&gt;
+
+&lt;p&gt;Wir möchten auf einem CentOS einen WebServer installieren. Dazu suchen wir im Repository nach dem Paket:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum search http
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir finden in der Ausgabe das Paket httpd und schauen und die Informationen zu dem Paket an um festzustellen, ob dies ein Webserver beinhaltet:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum info httpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir installieren das Paket:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;httpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Die erfolgreiche Installation können wir überprüfen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum list installed httpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir starten den Web-Server:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;service httpd start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und überprüfen die Funktionalität in dem wir auf die Webseite wechseln: &lt;a href=&quot;http://[IP-Adresse]&quot;&gt;http://[IP-Adresse]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Auch die Abhängigkeiten des Pakets wie Libaries können wir uns anzeigen lassen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum deplist httpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir möchten den Webserver wieder deinstallieren:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum remove httpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Der Befehl löscht nur den Webserver aber nicht die Abhängigkeiten. Um diese zu löschen, verwenden wir diesen Befehl:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum autoremove httpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Yum stellt dabei sicher, dass keine Abhängigkeiten gelöscht werden die von anderen Paketen noch gebraucht werden.&lt;/p&gt;
+
+&lt;p&gt;Wir können uns eine Liste der Repositories ausgen lassen, die von unserem System verwendet werden:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum repolist
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Die Informationen werden als Textdateien abgelegt. Wir wechseln in das Verzeichnis:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/yum.repos.d
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mit&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;können wir uns die Dateien dort anschauen. Pro Repository gibt es eine Datei.&lt;/p&gt;
+
+&lt;p&gt;Wir schauen uns eine Datei an:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;less CentOS-Base.repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir möchten jetzt die aktuellen Updates einspielen. Dazu löschen wir zuerst die alten Repo-Dateien:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum clean all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Jetzt holen wir die aktuellen Listen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir installieren jetzt PowerShell: &lt;a href=&quot;https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#centos-7&quot;&gt;https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#centos-7&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;rpm-pakete&quot;&gt;RPM Pakete&lt;/h1&gt;
+
+&lt;p&gt;Yum arbeitet mit Repositories, der Befehl rpm wird hingegen verwendet um einzelne Programme zu installieren, deren Paket lokal vorliegt (z.B. über download).&lt;/p&gt;
+
+&lt;p&gt;Zum installieren eines Pakets wird der Parameter -i verwendet (rpm -i &lt;rpmDateiName.rpm&gt;). Weitere typische Parameter sind -v für die Ausgabe des Programs und -h für einen Statusbalken. Es macht jetzt wenig Sinn, den Apache über rpm zu installieren da dieser ja über die Repositories zu installieren ist. Eine typische Verwendung ist die Installation von Sun Java, dass wir hier herunterladen: &amp;lt;https://www.java.com/de/download/linux_manual.jsp&amp;gt; Leider erlauben die Lizenzbestimmungen nicht das direkte herunterladen, weshalb die Datei erst manuell auf den Desktop geladen werden muss und dann mit Filezilla oder SCP auf den Server kopiert wird. Kürzer geht es mit folgendem Befehl:&lt;/rpmDateiName.rpm&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget &lt;span class=&quot;nt&quot;&gt;--no-cookies&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-check-certificate&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--header&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und installieren wir es mit dem Befehl:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;rpm &lt;span class=&quot;nt&quot;&gt;-ivh&lt;/span&gt; jdk-8u131-linux-x64.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mit dem Befehl&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java &lt;span class=&quot;nt&quot;&gt;-version&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;können wir die Installation überprüfen und mit folgendem Befehl den Ort der Installation:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;which java
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mit dem Befehl sehen wir die Abhängigkeiten des Programms&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm &lt;span class=&quot;nt&quot;&gt;-qpR&lt;/span&gt; jdk-8u131-linux-x64.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Es ist ein Update erschienen, dass unbedingt eingespielt werden muss:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget &lt;span class=&quot;nt&quot;&gt;--no-cookies&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-check-certificate&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--header&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.rpm&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und mit dem folgenden Befehl spielen wir das Update ein:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; rpm &lt;span class=&quot;nt&quot;&gt;-Uvh&lt;/span&gt; jdk-8u161-linux-x64.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir überprüfen nun die installierte Version:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;user@joergreuter4 ~]&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;rpm &lt;span class=&quot;nt&quot;&gt;-qi&lt;/span&gt; jdk1.8
+Name        : jdk1.8
+Epoch       : 2000
+Version     : 1.8.0_161
+Release     : fcs
+Architecture: x86_64
+Install Date: Fri 09 Feb 2018 01:22:12 AM UTC
+Group       : Development/Tools
+Size        : 289899092
+License     : http://java.com/license
+Signature   : &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;none&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Source RPM  : jdk1.8-1.8.0_161-fcs.src.rpm
+Build Date  : Wed 20 Dec 2017 12:29:52 AM UTC
+Build Host  : sc11137389.us.oracle.com
+Relocations : /usr/java
+Packager    : Java Software &amp;lt;jre-comments@java.sun.com&amp;gt;
+Vendor      : Oracle Corporation
+URL         : URL_REF
+Summary     : Java Platform Standard Edition Development Kit
+Description :
+The Java Platform Standard Edition Development Kit &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;JDK&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; includes both
+the runtime environment &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Java virtual machine, the Java platform classes
+and supporting files&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; and development tools &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;compilers, debuggers,
+tool libraries and other tools&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+
+The JDK is a development environment &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;building applications, applets
+and components that can be deployed with the Java Platform Standard
+Edition Runtime Environment.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und bekommen das erfolgreiche Update durch die Versionsnummer 161 bestätigt.&lt;/p&gt;
+
+&lt;p&gt;Mit dem Parameter -e deinstallieren wir das Paket&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; jdk1.8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und überprüfen die Deinstallation mit dem Befehl:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;user@joergreuter4 ~]&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;rpm &lt;span class=&quot;nt&quot;&gt;-qi&lt;/span&gt; jdk1.8
+package jdk1.8 is not installed
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Es gibt auch die Möglichkeit, mit dem Parameter –test eine Ausführung zu simulieren (der Befehl wird also nicht richtig ausgeführt aber Fehlermeldungen angezeigt:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--test&lt;/span&gt; jdk1.8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;apt&quot;&gt;APT&lt;/h2&gt;
+
+&lt;p&gt;Die Ropositories stehen hier in der Datei /etc/apt/source.list und dem Verzeichnis /etc/apt/source.list.d.&lt;/p&gt;
+
+&lt;h2 id=&quot;aufgabe&quot;&gt;Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;Schaue die bitte die Datei source.list und das Verzeichnis /etc/apt/source.list.d an.&lt;/p&gt;
+
+&lt;h2 id=&quot;apt-update&quot;&gt;apt update&lt;/h2&gt;
+
+&lt;p&gt;Die Repositories (die Metadaten der einzelnen Programme wie Versionsnummern etc.) müssen mit dem System abgeglichen werden:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;apt-search&quot;&gt;apt search&lt;/h2&gt;
+
+&lt;p&gt;Wir möchten den Apache Webserver installieren und schauen dafür nach den passenden Paketnamen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt search apache
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;oder&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-cache search apache
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Zu beachten ist hierbei, dass nicht online gesucht wird sondern nur im sogenannten Cache. Als Cache bezeichnen wir in diesem zusammenhang die Kopie der Metadaten des Online-Repositories auf unserem lokalen System. Bei vielen Cloud-Anbietern führt dies dazu, dass ohne ein ‘apt update’ keine Pakete gefunden werden können.&lt;/p&gt;
+
+&lt;h2 id=&quot;apt-install&quot;&gt;apt install&lt;/h2&gt;
+
+&lt;p&gt;Wir installieren jetzt den Webserver:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir starten den Web-Server:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;service apache2 start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und überprüfen die Funktionalität in dem wir auf die Webseite wechseln: &lt;a href=&quot;http://[IP-Adresse]&quot;&gt;http://[IP-Adresse]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;apt-remove&quot;&gt;apt remove&lt;/h2&gt;
+
+&lt;p&gt;Wir löschen den Webserver wieder:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir sehen allerdings, dass unter /etc/apache2 noch die Konfigurationsdateien vorhanden sind. Diese löschen wir mit einem anderen Befehl, der sowohl das Apache2 als auch alle Konfigurations-Dateien löscht! Dieser Unterschied ist vor z.B. im Zusammenhang mit Datenbanken nicht unerheblich: Bei remove sollten die Inhalte der Datenbank noch vorhanden sein und nach der Neuinstalaltion wieder eingebunden werden können (bitte trotzdem vorher ein Backup machen!!). Bei purge ist die Datenbank dann gelöscht.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt purge apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;oder&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove &lt;span class=&quot;nt&quot;&gt;--purge&lt;/span&gt; apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Purge bedeutet übrigens Säuberung, insbesondere auch politische.&lt;/p&gt;
+
+&lt;p&gt;Wir sehen den Hinweis, dass im Falle des Webservers die HTML-Seiten nicht glöscht worden sind. Das ist sehr nett von der Routine, auf dieses Verhalten sollte man sich allerdings keinesfalls verlassen, es gehört eher zu den Ausnahmen. Desweiteren sehen wir, das Abhängigkeiten istallirt wurden, die nicht mehr benötigt werden. Also deinstallieren wir diese:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt autoremove
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;apt-upgrade&quot;&gt;apt upgrade&lt;/h2&gt;
+
+&lt;p&gt;Um ein System einem Update zu unterziehen werden die Metadaten des Repositories mit denen der installierten Pakete verglichen. Bei einer Divergenz wird das aktuellere Paket installiert. Ist das installierte Paket aktueller (wurde also manuell eingespielt), gibt es eine Fehlermeldung:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Upgrade installiert keine neuen Pakete (z.B. durch Abhängigkeiten) und führt keine operationen durch, die die stabilität des Systems gefährten könnte. Um alle Pakete zu installieren gibt es zwei Möglichkeiten:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt dist-upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;oder&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt full-upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Um auf eine neue Version zu kommen (z.B. von Ubuntu 17.04 auf Ubuntu 17.10) wird ein Skript verwendet:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-release-upgrade&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Das Skript hält den Upgrade-Pfad ein, also von LTS-Version zur nächsten LTS-Version oder aber von der regulären Version zur nächsten. Das Skript wird nciht zeitnah zur Veröffentlichung aktiviert, sondern hat einen Schutz dass es erst mit Verögerung das Upgrade anbietet. Dies wird gemacht um die Stabilität des Systems sicher zu stellen. bei LTS-Versionen wird es z.B. erst bei ersten Update (z.B. Ubuntu 16.04.1) freigeschaltet.&lt;/p&gt;
+
+&lt;h1 id=&quot;dpkg&quot;&gt;dpkg&lt;/h1&gt;
+
+&lt;p&gt;Um alle installierten Pakete anzeigen zu lassen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg &lt;span class=&quot;nt&quot;&gt;--get-selections&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Die Hauptbedeutung kommt dpkg allerding zu, um einzelne Pakete zu installieren. Wir möchten bespielsweise einen Webserver in einer Version installieren, der noch nicht im Repository aufgenommen wurde.&lt;/p&gt;
+
+&lt;p&gt;Achtung: Das manuelle installieren von Paketen ist mit einem erheblichen Risiko für das System verbunden und kann im schlimmsten Falle zu inkonsistwenten Systemen mit nicht erfüllten Abhängigkeiten führen. Die manuelle Instalaltion von .deb-Paketen ist eine Notlösung, insbesondere wenn Abhängigkeiten im Verlauf der Instalaltion manuell nachgezogen werden müssen!&lt;/p&gt;
+
+&lt;p&gt;Wir laden das Paket von der Seite &lt;a href=&quot;https://pkgs.org/download/apache2&quot;&gt;https://pkgs.org/download/apache2&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://archive.ubuntu.com/ubuntu/pool/main/a/apache2/apache2_2.4.18-2ubuntu3_amd64.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir schauen uns die Informationen zu dem Paket an:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg-deb &lt;span class=&quot;nt&quot;&gt;-I&lt;/span&gt; apache2_2.4.18-2ubuntu3_amd64.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir schauen nach, ob das Paket bereits installiert ist:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;dpkg &lt;span class=&quot;nt&quot;&gt;--get-selections&lt;/span&gt; apache2_2.4.18-2ubuntu3_amd64
+dpkg: no packages found matching apache2_2.4.18-2ubuntu3_amd64
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und stellen fest, dass wir das Paket noch nicht installiert haben.&lt;/p&gt;
+
+&lt;p&gt;Den Inhalt des Pakets können wir uns ebenfalls anzeigen lassen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg-deb &lt;span class=&quot;nt&quot;&gt;--contents&lt;/span&gt; apache2_2.4.18-2ubuntu3_amd64.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir versuchen das Paket zu installieren:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; apache2_2.4.18-2ubuntu3_amd64.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Die installation scheitert, weil die Abhängigkeiten nicht erfüllt sind! 
+Wir installieren die Abhängigkeiten:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Jetzt starten wir Apache wie gewohnt und besuchen die Website:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;service apache2 start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Um das Paket wieder zu deinstallieren:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir sehen, dass das Paket noch als isntalliert erscheint:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und die Start-Skripte sind ebenfalls noch vorhanden.&lt;/p&gt;
+
+&lt;p&gt;Daher löschen wir das Paket mit allen Konfigurationen (purge):&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-P&lt;/span&gt; apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Jetzt wird das Paket als gelöscht angezeigt:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;bind-installieren&quot;&gt;Bind installieren&lt;/h1&gt;
 
 &lt;p&gt;Ein ergänzender Artikel ist hier zu finden &lt;a href=&quot;https://wiki.ubuntuusers.de/DNS-Server_Bind/&quot;&gt;https://wiki.ubuntuusers.de/DNS-Server_Bind/&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update
-apt dist-upgrade
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;apt dist-upgrade
 apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bind9 bind9utils vim-nox host telnet dnsutils
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -3272,6 +3615,205 @@ telnet: Unable to connect to remote host: No route to host
 
 </description>
             <link>http://fachinformatiker-fulda.de/LF7_Einfuehrung.html</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Powershell</title>
+            <description>&lt;h1 id=&quot;powershell-installieren&quot;&gt;Powershell installieren&lt;/h1&gt;
+
+&lt;p&gt;Zum installieren von Powershell auf Deinem System besuche &lt;a href=&quot;https://github.com/PowerShell/PowerShell&quot;&gt;https://github.com/PowerShell/PowerShell&lt;/a&gt; und folge der Anweisung.&lt;/p&gt;
+
+&lt;h1 id=&quot;warum-powershell&quot;&gt;Warum Powershell&lt;/h1&gt;
+
+&lt;p&gt;Powershell ist mit der Version 6 OpenSource Software geworden und unterstützt zahlreiche Plattformen wie Windows, iOS und alle gängige Linu-Plattformen (redhat, centos, Debian, Ubuntu etc.) und auch ARM-Prozessoren und Cloud-Anbieter wie Amazon, google und Azure von Microsoft. Der Vorteil liegt jetzt darin, dass man sich nicht mehr in einer hetrogenen Systemlanschaft auf jedes System einstellen muss, sondern alle Standardaufgaben in der gleichen Umgebung ausführen kann. Ebenfalls funktionieren geschriebene Skripte von einem Windowssystem auch auf allen anderen Systemen (wenn die Abhängigkeiten erfüllt sind).&lt;/p&gt;
+
+&lt;h1 id=&quot;starten-der-powershell&quot;&gt;Starten der Powershell&lt;/h1&gt;
+
+&lt;p&gt;Mit dem Befehl&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pwsh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;wird die Powershell gestartet. Mit dem Befehl&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;verlässt man die Powershell wieder.&lt;/p&gt;
+
+&lt;p&gt;Eine Übersicht der verfügbaren Befehle auf dem vorhandenen System bekommt man mit&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;get-command
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Beim ausführen unter Ubuntu und Windows sieht man recht klar, welche Plattform am besten unterstützt wird.&lt;/p&gt;
+
+&lt;h1 id=&quot;beispiel&quot;&gt;Beispiel&lt;/h1&gt;
+
+&lt;p&gt;Um den Inhalt eines Directory anzuzeigen, verwendet Powershell den Befehl&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;get-childitem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Powershell versucht nun die verschiedenen Befehle der unterschiedlichen Plattformen zu vereinheitlichen. Bei Windows gibt es den Befehl&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;dir&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und bei Linux hingegen&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Beide Befehle funktionieren auch auf allen Plattformen unter der Powershell. Aber der eigentliche Befehl heißt&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;get-childitem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;hilfe&quot;&gt;Hilfe&lt;/h1&gt;
+
+&lt;p&gt;Die Powershell hat ein eingebautes Hilfesystem. Wenn wir uns beispielsweise alle Befehle anschauen möchten, die etwas mit den Prozessen auf unserem System zu tun haben:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Get-Help &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;process&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+                                                                                Name                              Category  Module                    Synopsis  &lt;span class=&quot;nt&quot;&gt;----&lt;/span&gt;                              &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt;                    &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;  Debug-Process                     Cmdlet    Microsoft.PowerShell.M... ...       Get-Process                       Cmdlet    Microsoft.PowerShell.M... ...       Start-Process                     Cmdlet    Microsoft.PowerShell.M... ...       Stop-Process                      Cmdlet    Microsoft.PowerShell.M... ...       Wait-Process                      Cmdlet    Microsoft.PowerShell.M... ...       Get-PSMetaConfigurationProcessed  Function  PSDesiredStateConfigur... ...       Set-PSMetaConfigDocInsProcesse... Function  PSDesiredStateConfigur... ... 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir suchen uns den Befehl Get-Process aus und möchten zu diesem Befehl mehr Informationen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; get-help get-process                                                                                                                                  NAME                                                                                Get-Process                                                                 
+SYNTAX
+    Get-Process &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &amp;lt;string[]&amp;gt;] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Module&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-FileVersionInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;CommonParameters&amp;gt;]
+
+    Get-Process &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &amp;lt;string[]&amp;gt;] &lt;span class=&quot;nt&quot;&gt;-IncludeUserName&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;CommonParameters&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Am Ende steht eventuell folgender Hinweis:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;REMARKS
+    Get-Help cannot find the Help files &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;this cmdlet on this computer. It
+    is displaying only partial help.
+        &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; To download and &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;Help files &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the module that includes
+    this cmdlet, use Update-Help.
+        &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; To view the Help topic &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;this cmdlet online, &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;s2&quot;&gt;&quot;Get-Help
+    Get-Process -Online&quot;&lt;/span&gt; or
+           go to https://go.microsoft.com/fwlink/?LinkID&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;113324.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dort ist einmal der Hinweis, dass die Hilfe nicht komplett auf unserem System installiert ist und wir dies mit dem Befehl&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update-help &lt;span class=&quot;nt&quot;&gt;-force&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;tun können. Jetzt wird die Hilfe wesentlich ausführlicher. Des weiteren können wir den Link öffnen der unten angegeben ist und die Hilfe online lesen. Auf einem graphischen System könnten wir eingeben:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;get-help get-process &lt;span class=&quot;nt&quot;&gt;-online&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Die Hilfe ist noch umfangreicher als die installierte Hilfe.&lt;/p&gt;
+
+&lt;h1 id=&quot;die-4-arten-von-befehlen&quot;&gt;Die 4 Arten von Befehlen&lt;/h1&gt;
+
+&lt;p&gt;Es gibt 4 Arten von Befehlen bei der Powershell:&lt;/p&gt;
+
+&lt;p&gt;1.) Administrative Befehle des Betriebssystems (ifconfig, ipconfig)&lt;/p&gt;
+
+&lt;p&gt;2.) Aliases wie dir und ls&lt;/p&gt;
+
+&lt;p&gt;3.) Skripte&lt;/p&gt;
+
+&lt;p&gt;4.) Cmdlets&lt;/p&gt;
+
+&lt;h2 id=&quot;alias&quot;&gt;Alias&lt;/h2&gt;
+
+&lt;p&gt;Alias sind Verweise oder Verlinkungen auf andere Befehle. Beispielsweise verweise ls und dir auf den Befehl Get-ChildItem. Eine Liste aller Aliases kann angezeigt werden mit:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Alias
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Wir bekommen eine Liste aller Alliases und das Ziel des verweises angezeigt. Bitte beachte, dass bei Scripten auf Aliases verzichtet werden sollte, weil die Fehlersuche durch diese sehr erschwert wird.&lt;/p&gt;
+
+&lt;h2 id=&quot;cmdlets&quot;&gt;Cmdlets&lt;/h2&gt;
+
+&lt;p&gt;Aussprache: Command Lets&lt;/p&gt;
+
+&lt;p&gt;Cmdlets sind eine neue Kategorie von Befehlen die es so bisher weder unter Windows noch Unix gab.  Sie sind daran zu erkennen, dass erst ein Verb kommt und dann ein Nomen. Wir schauen uns ein CMDlet an:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;get-command
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir bekommen eine Liste aller verfügbaren CMDlets in der Powershell angezeigt.&lt;/p&gt;
+
+&lt;p&gt;Cmdlets können von anderen Quellen installiert oder selbst programmiert werden. Sogenannte Snapins können sehr viele Cmdlets beinhalten (teilweise tausende). Verfügbar sind Snapins z.B. für VirtualBox, AWS, Azure etc.&lt;/p&gt;
+
+&lt;p&gt;Wir haben oben das Cmdlet Get-Process kennengelernt. Cmdlets können Parameter mit “-“ angehängt werden, erfordern aber niemal zwingend einen Parameter. Wir möchten z.B. nur die Prozessinformationen über die offenen Shells wissen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Probiere den Befehl auch mit “Bash” aus. Ist die Powershell Casesensitive? Beachtet die Linux-Konsole Groß- und Kleinschreibung?&lt;/p&gt;
+
+&lt;h1 id=&quot;verketten-von-befehlen&quot;&gt;Verketten von Befehlen&lt;/h1&gt;
+
+&lt;p&gt;wir haben gesehen, dass wir mit&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;die aktiven Konsolen angezeigt bekommen. Jetzt möchten wie diese beenden:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; bash | Stop-Process
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Unsere Sitzung wird beendet, weil wir den Prozess beendet haben. Das Zeichen&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;|
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;nennt man “pipe” und bedeutet Röhre. Die Ausgabe vom ersten Befehl wird wie in einer Röhre nicht auf dem Bildschirm angezeigt sondern an dem nachfolgeneden Befehl weitergeleitet. Der Unterschied zur Linuxkonsole ist, dass dies ein Objekt ist nicht die einfache Textausgabe. Dies erhöht die Flexibilität ernorm:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process  | Select-Object &lt;span class=&quot;nt&quot;&gt;-property&lt;/span&gt; CPU
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Property bedeutet Eigenschaft und zeigt in diesem Fall vom Objekt Get-Process die Eigenschaft der CPU an. Um das ganze lesbarer zu gestalten lassen wir uns den Namen ausgeben:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process  | Select-Object &lt;span class=&quot;nt&quot;&gt;-property&lt;/span&gt; name, CPU
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir können auch mehere Pipes hintereinander fügen. Es soll jetzt beispielsweise die Prozesse nach der CPU-Belastung sortiert werden und nur die 10 Prozesse angezeigt werden, die die CPU am meisten belasten:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process | Select-Object &lt;span class=&quot;nt&quot;&gt;-property&lt;/span&gt; name, CPU|Sort-Object &lt;span class=&quot;nt&quot;&gt;-descending&lt;/span&gt; CPU|Select-Object &lt;span class=&quot;nt&quot;&gt;-first&lt;/span&gt; 10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Um sinnvolle Konstrukte aufzubauen, brauchen wir eine Übersicht über die Einzelheiten des Objekts:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process | Get-Member
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;variable&quot;&gt;Variable&lt;/h1&gt;
+
+&lt;p&gt;Wir können das Objekt auch in einer Variable speichern. Eine Variable beginnt immer mit $:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$variable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Get-Process
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und auf die Variable, die das gesamte Objekt beinhaltet, den obigen Befehl anwenden;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$variable&lt;/span&gt; | Select-Object &lt;span class=&quot;nt&quot;&gt;-property&lt;/span&gt; name, CPU|Sort-Object &lt;span class=&quot;nt&quot;&gt;-descending&lt;/span&gt; CPU|Select-Object &lt;span class=&quot;nt&quot;&gt;-first&lt;/span&gt; 10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;module&quot;&gt;Module&lt;/h1&gt;
+
+&lt;p&gt;Wir können auch Module bzw. SnapIns installieren, die den Befehlsvorrat der PowerShell-Installation deutlich erweitern:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Install-Package &lt;span class=&quot;nt&quot;&gt;-Name&lt;/span&gt; AzureRM.NetCore
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+            <link>http://fachinformatiker-fulda.de/LF7_Powershell.html</link>
           </item>
         
       

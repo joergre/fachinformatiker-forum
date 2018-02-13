@@ -113,6 +113,14 @@
   
     
       <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/LF7_Powershell.html'>Powershell</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='/about/'>About</a>
       </li>
     
@@ -337,14 +345,350 @@
 
           <p>Von <a rel="nofollow" class="external text" href="http://www.isc.tamu.edu/~lewing/">Larry Ewing</a>, <a rel="nofollow" class="external text" href="http://www.home.unix-ag.org/simon/">Simon Budig</a>, <a rel="nofollow" class="external text" href="https://github.com/garrett/Tux">Garrett LeSage</a> - <a rel="nofollow" class="external free" href="http://www.home.unix-ag.org/simon/penguin/">http://www.home.unix-ag.org/simon/penguin/</a>, <a rel="nofollow" class="external text" href="https://github.com/garrett/Tux">garrett/Tux</a> on GitHub, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=753970">Link</a></p>
 
-<p>Bei fragen <a href="https://discord.gg/TsaqyAQ">https://discord.gg/TsaqyAQ</a></p>
+<p>Bei Fragen, bitte die Diskussionsmöglichkeit unten verwenden.</p>
+
+<h1 id="installation-von-programmen">Installation von Programmen</h1>
+
+<p>Bei Windows wird eine Datei im Format .exe oder .msi bespielsweise aus dem Internet geladen und ausgeführt. Bei Linux gibt es für die meisten Programme ein Repository und zwar für jede Disribution ein eigenes. Das Repository sorgt auch für die Update-Versorgung sowohl der Gerätetreiber wie der Anwendungssoftware.</p>
+
+<p>Es gibt Repositories die aus Quellcode bestehen (Gentoo, Slack) oder aus bereits fertig kompilierten Paketen (CentOS, Fedora, SuSe, OpenSuSe und RedHat Enterprise Linux mit .rpm und Debian, Elementary OS. Linux Mint und Ubuntu mit .deb).</p>
+
+<h2 id="yum-package-managment">YUM Package Managment</h2>
+
+<p>Wir möchten auf einem CentOS einen WebServer installieren. Dazu suchen wir im Repository nach dem Paket:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum search http
+</code></pre></div></div>
+
+<p>Wir finden in der Ausgabe das Paket httpd und schauen und die Informationen zu dem Paket an um festzustellen, ob dies ein Webserver beinhaltet:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum info httpd
+</code></pre></div></div>
+
+<p>Wir installieren das Paket:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum <span class="nb">install </span>httpd
+</code></pre></div></div>
+<p>Die erfolgreiche Installation können wir überprüfen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum list installed httpd
+</code></pre></div></div>
+
+<p>Wir starten den Web-Server:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service httpd start
+</code></pre></div></div>
+
+<p>und überprüfen die Funktionalität in dem wir auf die Webseite wechseln: <a href="http://[IP-Adresse]">http://[IP-Adresse]</a>.</p>
+
+<p>Auch die Abhängigkeiten des Pakets wie Libaries können wir uns anzeigen lassen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum deplist httpd
+</code></pre></div></div>
+
+<p>Wir möchten den Webserver wieder deinstallieren:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum remove httpd
+</code></pre></div></div>
+
+<p>Der Befehl löscht nur den Webserver aber nicht die Abhängigkeiten. Um diese zu löschen, verwenden wir diesen Befehl:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum autoremove httpd
+</code></pre></div></div>
+
+<p>Yum stellt dabei sicher, dass keine Abhängigkeiten gelöscht werden die von anderen Paketen noch gebraucht werden.</p>
+
+<p>Wir können uns eine Liste der Repositories ausgen lassen, die von unserem System verwendet werden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum repolist
+</code></pre></div></div>
+
+<p>Die Informationen werden als Textdateien abgelegt. Wir wechseln in das Verzeichnis:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /etc/yum.repos.d
+</code></pre></div></div>
+
+<p>Mit</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span>
+</code></pre></div></div>
+<p>können wir uns die Dateien dort anschauen. Pro Repository gibt es eine Datei.</p>
+
+<p>Wir schauen uns eine Datei an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>less CentOS-Base.repo
+</code></pre></div></div>
+
+<p>Wir möchten jetzt die aktuellen Updates einspielen. Dazu löschen wir zuerst die alten Repo-Dateien:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum clean all
+</code></pre></div></div>
+
+<p>Jetzt holen wir die aktuellen Listen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum update
+</code></pre></div></div>
+
+<p>Wir installieren jetzt PowerShell: <a href="https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#centos-7">https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#centos-7</a></p>
+
+<h1 id="rpm-pakete">RPM Pakete</h1>
+
+<p>Yum arbeitet mit Repositories, der Befehl rpm wird hingegen verwendet um einzelne Programme zu installieren, deren Paket lokal vorliegt (z.B. über download).</p>
+
+<p>Zum installieren eines Pakets wird der Parameter -i verwendet (rpm -i <rpmDateiName.rpm>). Weitere typische Parameter sind -v für die Ausgabe des Programs und -h für einen Statusbalken. Es macht jetzt wenig Sinn, den Apache über rpm zu installieren da dieser ja über die Repositories zu installieren ist. Eine typische Verwendung ist die Installation von Sun Java, dass wir hier herunterladen: &lt;https://www.java.com/de/download/linux_manual.jsp&gt; Leider erlauben die Lizenzbestimmungen nicht das direkte herunterladen, weshalb die Datei erst manuell auf den Desktop geladen werden muss und dann mit Filezilla oder SCP auf den Server kopiert wird. Kürzer geht es mit folgendem Befehl:</rpmDateiName.rpm></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">--no-cookies</span> <span class="nt">--no-check-certificate</span> <span class="nt">--header</span> <span class="s2">"Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie"</span> <span class="s2">"http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm"</span>
+</code></pre></div></div>
+
+<p>Und installieren wir es mit dem Befehl:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>rpm <span class="nt">-ivh</span> jdk-8u131-linux-x64.rpm
+</code></pre></div></div>
+
+<p>Mit dem Befehl</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-version</span>
+</code></pre></div></div>
+
+<p>können wir die Installation überprüfen und mit folgendem Befehl den Ort der Installation:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>which java
+</code></pre></div></div>
+
+<p>Mit dem Befehl sehen wir die Abhängigkeiten des Programms</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rpm <span class="nt">-qpR</span> jdk-8u131-linux-x64.rpm
+</code></pre></div></div>
+
+<p>Es ist ein Update erschienen, dass unbedingt eingespielt werden muss:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">--no-cookies</span> <span class="nt">--no-check-certificate</span> <span class="nt">--header</span> <span class="s2">"Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie"</span> <span class="s2">"http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.rpm"</span>
+</code></pre></div></div>
+
+<p>Und mit dem folgenden Befehl spielen wir das Update ein:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> rpm <span class="nt">-Uvh</span> jdk-8u161-linux-x64.rpm
+</code></pre></div></div>
+
+<p>Wir überprüfen nun die installierte Version:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>user@joergreuter4 ~]<span class="nv">$ </span><span class="nb">sudo </span>rpm <span class="nt">-qi</span> jdk1.8
+Name        : jdk1.8
+Epoch       : 2000
+Version     : 1.8.0_161
+Release     : fcs
+Architecture: x86_64
+Install Date: Fri 09 Feb 2018 01:22:12 AM UTC
+Group       : Development/Tools
+Size        : 289899092
+License     : http://java.com/license
+Signature   : <span class="o">(</span>none<span class="o">)</span>
+Source RPM  : jdk1.8-1.8.0_161-fcs.src.rpm
+Build Date  : Wed 20 Dec 2017 12:29:52 AM UTC
+Build Host  : sc11137389.us.oracle.com
+Relocations : /usr/java
+Packager    : Java Software &lt;jre-comments@java.sun.com&gt;
+Vendor      : Oracle Corporation
+URL         : URL_REF
+Summary     : Java Platform Standard Edition Development Kit
+Description :
+The Java Platform Standard Edition Development Kit <span class="o">(</span>JDK<span class="o">)</span> includes both
+the runtime environment <span class="o">(</span>Java virtual machine, the Java platform classes
+and supporting files<span class="o">)</span> and development tools <span class="o">(</span>compilers, debuggers,
+tool libraries and other tools<span class="o">)</span><span class="nb">.</span>
+
+The JDK is a development environment <span class="k">for </span>building applications, applets
+and components that can be deployed with the Java Platform Standard
+Edition Runtime Environment.
+</code></pre></div></div>
+
+<p>Und bekommen das erfolgreiche Update durch die Versionsnummer 161 bestätigt.</p>
+
+<p>Mit dem Parameter -e deinstallieren wir das Paket</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rpm <span class="nt">-e</span> jdk1.8
+</code></pre></div></div>
+
+<p>Und überprüfen die Deinstallation mit dem Befehl:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>user@joergreuter4 ~]<span class="nv">$ </span><span class="nb">sudo </span>rpm <span class="nt">-qi</span> jdk1.8
+package jdk1.8 is not installed
+</code></pre></div></div>
+
+<p>Es gibt auch die Möglichkeit, mit dem Parameter –test eine Ausführung zu simulieren (der Befehl wird also nicht richtig ausgeführt aber Fehlermeldungen angezeigt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rpm <span class="nt">-e</span> <span class="nt">--test</span> jdk1.8
+</code></pre></div></div>
+
+<h2 id="apt">APT</h2>
+
+<p>Die Ropositories stehen hier in der Datei /etc/apt/source.list und dem Verzeichnis /etc/apt/source.list.d.</p>
+
+<h2 id="aufgabe">Aufgabe</h2>
+
+<p>Schaue die bitte die Datei source.list und das Verzeichnis /etc/apt/source.list.d an.</p>
+
+<h2 id="apt-update">apt update</h2>
+
+<p>Die Repositories (die Metadaten der einzelnen Programme wie Versionsnummern etc.) müssen mit dem System abgeglichen werden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+</code></pre></div></div>
+
+<h2 id="apt-search">apt search</h2>
+
+<p>Wir möchten den Apache Webserver installieren und schauen dafür nach den passenden Paketnamen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt search apache
+</code></pre></div></div>
+
+<p>oder</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-cache search apache
+</code></pre></div></div>
+
+<p>Zu beachten ist hierbei, dass nicht online gesucht wird sondern nur im sogenannten Cache. Als Cache bezeichnen wir in diesem zusammenhang die Kopie der Metadaten des Online-Repositories auf unserem lokalen System. Bei vielen Cloud-Anbietern führt dies dazu, dass ohne ein ‘apt update’ keine Pakete gefunden werden können.</p>
+
+<h2 id="apt-install">apt install</h2>
+
+<p>Wir installieren jetzt den Webserver:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>apache2
+</code></pre></div></div>
+
+<p>Wir starten den Web-Server:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service apache2 start
+</code></pre></div></div>
+
+<p>und überprüfen die Funktionalität in dem wir auf die Webseite wechseln: <a href="http://[IP-Adresse]">http://[IP-Adresse]</a>.</p>
+
+<h2 id="apt-remove">apt remove</h2>
+
+<p>Wir löschen den Webserver wieder:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt remove apache2
+</code></pre></div></div>
+
+<p>Wir sehen allerdings, dass unter /etc/apache2 noch die Konfigurationsdateien vorhanden sind. Diese löschen wir mit einem anderen Befehl, der sowohl das Apache2 als auch alle Konfigurations-Dateien löscht! Dieser Unterschied ist vor z.B. im Zusammenhang mit Datenbanken nicht unerheblich: Bei remove sollten die Inhalte der Datenbank noch vorhanden sein und nach der Neuinstalaltion wieder eingebunden werden können (bitte trotzdem vorher ein Backup machen!!). Bei purge ist die Datenbank dann gelöscht.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt purge apache2
+</code></pre></div></div>
+
+<p>oder</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt remove <span class="nt">--purge</span> apache2
+</code></pre></div></div>
+
+<p>Purge bedeutet übrigens Säuberung, insbesondere auch politische.</p>
+
+<p>Wir sehen den Hinweis, dass im Falle des Webservers die HTML-Seiten nicht glöscht worden sind. Das ist sehr nett von der Routine, auf dieses Verhalten sollte man sich allerdings keinesfalls verlassen, es gehört eher zu den Ausnahmen. Desweiteren sehen wir, das Abhängigkeiten istallirt wurden, die nicht mehr benötigt werden. Also deinstallieren wir diese:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt autoremove
+</code></pre></div></div>
+
+<h2 id="apt-upgrade">apt upgrade</h2>
+
+<p>Um ein System einem Update zu unterziehen werden die Metadaten des Repositories mit denen der installierten Pakete verglichen. Bei einer Divergenz wird das aktuellere Paket installiert. Ist das installierte Paket aktueller (wurde also manuell eingespielt), gibt es eine Fehlermeldung:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt upgrade
+</code></pre></div></div>
+
+<p>Upgrade installiert keine neuen Pakete (z.B. durch Abhängigkeiten) und führt keine operationen durch, die die stabilität des Systems gefährten könnte. Um alle Pakete zu installieren gibt es zwei Möglichkeiten:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt dist-upgrade
+</code></pre></div></div>
+
+<p>oder</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt full-upgrade
+</code></pre></div></div>
+
+<p>Um auf eine neue Version zu kommen (z.B. von Ubuntu 17.04 auf Ubuntu 17.10) wird ein Skript verwendet:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span><span class="nt">-release-upgrade</span>
+</code></pre></div></div>
+
+<p>Das Skript hält den Upgrade-Pfad ein, also von LTS-Version zur nächsten LTS-Version oder aber von der regulären Version zur nächsten. Das Skript wird nciht zeitnah zur Veröffentlichung aktiviert, sondern hat einen Schutz dass es erst mit Verögerung das Upgrade anbietet. Dies wird gemacht um die Stabilität des Systems sicher zu stellen. bei LTS-Versionen wird es z.B. erst bei ersten Update (z.B. Ubuntu 16.04.1) freigeschaltet.</p>
+
+<h1 id="dpkg">dpkg</h1>
+
+<p>Um alle installierten Pakete anzeigen zu lassen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg <span class="nt">--get-selections</span>
+</code></pre></div></div>
+
+<p>Die Hauptbedeutung kommt dpkg allerding zu, um einzelne Pakete zu installieren. Wir möchten bespielsweise einen Webserver in einer Version installieren, der noch nicht im Repository aufgenommen wurde.</p>
+
+<p>Achtung: Das manuelle installieren von Paketen ist mit einem erheblichen Risiko für das System verbunden und kann im schlimmsten Falle zu inkonsistwenten Systemen mit nicht erfüllten Abhängigkeiten führen. Die manuelle Instalaltion von .deb-Paketen ist eine Notlösung, insbesondere wenn Abhängigkeiten im Verlauf der Instalaltion manuell nachgezogen werden müssen!</p>
+
+<p>Wir laden das Paket von der Seite <a href="https://pkgs.org/download/apache2">https://pkgs.org/download/apache2</a>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://archive.ubuntu.com/ubuntu/pool/main/a/apache2/apache2_2.4.18-2ubuntu3_amd64.deb
+</code></pre></div></div>
+
+<p>Wir schauen uns die Informationen zu dem Paket an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg-deb <span class="nt">-I</span> apache2_2.4.18-2ubuntu3_amd64.deb
+</code></pre></div></div>
+
+<p>Wir schauen nach, ob das Paket bereits installiert ist:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span>dpkg <span class="nt">--get-selections</span> apache2_2.4.18-2ubuntu3_amd64
+dpkg: no packages found matching apache2_2.4.18-2ubuntu3_amd64
+</code></pre></div></div>
+
+<p>Und stellen fest, dass wir das Paket noch nicht installiert haben.</p>
+
+<p>Den Inhalt des Pakets können wir uns ebenfalls anzeigen lassen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg-deb <span class="nt">--contents</span> apache2_2.4.18-2ubuntu3_amd64.deb
+</code></pre></div></div>
+
+<p>Wir versuchen das Paket zu installieren:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg <span class="nt">-i</span> apache2_2.4.18-2ubuntu3_amd64.deb
+</code></pre></div></div>
+
+<p>Die installation scheitert, weil die Abhängigkeiten nicht erfüllt sind! 
+Wir installieren die Abhängigkeiten:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nt">-f</span> upgrade
+</code></pre></div></div>
+
+<p>Jetzt starten wir Apache wie gewohnt und besuchen die Website:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service apache2 start
+</code></pre></div></div>
+
+<p>Um das Paket wieder zu deinstallieren:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg <span class="nt">-r</span> apache2
+</code></pre></div></div>
+
+<p>Wir sehen, dass das Paket noch als isntalliert erscheint:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg <span class="nt">-l</span> apache2
+</code></pre></div></div>
+
+<p>und die Start-Skripte sind ebenfalls noch vorhanden.</p>
+
+<p>Daher löschen wir das Paket mit allen Konfigurationen (purge):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg <span class="nt">-P</span> apache2
+</code></pre></div></div>
+
+<p>Jetzt wird das Paket als gelöscht angezeigt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg <span class="nt">-l</span> apache2
+</code></pre></div></div>
 
 <h1 id="bind-installieren">Bind installieren</h1>
 
 <p>Ein ergänzender Artikel ist hier zu finden <a href="https://wiki.ubuntuusers.de/DNS-Server_Bind/">https://wiki.ubuntuusers.de/DNS-Server_Bind/</a></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
-apt dist-upgrade
+<span class="o">&gt;</span>apt dist-upgrade
 apt-get <span class="nb">install </span>bind9 bind9utils vim-nox host telnet dnsutils
 </code></pre></div></div>
 

@@ -6,9 +6,9 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-  <title>Jubiläumstagung des deutschen ingenieurinnenbundes</title>
-  <meta name='description' content="Mit insgesamt 4 Keynotes, 24 Fachvorträgen, 4 Workshops und 5 open space dicussions/round tables in insgesamt drei Sprachen geht die Jahrestagung 4.-6. Novem...">
-  <link rel='canonical' href="http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/">
+  <title>Powershell</title>
+  <meta name='description' content="Alles über IT.">
+  <link rel='canonical' href="http://fachinformatiker-fulda.de/LF7_Powershell.html">
   <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://fachinformatiker-fulda.de/feed.xml">
 
   <style>
@@ -332,127 +332,210 @@
   <div data-icon='ei-close' data-size='s' class='c-search__close js-search-close'></div>
 </div>
 
-    
-
-
-
-
-
-<div class='o-wrapper'>
+    <div class='o-wrapper'>
 
   <div class='o-grid'>
     <div class='o-grid__col o-grid__col--3-4-m o-grid__col--center'>
-      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
+      <article class='c-post'>
+        <h1 class='c-post__title u-text-center'>Powershell</h1>
 
-        <h1 class='c-post__title u-text-center'>Jubiläumstagung des deutschen ingenieurinnenbundes</h1>
-
-        <time class='c-post__date' datetime='2016-10-09T21:44:06+02:00' itemprop='datePublished'>09 Oct 2016</time>
-
-        <div class='c-content' itemprop='articleBody'>
+        <div class='c-content'>
           
-          <p>Mit insgesamt 4 Keynotes, 24 Fachvorträgen, 4 Workshops und 5 open space dicussions/round tables in insgesamt drei Sprachen geht die Jahrestagung 4.-6. November 2016 in Freising.</p>
-<ul>
-<li>Der deutsche ingenieurinnenbund e.V. (dib), feiert 30 jähriges Jubiläum: Die Jahrestagung im Jubiläumsjahr 2016</li>
-<li>gleichzeitig: INWES (International Network of Women in Engineerting and Science) Regional Conference Europe, 2016</li>
-<li>Das gemeinsame Tagungsthema: Wissen schaf(f)t Macht – Science.Knowledge. Power.</li>
-<li>Vorträge und Workshops in Englisch und Deutsch.</li>
-<li>250 Teilnehmerinnen – Frauen in MINT-Berufen, Frauen in Führung und Wissenschaft, ExpertInnen, GründerInnen, StudentInnen                                    <a href="http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en.png"><img class="alignright wp-image-1040 size-medium" src="/assets/patronage_unesco_en-300x146.png" sizes="(max-width: 300px) 100vw, 300px" srcset="http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en-300x146.png 300w, http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en-768x374.png 768w, http://muc.inwes.net/WordPress/wp-content/uploads/2016/10/patronage_unesco_en.png 867w" alt="patronage_unesco_en" width="300" height="146" /></a></li>
-</ul>
-<p>Ein Überblick über die Tagung und was zu buchen ist:<a href="http://muc.inwes.net/conference-programme/?lang=de" target="_blank">Tagungsprogramm, Überblick</a></p>
+          <h1 id="powershell-installieren">Powershell installieren</h1>
+
+<p>Zum installieren von Powershell auf Deinem System besuche <a href="https://github.com/PowerShell/PowerShell">https://github.com/PowerShell/PowerShell</a> und folge der Anweisung.</p>
+
+<h1 id="warum-powershell">Warum Powershell</h1>
+
+<p>Powershell ist mit der Version 6 OpenSource Software geworden und unterstützt zahlreiche Plattformen wie Windows, iOS und alle gängige Linu-Plattformen (redhat, centos, Debian, Ubuntu etc.) und auch ARM-Prozessoren und Cloud-Anbieter wie Amazon, google und Azure von Microsoft. Der Vorteil liegt jetzt darin, dass man sich nicht mehr in einer hetrogenen Systemlanschaft auf jedes System einstellen muss, sondern alle Standardaufgaben in der gleichen Umgebung ausführen kann. Ebenfalls funktionieren geschriebene Skripte von einem Windowssystem auch auf allen anderen Systemen (wenn die Abhängigkeiten erfüllt sind).</p>
+
+<h1 id="starten-der-powershell">Starten der Powershell</h1>
+
+<p>Mit dem Befehl</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pwsh
+</code></pre></div></div>
+
+<p>wird die Powershell gestartet. Mit dem Befehl</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">exit</span>
+</code></pre></div></div>
+
+<p>verlässt man die Powershell wieder.</p>
+
+<p>Eine Übersicht der verfügbaren Befehle auf dem vorhandenen System bekommt man mit</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get-command
+</code></pre></div></div>
+
+<p>Beim ausführen unter Ubuntu und Windows sieht man recht klar, welche Plattform am besten unterstützt wird.</p>
+
+<h1 id="beispiel">Beispiel</h1>
+
+<p>Um den Inhalt eines Directory anzuzeigen, verwendet Powershell den Befehl</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get-childitem
+</code></pre></div></div>
+
+<p>Powershell versucht nun die verschiedenen Befehle der unterschiedlichen Plattformen zu vereinheitlichen. Bei Windows gibt es den Befehl</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span>
+</code></pre></div></div>
+
+<p>und bei Linux hingegen</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span>
+</code></pre></div></div>
+
+<p>Beide Befehle funktionieren auch auf allen Plattformen unter der Powershell. Aber der eigentliche Befehl heißt</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get-childitem
+</code></pre></div></div>
+
+<h1 id="hilfe">Hilfe</h1>
+
+<p>Die Powershell hat ein eingebautes Hilfesystem. Wenn wir uns beispielsweise alle Befehle anschauen möchten, die etwas mit den Prozessen auf unserem System zu tun haben:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> Get-Help <span class="k">*</span>process<span class="k">*</span>
+                                                                                Name                              Category  Module                    Synopsis  <span class="nt">----</span>                              <span class="nt">--------</span>  <span class="nt">------</span>                    <span class="nt">--------</span>  Debug-Process                     Cmdlet    Microsoft.PowerShell.M... ...       Get-Process                       Cmdlet    Microsoft.PowerShell.M... ...       Start-Process                     Cmdlet    Microsoft.PowerShell.M... ...       Stop-Process                      Cmdlet    Microsoft.PowerShell.M... ...       Wait-Process                      Cmdlet    Microsoft.PowerShell.M... ...       Get-PSMetaConfigurationProcessed  Function  PSDesiredStateConfigur... ...       Set-PSMetaConfigDocInsProcesse... Function  PSDesiredStateConfigur... ... 
+</code></pre></div></div>
+
+<p>Wir suchen uns den Befehl Get-Process aus und möchten zu diesem Befehl mehr Informationen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> get-help get-process                                                                                                                                  NAME                                                                                Get-Process                                                                 
+SYNTAX
+    Get-Process <span class="o">[[</span><span class="nt">-Name</span><span class="o">]</span> &lt;string[]&gt;] <span class="o">[</span><span class="nt">-Module</span><span class="o">]</span> <span class="o">[</span><span class="nt">-FileVersionInfo</span><span class="o">]</span>
+    <span class="o">[</span>&lt;CommonParameters&gt;]
+
+    Get-Process <span class="o">[[</span><span class="nt">-Name</span><span class="o">]</span> &lt;string[]&gt;] <span class="nt">-IncludeUserName</span>  <span class="o">[</span>&lt;CommonParameters&gt;]
+</code></pre></div></div>
+
+<p>Am Ende steht eventuell folgender Hinweis:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>REMARKS
+    Get-Help cannot find the Help files <span class="k">for </span>this cmdlet on this computer. It
+    is displaying only partial help.
+        <span class="nt">--</span> To download and <span class="nb">install </span>Help files <span class="k">for </span>the module that includes
+    this cmdlet, use Update-Help.
+        <span class="nt">--</span> To view the Help topic <span class="k">for </span>this cmdlet online, <span class="nb">type</span>: <span class="s2">"Get-Help
+    Get-Process -Online"</span> or
+           go to https://go.microsoft.com/fwlink/?LinkID<span class="o">=</span>113324.
+
+</code></pre></div></div>
+
+<p>Dort ist einmal der Hinweis, dass die Hilfe nicht komplett auf unserem System installiert ist und wir dies mit dem Befehl</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>update-help <span class="nt">-force</span>
+</code></pre></div></div>
+
+<p>tun können. Jetzt wird die Hilfe wesentlich ausführlicher. Des weiteren können wir den Link öffnen der unten angegeben ist und die Hilfe online lesen. Auf einem graphischen System könnten wir eingeben:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get-help get-process <span class="nt">-online</span>
+</code></pre></div></div>
+
+<p>Die Hilfe ist noch umfangreicher als die installierte Hilfe.</p>
+
+<h1 id="die-4-arten-von-befehlen">Die 4 Arten von Befehlen</h1>
+
+<p>Es gibt 4 Arten von Befehlen bei der Powershell:</p>
+
+<p>1.) Administrative Befehle des Betriebssystems (ifconfig, ipconfig)</p>
+
+<p>2.) Aliases wie dir und ls</p>
+
+<p>3.) Skripte</p>
+
+<p>4.) Cmdlets</p>
+
+<h2 id="alias">Alias</h2>
+
+<p>Alias sind Verweise oder Verlinkungen auf andere Befehle. Beispielsweise verweise ls und dir auf den Befehl Get-ChildItem. Eine Liste aller Aliases kann angezeigt werden mit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Alias
+</code></pre></div></div>
+<p>Wir bekommen eine Liste aller Alliases und das Ziel des verweises angezeigt. Bitte beachte, dass bei Scripten auf Aliases verzichtet werden sollte, weil die Fehlersuche durch diese sehr erschwert wird.</p>
+
+<h2 id="cmdlets">Cmdlets</h2>
+
+<p>Aussprache: Command Lets</p>
+
+<p>Cmdlets sind eine neue Kategorie von Befehlen die es so bisher weder unter Windows noch Unix gab.  Sie sind daran zu erkennen, dass erst ein Verb kommt und dann ein Nomen. Wir schauen uns ein CMDlet an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get-command
+</code></pre></div></div>
+
+<p>Wir bekommen eine Liste aller verfügbaren CMDlets in der Powershell angezeigt.</p>
+
+<p>Cmdlets können von anderen Quellen installiert oder selbst programmiert werden. Sogenannte Snapins können sehr viele Cmdlets beinhalten (teilweise tausende). Verfügbar sind Snapins z.B. für VirtualBox, AWS, Azure etc.</p>
+
+<p>Wir haben oben das Cmdlet Get-Process kennengelernt. Cmdlets können Parameter mit “-“ angehängt werden, erfordern aber niemal zwingend einen Parameter. Wir möchten z.B. nur die Prozessinformationen über die offenen Shells wissen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process <span class="nt">-name</span> bash
+</code></pre></div></div>
+
+<p>Probiere den Befehl auch mit “Bash” aus. Ist die Powershell Casesensitive? Beachtet die Linux-Konsole Groß- und Kleinschreibung?</p>
+
+<h1 id="verketten-von-befehlen">Verketten von Befehlen</h1>
+
+<p>wir haben gesehen, dass wir mit</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process <span class="nt">-name</span> bash
+</code></pre></div></div>
+
+<p>die aktiven Konsolen angezeigt bekommen. Jetzt möchten wie diese beenden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process <span class="nt">-name</span> bash | Stop-Process
+</code></pre></div></div>
+
+<p>Unsere Sitzung wird beendet, weil wir den Prozess beendet haben. Das Zeichen</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|
+</code></pre></div></div>
+
+<p>nennt man “pipe” und bedeutet Röhre. Die Ausgabe vom ersten Befehl wird wie in einer Röhre nicht auf dem Bildschirm angezeigt sondern an dem nachfolgeneden Befehl weitergeleitet. Der Unterschied zur Linuxkonsole ist, dass dies ein Objekt ist nicht die einfache Textausgabe. Dies erhöht die Flexibilität ernorm:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process  | Select-Object <span class="nt">-property</span> CPU
+</code></pre></div></div>
+
+<p>Property bedeutet Eigenschaft und zeigt in diesem Fall vom Objekt Get-Process die Eigenschaft der CPU an. Um das ganze lesbarer zu gestalten lassen wir uns den Namen ausgeben:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process  | Select-Object <span class="nt">-property</span> name, CPU
+</code></pre></div></div>
+
+<p>Wir können auch mehere Pipes hintereinander fügen. Es soll jetzt beispielsweise die Prozesse nach der CPU-Belastung sortiert werden und nur die 10 Prozesse angezeigt werden, die die CPU am meisten belasten:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process | Select-Object <span class="nt">-property</span> name, CPU|Sort-Object <span class="nt">-descending</span> CPU|Select-Object <span class="nt">-first</span> 10
+</code></pre></div></div>
+
+<p>Um sinnvolle Konstrukte aufzubauen, brauchen wir eine Übersicht über die Einzelheiten des Objekts:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process | Get-Member
+</code></pre></div></div>
+
+<h1 id="variable">Variable</h1>
+
+<p>Wir können das Objekt auch in einer Variable speichern. Eine Variable beginnt immer mit $:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$variable</span> <span class="o">=</span> Get-Process
+</code></pre></div></div>
+
+<p>Und auf die Variable, die das gesamte Objekt beinhaltet, den obigen Befehl anwenden;</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$variable</span> | Select-Object <span class="nt">-property</span> name, CPU|Sort-Object <span class="nt">-descending</span> CPU|Select-Object <span class="nt">-first</span> 10
+</code></pre></div></div>
+
+<h1 id="module">Module</h1>
+
+<p>Wir können auch Module bzw. SnapIns installieren, die den Befehlsvorrat der PowerShell-Installation deutlich erweitern:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Install-Package <span class="nt">-Name</span> AzureRM.NetCore
+</code></pre></div></div>
+
 
         </div>
-
-        <div class='o-grid'>
-          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--3-4-m'>
-            <div class='c-tags'>
-              
-            </div>
-          </div>
-          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--1-4-m'>
-            
-
-<ul class='c-share o-plain-list'>
-  <li class='c-share__item'>
-    <a class='c-share__link'
-       title='Share on Twitter'
-       href="https://twitter.com/intent/tweet?text=Jubiläumstagung des deutschen ingenieurinnenbundes&url=http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/&via=joergreu&related=joergreu">
-      <div data-icon='ei-sc-twitter' data-size='s' class='c-share__icon c-share__icon--twitter'></div>
-    </a>
-  </li>
-
-  <li class='c-share__item'>
-    <a class='c-share__link'
-       title='Share on Facebook'
-       href="https://facebook.com/sharer.php?u=http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/">
-      <div data-icon='ei-sc-facebook' data-size='s' class='c-share__icon c-share__icon--facebook'></div>
-    </a>
-  </li>
-</ul>
-          </div>
-        </div>
-
-        <hr>
-
-        
-          <div class='c-author'>
-
-  
-
-  <div class='c-author__body'>
-    <h3 class='c-author__name'></h3>
-
-    
-
-    <ul class='c-author-links o-plain-list'>
-      
-
-      
-
-      
-
-      
-    </ul>
-  </div>
-
-</div>
-        
-
-        <h5 class='u-text-center'>Enter your email below to join our newsletter</h5>
-
-<form method='post'
-      target='_blank'
-      class='c-subscribe'
-      action='//aspirethemes.us12.list-manage.com/subscribe/post?u=9723f3c5c3a2637fbba3bc673&amp;id=7b50db9989'>
-  <div class='form-group'>
-    <input type='email' name='EMAIL' placeholder='Your email address'>
-  </div>
-  <input type='submit' class='c-subscribe__btn c-btn' value='Subscribe'>
-</form>
-        <hr>
-
-        <section class='disqus'>
-  <div id='disqus_thread'></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = 'http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/';
-    };
-
-    (function() {
-      var d = document, s = d.createElement('script');
-
-      s.src = '//fachinformatiker-forum.disqus.com/embed.js';
-
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-<noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>
-</section>
-
       </article>
-
     </div>
   </div>
+
 </div>
 
     <footer class='c-footer'>

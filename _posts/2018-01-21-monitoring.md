@@ -19,3 +19,5 @@ Datum: Samstag, 24. Februar 10:00 - 15:00
 Ort: Fulda, ITZ (alter Schlachthof)
 
 Moderation: Michael Ziegler
+
+Unterstützt von [Zeitsprung e.V.](http://zeitsprung.org)
