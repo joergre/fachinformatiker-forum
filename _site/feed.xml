@@ -5,8 +5,8 @@
     <description>Alles über IT.</description>
     <link>http://fachinformatiker-fulda.de/</link>
     <atom:link href="http://fachinformatiker-fulda.de/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Feb 2018 04:47:00 +0100</pubDate>
-    <lastBuildDate>Tue, 13 Feb 2018 04:47:00 +0100</lastBuildDate>
+    <pubDate>Thu, 15 Feb 2018 12:43:49 +0100</pubDate>
+    <lastBuildDate>Thu, 15 Feb 2018 12:43:49 +0100</lastBuildDate>
     <generator>Jekyll v3.7.2</generator>
 
     
@@ -3238,11 +3238,11 @@ package jdk1.8 is not installed
 
 &lt;h2 id=&quot;apt&quot;&gt;APT&lt;/h2&gt;
 
-&lt;p&gt;Die Ropositories stehen hier in der Datei /etc/apt/source.list und dem Verzeichnis /etc/apt/source.list.d.&lt;/p&gt;
+&lt;p&gt;Die Repositories stehen hier in der Datei /etc/apt/sources.list und dem Verzeichnis /etc/apt/sources.list.d. Früher war die gesamte Liste in der Datei sources.list und momentan findet eine Aufteilung statt auf verschiedene Dateien im Verzeichnis /etc/apt/sources.list.d&lt;/p&gt;
 
 &lt;h2 id=&quot;aufgabe&quot;&gt;Aufgabe&lt;/h2&gt;
 
-&lt;p&gt;Schaue die bitte die Datei source.list und das Verzeichnis /etc/apt/source.list.d an.&lt;/p&gt;
+&lt;p&gt;Schaue die bitte die Datei sources.list und das Verzeichnis /etc/apt/sources.list.d an.&lt;/p&gt;
 
 &lt;h2 id=&quot;apt-update&quot;&gt;apt update&lt;/h2&gt;
 

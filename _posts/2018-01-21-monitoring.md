@@ -4,7 +4,7 @@ title: Monitoring - mit Sinn und Verstand
 featured: true
 author: joerg_reuter
 tags: [event]
-image: 'images/posts/Internet_map_1024.jpg'
+image: '/images/posts/Internet_map_1024.jpg'
 ---
 
 In dem Workshop geht es nicht darum, dass ein bestimmtes Tool vorgestellt oder beworben werden soll. Es geht darum, auf die Erfahrung von Teilnehmern zurückzugreifen, die Teils Jahrzehnte lange Erfahrung auf diesem Gebiet haben, um einen strukturierten Ansatz zu dem Thema Monitoring vorzustellen. Es dreht sich im Detail um die Frage, welche Ziele ein Monitoring erreichen soll und welche Teile dabei eine Rolle spielen.
