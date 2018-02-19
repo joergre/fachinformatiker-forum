@@ -8,6 +8,8 @@ images: '/images/posts/Tux.png'
 
 Zum installieren von Powershell auf Deinem System besuche <https://github.com/PowerShell/PowerShell> und folge der Anweisung.
 
+**Beachte** bitte folgende Datei: <https://github.com/PowerShell/PowerShell/blob/master/docs/KNOWNISSUES.md>!
+
 # Warum Powershell
 
 Powershell ist mit der Version 6 OpenSource Software geworden und unterstützt zahlreiche Plattformen wie Windows, iOS und alle gängige Linu-Plattformen (redhat, centos, Debian, Ubuntu etc.) und auch ARM-Prozessoren und Cloud-Anbieter wie Amazon, google und Azure von Microsoft. Der Vorteil liegt jetzt darin, dass man sich nicht mehr in einer hetrogenen Systemlanschaft auf jedes System einstellen muss, sondern alle Standardaufgaben in der gleichen Umgebung ausführen kann. Ebenfalls funktionieren geschriebene Skripte von einem Windowssystem auch auf allen anderen Systemen (wenn die Abhängigkeiten erfüllt sind).
