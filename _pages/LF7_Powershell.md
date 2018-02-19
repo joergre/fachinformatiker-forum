@@ -249,9 +249,15 @@ Selbstverständlich könnte man den Befehl auch in eine Zeile schreiben. Die Ver
 
 Entwickle eine Befehlszeile, die die aktuelle, lokale Netzwerkkonfiguration als .xml in eine Datei speichert (export-Clixml). Lass Dir die Datei auf dem Bildschirm erscheinen.
 
+# Erstes Script
 
+Wir legen eine Datei an mit dem Namen erst.ps mit folgendem Inhalt:
 
+````bash
+write-host "FBS ist cool"
+````
 
+Installoiert dafür testhalber das Programm Visual Studio Code, das eine integrierte PowerShell hat.
 
 
 
