@@ -248,3 +248,19 @@ Selbstverständlich könnte man den Befehl auch in eine Zeile schreiben. Die Ver
 Entwickle eine Befehlszeile, die die aktuelle, lokale Netzwerkkonfiguration als .xml in eine Datei speichert (export-Clixml). Lass Dir die Datei auf dem Bildschirm erscheinen.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
