@@ -157,7 +157,7 @@ Probiere den Befehl auch mit "Bash" aus. Ist die Powershell Casesensitive? Beach
 
 # Verketten von Befehlen
 
-wir haben gesehen, dass wir mit
+Wir haben gesehen, dass wir mit
 
 ````bash
 Get-Process -name bash
@@ -220,9 +220,31 @@ Wir können auch Module bzw. SnapIns installieren, die den Befehlsvorrat der Pow
 ````bash
 Install-Package -Name AzureRM.NetCore
 ````
+# Dateien
 
+Um eine Ausgabe in eine Datei umzuleiten:
 
+````bash
+ Get-Process | Out-File -FilePath /home/user/process.csv
+````
 
+Bitte Pfad entsprechend anpassen. Die Ausgaber der Datei erfolgt mit:
 
+````bash
+cat process.csv
+````
+
+Eine Kodierung kann mit angegeben werden, ist aber sehr umständlich:
+
+````bash
+$encoding = New-Object System.Text.utf8encoding
+Get-Process | Out-File -FilePath /home/user/process.csv -Encoding $encoding
+````
+
+Selbstverständlich könnte man den Befehl auch in eine Zeile schreiben. Die Verwendung der Variable dient nur dazu, zu verdeutlichen, welcher Teil die Kodierung vornimmt.
+
+## Aufgabe
+
+Entwickle eine Befehlszeile, die die aktuelle, lokale Netzwerkkonfiguration als .xml in eine Datei speichert (export-Clixml). Lass Dir die Datei auf dem Bildschirm erscheinen.
 
 
