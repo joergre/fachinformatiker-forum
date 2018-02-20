@@ -393,6 +393,40 @@ Jetzt wird das Paket als gelöscht angezeigt:
 dpkg -l apache2
 ````
 
+# Which
+
+Manchmal ist die Antwort auf die Frage interessant: "Wo ist dieses Programm instaliert?" Beispielsweise des Befehls "ls". Die Antwort erhalten wir mit folgendem Befehl:
+
+````bash
+whish ls
+````
+
+Woher weiß jetzt das System in welchem Ordner das Programm installiert ist? Über das sogenannte "envoinment" also der Umgebung. Mit Umgebung bezeichnet man die Menge aller Syxstemvariablen und bekommt sie angezeigt mit:
+
+````bash
+env
+````
+
+Relativ weit unten kommt eine Zeile, die mit PATH anfängt, sie gibt alle Verzeichnisse an, in dem das Betriebssystem nach einem Befehl sucht.
+
+````bash
+PATH=/home/user/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+````
+
+Wir können uns auch nur die Variable ausgeben lassen:
+
+````bash
+echo $PATH
+````
+
+## Aufgabe
+
+Schreibe ein Bash-Script, dass ls -a ausführt.
+
+
+
+
+
 # Bind installieren
 
 Ein ergänzender Artikel ist hier zu finden <https://wiki.ubuntuusers.de/DNS-Server_Bind/>
