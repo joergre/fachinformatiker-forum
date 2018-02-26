@@ -259,7 +259,74 @@ write-host "FBS ist cool"
 
 Installoiert dafür testhalber das Programm Visual Studio Code, das eine integrierte PowerShell hat.
 
+````bash
+if(10 -gt 5)
+{
+write-host "Größer"
+}
+````
 
+'-gt' steht für 'greater then' als 'größer als'. Eine Erklärung der wichtigsten Vergleichsopertoren gibt es hier: <https://www.windowspro.de/script/vergleichsoperatoren-powershell-eq-lt-gt-contains-match>.
+
+Wir verändern den Code:
+
+````bash
+if(3 -gt 5)
+{
+write-host "Größer"
+}
+````
+
+Jetzt solltze keine Ausgabe erfolgen!
+
+Wir ergänzen den Code:
+
+````bash
+if(3 -gt 5)
+{
+    write-host "Größer"
+}elseif(11 -gt 5)
+{
+    write-host "Juhu"
+}
+````
+
+Das Skript wird wie erwartet ausgeführt. Setze jetzt Else
+If in eine einzelne Zeile:
+
+````bash
+if(3 -gt 5)
+{
+    write-host "Größer"
+}
+elseif(11 -gt 5)
+{
+    write-host "Juhu"
+}
+````
+
+Und Du bekommst eine Fehlermeldung. **Merke: ** Else oder ElseIf darf niemals aleine in einer Zeile stehen!
+
+## Do - While
+
+````bash
+Do{
+  $zahl = $zahl + 1
+  write-host "$zahl x FBS ist cool"
+  } while($zahl -lt 10)
+
+````
+
+## ForEach
+
+Mit ForEach kann jedes Element eines Array ausgegeben werden:
+
+````bash
+$namen = "F","B","S","i"
+ForEach($name in $namen){
+write-host "$name"
+}
+````
 
 
 

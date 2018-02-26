@@ -398,10 +398,10 @@ dpkg -l apache2
 Manchmal ist die Antwort auf die Frage interessant: "Wo ist dieses Programm instaliert?" Beispielsweise des Befehls "ls". Die Antwort erhalten wir mit folgendem Befehl:
 
 ````bash
-whish ls
+which ls
 ````
 
-Woher weiß jetzt das System in welchem Ordner das Programm installiert ist? Über das sogenannte "envoinment" also der Umgebung. Mit Umgebung bezeichnet man die Menge aller Syxstemvariablen und bekommt sie angezeigt mit:
+Woher weiß jetzt das System in welchem Ordner das Programm installiert ist? Über das sogenannte "environment" also der Umgebung. Mit Umgebung bezeichnet man die Menge aller Syxstemvariablen und bekommt sie angezeigt mit:
 
 ````bash
 env
@@ -419,9 +419,101 @@ Wir können uns auch nur die Variable ausgeben lassen:
 echo $PATH
 ````
 
-## Aufgabe
+# Das erste Script
 
-Schreibe ein Bash-Script, dass ls -a ausführt.
+Wir schreiben ein Script, dass den Befehl "ls -a" ausführen soll. Wir nennen die Datei ls.sh. Dazu öffnen wir die datei mit unserem Lieblingseditor und schreiben hinein:
+
+````bash
+ls -a
+````
+
+Wir können das Skript nicht ausführen, weil die entsprechende Berechtigung fehlt:
+
+````bash
+user@joergreuter3:~$ ./ls.sh
+-bash: ./ls.sh: Permission denied
+````
+
+Als nächstes müssen wir die Rechte setzen. Die momentanen Rechte sehe wir mit:
+
+````bash
+user@joergreuter3:~$ ls -l
+total 4
+-rw-rw-r-- 1 user user 6 Feb 25 14:12 ls.sh
+````
+
+Wir sehen an erster Stelle ein "-", dies bedeutet dass es sich um eine Datei handelt. Es gibt nich viele andere mögliche Zeichen, z.B. ein d für ein Verzeichnis (directory).
+
+Dann kommen die Buchstaben 'rw-', 'rw-' und 'r--'. 'r' steht für das Leserecht (read), 'w' für das Schreibrecht (write) und 'x' steht für das Ausführungsrecht (execute). Da das x-Recht nicht gesetzt ist, steht dort ein '-'. Die erste Gruppe von drei Zeichen beschreibt die Rechte des Eigentümers (user), die zweite Gruppe die der Benutzergruppe (group) und die letzte Gruppe die Rechte der Benutzer die weder Eigentümer der Datei noch in der entsprechenden Gruppe sind (others). Wir sehen, dass die "anderen" nur ein Leserecht haben.
+
+Wir sehen dann eine 1, dass die Anzahl der Dateien. Bei einer einzelnen Datei steht hier immer eine 1. Danach kommt der Besitzer (user) und die Gruppe (user) und das Erstellungsdatum (6. Februar)und die Uhrzeit (14:12). Die Uhrzeit wird ausgeblendet, wenn die Datei älter als ein Jahr ist und durch die Jahreszahl ersetzt. Die Zahl zwischen Datum und Uhrzeit gibt die Größe der Datei in Bytes an.
+
+Um die Datei auszuführbar zu machen, verwenden wir folgenden Befehl:
+
+````bash
+chmod u+x ls.sh
+````
+
+und schauen uns das Ergebnis an:
+
+````bash
+user@joergreuter3:~$ ls -l
+-rwxrw-r-- 1 user user 6 Feb 25 14:12 ls.sh
+````
+
+Wir sehen, dass ein x dazu gekommen ist. Das u steht für users, dass '+' für hinzufügen und das 'x' für das Ausführrecht. 
+Wir führen die Datei jetzt aus:
+
+````bash
+user@joergreuter3:~$ ./ls.sh
+.   .bash_history  .bashrc  .local  .profile                   .viminfo
+..  .bash_logout   .cache   ls.sh   .sudo_as_admin_successful
+````
+
+Wir müssen momentan ein './' davor schreiben, weil das System nicht weiß in welchem Verzeichnis die Datei liegt. Würden wir das './' weglassen würde das System die Pfade der Variable $PATH absuchen und unsere Datei nicht finden:
+
+````bash
+user@joergreuter3:~$ ls.sh
+ls.sh: command not found
+````
+
+'./' steht für das Verzeichnis indem wir uns gerade befinden. Dieses Verzeichnis wird beim Prompt angezeigt: '~'. Das '~' steht als Abkürzung für das Heimatverzeichnes des gerade angemeldeten Benutzer.
+
+'./ls.sh' ist der relative Pfad und wir können auch den absoluten Pfad verwenden:
+
+````bash
+/home/user/ls.sh
+````
+
+Wir können jetzt unseren Befehl in ein Directory kopieren, das in der PATH-Variable angegeben ist:
+
+````bash
+sudo cp ls.sh /bin
+````
+
+Beim ausführen bekommen wir eine Fehlermeldung:
+
+````bash
+user@joergreuter3:~$ ls.sh
+-bash: /bin/ls.sh: Permission denied
+````
+
+Das liegt daran, dass beim kopieren in bin der Besitzer zu root gewechselt ist. Uns gehört die Datei nichtmehr. Also passwn wir die Rechte an:
+
+````bash
+sudo chmod a+x /bin/ls.sh
+````
+
+'a' steht für all und setzt für alle die Ausführungsrechte. Jetzt können wir den Befehl verwenden.
+
+
+
+
+
+
+
+
+
 
 
 
