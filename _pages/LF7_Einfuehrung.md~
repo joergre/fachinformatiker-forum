@@ -530,7 +530,7 @@ user@joergreuter3:~$ history
     8  pswh
 ````
 
-Um den Befehl 8 auszuführen geben wir ein:
+Um den befehl 8 auszuführen geben wir ein:
 
 ````bash
 user@joergreuter3:~$ !8
@@ -539,115 +539,6 @@ No command 'pswh' found, did you mean:
  Command 'psw' from package 'wise' (universe)
 pswh: command not found
 ````
-
-# Locate und find
-
-Auch unter Linux steht eine Indexsuche zur Verfügung. Indexsuche bedeutet, dass eine Datenbank durchsucht wird anstelle der realen Dateinamen auf dem Speichermedien. Der grosse Vorteil ist die hohe Geschwindigkeit. Die Aktualität des Index bestimmt masgeblich über den Erfolg der suche. Der Befehl heißt "locate" und wir installieren ihn mit:
-
-````bash
-apt install locate
-````
-
-Und wir suchen nach ls:
-
-````bash
-locate ls
-````
-
-Dem gegenüber durchsucht der Befehl find wirklich die  Verzeichnisse auf den Laufwerken. Find muss normalerweise nicht extra installiert werden:
-
-````bash
-find / -name ls
-````
-
-Der erste Parameter gibt den Startpunkt der Suche an, hier "/" und der zweite Parameter wonach gesucht werden soll. Wollen wir nach Namen suchen, die ls enthalten, so rufen wir den Befehl wie folgt auf:
-
-````bash
-find / -name '*ls*'
-````
-
-# Man
-
-"Man" steht für Manual und bietet Hilfen für die Benutzung von Befehlen an. Manpages (also Manual-Seiten) sind in Sektionen unterteilt und haben einen standardisierten Aufbau. Sowohl die Unterteilung wie der Aufbau der einzelnen Seiten sind standardisiert. Siehe hierzu <https://de.wikipedia.org/wiki/Manpage>.
-
-Wir schauen uns die Hilfe zum Befehl "ls" an:
-
-````bash
-man ls
-````
-
-Die angezeigte Seite sollte in etwa der Webseite entsprechen: <http://man7.org/linux/man-pages/man1/ls.1.html>.
-
-Links oben steht ls(1) und zeigt an, dass wir uns in der ersten Sektion befinden. In der ersten Sektion werden Befehle erklärt.
-
-Wir schauen uns den Befehl passwd an:
-
-````bash
-man passwd
-````
-
-und erhalten eine Ausgabe ähnliche <http://man7.org/linux/man-pages/man1/passwd.1.html>. Wir sehen am Ende des Textes einen Hinweis, dass es auf einen Eintrag von passwd in Sektion 5 gibt. Es gibt einmal den Befehl passwd und auf der anderen Seite die Konfigurationsdatei passwd. Konfigurationsdateien sind in Sektion 5 abgelegt:
-
-````bash
-man 5 passwd
-````
-
-Die Ausgabe ist hier zu finden: <http://man7.org/linux/man-pages/man5/passwd.5.html>
-
-Wenn wir uns nicht sicher sind, in welcher Sektion etwas über einem Befehl steht, können wir folgendes eingeben:
-
-````bash
-user@joergreuter3:~$ whatis passwd
-passwd (1ssl)        - compute password hashes
-passwd (1)           - change user password
-passwd (5)           - the password file
-````
-
-Alternativ funktioniert auch:
-
-````bash
-man -f passwd
-````
-
-Wenn wir alle Seiten angezeigt bekommen möchten in denen ein bestimmter String auftaucht:
-
-````bash
-user@joergreuter3:~$ apropos passwd
-chgpasswd (8)        - update group passwords in batch mode
-chpasswd (8)         - update passwords in batch mode
-expect_mkpasswd (1)  - generate new password, optionally apply it to a user
-fgetpwent_r (3)      - get passwd file entry reentrantly
-getpwent_r (3)       - get passwd file entry reentrantly
-gpasswd (1)          - administer /etc/group and /etc/gshadow
-grub-mkpasswd-pbkdf2 (1) - generate hashed password for GRUB
-htpasswd (1)         - Manage user files for basic authentication
-pam_localuser (8)    - require users to be listed in /etc/passwd
-passwd (1)           - change user password
-passwd (1ssl)        - compute password hashes
-passwd (5)           - the password file
-passwd2des (3)       - RFS password encryption
-SSL_CTX_set_default_passwd_cb (3ssl) - set passwd callback for encrypted PEM ...
-SSL_CTX_set_default_passwd_cb_userdata (3ssl) - set passwd callback for encry...
-update-passwd (8)    - safely update /etc/passwd, /etc/shadow and /etc/group
-````
-
-Alternativ:
-
-````bash
-man -k passwd
-````
-
-Innerhalb der Manpages kann man mit "/" und dem Schlüsselwort die Hilfe durchsuchen. Das drücken der "n"-Taste springt dann zum nächsten Treffer.
-
-# Info
-
-Manpages hanen keine Verweise, sondern beim aufruf einer neuen Seite muss die Seite geschlossen werden und manuell eine neue geöffnet werden. Bei Info ist dies anders. Informationen zur Steuerung: <https://en.wikipedia.org/wiki/Info_(Unix)>.
-
-Die Links sind drch "*" gekennzeichnet.
-
-
-
-
 
 
 
