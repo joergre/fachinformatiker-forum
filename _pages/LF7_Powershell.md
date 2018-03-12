@@ -491,7 +491,7 @@ PS /opt>
 
 Mit dem Befehl "my" rufen wir die Funktion CDOpt auf die uns in das Verzeichnis /opt bringt.
 
-#Python in Powershell
+# Python in Powershell
 
 Wir legen eine Datei an mit dem Namen fbs.py und folgendem Inhalt (vorher bitte ins Home-Verzeichnis wechseln mit dem Befehl "cd ~"):
 
