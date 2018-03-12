@@ -466,7 +466,7 @@ und rufen das Alias in der nächsten Zeile auf.
 
 ## Aufgabe
 
-Löse mit Alias folgende Aufgabe: Unter Windows soll unter dem Alias "myEditor" Notepad aufgerufen werdn und unter Linux nano.
+Löse mit Alias folgende Aufgabe: Unter Windows soll unter dem Alias "myEditor" Notepad aufgerufen werdewn und unter Linux nano.
 
 ## Alias und Funktionen
 
