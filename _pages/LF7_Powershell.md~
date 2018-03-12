@@ -132,7 +132,7 @@ Alias sind Verweise oder Verlinkungen auf andere Befehle. Beispielsweise verweis
 ````bash
 Get-Alias
 ````
-Wir bekommen eine Liste aller Alliases und das Ziel des Verweises angezeigt. Bitte beachte, dass bei Scripten auf Aliases verzichtet werden sollte, weil die Fehlersuche durch diese sehr erschwert wird.
+Wir bekommen eine Liste aller Alliases und das Ziel des verweises angezeigt. Bitte beachte, dass bei Scripten auf Aliases verzichtet werden sollte, weil die Fehlersuche durch diese sehr erschwert wird.
 
 
 ## Cmdlets
@@ -453,141 +453,28 @@ amazon-ssm-agen   0
 
 Die Ausgabe soll absteigend nach MGB sortiert werden. Weiterhin sollen nur die ersten 10 Zeilen ausgegeben werden.
 
-# Alias
 
-Wir setzen das Alias meinProzess:
 
-````bash
-Set-Alias meinProzess Get-Process
-meinProzess
-````
 
-und rufen das Alias in der nächsten Zeile auf.
 
-## Aufgabe
 
-Löse mit Alias folgende Aufgabe: Unter Windows soll unter dem Alias "myEditor" Notepad aufgerufen werdn und unter Linux nano.
 
-## Alias und Funktionen
 
-Wir definieren eine Funktion CDOpt und rufen diese auf:
 
-````bash
-PS /home/user> function CDOpt {set-location /opt/}
-PS /home/user> CDOpt
-PS /opt>
-````
 
-Die Funktion bringt uns immer in ein bestimmtes Verzeichnis, egal an welchem Ort wir uns gerade befinden.
 
-Wir können jetzt die Funktion mit einem Alias versehen:
 
-````bash
-PS /opt> Set-Alias my CDOpt
-PS /opt> cd ~
-PS /home/user> my
-PS /opt>
-````
 
-Mit dem Befehl "my" rufen wir die Funktion CDOpt auf die uns in das Verzeichnis /opt bringt.
 
-#Python in Powershell
 
-Wir legen eine Datei an mit dem Namen fbs.py und folgendem Inhalt (vorher bitte ins Home-Verzeichnis wechseln mit dem Befehl "cd ~"):
 
-````
-#!/usr/bin/python
-print("FBS ist cool!")
-````
 
-und setzen die Ausführungsechte und starten das Skript:
 
-````bash
-PS /home/user> chmod a+x fbs.py
-PS /home/user> ./fbs.py
-FBS ist cool!
-````
 
-# Arbeiten mit Dateien
 
-Wir erstellen eine json-Datei (siehe oben) mit den ersten 10 Zeilen der Prozessliste, Der Befehl funktioniert nur unter Linux da head und cat Linux-Befehle sind:
 
-````bash
-PS /home/user> Get-Process|head|ConvertTo-Json|out-file ausgabe.json
-PS /home/user> cat ./ausgabe.json
-[
-  "",
-  " NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName                  ",
-  " ------    -----      -----     ------      --  -- -----------                  ",
-  "      0     0.00       2.16       0.00    2404 401 (sd-pam)                     ",
-  "      0     0.00       6.18       0.56    1128 128 accounts-daemon              ",
-  "      0     0.00       1.24       0.00    1146 146 acpid                        ",
-  "      0     0.00       2.13       0.10    1259 259 agetty                       ",
-  "      0     0.00       1.83       0.28    1264 264 agetty                       ",
-  "      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen              ",
-  "      0     0.00       0.00       0.00      25   0 ata_sff                      "
-]
 
-````
 
-Wir können den Inhalt wieder in PowerShell einlesen und als Variable speichern. Den Inhalt der Variable $Daten geben wir dann aus:
-
-````bash
-PS /home/user> $Daten = Get-Content ausgabe.json
-PS /home/user> $Daten
-[
-  "",
-  " NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName                  ",
-  " ------    -----      -----     ------      --  -- -----------                  ",
-  "      0     0.00       2.16       0.00    2404 401 (sd-pam)                     ",
-  "      0     0.00       6.18       0.56    1128 128 accounts-daemon              ",
-  "      0     0.00       1.24       0.00    1146 146 acpid                        ",
-  "      0     0.00       2.13       0.10    1259 259 agetty                       ",
-  "      0     0.00       1.83       0.28    1264 264 agetty                       ",
-  "      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen              ",
-  "      0     0.00       0.00       0.00      25   0 ata_sff                      "
-]
-
-````
-
-Wir können das Json-File auch konvertieren in die Ursprügliche Ausgabe:
-
-````bash
-PS /home/user> $Daten = Get-Content ausgabe.json|ConvertFrom-Json
-PS /home/user> $Daten
-
- NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName
- ------    -----      -----     ------      --  -- -----------
-      0     0.00       2.16       0.00    2404 401 (sd-pam)
-      0     0.00       6.18       0.56    1128 128 accounts-daemon
-      0     0.00       1.24       0.00    1146 146 acpid
-      0     0.00       2.13       0.10    1259 259 agetty
-      0     0.00       1.83       0.28    1264 264 agetty
-      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen
-      0     0.00       0.00       0.00      25   0 ata_sff
-````
-
-Aber nicht nur das, dass gesamte Objekt steht wieder zur Verfügung!:
-
-````bash
-PS /home/user> $Daten|Sort-Object -Descending CPU
-
- NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName
- ------    -----      -----     ------      --  -- -----------
-      0     0.00       2.16       0.00    2404 401 (sd-pam)
-      0     0.00       6.18       0.56    1128 128 accounts-daemon
-      0     0.00       1.24       0.00    1146 146 acpid
-      0     0.00       2.13       0.10    1259 259 agetty
-      0     0.00       1.83       0.28    1264 264 agetty
-      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen
-      0     0.00       0.00       0.00      25   0 ata_sff
-````
-
-Und wir können uns alle Member des Objekts anzeigen lassen:
-
-````bash
-$Daten|Get-Member
-````
 
 
 
