@@ -114,7 +114,7 @@ rmdir Red
 
 ## Test des Images mit statischem Webinhalt
 
-Wir startn jetzt einen neuen Container:
+Wir starten jetzt einen neuen Container:
 
 ```bash
 docker run --name=webtest -p 80:80 -v /root/web:/var/www/html -i -t ubuntu:web /bin/bash
