@@ -102,14 +102,14 @@ wget http://www.oswd.org/design/download/id/3699/
 In dem Verzeichnis web legen wir den statschen Anteil unserer Webseite ab. Also entpacken wir unser Template:
 
 ```bash
-unzip Red.zip
+unzip RedTie.zip
 ```
 
 Wir kopieren die entpackten Dateien eine Ebene höher und löschen das Verzeichnis:
 
 ```bash
-mv Red/* .
-rmdir Red
+mv RedTie/* .
+rmdir RedTie
 ```
 
 ## Test des Images mit statischem Webinhalt
