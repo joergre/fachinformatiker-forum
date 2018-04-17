@@ -96,7 +96,7 @@ Wir laden das Design herunter und gehen im Browser auf die Downloads um die URL 
 ```bash
 cd ~
 mkdir web
-wget http://static.oswd.org/designs/3699/Red.zip
+wget http://www.oswd.org/design/download/id/3699/
 ```
 
 In dem Verzeichnis web legen wir den statschen Anteil unserer Webseite ab. Also entpacken wir unser Template:
