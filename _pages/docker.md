@@ -117,7 +117,7 @@ rmdir RedTie
 Wir starten jetzt einen neuen Container:
 
 ```bash
-docker run --name=webtest -p 80:80 -v /root/web:/var/www/html -i -t ubuntu:web /bin/bash
+docker run --name=webtest -p 80:80 -v /core/web:/var/www/html -i -t ubuntu:web /bin/bash
 ```
 
 Mit dem Befehl binden wir das lokale Verzeichnis /root/web  in den Container unter /var/www/html ein und öffnen den Port 80.
