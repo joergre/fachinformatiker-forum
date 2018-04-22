@@ -345,6 +345,8 @@
 
 <p>Zum installieren von Powershell auf Deinem System besuche <a href="https://github.com/PowerShell/PowerShell">https://github.com/PowerShell/PowerShell</a> und folge der Anweisung.</p>
 
+<p><strong>Beachte</strong> bitte folgende Datei: <a href="https://github.com/PowerShell/PowerShell/blob/master/docs/KNOWNISSUES.md">https://github.com/PowerShell/PowerShell/blob/master/docs/KNOWNISSUES.md</a>!</p>
+
 <h1 id="warum-powershell">Warum Powershell</h1>
 
 <p>Powershell ist mit der Version 6 OpenSource Software geworden und unterstützt zahlreiche Plattformen wie Windows, iOS und alle gängige Linu-Plattformen (redhat, centos, Debian, Ubuntu etc.) und auch ARM-Prozessoren und Cloud-Anbieter wie Amazon, google und Azure von Microsoft. Der Vorteil liegt jetzt darin, dass man sich nicht mehr in einer hetrogenen Systemlanschaft auf jedes System einstellen muss, sondern alle Standardaufgaben in der gleichen Umgebung ausführen kann. Ebenfalls funktionieren geschriebene Skripte von einem Windowssystem auch auf allen anderen Systemen (wenn die Abhängigkeiten erfüllt sind).</p>
@@ -452,7 +454,7 @@ SYNTAX
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Alias
 </code></pre></div></div>
-<p>Wir bekommen eine Liste aller Alliases und das Ziel des verweises angezeigt. Bitte beachte, dass bei Scripten auf Aliases verzichtet werden sollte, weil die Fehlersuche durch diese sehr erschwert wird.</p>
+<p>Wir bekommen eine Liste aller Alliases und das Ziel des Verweises angezeigt. Bitte beachte, dass bei Scripten auf Aliases verzichtet werden sollte, weil die Fehlersuche durch diese sehr erschwert wird.</p>
 
 <h2 id="cmdlets">Cmdlets</h2>
 
@@ -476,7 +478,7 @@ SYNTAX
 
 <h1 id="verketten-von-befehlen">Verketten von Befehlen</h1>
 
-<p>wir haben gesehen, dass wir mit</p>
+<p>Wir haben gesehen, dass wir mit</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process <span class="nt">-name</span> bash
 </code></pre></div></div>
@@ -528,6 +530,336 @@ SYNTAX
 <p>Wir können auch Module bzw. SnapIns installieren, die den Befehlsvorrat der PowerShell-Installation deutlich erweitern:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Install-Package <span class="nt">-Name</span> AzureRM.NetCore
+</code></pre></div></div>
+<h1 id="dateien">Dateien</h1>
+
+<p>Um eine Ausgabe in eine Datei umzuleiten:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Get-Process | Out-File <span class="nt">-FilePath</span> /home/user/process.csv
+</code></pre></div></div>
+
+<p>Bitte Pfad entsprechend anpassen. Die Ausgaber der Datei erfolgt mit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat </span>process.csv
+</code></pre></div></div>
+
+<p>Eine Kodierung kann mit angegeben werden, ist aber sehr umständlich:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$encoding</span> <span class="o">=</span> New-Object System.Text.utf8encoding
+Get-Process | Out-File <span class="nt">-FilePath</span> /home/user/process.csv <span class="nt">-Encoding</span> <span class="nv">$encoding</span>
+</code></pre></div></div>
+
+<p>Selbstverständlich könnte man den Befehl auch in eine Zeile schreiben. Die Verwendung der Variable dient nur dazu, zu verdeutlichen, welcher Teil die Kodierung vornimmt.</p>
+
+<h2 id="aufgabe">Aufgabe</h2>
+
+<p>Entwickle eine Befehlszeile, die die aktuelle, lokale Netzwerkkonfiguration als .xml in eine Datei speichert (export-Clixml). Lass Dir die Datei auf dem Bildschirm erscheinen.</p>
+
+<h1 id="erstes-script">Erstes Script</h1>
+
+<p>Wir legen eine Datei an mit dem Namen erst.ps mit folgendem Inhalt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>write-host <span class="s2">"FBS ist cool"</span>
+</code></pre></div></div>
+
+<p>Installoiert dafür testhalber das Programm Visual Studio Code, das eine integrierte PowerShell hat.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="o">(</span>10 <span class="nt">-gt</span> 5<span class="o">)</span>
+<span class="o">{</span>
+write-host <span class="s2">"Größer"</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>‘-gt’ steht für ‘greater then’ als ‘größer als’. Eine Erklärung der wichtigsten Vergleichsopertoren gibt es hier: <a href="https://www.windowspro.de/script/vergleichsoperatoren-powershell-eq-lt-gt-contains-match">https://www.windowspro.de/script/vergleichsoperatoren-powershell-eq-lt-gt-contains-match</a>.</p>
+
+<p>Wir verändern den Code:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="o">(</span>3 <span class="nt">-gt</span> 5<span class="o">)</span>
+<span class="o">{</span>
+write-host <span class="s2">"Größer"</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Jetzt solltze keine Ausgabe erfolgen!</p>
+
+<p>Wir ergänzen den Code:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="o">(</span>3 <span class="nt">-gt</span> 5<span class="o">)</span>
+<span class="o">{</span>
+    write-host <span class="s2">"Größer"</span>
+<span class="o">}</span>elseif<span class="o">(</span>11 <span class="nt">-gt</span> 5<span class="o">)</span>
+<span class="o">{</span>
+    write-host <span class="s2">"Juhu"</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Das Skript wird wie erwartet ausgeführt. Setze jetzt Else
+If in eine einzelne Zeile:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="o">(</span>3 <span class="nt">-gt</span> 5<span class="o">)</span>
+<span class="o">{</span>
+    write-host <span class="s2">"Größer"</span>
+<span class="o">}</span>
+elseif<span class="o">(</span>11 <span class="nt">-gt</span> 5<span class="o">)</span>
+<span class="o">{</span>
+    write-host <span class="s2">"Juhu"</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Und Du bekommst eine Fehlermeldung. **Merke: ** Else oder ElseIf darf niemals aleine in einer Zeile stehen!</p>
+
+<h2 id="do---while">Do - While</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Do<span class="o">{</span>
+  <span class="nv">$zahl</span> <span class="o">=</span> <span class="nv">$zahl</span> + 1
+  write-host <span class="s2">"</span><span class="nv">$zahl</span><span class="s2"> x FBS ist cool"</span>
+  <span class="o">}</span> <span class="k">while</span><span class="o">(</span><span class="nv">$zahl</span> <span class="nt">-lt</span> 10<span class="o">)</span>
+
+</code></pre></div></div>
+
+<h2 id="foreach">ForEach</h2>
+
+<p>Mit ForEach kann jedes Element eines Array ausgegeben werden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$namen</span> <span class="o">=</span> <span class="s2">"F"</span>,<span class="s2">"B"</span>,<span class="s2">"S"</span>,<span class="s2">"i"</span>
+ForEach<span class="o">(</span><span class="nv">$name</span> <span class="k">in</span> <span class="nv">$namen</span><span class="o">){</span>
+write-host <span class="s2">"</span><span class="nv">$name</span><span class="s2">"</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h1 id="powershell-als-standardshell-einrichten">Powershell als Standardshell einrichten</h1>
+
+<p>Um Powershell als Standard einzurichten, sucht man sich selbst in der Datei /etc/passwd mit rinmem beliebigen Editor:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim /etc/passwd
+</code></pre></div></div>
+
+<p>und verändert den Eintrag /bin/bash zu (nachdem man den Pfad überprüft hat):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span>whereis pwsh
+pwsh: /usr/bin/pwsh
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/pwsh
+</code></pre></div></div>
+
+<h1 id="prozesse">Prozesse</h1>
+
+<p>Wir schauen uns nocheinmal den Befehl an um die laufende Prozesse angezeigt zu bekommen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process
+</code></pre></div></div>
+
+<p>Eine sehr ungeordnete Ausgabe. Wir schränken die Ausgabe auf die ersten 1o Elemente ein:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process|Select-Object <span class="nt">-first</span> 10
+</code></pre></div></div>
+
+<p>Jetzt möchten wir die Prozesse absteigend nach CPU-Belastung sortieren:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process|Sort-Object <span class="nt">-Descending</span> CPU|Select-Object <span class="nt">-first</span> 10
+</code></pre></div></div>
+
+<p>Dann weißen wir das ganze einer Variable zu:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$belastung</span> <span class="o">=</span> Get-Process|Sort-Object <span class="nt">-Descending</span> CPU|Select-Object <span class="nt">-first</span> 10
+</code></pre></div></div>
+
+<p>Lassen uns die Variable anzeigen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /home/user&gt; <span class="nv">$belastung</span>
+
+ NPM<span class="o">(</span>K<span class="o">)</span>    PM<span class="o">(</span>M<span class="o">)</span>      WS<span class="o">(</span>M<span class="o">)</span>     CPU<span class="o">(</span>s<span class="o">)</span>      Id  SI ProcessName
+ <span class="nt">------</span>    <span class="nt">-----</span>      <span class="nt">-----</span>     <span class="nt">------</span>      <span class="nt">--</span>  <span class="nt">--</span> <span class="nt">-----------</span>
+      0     0.00      17.87       4.51    1114 114 amazon-ssm-agen
+      0     0.00       5.74       2.30       1   1 systemd
+      0     0.00     102.17       2.00    1974 974 pwsh
+      0     0.00       3.43       1.68    1098 098 iscsid
+      0     0.00       6.79       0.49     380 380 systemd-journal
+      0     0.00      25.59       0.39    1135 135 snapd
+      0     0.00       0.14       0.35    1097 097 iscsid
+      0     0.00      39.27       0.23    1147 147 node
+      0     0.00       6.05       0.23    1139 139 accounts-daemon
+      0     0.00       0.00       0.18       4   0 kworker/0:0
+</code></pre></div></div>
+
+<p>Jetzt möchten wir die Ausgabe als Json bekommen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$belastung_json</span> <span class="o">=</span> Get-Process|Sort-Object <span class="nt">-Descending</span> CPU|Select-Object <span class="nt">-first</span> 10|ConvertTo-Json
+</code></pre></div></div>
+
+<p>Wir können auch die Variable direkt in Json umwandeln:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$belastung_json2</span> <span class="o">=</span> <span class="nv">$belastung</span>| ConvertTo-Json
+</code></pre></div></div>
+
+<p>Wir lassen uns von der Prozessliste nur CPU und Name ausgeben:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process|Select-Object <span class="nt">-property</span> name, cpu
+</code></pre></div></div>
+
+<p>Und jetzt Name und virtueller Speicher (VM):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process|Select-Object <span class="nt">-property</span> name, vm
+</code></pre></div></div>
+
+<p>Wir möchten jetzt die Spalte VM nicht in Byte sondern in Gigabyte dargestellt bekommen.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /home/user&gt; 1gb
+1073741824
+</code></pre></div></div>
+
+<p>Wir müssen jetzt eine neue Spalte generieren die aus der Spalte VM den Wert nimmt und durch 1 GB teilt. Damit das Ergebniss leichter zu lesen ist, wandeln wir das Ergenis in ein Integer um:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-Process|Select-Object <span class="nt">-property</span> name, @<span class="o">{</span>Label <span class="o">=</span><span class="s1">'MGB'</span><span class="p">;</span>Expression <span class="o">={</span><span class="nv">$_</span>.VM / 1gb <span class="nt">-as</span> <span class="o">[</span>int]<span class="o">}}</span>|Sort-Object <span class="nt">-property</span> MGB <span class="nt">-Descending</span>|Select-Object <span class="nt">-first</span> 10
+</code></pre></div></div>
+
+<p>Um die Berechnung der Spalte zu speichern, kann man folgenden Befehl verwenden:</p>
+
+<pre><code class="language-bas">Update-TypeData -Typename System.Diagnostics.process -MemberType ScriptProperty -MemberName MGB -value {$this.VM/1gb -as [int]}
+</code></pre>
+
+<p>Wir überprüfen das:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /home/user&gt; Get-Process|Select-Object <span class="nt">-property</span> name, MGD                    
+Name            MGD
+<span class="nt">----</span>            <span class="nt">---</span>
+<span class="o">(</span>sd-pam<span class="o">)</span>          0
+accounts-daemon   0
+acpid             0
+agetty            0
+agetty            0
+amazon-ssm-agen   0
+</code></pre></div></div>
+
+<h2 id="aufgabe-1">Aufgabe</h2>
+
+<p>Die Ausgabe soll absteigend nach MGB sortiert werden. Weiterhin sollen nur die ersten 10 Zeilen ausgegeben werden.</p>
+
+<h1 id="alias-1">Alias</h1>
+
+<p>Wir setzen das Alias meinProzess:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set-Alias meinProzess Get-Process
+meinProzess
+</code></pre></div></div>
+
+<p>und rufen das Alias in der nächsten Zeile auf.</p>
+
+<h2 id="aufgabe-2">Aufgabe</h2>
+
+<p>Löse mit Alias folgende Aufgabe: Unter Windows soll unter dem Alias “myEditor” Notepad aufgerufen werdewn und unter Linux nano.</p>
+
+<h2 id="alias-und-funktionen">Alias und Funktionen</h2>
+
+<p>Wir definieren eine Funktion CDOpt und rufen diese auf:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /home/user&gt; <span class="k">function </span>CDOpt <span class="o">{</span>set-location /opt/<span class="o">}</span>
+PS /home/user&gt; CDOpt
+PS /opt&gt;
+</code></pre></div></div>
+
+<p>Die Funktion bringt uns immer in ein bestimmtes Verzeichnis, egal an welchem Ort wir uns gerade befinden.</p>
+
+<p>Wir können jetzt die Funktion mit einem Alias versehen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /opt&gt; Set-Alias my CDOpt
+PS /opt&gt; <span class="nb">cd</span> ~
+PS /home/user&gt; my
+PS /opt&gt;
+</code></pre></div></div>
+
+<p>Mit dem Befehl “my” rufen wir die Funktion CDOpt auf die uns in das Verzeichnis /opt bringt.</p>
+
+<h1 id="python-in-powershell">Python in Powershell</h1>
+
+<p>Wir legen eine Datei an mit dem Namen fbs.py und folgendem Inhalt (vorher bitte ins Home-Verzeichnis wechseln mit dem Befehl “cd ~”):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"FBS ist cool!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>und setzen die Ausführungsechte und starten das Skript:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /home/user&gt; <span class="nb">chmod </span>a+x fbs.py
+PS /home/user&gt; ./fbs.py
+FBS ist cool!
+</code></pre></div></div>
+
+<h1 id="arbeiten-mit-dateien">Arbeiten mit Dateien</h1>
+
+<p>Wir erstellen eine json-Datei (siehe oben) mit den ersten 10 Zeilen der Prozessliste, Der Befehl funktioniert nur unter Linux da head und cat Linux-Befehle sind:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /home/user&gt; Get-Process|head|ConvertTo-Json|out-file ausgabe.json
+PS /home/user&gt; <span class="nb">cat</span> ./ausgabe.json
+<span class="o">[</span>
+  <span class="s2">""</span>,
+  <span class="s2">" NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName                  "</span>,
+  <span class="s2">" ------    -----      -----     ------      --  -- -----------                  "</span>,
+  <span class="s2">"      0     0.00       2.16       0.00    2404 401 (sd-pam)                     "</span>,
+  <span class="s2">"      0     0.00       6.18       0.56    1128 128 accounts-daemon              "</span>,
+  <span class="s2">"      0     0.00       1.24       0.00    1146 146 acpid                        "</span>,
+  <span class="s2">"      0     0.00       2.13       0.10    1259 259 agetty                       "</span>,
+  <span class="s2">"      0     0.00       1.83       0.28    1264 264 agetty                       "</span>,
+  <span class="s2">"      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen              "</span>,
+  <span class="s2">"      0     0.00       0.00       0.00      25   0 ata_sff                      "</span>
+<span class="o">]</span>
+
+</code></pre></div></div>
+
+<p>Wir können den Inhalt wieder in PowerShell einlesen und als Variable speichern. Den Inhalt der Variable $Daten geben wir dann aus:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /home/user&gt; <span class="nv">$Daten</span> <span class="o">=</span> Get-Content ausgabe.json
+PS /home/user&gt; <span class="nv">$Daten</span>
+<span class="o">[</span>
+  <span class="s2">""</span>,
+  <span class="s2">" NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName                  "</span>,
+  <span class="s2">" ------    -----      -----     ------      --  -- -----------                  "</span>,
+  <span class="s2">"      0     0.00       2.16       0.00    2404 401 (sd-pam)                     "</span>,
+  <span class="s2">"      0     0.00       6.18       0.56    1128 128 accounts-daemon              "</span>,
+  <span class="s2">"      0     0.00       1.24       0.00    1146 146 acpid                        "</span>,
+  <span class="s2">"      0     0.00       2.13       0.10    1259 259 agetty                       "</span>,
+  <span class="s2">"      0     0.00       1.83       0.28    1264 264 agetty                       "</span>,
+  <span class="s2">"      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen              "</span>,
+  <span class="s2">"      0     0.00       0.00       0.00      25   0 ata_sff                      "</span>
+<span class="o">]</span>
+
+</code></pre></div></div>
+
+<p>Wir können das Json-File auch konvertieren in die Ursprügliche Ausgabe:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /home/user&gt; <span class="nv">$Daten</span> <span class="o">=</span> Get-Content ausgabe.json|ConvertFrom-Json
+PS /home/user&gt; <span class="nv">$Daten</span>
+
+ NPM<span class="o">(</span>K<span class="o">)</span>    PM<span class="o">(</span>M<span class="o">)</span>      WS<span class="o">(</span>M<span class="o">)</span>     CPU<span class="o">(</span>s<span class="o">)</span>      Id  SI ProcessName
+ <span class="nt">------</span>    <span class="nt">-----</span>      <span class="nt">-----</span>     <span class="nt">------</span>      <span class="nt">--</span>  <span class="nt">--</span> <span class="nt">-----------</span>
+      0     0.00       2.16       0.00    2404 401 <span class="o">(</span>sd-pam<span class="o">)</span>
+      0     0.00       6.18       0.56    1128 128 accounts-daemon
+      0     0.00       1.24       0.00    1146 146 acpid
+      0     0.00       2.13       0.10    1259 259 agetty
+      0     0.00       1.83       0.28    1264 264 agetty
+      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen
+      0     0.00       0.00       0.00      25   0 ata_sff
+</code></pre></div></div>
+
+<p>Aber nicht nur das, dass gesamte Objekt steht wieder zur Verfügung!:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS /home/user&gt; <span class="nv">$Daten</span>|Sort-Object <span class="nt">-Descending</span> CPU
+
+ NPM<span class="o">(</span>K<span class="o">)</span>    PM<span class="o">(</span>M<span class="o">)</span>      WS<span class="o">(</span>M<span class="o">)</span>     CPU<span class="o">(</span>s<span class="o">)</span>      Id  SI ProcessName
+ <span class="nt">------</span>    <span class="nt">-----</span>      <span class="nt">-----</span>     <span class="nt">------</span>      <span class="nt">--</span>  <span class="nt">--</span> <span class="nt">-----------</span>
+      0     0.00       2.16       0.00    2404 401 <span class="o">(</span>sd-pam<span class="o">)</span>
+      0     0.00       6.18       0.56    1128 128 accounts-daemon
+      0     0.00       1.24       0.00    1146 146 acpid
+      0     0.00       2.13       0.10    1259 259 agetty
+      0     0.00       1.83       0.28    1264 264 agetty
+      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen
+      0     0.00       0.00       0.00      25   0 ata_sff
+</code></pre></div></div>
+
+<p>Und wir können uns alle Member des Objekts anzeigen lassen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$Daten</span>|Get-Member
 </code></pre></div></div>
 
 

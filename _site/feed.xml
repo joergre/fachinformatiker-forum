@@ -5,10 +5,59 @@
     <description>Alles über IT.</description>
     <link>http://fachinformatiker-fulda.de/</link>
     <atom:link href="http://fachinformatiker-fulda.de/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Feb 2018 12:43:49 +0100</pubDate>
-    <lastBuildDate>Thu, 15 Feb 2018 12:43:49 +0100</lastBuildDate>
+    <pubDate>Sun, 22 Apr 2018 19:33:52 +0200</pubDate>
+    <lastBuildDate>Sun, 22 Apr 2018 19:33:52 +0200</lastBuildDate>
     <generator>Jekyll v3.7.2</generator>
 
+    
+      <item>
+        <title>Steam manuell aktualisieren</title>
+        <description>&lt;p&gt;Steam zeigt diverse Fehlermeldungen beim Start unter Ubuntu an. Beispielsweise “/lib/firmware/amdgpu/raven_gpu_info.bin for module amdgpu not found” oder kann radeonsi_dri.so nicht finden oder andere Probleme die einen Start von Steam verhindern.&lt;/p&gt;
+
+&lt;p&gt;Die Lösung ist meist, Steam manuell zu aktualisieren:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/.local/share/Steam/ubuntu12_32/steam
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sun, 25 Mar 2018 00:00:00 +0100</pubDate>
+        <link>http://fachinformatiker-fulda.de/2018/03/25/steam/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/03/25/steam/</guid>
+      </item>
+    
+      <item>
+        <title>Nextcloud Client unter Ubuntu installieren</title>
+        <description>&lt;p&gt;Am besten funktioniert die Installation mit Snap:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;snap &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nextcloud-client
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Falls der Befehl Snap nicht bekannt ist:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;snap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sun, 25 Mar 2018 00:00:00 +0100</pubDate>
+        <link>http://fachinformatiker-fulda.de/2018/03/25/nextcloud-client/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/03/25/nextcloud-client/</guid>
+      </item>
+    
+      <item>
+        <title>Virtualisierung mit Proxmox</title>
+        <description>&lt;p&gt;In dem Workshop wird ein ProxmoxServer mit Clusterfunktionalität aufgesetzt. Es werden Virtuelle Maschinen (KVM) und Container (LXC und Docker) erstellt. Es wird ein Skript erstellt mit dem viele Container auf einmal erstellt werden und beendet werden kann.&lt;/p&gt;
+
+&lt;p&gt;Die Veranstaltung ist ein Workshop an dem jeder Teilnehmen kann. Endzeitpunkt ist völlig variabel, die Veranstaltung endet, wenn niemand mehr etwas zu sagen hat:-)&lt;/p&gt;
+
+&lt;p&gt;Datum: Samstag, 24. März 2018 von 10:00 - 15:00 Ort: Fulda, ITZ (alter Schlachthof)&lt;/p&gt;
+
+&lt;p&gt;Moderation: Julien Coleman&lt;/p&gt;
+
+&lt;p&gt;Unterstützt von &lt;a href=&quot;http://zeitsprung.org&quot;&gt;Zeitsprung e.V.&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Mar 2018 00:00:00 +0100</pubDate>
+        <link>http://fachinformatiker-fulda.de/2018/03/13/virtualisierung/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/03/13/virtualisierung/</guid>
+      </item>
     
       <item>
         <title>Monitoring - mit Sinn und Verstand</title>
@@ -1395,9 +1444,11 @@ Die Veranstaltung wird sich in Form eines kleinen Workshops gestalten. Es bedarf
             <description>&lt;p&gt;Bild von &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Python_molurus_molurus-Portrait.jpg&quot;&gt;https://commons.wikimedia.org/wiki/File:Python_molurus_molurus-Portrait.jpg&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;allgemeines&quot;&gt;Allgemeines&lt;/h1&gt;
 
-&lt;p&gt;Fragen zum Text oder zu Python: &lt;a href=&quot;https://discord.gg/TsaqyAQ&quot;&gt;https://discord.gg/TsaqyAQ&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;unterschied-zwischen-python-2-und-python-3&quot;&gt;Unterschied zwischen Python 2 und Python 3&lt;/h2&gt;
 
-&lt;p&gt;Videos: &lt;a href=&quot;https://www.youtube.com/watch?v=TCwIIs_vwzQ&quot;&gt;https://www.youtube.com/watch?v=TCwIIs_vwzQ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Python 2 versus Python 3: &lt;a href=&quot;https://docs.python.org/3/whatsnew/3.0.html&quot;&gt;https://docs.python.org/3/whatsnew/3.0.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Unterschiede zwischen Python 2 und Python 3: &lt;a href=&quot;https://wiki.python.org/moin/Python2orPython3&quot;&gt;https://wiki.python.org/moin/Python2orPython3&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;python-programm-ausführen&quot;&gt;Python-Programm ausführen&lt;/h1&gt;
 
@@ -2377,7 +2428,35 @@ Du solltest 100% erreichen!&lt;/p&gt;
 
 &lt;p&gt;Es gibt einmal die “for-Schleife” und auf der anderen Seite die “while-Schleife”. Die “for-schleife” ist dafür gedacht, bestimmte Befehle n mal auszuführen. N ist bei Eintritt in die Schleife ein fester Wert. Die “While-Schleife” wird verwendet um einen Code-Block solange auszuführen, solange eine Bedingung wahr ist.&lt;/p&gt;
 
-&lt;h2 id=&quot;for-schleife&quot;&gt;For-Schleife&lt;/h2&gt;
+&lt;h1 id=&quot;projekt&quot;&gt;Projekt&lt;/h1&gt;
+
+&lt;p&gt;Wir haben viele Datenbank-Server und möchten ein einfaches Tool, dass diese entweder lokal oder nach S3 sichert. Es sind folgende Schritte notwendig:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Eine Datenbank-URL muss angegeben werden.&lt;/li&gt;
+  &lt;li&gt;Ein Treiber für “lokal” oder “s3” muss angegeben werden&lt;/li&gt;
+  &lt;li&gt;Ein Ziel muss angegeben werden. Die Interpretation ist abhängig vom Treiber: Pfad oder Name des S3-Bucket.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-aufgabe&quot;&gt;1. Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;a) Mit Welchem UML-Diagramm kann obige Anforderung beschrieben werden?&lt;/p&gt;
+
+&lt;p&gt;b) Wähle ein Tool aus, dass kostenfrei ist und mit dem das Diagramm gezeichnet werden kann.&lt;/p&gt;
+
+&lt;p&gt;c) Zeichne das Diagramm und gebe als Bild in Moodle ab.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-aufgabe&quot;&gt;2. Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;Schreine bitte alle verwendeten Befehle auf:&lt;/p&gt;
+
+&lt;p&gt;a) Installiere eine PostgreSQL-Datenbank mit entsprechenden Client.&lt;/p&gt;
+
+&lt;p&gt;b) Lade Die entsprechende Datenbank von http://sportsdb.org/sd/samples herunter.&lt;/p&gt;
+
+&lt;p&gt;c) Importiere die Datei in die Datenbank&lt;/p&gt;
+
+&lt;p&gt;Ist es möglich, die Installation zu automatisieren? Mache Dir hierzu Gedanken! Wie weit kommst Du mit Deinem jetzigen Wissen? Begründe diese und gebe die Antwort un Moodle ab!&lt;/p&gt;
 
 </description>
             <link>http://fachinformatiker-fulda.de/LF6_1.1_Python.html</link>
@@ -3399,6 +3478,228 @@ Wir installieren die Abhängigkeiten:&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; apache2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;h1 id=&quot;which&quot;&gt;Which&lt;/h1&gt;
+
+&lt;p&gt;Manchmal ist die Antwort auf die Frage interessant: “Wo ist dieses Programm instaliert?” Beispielsweise des Befehls “ls”. Die Antwort erhalten wir mit folgendem Befehl:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;which &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Woher weiß jetzt das System in welchem Ordner das Programm installiert ist? Über das sogenannte “environment” also der Umgebung. Mit Umgebung bezeichnet man die Menge aller Syxstemvariablen und bekommt sie angezeigt mit:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;env&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Relativ weit unten kommt eine Zeile, die mit PATH anfängt, sie gibt alle Verzeichnisse an, in dem das Betriebssystem nach einem Befehl sucht.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/user/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir können uns auch nur die Variable ausgeben lassen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;das-erste-script&quot;&gt;Das erste Script&lt;/h1&gt;
+
+&lt;p&gt;Wir schreiben ein Script, dass den Befehl “ls -a” ausführen soll. Wir nennen die Datei ls.sh. Dazu öffnen wir die datei mit unserem Lieblingseditor und schreiben hinein:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir können das Skript nicht ausführen, weil die entsprechende Berechtigung fehlt:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./ls.sh
+&lt;span class=&quot;nt&quot;&gt;-bash&lt;/span&gt;: ./ls.sh: Permission denied
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Als nächstes müssen wir die Rechte setzen. Die momentanen Rechte sehe wir mit:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+total 4
+&lt;span class=&quot;nt&quot;&gt;-rw-rw-r--&lt;/span&gt; 1 user user 6 Feb 25 14:12 ls.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir sehen an erster Stelle ein “-“, dies bedeutet dass es sich um eine Datei handelt. Es gibt nich viele andere mögliche Zeichen, z.B. ein d für ein Verzeichnis (directory).&lt;/p&gt;
+
+&lt;p&gt;Dann kommen die Buchstaben ‘rw-‘, ‘rw-‘ und ‘r–’. ‘r’ steht für das Leserecht (read), ‘w’ für das Schreibrecht (write) und ‘x’ steht für das Ausführungsrecht (execute). Da das x-Recht nicht gesetzt ist, steht dort ein ‘-‘. Die erste Gruppe von drei Zeichen beschreibt die Rechte des Eigentümers (user), die zweite Gruppe die der Benutzergruppe (group) und die letzte Gruppe die Rechte der Benutzer die weder Eigentümer der Datei noch in der entsprechenden Gruppe sind (others). Wir sehen, dass die “anderen” nur ein Leserecht haben.&lt;/p&gt;
+
+&lt;p&gt;Wir sehen dann eine 1, dass die Anzahl der Dateien. Bei einer einzelnen Datei steht hier immer eine 1. Danach kommt der Besitzer (user) und die Gruppe (user) und das Erstellungsdatum (6. Februar)und die Uhrzeit (14:12). Die Uhrzeit wird ausgeblendet, wenn die Datei älter als ein Jahr ist und durch die Jahreszahl ersetzt. Die Zahl zwischen Datum und Uhrzeit gibt die Größe der Datei in Bytes an.&lt;/p&gt;
+
+&lt;p&gt;Um die Datei auszuführbar zu machen, verwenden wir folgenden Befehl:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;u+x ls.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und schauen uns das Ergebnis an:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-rwxrw-r--&lt;/span&gt; 1 user user 6 Feb 25 14:12 ls.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir sehen, dass ein x dazu gekommen ist. Das u steht für users, dass ‘+’ für hinzufügen und das ‘x’ für das Ausführrecht. 
+Wir führen die Datei jetzt aus:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./ls.sh
+&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;   .bash_history  .bashrc  .local  .profile                   .viminfo
+..  .bash_logout   .cache   ls.sh   .sudo_as_admin_successful
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir müssen momentan ein ‘./’ davor schreiben, weil das System nicht weiß in welchem Verzeichnis die Datei liegt. Würden wir das ‘./’ weglassen würde das System die Pfade der Variable $PATH absuchen und unsere Datei nicht finden:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ls.sh
+ls.sh: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;’./’ steht für das Verzeichnis indem wir uns gerade befinden. Dieses Verzeichnis wird beim Prompt angezeigt: ‘~’. Das ‘~’ steht als Abkürzung für das Heimatverzeichnes des gerade angemeldeten Benutzer.&lt;/p&gt;
+
+&lt;p&gt;’./ls.sh’ ist der relative Pfad und wir können auch den absoluten Pfad verwenden:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/home/user/ls.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir können jetzt unseren Befehl in ein Directory kopieren, das in der PATH-Variable angegeben ist:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;ls.sh /bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Beim ausführen bekommen wir eine Fehlermeldung:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ls.sh
+&lt;span class=&quot;nt&quot;&gt;-bash&lt;/span&gt;: /bin/ls.sh: Permission denied
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Das liegt daran, dass beim kopieren in bin der Besitzer zu root gewechselt ist. Uns gehört die Datei nichtmehr. Also passwn wir die Rechte an:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo chmod &lt;/span&gt;a+x /bin/ls.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;‘a’ steht für all und setzt für alle die Ausführungsrechte. Jetzt können wir den Befehl verwenden.&lt;/p&gt;
+
+&lt;p&gt;Wir können auch die Variable $PATH unseren Bedürfnissen anpassen. Wir möchten unser Programm ls.sh im Verzeichnis /opt haben und es soll dort auch gefunden werden:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mv&lt;/span&gt; /bin/ls.sh /opt/
+&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;:/opt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;history&quot;&gt;History&lt;/h1&gt;
+
+&lt;p&gt;Mit dem Befehl ‘history’ sehen wir alle Befehle die unser User auf diesem System ausgeführt hat. Die Befehle werden in der Datei .bash_history gespeichert.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;history
+    &lt;/span&gt;1  su -
+    2  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+    3  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; powershell
+    4  curl https://packages.microsoft.com/keys/microsoft.asc | &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key add -
+    5  curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/apt/sources.list.d/microsoft.list
+    6  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+    7  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; powershell
+    8  pswh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Um den Befehl 8 auszuführen geben wir ein:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;8
+pswh
+No &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pswh'&lt;/span&gt; found, did you mean:
+ Command &lt;span class=&quot;s1&quot;&gt;'psw'&lt;/span&gt; from package &lt;span class=&quot;s1&quot;&gt;'wise'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;universe&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+pswh: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;locate-und-find&quot;&gt;Locate und find&lt;/h1&gt;
+
+&lt;p&gt;Auch unter Linux steht eine Indexsuche zur Verfügung. Indexsuche bedeutet, dass eine Datenbank durchsucht wird anstelle der realen Dateinamen auf dem Speichermedien. Der grosse Vorteil ist die hohe Geschwindigkeit. Die Aktualität des Index bestimmt masgeblich über den Erfolg der suche. Der Befehl heißt “locate” und wir installieren ihn mit:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;locate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und wir suchen nach ls:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;locate &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dem gegenüber durchsucht der Befehl find wirklich die  Verzeichnisse auf den Laufwerken. Find muss normalerweise nicht extra installiert werden:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find / &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Der erste Parameter gibt den Startpunkt der Suche an, hier “/” und der zweite Parameter wonach gesucht werden soll. Wollen wir nach Namen suchen, die ls enthalten, so rufen wir den Befehl wie folgt auf:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find / &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'*ls*'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;man&quot;&gt;Man&lt;/h1&gt;
+
+&lt;p&gt;“Man” steht für Manual und bietet Hilfen für die Benutzung von Befehlen an. Manpages (also Manual-Seiten) sind in Sektionen unterteilt und haben einen standardisierten Aufbau. Sowohl die Unterteilung wie der Aufbau der einzelnen Seiten sind standardisiert. Siehe hierzu &lt;a href=&quot;https://de.wikipedia.org/wiki/Manpage&quot;&gt;https://de.wikipedia.org/wiki/Manpage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Wir schauen uns die Hilfe zum Befehl “ls” an:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;man &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Die angezeigte Seite sollte in etwa der Webseite entsprechen: &lt;a href=&quot;http://man7.org/linux/man-pages/man1/ls.1.html&quot;&gt;http://man7.org/linux/man-pages/man1/ls.1.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Links oben steht ls(1) und zeigt an, dass wir uns in der ersten Sektion befinden. In der ersten Sektion werden Befehle erklärt.&lt;/p&gt;
+
+&lt;p&gt;Wir schauen uns den Befehl passwd an:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;man passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und erhalten eine Ausgabe ähnliche &lt;a href=&quot;http://man7.org/linux/man-pages/man1/passwd.1.html&quot;&gt;http://man7.org/linux/man-pages/man1/passwd.1.html&lt;/a&gt;. Wir sehen am Ende des Textes einen Hinweis, dass es auf einen Eintrag von passwd in Sektion 5 gibt. Es gibt einmal den Befehl passwd und auf der anderen Seite die Konfigurationsdatei passwd. Konfigurationsdateien sind in Sektion 5 abgelegt:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;man 5 passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Die Ausgabe ist hier zu finden: &lt;a href=&quot;http://man7.org/linux/man-pages/man5/passwd.5.html&quot;&gt;http://man7.org/linux/man-pages/man5/passwd.5.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Wenn wir uns nicht sicher sind, in welcher Sektion etwas über einem Befehl steht, können wir folgendes eingeben:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;whatis passwd
+passwd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1ssl&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;        - compute password hashes
+passwd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;           - change user password
+passwd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;           - the password file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Alternativ funktioniert auch:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;man &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wenn wir alle Seiten angezeigt bekommen möchten in denen ein bestimmter String auftaucht:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apropos passwd
+chgpasswd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;        - update group passwords &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;batch mode
+chpasswd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;         - update passwords &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;batch mode
+expect_mkpasswd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;  - generate new password, optionally apply it to a user
+fgetpwent_r &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;      - get passwd file entry reentrantly
+getpwent_r &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;       - get passwd file entry reentrantly
+gpasswd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;          - administer /etc/group and /etc/gshadow
+grub-mkpasswd-pbkdf2 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; - generate hashed password &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;GRUB
+htpasswd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;         - Manage user files &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;basic authentication
+pam_localuser &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;    - require &lt;span class=&quot;nb&quot;&gt;users &lt;/span&gt;to be listed &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /etc/passwd
+passwd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;           - change user password
+passwd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1ssl&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;        - compute password hashes
+passwd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;           - the password file
+passwd2des &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;       - RFS password encryption
+SSL_CTX_set_default_passwd_cb &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3ssl&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; - &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;passwd callback &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;encrypted PEM ...
+SSL_CTX_set_default_passwd_cb_userdata &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3ssl&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; - &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;passwd callback &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;encry...
+update-passwd &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;    - safely update /etc/passwd, /etc/shadow and /etc/group
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Alternativ:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;man &lt;span class=&quot;nt&quot;&gt;-k&lt;/span&gt; passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Innerhalb der Manpages kann man mit “/” und dem Schlüsselwort die Hilfe durchsuchen. Das drücken der “n”-Taste springt dann zum nächsten Treffer.&lt;/p&gt;
+
+&lt;h1 id=&quot;info&quot;&gt;Info&lt;/h1&gt;
+
+&lt;p&gt;Manpages hanen keine Verweise, sondern beim aufruf einer neuen Seite muss die Seite geschlossen werden und manuell eine neue geöffnet werden. Bei Info ist dies anders. Informationen zur Steuerung: &lt;a href=&quot;https://en.wikipedia.org/wiki/Info_(Unix)&quot;&gt;https://en.wikipedia.org/wiki/Info_(Unix)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Die Links sind drch “*” gekennzeichnet.&lt;/p&gt;
+
 &lt;h1 id=&quot;bind-installieren&quot;&gt;Bind installieren&lt;/h1&gt;
 
 &lt;p&gt;Ein ergänzender Artikel ist hier zu finden &lt;a href=&quot;https://wiki.ubuntuusers.de/DNS-Server_Bind/&quot;&gt;https://wiki.ubuntuusers.de/DNS-Server_Bind/&lt;/a&gt;&lt;/p&gt;
@@ -3627,6 +3928,8 @@ telnet: Unable to connect to remote host: No route to host
 
 &lt;p&gt;Zum installieren von Powershell auf Deinem System besuche &lt;a href=&quot;https://github.com/PowerShell/PowerShell&quot;&gt;https://github.com/PowerShell/PowerShell&lt;/a&gt; und folge der Anweisung.&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Beachte&lt;/strong&gt; bitte folgende Datei: &lt;a href=&quot;https://github.com/PowerShell/PowerShell/blob/master/docs/KNOWNISSUES.md&quot;&gt;https://github.com/PowerShell/PowerShell/blob/master/docs/KNOWNISSUES.md&lt;/a&gt;!&lt;/p&gt;
+
 &lt;h1 id=&quot;warum-powershell&quot;&gt;Warum Powershell&lt;/h1&gt;
 
 &lt;p&gt;Powershell ist mit der Version 6 OpenSource Software geworden und unterstützt zahlreiche Plattformen wie Windows, iOS und alle gängige Linu-Plattformen (redhat, centos, Debian, Ubuntu etc.) und auch ARM-Prozessoren und Cloud-Anbieter wie Amazon, google und Azure von Microsoft. Der Vorteil liegt jetzt darin, dass man sich nicht mehr in einer hetrogenen Systemlanschaft auf jedes System einstellen muss, sondern alle Standardaufgaben in der gleichen Umgebung ausführen kann. Ebenfalls funktionieren geschriebene Skripte von einem Windowssystem auch auf allen anderen Systemen (wenn die Abhängigkeiten erfüllt sind).&lt;/p&gt;
@@ -3734,7 +4037,7 @@ SYNTAX
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Alias
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Wir bekommen eine Liste aller Alliases und das Ziel des verweises angezeigt. Bitte beachte, dass bei Scripten auf Aliases verzichtet werden sollte, weil die Fehlersuche durch diese sehr erschwert wird.&lt;/p&gt;
+&lt;p&gt;Wir bekommen eine Liste aller Alliases und das Ziel des Verweises angezeigt. Bitte beachte, dass bei Scripten auf Aliases verzichtet werden sollte, weil die Fehlersuche durch diese sehr erschwert wird.&lt;/p&gt;
 
 &lt;h2 id=&quot;cmdlets&quot;&gt;Cmdlets&lt;/h2&gt;
 
@@ -3758,7 +4061,7 @@ SYNTAX
 
 &lt;h1 id=&quot;verketten-von-befehlen&quot;&gt;Verketten von Befehlen&lt;/h1&gt;
 
-&lt;p&gt;wir haben gesehen, dass wir mit&lt;/p&gt;
+&lt;p&gt;Wir haben gesehen, dass wir mit&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; bash
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -3810,6 +4113,336 @@ SYNTAX
 &lt;p&gt;Wir können auch Module bzw. SnapIns installieren, die den Befehlsvorrat der PowerShell-Installation deutlich erweitern:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Install-Package &lt;span class=&quot;nt&quot;&gt;-Name&lt;/span&gt; AzureRM.NetCore
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;dateien&quot;&gt;Dateien&lt;/h1&gt;
+
+&lt;p&gt;Um eine Ausgabe in eine Datei umzuleiten:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Get-Process | Out-File &lt;span class=&quot;nt&quot;&gt;-FilePath&lt;/span&gt; /home/user/process.csv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bitte Pfad entsprechend anpassen. Die Ausgaber der Datei erfolgt mit:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;process.csv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Eine Kodierung kann mit angegeben werden, ist aber sehr umständlich:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$encoding&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; New-Object System.Text.utf8encoding
+Get-Process | Out-File &lt;span class=&quot;nt&quot;&gt;-FilePath&lt;/span&gt; /home/user/process.csv &lt;span class=&quot;nt&quot;&gt;-Encoding&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$encoding&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Selbstverständlich könnte man den Befehl auch in eine Zeile schreiben. Die Verwendung der Variable dient nur dazu, zu verdeutlichen, welcher Teil die Kodierung vornimmt.&lt;/p&gt;
+
+&lt;h2 id=&quot;aufgabe&quot;&gt;Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;Entwickle eine Befehlszeile, die die aktuelle, lokale Netzwerkkonfiguration als .xml in eine Datei speichert (export-Clixml). Lass Dir die Datei auf dem Bildschirm erscheinen.&lt;/p&gt;
+
+&lt;h1 id=&quot;erstes-script&quot;&gt;Erstes Script&lt;/h1&gt;
+
+&lt;p&gt;Wir legen eine Datei an mit dem Namen erst.ps mit folgendem Inhalt:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;write-host &lt;span class=&quot;s2&quot;&gt;&quot;FBS ist cool&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Installoiert dafür testhalber das Programm Visual Studio Code, das eine integrierte PowerShell hat.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;10 &lt;span class=&quot;nt&quot;&gt;-gt&lt;/span&gt; 5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+write-host &lt;span class=&quot;s2&quot;&gt;&quot;Größer&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;‘-gt’ steht für ‘greater then’ als ‘größer als’. Eine Erklärung der wichtigsten Vergleichsopertoren gibt es hier: &lt;a href=&quot;https://www.windowspro.de/script/vergleichsoperatoren-powershell-eq-lt-gt-contains-match&quot;&gt;https://www.windowspro.de/script/vergleichsoperatoren-powershell-eq-lt-gt-contains-match&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Wir verändern den Code:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3 &lt;span class=&quot;nt&quot;&gt;-gt&lt;/span&gt; 5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+write-host &lt;span class=&quot;s2&quot;&gt;&quot;Größer&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Jetzt solltze keine Ausgabe erfolgen!&lt;/p&gt;
+
+&lt;p&gt;Wir ergänzen den Code:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3 &lt;span class=&quot;nt&quot;&gt;-gt&lt;/span&gt; 5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    write-host &lt;span class=&quot;s2&quot;&gt;&quot;Größer&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;elseif&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;11 &lt;span class=&quot;nt&quot;&gt;-gt&lt;/span&gt; 5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    write-host &lt;span class=&quot;s2&quot;&gt;&quot;Juhu&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Das Skript wird wie erwartet ausgeführt. Setze jetzt Else
+If in eine einzelne Zeile:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3 &lt;span class=&quot;nt&quot;&gt;-gt&lt;/span&gt; 5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    write-host &lt;span class=&quot;s2&quot;&gt;&quot;Größer&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+elseif&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;11 &lt;span class=&quot;nt&quot;&gt;-gt&lt;/span&gt; 5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    write-host &lt;span class=&quot;s2&quot;&gt;&quot;Juhu&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und Du bekommst eine Fehlermeldung. **Merke: ** Else oder ElseIf darf niemals aleine in einer Zeile stehen!&lt;/p&gt;
+
+&lt;h2 id=&quot;do---while&quot;&gt;Do - While&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Do&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;$zahl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$zahl&lt;/span&gt; + 1
+  write-host &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$zahl&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; x FBS ist cool&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$zahl&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lt&lt;/span&gt; 10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;foreach&quot;&gt;ForEach&lt;/h2&gt;
+
+&lt;p&gt;Mit ForEach kann jedes Element eines Array ausgegeben werden:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$namen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;F&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;B&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;S&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;i&quot;&lt;/span&gt;
+ForEach&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$namen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+write-host &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;powershell-als-standardshell-einrichten&quot;&gt;Powershell als Standardshell einrichten&lt;/h1&gt;
+
+&lt;p&gt;Um Powershell als Standard einzurichten, sucht man sich selbst in der Datei /etc/passwd mit rinmem beliebigen Editor:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim /etc/passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und verändert den Eintrag /bin/bash zu (nachdem man den Pfad überprüft hat):&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user@joergreuter3:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;whereis pwsh
+pwsh: /usr/bin/pwsh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/pwsh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;prozesse&quot;&gt;Prozesse&lt;/h1&gt;
+
+&lt;p&gt;Wir schauen uns nocheinmal den Befehl an um die laufende Prozesse angezeigt zu bekommen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Eine sehr ungeordnete Ausgabe. Wir schränken die Ausgabe auf die ersten 1o Elemente ein:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process|Select-Object &lt;span class=&quot;nt&quot;&gt;-first&lt;/span&gt; 10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Jetzt möchten wir die Prozesse absteigend nach CPU-Belastung sortieren:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process|Sort-Object &lt;span class=&quot;nt&quot;&gt;-Descending&lt;/span&gt; CPU|Select-Object &lt;span class=&quot;nt&quot;&gt;-first&lt;/span&gt; 10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dann weißen wir das ganze einer Variable zu:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$belastung&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Get-Process|Sort-Object &lt;span class=&quot;nt&quot;&gt;-Descending&lt;/span&gt; CPU|Select-Object &lt;span class=&quot;nt&quot;&gt;-first&lt;/span&gt; 10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lassen uns die Variable anzeigen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /home/user&amp;gt; &lt;span class=&quot;nv&quot;&gt;$belastung&lt;/span&gt;
+
+ NPM&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;K&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;    PM&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;M&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;      WS&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;M&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;     CPU&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;      Id  SI ProcessName
+ &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt;    &lt;span class=&quot;nt&quot;&gt;-----&lt;/span&gt;      &lt;span class=&quot;nt&quot;&gt;-----&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt;      &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt;
+      0     0.00      17.87       4.51    1114 114 amazon-ssm-agen
+      0     0.00       5.74       2.30       1   1 systemd
+      0     0.00     102.17       2.00    1974 974 pwsh
+      0     0.00       3.43       1.68    1098 098 iscsid
+      0     0.00       6.79       0.49     380 380 systemd-journal
+      0     0.00      25.59       0.39    1135 135 snapd
+      0     0.00       0.14       0.35    1097 097 iscsid
+      0     0.00      39.27       0.23    1147 147 node
+      0     0.00       6.05       0.23    1139 139 accounts-daemon
+      0     0.00       0.00       0.18       4   0 kworker/0:0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Jetzt möchten wir die Ausgabe als Json bekommen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$belastung_json&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Get-Process|Sort-Object &lt;span class=&quot;nt&quot;&gt;-Descending&lt;/span&gt; CPU|Select-Object &lt;span class=&quot;nt&quot;&gt;-first&lt;/span&gt; 10|ConvertTo-Json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir können auch die Variable direkt in Json umwandeln:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$belastung_json2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$belastung&lt;/span&gt;| ConvertTo-Json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir lassen uns von der Prozessliste nur CPU und Name ausgeben:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process|Select-Object &lt;span class=&quot;nt&quot;&gt;-property&lt;/span&gt; name, cpu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und jetzt Name und virtueller Speicher (VM):&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process|Select-Object &lt;span class=&quot;nt&quot;&gt;-property&lt;/span&gt; name, vm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir möchten jetzt die Spalte VM nicht in Byte sondern in Gigabyte dargestellt bekommen.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /home/user&amp;gt; 1gb
+1073741824
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir müssen jetzt eine neue Spalte generieren die aus der Spalte VM den Wert nimmt und durch 1 GB teilt. Damit das Ergebniss leichter zu lesen ist, wandeln wir das Ergenis in ein Integer um:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Get-Process|Select-Object &lt;span class=&quot;nt&quot;&gt;-property&lt;/span&gt; name, @&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;Label &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'MGB'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;Expression &lt;span class=&quot;o&quot;&gt;={&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_&lt;/span&gt;.VM / 1gb &lt;span class=&quot;nt&quot;&gt;-as&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;int]&lt;span class=&quot;o&quot;&gt;}}&lt;/span&gt;|Sort-Object &lt;span class=&quot;nt&quot;&gt;-property&lt;/span&gt; MGB &lt;span class=&quot;nt&quot;&gt;-Descending&lt;/span&gt;|Select-Object &lt;span class=&quot;nt&quot;&gt;-first&lt;/span&gt; 10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Um die Berechnung der Spalte zu speichern, kann man folgenden Befehl verwenden:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bas&quot;&gt;Update-TypeData -Typename System.Diagnostics.process -MemberType ScriptProperty -MemberName MGB -value {$this.VM/1gb -as [int]}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Wir überprüfen das:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /home/user&amp;gt; Get-Process|Select-Object &lt;span class=&quot;nt&quot;&gt;-property&lt;/span&gt; name, MGD                    
+Name            MGD
+&lt;span class=&quot;nt&quot;&gt;----&lt;/span&gt;            &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;sd-pam&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;          0
+accounts-daemon   0
+acpid             0
+agetty            0
+agetty            0
+amazon-ssm-agen   0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;aufgabe-1&quot;&gt;Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;Die Ausgabe soll absteigend nach MGB sortiert werden. Weiterhin sollen nur die ersten 10 Zeilen ausgegeben werden.&lt;/p&gt;
+
+&lt;h1 id=&quot;alias-1&quot;&gt;Alias&lt;/h1&gt;
+
+&lt;p&gt;Wir setzen das Alias meinProzess:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Set-Alias meinProzess Get-Process
+meinProzess
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und rufen das Alias in der nächsten Zeile auf.&lt;/p&gt;
+
+&lt;h2 id=&quot;aufgabe-2&quot;&gt;Aufgabe&lt;/h2&gt;
+
+&lt;p&gt;Löse mit Alias folgende Aufgabe: Unter Windows soll unter dem Alias “myEditor” Notepad aufgerufen werdewn und unter Linux nano.&lt;/p&gt;
+
+&lt;h2 id=&quot;alias-und-funktionen&quot;&gt;Alias und Funktionen&lt;/h2&gt;
+
+&lt;p&gt;Wir definieren eine Funktion CDOpt und rufen diese auf:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /home/user&amp;gt; &lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;CDOpt &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;set-location /opt/&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+PS /home/user&amp;gt; CDOpt
+PS /opt&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Die Funktion bringt uns immer in ein bestimmtes Verzeichnis, egal an welchem Ort wir uns gerade befinden.&lt;/p&gt;
+
+&lt;p&gt;Wir können jetzt die Funktion mit einem Alias versehen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /opt&amp;gt; Set-Alias my CDOpt
+PS /opt&amp;gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~
+PS /home/user&amp;gt; my
+PS /opt&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mit dem Befehl “my” rufen wir die Funktion CDOpt auf die uns in das Verzeichnis /opt bringt.&lt;/p&gt;
+
+&lt;h1 id=&quot;python-in-powershell&quot;&gt;Python in Powershell&lt;/h1&gt;
+
+&lt;p&gt;Wir legen eine Datei an mit dem Namen fbs.py und folgendem Inhalt (vorher bitte ins Home-Verzeichnis wechseln mit dem Befehl “cd ~”):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;FBS ist cool!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;und setzen die Ausführungsechte und starten das Skript:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /home/user&amp;gt; &lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;a+x fbs.py
+PS /home/user&amp;gt; ./fbs.py
+FBS ist cool!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;arbeiten-mit-dateien&quot;&gt;Arbeiten mit Dateien&lt;/h1&gt;
+
+&lt;p&gt;Wir erstellen eine json-Datei (siehe oben) mit den ersten 10 Zeilen der Prozessliste, Der Befehl funktioniert nur unter Linux da head und cat Linux-Befehle sind:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /home/user&amp;gt; Get-Process|head|ConvertTo-Json|out-file ausgabe.json
+PS /home/user&amp;gt; &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; ./ausgabe.json
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot; NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName                  &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot; ------    -----      -----     ------      --  -- -----------                  &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       2.16       0.00    2404 401 (sd-pam)                     &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       6.18       0.56    1128 128 accounts-daemon              &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       1.24       0.00    1146 146 acpid                        &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       2.13       0.10    1259 259 agetty                       &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       1.83       0.28    1264 264 agetty                       &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen              &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       0.00       0.00      25   0 ata_sff                      &quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir können den Inhalt wieder in PowerShell einlesen und als Variable speichern. Den Inhalt der Variable $Daten geben wir dann aus:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /home/user&amp;gt; &lt;span class=&quot;nv&quot;&gt;$Daten&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Get-Content ausgabe.json
+PS /home/user&amp;gt; &lt;span class=&quot;nv&quot;&gt;$Daten&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot; NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName                  &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot; ------    -----      -----     ------      --  -- -----------                  &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       2.16       0.00    2404 401 (sd-pam)                     &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       6.18       0.56    1128 128 accounts-daemon              &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       1.24       0.00    1146 146 acpid                        &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       2.13       0.10    1259 259 agetty                       &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       1.83       0.28    1264 264 agetty                       &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen              &quot;&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;      0     0.00       0.00       0.00      25   0 ata_sff                      &quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wir können das Json-File auch konvertieren in die Ursprügliche Ausgabe:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /home/user&amp;gt; &lt;span class=&quot;nv&quot;&gt;$Daten&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Get-Content ausgabe.json|ConvertFrom-Json
+PS /home/user&amp;gt; &lt;span class=&quot;nv&quot;&gt;$Daten&lt;/span&gt;
+
+ NPM&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;K&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;    PM&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;M&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;      WS&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;M&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;     CPU&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;      Id  SI ProcessName
+ &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt;    &lt;span class=&quot;nt&quot;&gt;-----&lt;/span&gt;      &lt;span class=&quot;nt&quot;&gt;-----&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt;      &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt;
+      0     0.00       2.16       0.00    2404 401 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;sd-pam&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+      0     0.00       6.18       0.56    1128 128 accounts-daemon
+      0     0.00       1.24       0.00    1146 146 acpid
+      0     0.00       2.13       0.10    1259 259 agetty
+      0     0.00       1.83       0.28    1264 264 agetty
+      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen
+      0     0.00       0.00       0.00      25   0 ata_sff
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Aber nicht nur das, dass gesamte Objekt steht wieder zur Verfügung!:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS /home/user&amp;gt; &lt;span class=&quot;nv&quot;&gt;$Daten&lt;/span&gt;|Sort-Object &lt;span class=&quot;nt&quot;&gt;-Descending&lt;/span&gt; CPU
+
+ NPM&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;K&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;    PM&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;M&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;      WS&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;M&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;     CPU&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;      Id  SI ProcessName
+ &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt;    &lt;span class=&quot;nt&quot;&gt;-----&lt;/span&gt;      &lt;span class=&quot;nt&quot;&gt;-----&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt;      &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt;
+      0     0.00       2.16       0.00    2404 401 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;sd-pam&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+      0     0.00       6.18       0.56    1128 128 accounts-daemon
+      0     0.00       1.24       0.00    1146 146 acpid
+      0     0.00       2.13       0.10    1259 259 agetty
+      0     0.00       1.83       0.28    1264 264 agetty
+      0     0.00      19.68       5.90    1137 137 amazon-ssm-agen
+      0     0.00       0.00       0.00      25   0 ata_sff
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Und wir können uns alle Member des Objekts anzeigen lassen:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$Daten&lt;/span&gt;|Get-Member
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
@@ -3922,25 +4555,25 @@ AH00558: apache2: Could not reliably determine the server&lt;span class=&quot;s1
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~
 &lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;web
-wget http://static.oswd.org/designs/3699/Red.zip
+wget &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; RedTie.zip http://www.oswd.org/design/download/id/3699/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;In dem Verzeichnis web legen wir den statschen Anteil unserer Webseite ab. Also entpacken wir unser Template:&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;unzip Red.zip
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;unzip RedTie.zip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Wir kopieren die entpackten Dateien eine Ebene höher und löschen das Verzeichnis:&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mv &lt;/span&gt;Red/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;rmdir &lt;/span&gt;Red
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mv &lt;/span&gt;RedTie/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;rmdir &lt;/span&gt;RedTie
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;test-des-images-mit-statischem-webinhalt&quot;&gt;Test des Images mit statischem Webinhalt&lt;/h2&gt;
 
-&lt;p&gt;Wir startn jetzt einen neuen Container:&lt;/p&gt;
+&lt;p&gt;Wir starten jetzt einen neuen Container:&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;webtest &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 80:80 &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /root/web:/var/www/html &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; ubuntu:web /bin/bash
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;webtest &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 80:80 &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /home/core/web:/var/www/html &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; ubuntu:web /bin/bash
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Mit dem Befehl binden wir das lokale Verzeichnis /root/web  in den Container unter /var/www/html ein und öffnen den Port 80.

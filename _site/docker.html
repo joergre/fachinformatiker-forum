@@ -423,25 +423,25 @@ AH00558: apache2: Could not reliably determine the server<span class="s1">'s ful
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~
 <span class="nb">mkdir </span>web
-wget http://static.oswd.org/designs/3699/Red.zip
+wget <span class="nt">-O</span> RedTie.zip http://www.oswd.org/design/download/id/3699/
 </code></pre></div></div>
 
 <p>In dem Verzeichnis web legen wir den statschen Anteil unserer Webseite ab. Also entpacken wir unser Template:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip Red.zip
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip RedTie.zip
 </code></pre></div></div>
 
 <p>Wir kopieren die entpackten Dateien eine Ebene höher und löschen das Verzeichnis:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mv </span>Red/<span class="k">*</span> <span class="nb">.</span>
-<span class="nb">rmdir </span>Red
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mv </span>RedTie/<span class="k">*</span> <span class="nb">.</span>
+<span class="nb">rmdir </span>RedTie
 </code></pre></div></div>
 
 <h2 id="test-des-images-mit-statischem-webinhalt">Test des Images mit statischem Webinhalt</h2>
 
-<p>Wir startn jetzt einen neuen Container:</p>
+<p>Wir starten jetzt einen neuen Container:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--name</span><span class="o">=</span>webtest <span class="nt">-p</span> 80:80 <span class="nt">-v</span> /root/web:/var/www/html <span class="nt">-i</span> <span class="nt">-t</span> ubuntu:web /bin/bash
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--name</span><span class="o">=</span>webtest <span class="nt">-p</span> 80:80 <span class="nt">-v</span> /home/core/web:/var/www/html <span class="nt">-i</span> <span class="nt">-t</span> ubuntu:web /bin/bash
 </code></pre></div></div>
 
 <p>Mit dem Befehl binden wir das lokale Verzeichnis /root/web  in den Container unter /var/www/html ein und öffnen den Port 80.

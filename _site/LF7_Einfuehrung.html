@@ -683,6 +683,228 @@ Wir installieren die Abhängigkeiten:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg <span class="nt">-l</span> apache2
 </code></pre></div></div>
 
+<h1 id="which">Which</h1>
+
+<p>Manchmal ist die Antwort auf die Frage interessant: “Wo ist dieses Programm instaliert?” Beispielsweise des Befehls “ls”. Die Antwort erhalten wir mit folgendem Befehl:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>which <span class="nb">ls</span>
+</code></pre></div></div>
+
+<p>Woher weiß jetzt das System in welchem Ordner das Programm installiert ist? Über das sogenannte “environment” also der Umgebung. Mit Umgebung bezeichnet man die Menge aller Syxstemvariablen und bekommt sie angezeigt mit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">env</span>
+</code></pre></div></div>
+
+<p>Relativ weit unten kommt eine Zeile, die mit PATH anfängt, sie gibt alle Verzeichnisse an, in dem das Betriebssystem nach einem Befehl sucht.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">PATH</span><span class="o">=</span>/home/user/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+</code></pre></div></div>
+
+<p>Wir können uns auch nur die Variable ausgeben lassen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="nv">$PATH</span>
+</code></pre></div></div>
+
+<h1 id="das-erste-script">Das erste Script</h1>
+
+<p>Wir schreiben ein Script, dass den Befehl “ls -a” ausführen soll. Wir nennen die Datei ls.sh. Dazu öffnen wir die datei mit unserem Lieblingseditor und schreiben hinein:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> <span class="nt">-a</span>
+</code></pre></div></div>
+
+<p>Wir können das Skript nicht ausführen, weil die entsprechende Berechtigung fehlt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span>./ls.sh
+<span class="nt">-bash</span>: ./ls.sh: Permission denied
+</code></pre></div></div>
+
+<p>Als nächstes müssen wir die Rechte setzen. Die momentanen Rechte sehe wir mit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span>
+total 4
+<span class="nt">-rw-rw-r--</span> 1 user user 6 Feb 25 14:12 ls.sh
+</code></pre></div></div>
+
+<p>Wir sehen an erster Stelle ein “-“, dies bedeutet dass es sich um eine Datei handelt. Es gibt nich viele andere mögliche Zeichen, z.B. ein d für ein Verzeichnis (directory).</p>
+
+<p>Dann kommen die Buchstaben ‘rw-‘, ‘rw-‘ und ‘r–’. ‘r’ steht für das Leserecht (read), ‘w’ für das Schreibrecht (write) und ‘x’ steht für das Ausführungsrecht (execute). Da das x-Recht nicht gesetzt ist, steht dort ein ‘-‘. Die erste Gruppe von drei Zeichen beschreibt die Rechte des Eigentümers (user), die zweite Gruppe die der Benutzergruppe (group) und die letzte Gruppe die Rechte der Benutzer die weder Eigentümer der Datei noch in der entsprechenden Gruppe sind (others). Wir sehen, dass die “anderen” nur ein Leserecht haben.</p>
+
+<p>Wir sehen dann eine 1, dass die Anzahl der Dateien. Bei einer einzelnen Datei steht hier immer eine 1. Danach kommt der Besitzer (user) und die Gruppe (user) und das Erstellungsdatum (6. Februar)und die Uhrzeit (14:12). Die Uhrzeit wird ausgeblendet, wenn die Datei älter als ein Jahr ist und durch die Jahreszahl ersetzt. Die Zahl zwischen Datum und Uhrzeit gibt die Größe der Datei in Bytes an.</p>
+
+<p>Um die Datei auszuführbar zu machen, verwenden wir folgenden Befehl:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod </span>u+x ls.sh
+</code></pre></div></div>
+
+<p>und schauen uns das Ergebnis an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span>
+<span class="nt">-rwxrw-r--</span> 1 user user 6 Feb 25 14:12 ls.sh
+</code></pre></div></div>
+
+<p>Wir sehen, dass ein x dazu gekommen ist. Das u steht für users, dass ‘+’ für hinzufügen und das ‘x’ für das Ausführrecht. 
+Wir führen die Datei jetzt aus:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span>./ls.sh
+<span class="nb">.</span>   .bash_history  .bashrc  .local  .profile                   .viminfo
+..  .bash_logout   .cache   ls.sh   .sudo_as_admin_successful
+</code></pre></div></div>
+
+<p>Wir müssen momentan ein ‘./’ davor schreiben, weil das System nicht weiß in welchem Verzeichnis die Datei liegt. Würden wir das ‘./’ weglassen würde das System die Pfade der Variable $PATH absuchen und unsere Datei nicht finden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span>ls.sh
+ls.sh: <span class="nb">command </span>not found
+</code></pre></div></div>
+
+<p>’./’ steht für das Verzeichnis indem wir uns gerade befinden. Dieses Verzeichnis wird beim Prompt angezeigt: ‘~’. Das ‘~’ steht als Abkürzung für das Heimatverzeichnes des gerade angemeldeten Benutzer.</p>
+
+<p>’./ls.sh’ ist der relative Pfad und wir können auch den absoluten Pfad verwenden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/user/ls.sh
+</code></pre></div></div>
+
+<p>Wir können jetzt unseren Befehl in ein Directory kopieren, das in der PATH-Variable angegeben ist:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp </span>ls.sh /bin
+</code></pre></div></div>
+
+<p>Beim ausführen bekommen wir eine Fehlermeldung:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span>ls.sh
+<span class="nt">-bash</span>: /bin/ls.sh: Permission denied
+</code></pre></div></div>
+
+<p>Das liegt daran, dass beim kopieren in bin der Besitzer zu root gewechselt ist. Uns gehört die Datei nichtmehr. Also passwn wir die Rechte an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chmod </span>a+x /bin/ls.sh
+</code></pre></div></div>
+
+<p>‘a’ steht für all und setzt für alle die Ausführungsrechte. Jetzt können wir den Befehl verwenden.</p>
+
+<p>Wir können auch die Variable $PATH unseren Bedürfnissen anpassen. Wir möchten unser Programm ls.sh im Verzeichnis /opt haben und es soll dort auch gefunden werden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mv</span> /bin/ls.sh /opt/
+<span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/opt
+</code></pre></div></div>
+
+<h1 id="history">History</h1>
+
+<p>Mit dem Befehl ‘history’ sehen wir alle Befehle die unser User auf diesem System ausgeführt hat. Die Befehle werden in der Datei .bash_history gespeichert.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span><span class="nb">history
+    </span>1  su -
+    2  <span class="nb">sudo </span>apt update
+    3  <span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> powershell
+    4  curl https://packages.microsoft.com/keys/microsoft.asc | <span class="nb">sudo </span>apt-key add -
+    5  curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/microsoft.list
+    6  <span class="nb">sudo </span>apt-get update
+    7  <span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> powershell
+    8  pswh
+</code></pre></div></div>
+
+<p>Um den Befehl 8 auszuführen geben wir ein:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span><span class="o">!</span>8
+pswh
+No <span class="nb">command</span> <span class="s1">'pswh'</span> found, did you mean:
+ Command <span class="s1">'psw'</span> from package <span class="s1">'wise'</span> <span class="o">(</span>universe<span class="o">)</span>
+pswh: <span class="nb">command </span>not found
+</code></pre></div></div>
+
+<h1 id="locate-und-find">Locate und find</h1>
+
+<p>Auch unter Linux steht eine Indexsuche zur Verfügung. Indexsuche bedeutet, dass eine Datenbank durchsucht wird anstelle der realen Dateinamen auf dem Speichermedien. Der grosse Vorteil ist die hohe Geschwindigkeit. Die Aktualität des Index bestimmt masgeblich über den Erfolg der suche. Der Befehl heißt “locate” und wir installieren ihn mit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>locate
+</code></pre></div></div>
+
+<p>Und wir suchen nach ls:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locate <span class="nb">ls</span>
+</code></pre></div></div>
+
+<p>Dem gegenüber durchsucht der Befehl find wirklich die  Verzeichnisse auf den Laufwerken. Find muss normalerweise nicht extra installiert werden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / <span class="nt">-name</span> <span class="nb">ls</span>
+</code></pre></div></div>
+
+<p>Der erste Parameter gibt den Startpunkt der Suche an, hier “/” und der zweite Parameter wonach gesucht werden soll. Wollen wir nach Namen suchen, die ls enthalten, so rufen wir den Befehl wie folgt auf:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / <span class="nt">-name</span> <span class="s1">'*ls*'</span>
+</code></pre></div></div>
+
+<h1 id="man">Man</h1>
+
+<p>“Man” steht für Manual und bietet Hilfen für die Benutzung von Befehlen an. Manpages (also Manual-Seiten) sind in Sektionen unterteilt und haben einen standardisierten Aufbau. Sowohl die Unterteilung wie der Aufbau der einzelnen Seiten sind standardisiert. Siehe hierzu <a href="https://de.wikipedia.org/wiki/Manpage">https://de.wikipedia.org/wiki/Manpage</a>.</p>
+
+<p>Wir schauen uns die Hilfe zum Befehl “ls” an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man <span class="nb">ls</span>
+</code></pre></div></div>
+
+<p>Die angezeigte Seite sollte in etwa der Webseite entsprechen: <a href="http://man7.org/linux/man-pages/man1/ls.1.html">http://man7.org/linux/man-pages/man1/ls.1.html</a>.</p>
+
+<p>Links oben steht ls(1) und zeigt an, dass wir uns in der ersten Sektion befinden. In der ersten Sektion werden Befehle erklärt.</p>
+
+<p>Wir schauen uns den Befehl passwd an:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man passwd
+</code></pre></div></div>
+
+<p>und erhalten eine Ausgabe ähnliche <a href="http://man7.org/linux/man-pages/man1/passwd.1.html">http://man7.org/linux/man-pages/man1/passwd.1.html</a>. Wir sehen am Ende des Textes einen Hinweis, dass es auf einen Eintrag von passwd in Sektion 5 gibt. Es gibt einmal den Befehl passwd und auf der anderen Seite die Konfigurationsdatei passwd. Konfigurationsdateien sind in Sektion 5 abgelegt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man 5 passwd
+</code></pre></div></div>
+
+<p>Die Ausgabe ist hier zu finden: <a href="http://man7.org/linux/man-pages/man5/passwd.5.html">http://man7.org/linux/man-pages/man5/passwd.5.html</a></p>
+
+<p>Wenn wir uns nicht sicher sind, in welcher Sektion etwas über einem Befehl steht, können wir folgendes eingeben:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span>whatis passwd
+passwd <span class="o">(</span>1ssl<span class="o">)</span>        - compute password hashes
+passwd <span class="o">(</span>1<span class="o">)</span>           - change user password
+passwd <span class="o">(</span>5<span class="o">)</span>           - the password file
+</code></pre></div></div>
+
+<p>Alternativ funktioniert auch:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man <span class="nt">-f</span> passwd
+</code></pre></div></div>
+
+<p>Wenn wir alle Seiten angezeigt bekommen möchten in denen ein bestimmter String auftaucht:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user@joergreuter3:~<span class="nv">$ </span>apropos passwd
+chgpasswd <span class="o">(</span>8<span class="o">)</span>        - update group passwords <span class="k">in </span>batch mode
+chpasswd <span class="o">(</span>8<span class="o">)</span>         - update passwords <span class="k">in </span>batch mode
+expect_mkpasswd <span class="o">(</span>1<span class="o">)</span>  - generate new password, optionally apply it to a user
+fgetpwent_r <span class="o">(</span>3<span class="o">)</span>      - get passwd file entry reentrantly
+getpwent_r <span class="o">(</span>3<span class="o">)</span>       - get passwd file entry reentrantly
+gpasswd <span class="o">(</span>1<span class="o">)</span>          - administer /etc/group and /etc/gshadow
+grub-mkpasswd-pbkdf2 <span class="o">(</span>1<span class="o">)</span> - generate hashed password <span class="k">for </span>GRUB
+htpasswd <span class="o">(</span>1<span class="o">)</span>         - Manage user files <span class="k">for </span>basic authentication
+pam_localuser <span class="o">(</span>8<span class="o">)</span>    - require <span class="nb">users </span>to be listed <span class="k">in</span> /etc/passwd
+passwd <span class="o">(</span>1<span class="o">)</span>           - change user password
+passwd <span class="o">(</span>1ssl<span class="o">)</span>        - compute password hashes
+passwd <span class="o">(</span>5<span class="o">)</span>           - the password file
+passwd2des <span class="o">(</span>3<span class="o">)</span>       - RFS password encryption
+SSL_CTX_set_default_passwd_cb <span class="o">(</span>3ssl<span class="o">)</span> - <span class="nb">set </span>passwd callback <span class="k">for </span>encrypted PEM ...
+SSL_CTX_set_default_passwd_cb_userdata <span class="o">(</span>3ssl<span class="o">)</span> - <span class="nb">set </span>passwd callback <span class="k">for </span>encry...
+update-passwd <span class="o">(</span>8<span class="o">)</span>    - safely update /etc/passwd, /etc/shadow and /etc/group
+</code></pre></div></div>
+
+<p>Alternativ:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man <span class="nt">-k</span> passwd
+</code></pre></div></div>
+
+<p>Innerhalb der Manpages kann man mit “/” und dem Schlüsselwort die Hilfe durchsuchen. Das drücken der “n”-Taste springt dann zum nächsten Treffer.</p>
+
+<h1 id="info">Info</h1>
+
+<p>Manpages hanen keine Verweise, sondern beim aufruf einer neuen Seite muss die Seite geschlossen werden und manuell eine neue geöffnet werden. Bei Info ist dies anders. Informationen zur Steuerung: <a href="https://en.wikipedia.org/wiki/Info_(Unix)">https://en.wikipedia.org/wiki/Info_(Unix)</a>.</p>
+
+<p>Die Links sind drch “*” gekennzeichnet.</p>
+
 <h1 id="bind-installieren">Bind installieren</h1>
 
 <p>Ein ergänzender Artikel ist hier zu finden <a href="https://wiki.ubuntuusers.de/DNS-Server_Bind/">https://wiki.ubuntuusers.de/DNS-Server_Bind/</a></p>
