@@ -240,7 +240,7 @@ Wir bereiten unser System auf einen zweiten Container vor. Dafür kopieren wir d
 
 ```bash
 mkdir dockergit
-git clone root@localhost:/root/web/ dockergit
+git clone /root/web/ dockergit
 ```
 
 Wir haben jetzt eine Kopie des Verzeichnisses web in dockergit. Beides sind getrennte Git-Repositories.
