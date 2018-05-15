@@ -232,7 +232,7 @@ cd /var/www/html
 git status
 ```
 
-Und sehen mit dem zwiten Befehl, dass das Repository "sauber" ist.
+Und sehen mit dem zweiten Befehl, dass das Repository "sauber" ist.
 
 ## git clone
 
