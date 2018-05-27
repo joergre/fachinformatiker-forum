@@ -8,8 +8,8 @@
 
   <title>LF7 Docker</title>
   <meta name='description' content="Alles über IT.">
-  <link rel='canonical' href="http://fachinformatiker-fulda.de/docker.html">
-  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://fachinformatiker-fulda.de/feed.xml">
+  <link rel='canonical' href="http://localhost:4000/docker.html">
+  <link rel='alternate' type='application/rss+xml' title='Fachinformatiker-Forum Fulda' href="http://localhost:4000/feed.xml">
 
   <style>
     
@@ -298,6 +298,10 @@
     
   
 
+  
+    
+  
+
               </ul>
 
               
@@ -344,8 +348,6 @@
   <img src='/images/pages/docker.png' class='c-post__image' alt='LF7 Docker'>
 
           <p>Bildquelle: Von dotCloud, Inc. - <a href="https://github.com/docker/docker/blob/master/docs/static_files/docker-logo-compressed.png">https://github.com/docker/docker/blob/master/docs/static_files/docker-logo-compressed.png</a>, Apache License 2.0, <a href="https://commons.wikimedia.org/w/index.php?curid=28456942">https://commons.wikimedia.org/w/index.php?curid=28456942</a></p>
-
-<p>Bei Fragen: <a href="https://discord.gg/TsaqyAQ">https://discord.gg/TsaqyAQ</a></p>
 
 <h1 id="installation-webserver-für-entwicklung">Installation Webserver für Entwicklung</h1>
 
@@ -548,14 +550,14 @@ nothing to commit, working tree clean
 git status
 </code></pre></div></div>
 
-<p>Und sehen mit dem zwiten Befehl, dass das Repository “sauber” ist.</p>
+<p>Und sehen mit dem zweiten Befehl, dass das Repository “sauber” ist.</p>
 
 <h2 id="git-clone">git clone</h2>
 
 <p>Wir bereiten unser System auf einen zweiten Container vor. Dafür kopieren wir das Repository um die Websites der Produktion von der Entwicklung zu trennen.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>dockergit
-git clone root@localhost:/root/web/ dockergit
+git clone /root/web/ dockergit
 </code></pre></div></div>
 
 <p>Wir haben jetzt eine Kopie des Verzeichnisses web in dockergit. Beides sind getrennte Git-Repositories.</p>
