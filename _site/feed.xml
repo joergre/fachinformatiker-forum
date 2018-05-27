@@ -3,10 +3,10 @@
   <channel>
     <title>Fachinformatiker-Forum Fulda</title>
     <description>Alles über IT.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 May 2018 13:44:09 +0200</pubDate>
-    <lastBuildDate>Sun, 27 May 2018 13:44:09 +0200</lastBuildDate>
+    <link>http://fachinformatiker-fulda.de/</link>
+    <atom:link href="http://fachinformatiker-fulda.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 27 May 2018 14:04:20 +0200</pubDate>
+    <lastBuildDate>Sun, 27 May 2018 14:04:20 +0200</lastBuildDate>
     <generator>Jekyll v3.8.2</generator>
 
     
@@ -23,8 +23,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2018/05/01/emacs_praesentation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/05/01/emacs_praesentation/</guid>
+        <link>http://fachinformatiker-fulda.de/2018/05/01/emacs_praesentation/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/05/01/emacs_praesentation/</guid>
       </item>
     
       <item>
@@ -36,8 +36,8 @@
 &lt;p&gt;&lt;a href=&quot;https://www.ferdinand-braun-schule.de/blog/2018/04/18/studierende-der-fachschule-fuer-technik-stellten-ihre-abschlussprojekte-vor/&quot;&gt;Hier geht es zum vollständigen Artikel&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Apr 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2018/04/30/projekte/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/04/30/projekte/</guid>
+        <link>http://fachinformatiker-fulda.de/2018/04/30/projekte/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/04/30/projekte/</guid>
       </item>
     
       <item>
@@ -50,8 +50,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sun, 25 Mar 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/03/25/steam/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/25/steam/</guid>
+        <link>http://fachinformatiker-fulda.de/2018/03/25/steam/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/03/25/steam/</guid>
       </item>
     
       <item>
@@ -68,8 +68,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sun, 25 Mar 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/03/25/nextcloud-client/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/25/nextcloud-client/</guid>
+        <link>http://fachinformatiker-fulda.de/2018/03/25/nextcloud-client/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/03/25/nextcloud-client/</guid>
       </item>
     
       <item>
@@ -85,8 +85,8 @@
 &lt;p&gt;Unterstützt von &lt;a href=&quot;http://zeitsprung.org&quot;&gt;Zeitsprung e.V.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Mar 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/03/13/virtualisierung/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/13/virtualisierung/</guid>
+        <link>http://fachinformatiker-fulda.de/2018/03/13/virtualisierung/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/03/13/virtualisierung/</guid>
       </item>
     
       <item>
@@ -107,8 +107,8 @@ Ort: Fulda, ITZ (alter Schlachthof)&lt;/p&gt;
 &lt;p&gt;Unterstützt von &lt;a href=&quot;http://zeitsprung.org&quot;&gt;Zeitsprung e.V.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Jan 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/01/21/monitoring/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/21/monitoring/</guid>
+        <link>http://fachinformatiker-fulda.de/2018/01/21/monitoring/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/01/21/monitoring/</guid>
       </item>
     
       <item>
@@ -123,8 +123,8 @@ Ort: Fulda, ITZ (alter Schlachthof)&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 21 Jan 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/01/21/hpi-linuxkurs/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/21/hpi-linuxkurs/</guid>
+        <link>http://fachinformatiker-fulda.de/2018/01/21/hpi-linuxkurs/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2018/01/21/hpi-linuxkurs/</guid>
       </item>
     
       <item>
@@ -150,8 +150,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 &lt;p&gt;Alexander Propp&lt;/p&gt;
 </description>
         <pubDate>Thu, 21 Dec 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/12/21/cordova/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/21/cordova/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/12/21/cordova/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/12/21/cordova/</guid>
       </item>
     
       <item>
@@ -161,8 +161,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 &lt;p&gt;Hier der Link: https://www.humblebundle.com/books/network-security-certification-books&lt;/p&gt;
 </description>
         <pubDate>Wed, 06 Dec 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/12/06/Humble/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/06/Humble/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/12/06/Humble/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/12/06/Humble/</guid>
       </item>
     
       <item>
@@ -180,8 +180,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 &lt;p&gt;Referent: Thomas Wenk&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/29/Windows-PE/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/29/Windows-PE/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/29/Windows-PE/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/29/Windows-PE/</guid>
       </item>
     
       <item>
@@ -192,8 +192,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 25 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/25/verschleierung/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/25/verschleierung/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/25/verschleierung/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/25/verschleierung/</guid>
       </item>
     
       <item>
@@ -208,8 +208,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 20 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/20/watches/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/20/watches/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/20/watches/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/20/watches/</guid>
       </item>
     
       <item>
@@ -221,8 +221,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://getsmarter.mit.edu/mit-artificial-intelligence-online-short-course-hm/&quot;&gt;https://getsmarter.mit.edu/mit-artificial-intelligence-online-short-course-hm/&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/20/mit/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/20/mit/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/20/mit/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/20/mit/</guid>
       </item>
     
       <item>
@@ -232,8 +232,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.hr-fernsehen.de/sendungen-a-z/mex/themen/boomregion-osthessen--hier-sind-jobs-leicht-zu-finden,osthessen-boom-jobs-lehrlinge-arbeitslosenquote-100.html&quot;&gt;http://www.hr-fernsehen.de/sendungen-a-z/mex/themen/boomregion-osthessen--hier-sind-jobs-leicht-zu-finden,osthessen-boom-jobs-lehrlinge-arbeitslosenquote-100.html&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/12/mex/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/12/mex/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/12/mex/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/12/mex/</guid>
       </item>
     
       <item>
@@ -243,8 +243,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://sploid.gizmodo.com/one-of-the-secrets-guarding-the-secure-internet-is-a-wa-1820188866&quot;&gt;https://sploid.gizmodo.com/one-of-the-secrets-guarding-the-secure-internet-is-a-wa-1820188866&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 08 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/08/Zufall_mit_Lava_lampen/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/08/Zufall_mit_Lava_lampen/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/08/Zufall_mit_Lava_lampen/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/08/Zufall_mit_Lava_lampen/</guid>
       </item>
     
       <item>
@@ -254,8 +254,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://miriamxyra.com/2017/11/08/stop-using-lan-manager-and-ntlmv1/#more-913&quot;&gt;https://miriamxyra.com/2017/11/08/stop-using-lan-manager-and-ntlmv1/#more-913&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 08 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/08/NTLMv1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/08/NTLMv1/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/08/NTLMv1/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/08/NTLMv1/</guid>
       </item>
     
       <item>
@@ -275,8 +275,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 03 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/03/Bilder_verkleinern/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/03/Bilder_verkleinern/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/03/Bilder_verkleinern/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/03/Bilder_verkleinern/</guid>
       </item>
     
       <item>
@@ -288,8 +288,8 @@ Am 18.01.2018, 19 Uhr, Ort: ITZ Fulda&lt;/p&gt;
 &lt;p&gt;Video: &lt;a href=&quot;https://media.ccc.de/v/cr238/oembed&quot;&gt;https://media.ccc.de/v/cr238/oembed&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/02/cr238/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/02/cr238/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/02/cr238/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/02/cr238/</guid>
       </item>
     
       <item>
@@ -318,8 +318,8 @@ fachinformatiker-forum.de. 1947	IN	A	192.30.252.153
 &lt;p&gt;Hier siehst Du eine Besipiel-Datei: &lt;a href=&quot;https://github.com/joergre/fachinformatiker-forum/&quot;&gt;https://github.com/joergre/fachinformatiker-forum/&lt;/a&gt; und die dazugehörige Webseite: &lt;a href=&quot;http://fachinformatiker-forum.de&quot;&gt;http://fachinformatiker-forum.de&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/11/01/eigene_domain_fuer_github_projekt_seiten/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/01/eigene_domain_fuer_github_projekt_seiten/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/11/01/eigene_domain_fuer_github_projekt_seiten/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/11/01/eigene_domain_fuer_github_projekt_seiten/</guid>
       </item>
     
       <item>
@@ -343,8 +343,8 @@ fachinformatiker-forum.de. 1947	IN	A	192.30.252.153
 &lt;p&gt;cd steht für eine Verzögerung der Aufnahme von 10 Sekunden. Mit -u wird nur das aktive Fenster aufgenommen. Eine schöne Übersicht der möglichen Paramter findert Ihr &lt;a href=&quot;https://wiki.ubuntuusers.de/Scrot/&quot;&gt;hier&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Oct 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/10/30/Screenshot_Raspberry_Pi/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/30/Screenshot_Raspberry_Pi/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/10/30/Screenshot_Raspberry_Pi/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/10/30/Screenshot_Raspberry_Pi/</guid>
       </item>
     
       <item>
@@ -358,8 +358,8 @@ fachinformatiker-forum.de. 1947	IN	A	192.30.252.153
 &lt;p&gt;Ferdinand-Braun-Schule Fulda&lt;/p&gt;
 </description>
         <pubDate>Fri, 27 Oct 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2017/10/27/Tag-der-offenen-tuer/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/27/Tag-der-offenen-tuer/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/10/27/Tag-der-offenen-tuer/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/10/27/Tag-der-offenen-tuer/</guid>
       </item>
     
       <item>
@@ -370,8 +370,8 @@ fachinformatiker-forum.de. 1947	IN	A	192.30.252.153
 
 </description>
         <pubDate>Sat, 23 Sep 2017 09:42:01 +0200</pubDate>
-        <link>http://localhost:4000/2017/09/23/die-ueberwachung-nimmt-zu/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/09/23/die-ueberwachung-nimmt-zu/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/09/23/die-ueberwachung-nimmt-zu/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/09/23/die-ueberwachung-nimmt-zu/</guid>
       </item>
     
       <item>
@@ -390,8 +390,8 @@ Um Anmeldung wird gebeten (joerg@reuter.sc).&lt;/p&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/icR-df2Olm8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Mon, 18 Sep 2017 13:45:07 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/09/18/einfuehrung-ansible/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/09/18/einfuehrung-ansible/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/09/18/einfuehrung-ansible/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/09/18/einfuehrung-ansible/</guid>
       </item>
     
       <item>
@@ -402,8 +402,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;a href=&quot;https://netzpolitik.org/2017/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/&quot;&gt;https://netzpolitik.org/2017/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 12 Sep 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/09/12/google-sperrt-us-journalistin-vermutlich-wegen-videos-zum-verfahren-gegen-chelsea-manning/</guid>
       </item>
     
       <item>
@@ -416,8 +416,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 
 </description>
         <pubDate>Sat, 09 Sep 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/09/09/ein-rack-fuer-wenig-geld-lackrack/</guid>
       </item>
     
       <item>
@@ -427,8 +427,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;a href=&quot;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&quot;&gt;https://www.heise.de/tr/artikel/Der-Code-fuer-den-ich-mich-immer-noch-schaeme-3746246.html&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/07/22/ethik-und-programmieren/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/07/22/ethik-und-programmieren/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/07/22/ethik-und-programmieren/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/07/22/ethik-und-programmieren/</guid>
       </item>
     
       <item>
@@ -438,8 +438,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;a href=&quot;https://www.pro-linux.de/artikel/2/1890/der-maust%C3%BCr%C3%B6ffnertag-bei-der-fralug.htm&quot;&gt;https://www.pro-linux.de/artikel/2/1890/der-maust%C3%BCr%C3%B6ffnertag-bei-der-fralug.htm&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 07 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/07/07/it-kindern-naeher-bringen-mit-dem-maus-tueroeffner/</guid>
       </item>
     
       <item>
@@ -450,8 +450,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 
 </description>
         <pubDate>Fri, 07 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/07/07/460-freie-it-kurse-die-im-juli-starten/</guid>
       </item>
     
       <item>
@@ -461,8 +461,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;a href=&quot;https://www.wired.co.uk/article/google-raspberry-pi-ai&quot;&gt;https://www.wired.co.uk/article/google-raspberry-pi-ai&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/07/02/ki-mit-dem-paspberry-pi-kein-problem/</guid>
       </item>
     
       <item>
@@ -471,8 +471,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Datenschutzgrundverordnung-Boeses-Erwachen-der-Domainverwaltung-ICANN-3757415.html&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Jun 2017 11:18:12 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/06/28/bye-bye-whois/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/06/28/bye-bye-whois/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/06/28/bye-bye-whois/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/06/28/bye-bye-whois/</guid>
       </item>
     
       <item>
@@ -481,8 +481,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;[link-preview url=&quot;https://youtu.be/hSnbp4CXKT0&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Jun 2017 10:13:26 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/06/28/windows-vor-petya-2-schuetzen/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/06/28/windows-vor-petya-2-schuetzen/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/06/28/windows-vor-petya-2-schuetzen/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/06/28/windows-vor-petya-2-schuetzen/</guid>
       </item>
     
       <item>
@@ -497,8 +497,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Die &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;Termine &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;könnt Ihr auf unserer Website &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;&lt;a href=&quot;http://fachinformatiker-forum.de/&quot;&gt;http://fachinformatiker-forum.de&lt;/a&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;einsehen&lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_205333.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-354&quot; src=&quot;/assets/20170623_205333-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_205245.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-353&quot; src=&quot;/assets/20170623_205245-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_203646.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-352&quot; src=&quot;/assets/20170623_203646-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_195022.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-351&quot; src=&quot;/assets/20170623_195022-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_195004.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-350&quot; src=&quot;/assets/20170623_195004-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_194953-1.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-349&quot; src=&quot;/assets/20170623_194953-1-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_192741.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-348&quot; src=&quot;/assets/20170623_192741-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_191509.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-347&quot; src=&quot;/assets/20170623_191509-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2017/06/20170623_184239-1.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-346&quot; src=&quot;/assets/20170623_184239-1-300x169.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;169&quot; /&gt;&lt;/a&gt;&lt;span style=&quot;font-family: Calibri, serif;&quot;&gt;&lt;span lang=&quot;de&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Jun 2017 17:19:35 +0200</pubDate>
-        <link>http://localhost:4000/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</guid>
+        <link>http://fachinformatiker-fulda.de/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/vergangene%20events/2017/06/25/react-informativer-workshop-des-fachinformatiker-forums-fuldas/</guid>
       </item>
     
       <item>
@@ -507,8 +507,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;[link-preview url=&quot;https://www.pro-linux.de/news/1/24861/synchronisationsprogramm-casync-in-erster-version.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 22 Jun 2017 08:26:37 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/06/22/synchronisationsprogramm-casync/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/06/22/synchronisationsprogramm-casync/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/06/22/synchronisationsprogramm-casync/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/06/22/synchronisationsprogramm-casync/</guid>
       </item>
     
       <item>
@@ -517,8 +517,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;p&gt;[link-preview url=&quot;https://youtu.be/qHsbzTbjcX4&quot;]&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Jun 2017 20:20:17 +0200</pubDate>
-        <link>http://localhost:4000/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</link>
-        <guid isPermaLink="true">http://localhost:4000/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</guid>
+        <link>http://fachinformatiker-fulda.de/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/tipps&amp;tricks/2017/06/20/raspberry-pi-ssh-aktivieren/</guid>
       </item>
     
       <item>
@@ -536,8 +536,8 @@ Stein des Anstoßes waren 3 nicht(!) öffentliche youtube-Videos. Daraufhin wurd
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 20 Jun 2017 19:54:49 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/06/20/cybersecurity-success-storys-aus-dem-darknet/</guid>
       </item>
     
       <item>
@@ -556,8 +556,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
 &lt;p&gt;Bis bald im Kurs! (kostenlos aber nicht umsonst)&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Jun 2017 07:50:14 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/06/20/hpi-kuus-zum-thema-smart-home/</guid>
       </item>
     
       <item>
@@ -566,8 +566,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
 &lt;p&gt;[link-preview url=&quot;http://www.n-tv.de/technik/Freifunk-muss-keine-Vorratsdaten-speichern-article19897165.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Jun 2017 20:37:22 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/06/19/freifunk-muss-keine-vorratsdaten-speichern/</guid>
       </item>
     
       <item>
@@ -576,8 +576,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
 &lt;p&gt;[link-preview url=&quot;https://youtu.be/bQe_ViGxVTo&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 23:33:09 +0200</pubDate>
-        <link>http://localhost:4000/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/06/18/google-darf-nicht-mehr-auf-gefilterte-treffer-hinweisen/</guid>
       </item>
     
       <item>
@@ -586,8 +586,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Unreparierbar-Surface-Laptop-faellt-bei-iFixit-durch-3746123.html?wt_mc=rss.ho.beitrag.atom&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 23:26:49 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/06/18/unreparierbar-surface-laptop-faellt-bei-ifixit-durch/</guid>
       </item>
     
       <item>
@@ -595,8 +595,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
         <description>&lt;p&gt;[link-preview url=&quot;https://www.pro-linux.de/news/1/24811/humble-book-bundle-linux-amp-open-source.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Jun 2017 22:23:26 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/06/07/humble-book-bundle-linux-open-source/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/06/07/humble-book-bundle-linux-open-source/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/06/07/humble-book-bundle-linux-open-source/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/06/07/humble-book-bundle-linux-open-source/</guid>
       </item>
     
       <item>
@@ -604,8 +604,8 @@ Martin Malchow und Matthias Bauer, die einigen von Ihnen schon aus dem Vorgänge
         <description>&lt;p&gt;[link-preview url=&quot;https://www.overleaf.com/blog/441-how-to-write-in-markdown-on-overleaf#.WQz6LYjyjmH&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Jun 2017 19:20:29 +0200</pubDate>
-        <link>http://localhost:4000/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</link>
-        <guid isPermaLink="true">http://localhost:4000/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</guid>
+        <link>http://fachinformatiker-fulda.de/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/latex/tipps&amp;tricks/2017/06/04/markdown-in-latex-dokumentem/</guid>
       </item>
     
       <item>
@@ -626,8 +626,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Fri, 02 Jun 2017 10:56:21 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/06/02/einfuehrung-in-react/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/06/02/einfuehrung-in-react/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/06/02/einfuehrung-in-react/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/06/02/einfuehrung-in-react/</guid>
       </item>
     
       <item>
@@ -637,8 +637,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=7aaAmULP_rA&amp;amp;feature=push-u&amp;amp;attr_tag=Js9OeHCpCAV3fK0B-6&quot;]&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Apr 2017 11:19:54 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/04/14/welche-daten-windows-10-uebertraegt/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/04/14/welche-daten-windows-10-uebertraegt/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/04/14/welche-daten-windows-10-uebertraegt/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/04/14/welche-daten-windows-10-uebertraegt/</guid>
       </item>
     
       <item>
@@ -650,8 +650,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 10 Apr 2017 12:29:16 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/04/10/ehc-mitglied-jumo-gmbh-co-kg-sucht-auszubildende-zum-fachinformatiker-mw/</guid>
       </item>
     
       <item>
@@ -659,8 +659,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24622/android-verdr%C3%A4ngt-windows-vom-ersten-platz-der-marktanteile.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Apr 2017 06:30:32 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/04/05/sorry-windows-android-is-now-the-most-popular-end-user-operating-system/</guid>
       </item>
     
       <item>
@@ -668,8 +668,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=jUibaPTXSHk&quot;]&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 Apr 2017 23:00:33 +0200</pubDate>
-        <link>http://localhost:4000/news/2017/04/04/292/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/04/04/292/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/04/04/292/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/04/04/292/</guid>
       </item>
     
       <item>
@@ -680,8 +680,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Mar 2017 08:04:15 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/03/21/treffen-linux-user-group-fulda-5/</guid>
       </item>
     
       <item>
@@ -690,8 +690,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Freifunk-Bundesrat-befuerwortet-Gemeinnuetzigkeit-3650176.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Mar 2017 10:37:16 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/03/12/freifunk-bundesrat-befuerwortet-gemeinnuetzigkeit/</guid>
       </item>
     
       <item>
@@ -699,8 +699,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;http://www.n-tv.de/wirtschaft/Amazon-transportiert-Daten-per-LKW-article19691380.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Mar 2017 02:16:01 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/03/03/das-ist-also-die-datenautobahn/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/03/03/das-ist-also-die-datenautobahn/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/03/03/das-ist-also-die-datenautobahn/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/03/03/das-ist-also-die-datenautobahn/</guid>
       </item>
     
       <item>
@@ -708,8 +708,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://www.gedys-intraware.de/ausbildungsplatz/fachinformatiker/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Feb 2017 09:13:06 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/23/ausbildung-zum-informatiker-ae/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/23/ausbildung-zum-informatiker-ae/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/23/ausbildung-zum-informatiker-ae/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/23/ausbildung-zum-informatiker-ae/</guid>
       </item>
     
       <item>
@@ -717,8 +717,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://goo.gl/I1QatD&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Feb 2017 08:46:36 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/02/23/freies-webinar-effizientes-incident-managment-mit-i-doitotrs/</guid>
       </item>
     
       <item>
@@ -729,8 +729,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 Feb 2017 11:26:32 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/02/22/treffen-linux-user-group-fulda-4/</guid>
       </item>
     
       <item>
@@ -740,8 +740,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24466/airsim-microsoft-stellt-simulator-f%C3%BCr-drohnen-und-roboter-vor.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Feb 2017 07:31:30 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/20/airsim-microsoft-stellt-simulator-fuer-drohnen-und-roboter-vor/</guid>
       </item>
     
       <item>
@@ -750,8 +750,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2017/schnueffelpuppe-my-friend-cayla-in-deutschland-verboten/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Feb 2017 10:43:27 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/17/puppe-my-friend-cayla-muss-vernichtet-werden/</guid>
       </item>
     
       <item>
@@ -759,8 +759,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2017/democracy-im-rausch-der-daten-in-der-arte-mediathek/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Feb 2017 07:44:30 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/15/democracy-im-rausch-der-daten-in-der-arte-mediathek/</guid>
       </item>
     
       <item>
@@ -771,8 +771,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://youtu.be/xG9vhTHwH4w&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 13 Feb 2017 05:23:56 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/13/h5p-ein-freier-html5-editor-fuer-lerninhalte/</guid>
       </item>
     
       <item>
@@ -781,8 +781,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Sicherheitsforscher-an-AV-Hersteller-Finger-weg-von-HTTPS-3620159.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Feb 2017 16:29:15 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/12/sicherheitsforscher-an-av-hersteller-finger-weg-von-https/</guid>
       </item>
     
       <item>
@@ -791,8 +791,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Pilotprojekt-Britische-Lehrer-tragen-Body-Cams-3622814.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Feb 2017 16:24:40 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/12/britische-lehrer-tragen-body-cams/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/12/britische-lehrer-tragen-body-cams/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/12/britische-lehrer-tragen-body-cams/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/12/britische-lehrer-tragen-body-cams/</guid>
       </item>
     
       <item>
@@ -801,8 +801,8 @@ Windows: https://youtu.be/BzdzNSr-4Vk)&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=i4UndCCqRu8&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Feb 2017 22:20:20 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/11/notrack-das-schwarze-loch-fuer-tracker/</guid>
       </item>
     
       <item>
@@ -814,8 +814,8 @@ Chemnitzer Linux-Tage vorgestellt.&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://chemnitzer.linux-tage.de/2017/de/programm&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Feb 2017 08:02:43 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/09/programm-der-chemnitzer-linux-tage-2017/</guid>
       </item>
     
       <item>
@@ -824,8 +824,8 @@ Chemnitzer Linux-Tage vorgestellt.&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Hannover-Explosion-von-E-Bike-Akku-loest-Parkhausbrand-aus-3619564.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Feb 2017 07:52:45 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/09/e-bike-akku-loest-parkhausbrand/</guid>
       </item>
     
       <item>
@@ -834,8 +834,8 @@ Chemnitzer Linux-Tage vorgestellt.&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/security/meldung/Erpressungs-Trojaner-Spora-Der-Kunde-ist-Koenig-3618984.html&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Feb 2017 07:39:16 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/09/trojaner-bietet-support-und-bittet-um-eine-gut-bewertung/</guid>
       </item>
     
       <item>
@@ -844,8 +844,8 @@ Chemnitzer Linux-Tage vorgestellt.&lt;/p&gt;
 &lt;p&gt;[link-preview url=&quot;http://www.konrad-zuse-schule.de/index.php?id=568&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 08 Feb 2017 08:36:25 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/02/08/tag-der-offenen-tuer-2017-konrad-zuse-schule/</guid>
       </item>
     
       <item>
@@ -855,8 +855,8 @@ Samstag, 11.02.2017, von 10:00 bis 14:30 Uhr ein zum Tag der offenen Tür.&lt;br
 Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vor.&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Feb 2017 01:49:21 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/02/07/tag-der-offenen-tuer/</guid>
       </item>
     
       <item>
@@ -865,8 +865,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=3GJ2Jqk8wD4&quot;]&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Feb 2017 01:07:40 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/02/07/pi-hole/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/02/07/pi-hole/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/02/07/pi-hole/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/02/07/pi-hole/</guid>
       </item>
     
       <item>
@@ -875,8 +875,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Zuse-Computer-Museum-ZCOM-in-Hoyerswerda-eroeffnet-3609845.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Jan 2017 23:37:39 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/01/29/neues-zuse-computer-museum-zcom/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/01/29/neues-zuse-computer-museum-zcom/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/01/29/neues-zuse-computer-museum-zcom/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/01/29/neues-zuse-computer-museum-zcom/</guid>
       </item>
     
       <item>
@@ -886,8 +886,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/newsticker/meldung/Milliarden-Foerderprogramm-fuer-digitale-Klassenzimmer-3609761.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Jan 2017 23:20:12 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/01/29/milliarden-foerderprogramm-fuer-digitale-klassenzimmer/</guid>
       </item>
     
       <item>
@@ -898,8 +898,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;http://mscommunity.cloud/community/2102-safe-the-date-02-02-2017-community-spring-event-in-fulda?utm_content=buffer02391&amp;amp;utm_medium=social&amp;amp;utm_source=linkedin.com&amp;amp;utm_campaign=buffer&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Jan 2017 22:09:58 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/01/29/microsoft-cloud-community-spring-event-in-fulda/</guid>
       </item>
     
       <item>
@@ -910,8 +910,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.heise.de/tr/artikel/Digital-Health-Pioneers-sind-ausgewaehlt-3454865.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Jan 2017 16:29:18 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/01/25/smartphone-misst-den-herzschlag/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/01/25/smartphone-misst-den-herzschlag/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/01/25/smartphone-misst-den-herzschlag/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/01/25/smartphone-misst-den-herzschlag/</guid>
       </item>
     
       <item>
@@ -922,8 +922,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Jan 2017 16:18:42 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/01/25/treffen-linux-user-group-fulda-3/</guid>
       </item>
     
       <item>
@@ -932,8 +932,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://igikorn.com/sshfs-windows-10/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Jan 2017 19:10:33 +0100</pubDate>
-        <link>http://localhost:4000/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</link>
-        <guid isPermaLink="true">http://localhost:4000/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</guid>
+        <link>http://fachinformatiker-fulda.de/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/tipps&amp;tricks/2017/01/21/sshfs-mit-windows-10/</guid>
       </item>
     
       <item>
@@ -943,8 +943,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2016/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Jan 2017 11:07:31 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/01/19/analyse-von-spiegel-online-so-tickt-deutschlands-groesste-nachrichtenseite/</guid>
       </item>
     
       <item>
@@ -972,8 +972,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;div class=&quot;g-group&quot;&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 12 Jan 2017 22:05:27 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/01/12/2-fuldaer-netzwerke-abend/</guid>
       </item>
     
       <item>
@@ -982,8 +982,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;[link-preview url=&quot;https://www.linux.com/news/learn/intro-to-linux/first-64-bit-and-enterprise-os-comes-raspberry-pi-3&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jan 2017 21:14:31 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/01/09/first-64-bit-and-enterprise-os-comes-to-raspberry-pi-3/</guid>
       </item>
     
       <item>
@@ -993,8 +993,8 @@ Regionale Ausbildungsbetriebe stellen mit uns als Schule die duale Ausbildung vo
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jan 2017 21:02:41 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/01/09/lidl-gutschein-bei-whatsapp-vorsicht/</guid>
       </item>
     
       <item>
@@ -1025,8 +1025,8 @@ damit einhergehenden Organisations- und Personalfragen.&lt;/p&gt;
 Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Verein Zeitsprung e.V. beteiligen.&lt;/span&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Jan 2017 20:45:42 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2017/01/05/tech-treff-problemloesungen-alleine-oder-im-kollektiv/</guid>
       </item>
     
       <item>
@@ -1035,8 +1035,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
 &lt;p&gt;[link-preview url=&quot;https://www.youtube.com/watch?v=yb7BgDBUbP0&amp;amp;index=18#t=585.085792&quot;]&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Jan 2017 19:44:35 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/01/05/build-yout-own-nsa/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/01/05/build-yout-own-nsa/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/01/05/build-yout-own-nsa/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/01/05/build-yout-own-nsa/</guid>
       </item>
     
       <item>
@@ -1047,8 +1047,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Jan 2017 23:49:21 +0100</pubDate>
-        <link>http://localhost:4000/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</guid>
+        <link>http://fachinformatiker-fulda.de/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/2017/01/03/2-platz-des-osbar-awards-2016-geht-nach-fulda/</guid>
       </item>
     
       <item>
@@ -1056,8 +1056,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
         <description>&lt;p&gt;https://www.youtube.com/watch?v=kEl_Ib4I7OI#t=640.260417&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Jan 2017 04:10:50 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/01/01/sehr-schoene-diskussion-ueber-schule-jugendliche-und-zukunft/</guid>
       </item>
     
       <item>
@@ -1067,8 +1067,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
 &lt;p&gt;telnet pf.fbs-fulda.info&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Jan 2017 03:09:07 +0100</pubDate>
-        <link>http://localhost:4000/news/2017/01/01/happy-new-year/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2017/01/01/happy-new-year/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2017/01/01/happy-new-year/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2017/01/01/happy-new-year/</guid>
       </item>
     
       <item>
@@ -1076,8 +1076,8 @@ Nicht-Mitglieder dürfen sich gerne mit einer Spende an den gemeinnützigen Vere
         <description>&lt;p&gt;[link-preview url=&quot;https://netzpolitik.org/2016/ard-doku-schicksale-von-whistleblowern/&quot;]&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Nov 2016 23:31:02 +0100</pubDate>
-        <link>http://localhost:4000/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/11/22/ard-doku-schicksale-von-whistleblowern/</guid>
       </item>
     
       <item>
@@ -1090,8 +1090,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;19:00 - 22:00 Uhr&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Nov 2016 13:53:16 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/11/21/angular-js-workshop/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/11/21/angular-js-workshop/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/11/21/angular-js-workshop/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/11/21/angular-js-workshop/</guid>
       </item>
     
       <item>
@@ -1102,8 +1102,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Ihr könnt eure Tabletts, Notebooks oder sogar ganze PC und Server mitbringen, falls ihr ein Problem zu lösen habt. Meist sind kompetente Linuxer mit von der Runde.&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Nov 2016 13:39:19 +0100</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/11/21/treffen-linux-user-group-fulda-2/</guid>
       </item>
     
       <item>
@@ -1111,8 +1111,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;https://www.infoq.com/presentations/tdd-lego&quot; forceshot=&quot;true&quot;]&lt;/p&gt;
 </description>
         <pubDate>Mon, 31 Oct 2016 23:13:20 +0100</pubDate>
-        <link>http://localhost:4000/news/2016/10/31/tdd-mit-lego/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/31/tdd-mit-lego/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/31/tdd-mit-lego/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/31/tdd-mit-lego/</guid>
       </item>
     
       <item>
@@ -1120,8 +1120,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
         <description>&lt;p&gt;[link-preview url=&quot;http://www.pro-linux.de/news/1/24117/freier-devops-kurs-der-linux-foundation.html&quot;]&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Oct 2016 09:25:03 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/28/freier-devops-kurs-der-linux-foundation/</guid>
       </item>
     
       <item>
@@ -1133,8 +1133,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Oct 2016 20:48:33 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/24/treffen-linux-user-group-fulda/</guid>
       </item>
     
       <item>
@@ -1148,8 +1148,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Alle Teilnehmer hoffen auf eine Wiederholung des &quot;Global Day of Code Retreat&quot; im nächsten Jahr.&lt;/span&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14612449_10154608730828349_7451208976797355683_o.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-143&quot; src=&quot;/assets/14612449_10154608730828349_7451208976797355683_o-300x225.jpg&quot; alt=&quot;14612449_10154608730828349_7451208976797355683_o&quot; width=&quot;300&quot; height=&quot;225&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Oct 2016 18:32:23 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/24/global-day-of-code-retreat-2016-in-fulda/</guid>
       </item>
     
       <item>
@@ -1158,8 +1158,8 @@ Referent: Michael Ziegler&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;https://youtu.be/Sw1shJiuTmg&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Oct 2016 18:11:26 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/24/willkommen-in-der-wunderbaren-welt-von-iot/</guid>
       </item>
     
       <item>
@@ -1181,8 +1181,8 @@ Währe&lt;span class=&quot;text_exposed_show&quot;&gt;nd der Veranstaltung solle
 &lt;p&gt;&lt;a href=&quot;https://www.hs-fulda.de/unsere-hochschule/alle-termine/termin/global-day-of-coderetreat/show/&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;https://www.hs-fulda.de/&lt;wbr /&gt;unsere-hochschule/&lt;wbr /&gt;alle-termine/termin/&lt;wbr /&gt;global-day-of-coderetreat/&lt;wbr /&gt;show/&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 20 Oct 2016 15:05:04 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/20/global-day-of-coderetreat-in-fulda/</guid>
       </item>
     
       <item>
@@ -1207,8 +1207,8 @@ Nicolas Bredel - Schöne Aussicht Ideenagentur&lt;/p&gt;
 &lt;p&gt;21.00 Uhr: Beginn des Get Together&lt;/p&gt;
 </description>
         <pubDate>Thu, 20 Oct 2016 10:54:58 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/20/7-innovationsabend-der-region-fulda/</guid>
       </item>
     
       <item>
@@ -1218,8 +1218,8 @@ Nicolas Bredel - Schöne Aussicht Ideenagentur&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Oct 2016 12:49:55 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/15/geekend-reloaded/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/15/geekend-reloaded/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/15/geekend-reloaded/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/15/geekend-reloaded/</guid>
       </item>
     
       <item>
@@ -1228,8 +1228,8 @@ Nicolas Bredel - Schöne Aussicht Ideenagentur&lt;/p&gt;
 &lt;p&gt;https://youtu.be/_JjWvo-55JU&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Oct 2016 10:43:05 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/10/15/microsoft-rettendes-ufer-linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/15/microsoft-rettendes-ufer-linux/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/15/microsoft-rettendes-ufer-linux/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/15/microsoft-rettendes-ufer-linux/</guid>
       </item>
     
       <item>
@@ -1246,8 +1246,8 @@ Diese und weitere Fragen bilden für Ortrud Tornow den Kompass, um das jeweilige
 bis zum 28. Oktober 2016. Veranstaltungsort: Ferdinand-Braun-Schule, Goerdelerstraße 7, Medienzentrum, Eingang B.&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Oct 2016 21:03:02 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/14/berufsschule-trifft-wirtschaftkraft/</guid>
       </item>
     
       <item>
@@ -1258,8 +1258,8 @@ bis zum 28. Oktober 2016. Veranstaltungsort: Ferdinand-Braun-Schule, Goerdelerst
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </description>
         <pubDate>Tue, 11 Oct 2016 02:28:39 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/11/suse-und-it-novum-verbessern-storage-management-in-ceph/</guid>
       </item>
     
       <item>
@@ -1280,8 +1280,8 @@ update-alternatives --config editor&lt;br /&gt;
 &lt;p&gt;By Groov3 (Own work) [href=&quot;http://creativecommons.org/licenses/by-sa/4.0&quot;&amp;gt;CC BY-SA 4.0], &lt;a href=&quot;https://commons.wikimedia.org/wiki/File%3ACrontab_(en_fran%C3%A7ais_-_in_French).png&quot;&gt;via Wikimedia Commons&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 10 Oct 2016 11:58:17 +0200</pubDate>
-        <link>http://localhost:4000/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</link>
-        <guid isPermaLink="true">http://localhost:4000/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</guid>
+        <link>http://fachinformatiker-fulda.de/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/tipps&amp;tricks/2016/10/10/einstellung-des-editors-fuer-crontab/</guid>
       </item>
     
       <item>
@@ -1289,8 +1289,8 @@ update-alternatives --config editor&lt;br /&gt;
         <description>&lt;p&gt;&lt;a href=&quot;http://techstage.de/-3328059l&quot;&gt;http://techstage.de/-3328059l&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 23:15:29 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/10/09/50-euro-drohne/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/09/50-euro-drohne/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/09/50-euro-drohne/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/09/50-euro-drohne/</guid>
       </item>
     
       <item>
@@ -1298,8 +1298,8 @@ update-alternatives --config editor&lt;br /&gt;
         <description>&lt;p&gt;&lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14463254_1067215403391557_7725897375664111170_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-69&quot; src=&quot;/assets/14463254_1067215403391557_7725897375664111170_n-300x199.jpg&quot; alt=&quot;14463254_1067215403391557_7725897375664111170_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14368755_1067214406724990_747006614694416639_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-71&quot; src=&quot;/assets/14368755_1067214406724990_747006614694416639_n-300x199.jpg&quot; alt=&quot;14368755_1067214406724990_747006614694416639_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14441102_1067214056725025_4634759047833502115_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-72&quot; src=&quot;/assets/14441102_1067214056725025_4634759047833502115_n-300x199.jpg&quot; alt=&quot;14441102_1067214056725025_4634759047833502115_n&quot; width=&quot;300&quot; height=&quot;199&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://fachinformatiker-fulda.de/wp-content/uploads/2016/10/14390703_1067215233391574_1620960008726092756_n.jpg&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-70&quot; src=&quot;/assets/14390703_1067215233391574_1620960008726092756_n-300x200.jpg&quot; alt=&quot;14390703_1067215233391574_1620960008726092756_n&quot; width=&quot;300&quot; height=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 22:05:42 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/09/fuldas-sonnenwinde-erneut-unter-den-besten/</guid>
       </item>
     
       <item>
@@ -1309,8 +1309,8 @@ update-alternatives --config editor&lt;br /&gt;
 &lt;p&gt;http://ferdinand-braun-schule.de&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:46:06 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/09/tag-der-offen-tuer/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/tag-der-offen-tuer/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/tag-der-offen-tuer/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/tag-der-offen-tuer/</guid>
       </item>
     
       <item>
@@ -1326,8 +1326,8 @@ update-alternatives --config editor&lt;br /&gt;
 &lt;p&gt;Ein Überblick über die Tagung und was zu buchen ist:&lt;a href=&quot;http://muc.inwes.net/conference-programme/?lang=de&quot; target=&quot;_blank&quot;&gt;Tagungsprogramm, Überblick&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:44:06 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/jubilaeumstagung-des-deutschen-ingenieurinnenbundes/</guid>
       </item>
     
       <item>
@@ -1340,8 +1340,8 @@ Als Ansprechpartner stehen Oliver Staubach (Arbeitskollege des Papas) 0178831765
 Wir organisieren eine Tombola für den Tag der Typisierung und sagen Danke schön für jede Art von Sachspenden.&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:35:14 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/der-vierjaehrige-jakob-braucht-unsere-hilfe/</guid>
       </item>
     
       <item>
@@ -1351,8 +1351,8 @@ Alle Infos &amp;amp; Anmeldemöglichkeiten hier auf Facebook:&lt;a class=&quot;p
 &lt;p&gt;&lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/datenschutz?source=feed_text&amp;amp;story_id=10153994481499639&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;Datenschutz&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/datenschutzgrundverordnung?source=feed_text&amp;amp;story_id=10153994481499639&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;Datenschutzgrundverordnung&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; &lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/dsgvo?source=feed_text&amp;amp;story_id=10153994481499639&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;DSGVO&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:30:17 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/thementag-eu-datenschutz-grundverordnung/</guid>
       </item>
     
       <item>
@@ -1364,8 +1364,8 @@ Alle Infos &amp;amp; Anmeldemöglichkeiten hier auf Facebook:&lt;a class=&quot;p
 &lt;p&gt;Wir bitten um eine verbindliche Anmeldung über unsere Anmeldeformular unter folgendem Link: &lt;a href=&quot;http://www.region-fulda.de/termine_6655.html?event_id=18670&quot; target=&quot;_blank&quot; rel=&quot;nofollow nofollow&quot;&gt;http://&lt;wbr /&gt;www.region-fulda.de/&lt;wbr /&gt;termine_6655.html?event_id=&lt;wbr /&gt;18670&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 21:22:09 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2016/10/09/fachvortrag-krisen-pr-von-dr-andreas-bachmeier/</guid>
       </item>
     
       <item>
@@ -1379,8 +1379,8 @@ Alle Infos &amp;amp; Anmeldemöglichkeiten hier auf Facebook:&lt;a class=&quot;p
 &lt;p&gt;&lt;strong&gt;[link-preview url=&quot;https://www.ted.com/talks/sam_harris_can_we_build_ai_without_losing_control_over_it&quot;]&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 20:19:36 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/10/09/ki-und-ihre-gefahren/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/09/ki-und-ihre-gefahren/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/09/ki-und-ihre-gefahren/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/09/ki-und-ihre-gefahren/</guid>
       </item>
     
       <item>
@@ -1388,8 +1388,8 @@ Alle Infos &amp;amp; Anmeldemöglichkeiten hier auf Facebook:&lt;a class=&quot;p
         <description>&lt;p&gt;&lt;strong&gt;[link-preview url=&quot;http://open-educational-resources.de/bpb-veroeffentlicht-drei-erklaervideos-zu-oer/&quot;]&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Oct 2016 13:40:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/10/09/oer/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/10/09/oer/</guid>
+        <link>http://fachinformatiker-fulda.de/news/2016/10/09/oer/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/news/2016/10/09/oer/</guid>
       </item>
     
       <item>
@@ -1401,8 +1401,8 @@ Die Veranstaltung wird sich in Form eines kleinen Workshops gestalten. Es bedarf
 &lt;p&gt;[contact-form][contact-field label='Name' type='name' required='1'/][contact-field label='E-Mail' type='email' required='1'/][contact-field label='Website' type='url'/][contact-field label='Kommentar' type='textarea' required='1'/][/contact-form]&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Sep 2015 23:21:40 +0200</pubDate>
-        <link>http://localhost:4000/vergangene%20events/2015/09/19/hello-world/</link>
-        <guid isPermaLink="true">http://localhost:4000/vergangene%20events/2015/09/19/hello-world/</guid>
+        <link>http://fachinformatiker-fulda.de/vergangene%20events/2015/09/19/hello-world/</link>
+        <guid isPermaLink="true">http://fachinformatiker-fulda.de/vergangene%20events/2015/09/19/hello-world/</guid>
       </item>
     
 
@@ -1462,7 +1462,7 @@ Die Veranstaltung wird sich in Form eines kleinen Workshops gestalten. Es bedarf
 &lt;p&gt;7 Glossar&lt;/p&gt;
 
 </description>
-            <link>http://localhost:4000/LF10.html</link>
+            <link>http://fachinformatiker-fulda.de/LF10.html</link>
           </item>
         
       
@@ -2489,7 +2489,7 @@ Du solltest 100% erreichen!&lt;/p&gt;
 &lt;p&gt;Ist es möglich, die Installation zu automatisieren? Mache Dir hierzu Gedanken! Wie weit kommst Du mit Deinem jetzigen Wissen? Begründe diese und gebe die Antwort un Moodle ab!&lt;/p&gt;
 
 </description>
-            <link>http://localhost:4000/LF6_1.1_Python.html</link>
+            <link>http://fachinformatiker-fulda.de/LF6_1.1_Python.html</link>
           </item>
         
       
@@ -2590,7 +2590,7 @@ Du solltest 100% erreichen!&lt;/p&gt;
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Spalte3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-            <link>http://localhost:4000/LF6_2.1_Python.html</link>
+            <link>http://fachinformatiker-fulda.de/LF6_2.1_Python.html</link>
           </item>
         
       
@@ -3159,7 +3159,7 @@ MariaDB [geburtsurkunde]&amp;gt; SHOW FIELDS FROM tblGeburtsurkunde;
 &lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblKlasse&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Klassen_Bezeichnung&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Anzahl_Schueler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'12B392'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;22&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-            <link>http://localhost:4000/LF6_SQL.html</link>
+            <link>http://fachinformatiker-fulda.de/LF6_SQL.html</link>
           </item>
         
       
@@ -3945,7 +3945,7 @@ telnet: Unable to connect to remote host: No route to host
 &lt;h1 id=&quot;apache&quot;&gt;Apache&lt;/h1&gt;
 
 </description>
-            <link>http://localhost:4000/LF7_Einfuehrung.html</link>
+            <link>http://fachinformatiker-fulda.de/LF7_Einfuehrung.html</link>
           </item>
         
       
@@ -4476,7 +4476,7 @@ PS /home/user&amp;gt; &lt;span class=&quot;nv&quot;&gt;$Daten&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
-            <link>http://localhost:4000/LF7_Powershell.html</link>
+            <link>http://fachinformatiker-fulda.de/LF7_Powershell.html</link>
           </item>
         
       
@@ -4496,7 +4496,7 @@ PS /home/user&amp;gt; &lt;span class=&quot;nv&quot;&gt;$Daten&lt;/span&gt;
 &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;jekyll&lt;/a&gt;&lt;/p&gt;
 
 </description>
-            <link>http://localhost:4000/about/</link>
+            <link>http://fachinformatiker-fulda.de/about/</link>
           </item>
         
       
@@ -5229,7 +5229,7 @@ index e69de29..d70f6df 100644
 &lt;p&gt;Bitte den Punkt hinten nicht vergessen.&lt;/p&gt;
 
 </description>
-            <link>http://localhost:4000/docker.html</link>
+            <link>http://fachinformatiker-fulda.de/docker.html</link>
           </item>
         
       
@@ -5246,7 +5246,7 @@ Forsthaus Bimbach
 
 36137 Großenlüder
 </description>
-            <link>http://localhost:4000/impressum.html</link>
+            <link>http://fachinformatiker-fulda.de/impressum.html</link>
           </item>
         
       
