@@ -41,14 +41,14 @@ Installation der benötigten Programme:
 apt install -y sudo apache2 apache2-utils php php-common openssh-server vim-nox git
 ```
 
-Di beiden Server openssh und apache2 sollen beim start des Systems automatisch starten. Der einfachste Weg ist der Eintrag in die Datei .bashrc. Dazu müsen wir zuerst den Installationspfad von  service herausfinden:
+Die beiden Server openssh und apache2 sollen beim start des Systems automatisch starten. Der einfachste Weg ist der Eintrag in die Datei .bashrc. Dazu müsen wir zuerst den Installationspfad von  service herausfinden:
 
 ```bash
 root@63fb5dc1ac6b:/# which service                                             
 /usr/sbin/service
 ```
 
-Wir merken uns dn Pfad und wechseln in das Home-Verzeichnis und öffnen dort die Datei .bashrc:
+Wir merken uns den Pfad und wechseln in das Home-Verzeichnis und öffnen dort die Datei .bashrc:
 
 ```bash
 cd ~
@@ -223,7 +223,7 @@ Wir melden uns auf den Container an:
 docker attach webtest
 ```
 
-Wir können über das Git-Repository die Wbsite in jedem Container oder auf dem Muttrtsystem ändern und diese durch das Tolkit von git nachvollziehbar ändern und auch evntuelle Änderungen rückgängig machen. Aussrdem haben wir ein externes Backup der Inhalte.
+Wir können über das Git-Repository die Website in jedem Container oder auf dem Muttertsystem ändern und diese durch das Toolkit von git nachvollziehbar ändern und auch evntuelle Änderungen rückgängig machen. Aussrdem haben wir ein externes Backup der Inhalte.
 
 Wir wechseln in das Verzeichnis /var/www/html:
 
@@ -239,8 +239,8 @@ Und sehen mit dem zweiten Befehl, dass das Repository "sauber" ist.
 Wir bereiten unser System auf einen zweiten Container vor. Dafür kopieren wir das Repository um die Websites der Produktion von der Entwicklung zu trennen.
 
 ```bash
-mkdir dockergit
-git clone /root/web/ dockergit
+mkdir /home/core/dockergit
+git clone /home/core/web/ /home/core/dockergit
 ```
 
 Wir haben jetzt eine Kopie des Verzeichnisses web in dockergit. Beides sind getrennte Git-Repositories.
@@ -248,7 +248,7 @@ Wir haben jetzt eine Kopie des Verzeichnisses web in dockergit. Beides sind getr
 Wir starten einen neuen Container:
 
 ```bash
-docker run -d -i -t --name=webdev -p 8081:80 -v /root/dockergit:/var/www/html ubuntu:web /bin/bash
+docker run -d -i -t --name=webdev -p 8081:80 -v /home/core/dockergit:/var/www/html ubuntu:web /bin/bash
 ```
 Wir überprüfen, dass der Container läuft:
 
@@ -257,10 +257,10 @@ root@proxmox:~/dockergit# docker ps
 CONTAINER ID        IMAGE                   COMMAND                  CREATED              STATUS                PORTS                                                NAMES
 5f3964eaabf6        ubuntu:web              "/bin/bash"              About a minute ago   Up About a minute     0.0.0.0:8081->80/tcp                                 webdev
 ```
-Wir starten noch einen witeren Container auf Port 8083 und dem Namen webdev2:
+Wir starten noch einen weiteren Container auf Port 8083 und dem Namen webdev2:
 
 ```bash
-docker run -d -i -t --name=webdev2 -p 8082:80 -v /root/dockergit:/var/www/html ubuntu:web /bin/bash
+docker run -d -i -t --name=webdev2 -p 8082:80 -v /home/core/dockergit:/var/www/html ubuntu:web /bin/bash
 ```
 
 Und überprüfen, dass beide Container laufen:

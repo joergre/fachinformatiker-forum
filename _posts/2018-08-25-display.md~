@@ -1,0 +1,35 @@
+---
+layout: post
+title: Raspberry Pi Bildschirm remote
+featured: true
+author: joerg_reuter
+tags: [event]
+image: '/images/posts/remote.png'
+---
+
+Es gibt zwei wichtige Protokolle um remote auf ein Raspberry zuzugreifen:
+
+- RDP
+- VNC
+
+# VNC
+
+VNC mus auf dem Raspberry aktiviert werden:
+
+````
+sudo raspi-config
+````
+
+Menüpunkt "Interfacing Options" kann  VNC aktiviert werden. Eventuell werden einige Pakete installiert. Jetzt kann mit Hilfe eines VNC-Viewer auf dem Raspberry Pi zugegriffen werden. Eine App für Anroid gibt es [hier](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android).
+
+Die Verbindung kann entweder über WLAN mit Angabe der IP-Adresse aufgebaut werden oder über USB. Dazu muss auf dem Android-Gerät USB-Tethering aktiviert werden. Auf dem Raspberry Pi muss dazu dem Interface usb0 eine IP-Adresse zugeteilt werden unter der das Raspberry Pi erreichbar ist.
+
+# RDP
+
+Installation des RDP-Servers auf dem Raspberry Pi:
+
+````
+sudo apt install xrdp
+````
+
+Die App für Android gibt es [hier](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android). Die Verwendung funktioniert wie bei VNC.
