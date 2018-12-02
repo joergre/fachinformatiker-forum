@@ -816,16 +816,85 @@ git clone ../test-1/ .
 ```
 Bitte den Punkt hinten nicht vergessen.
 
+# Erstellen von Images
 
+Wir überprüfen die vorhandenen Images:
 
+```bash
+docker images
+```
 
+Wir möchten mit CentOS Version 6 arbeiten:
 
+```bash
+docker pull centos:6
+```
 
+Wie bereits bekannt starten wir den Container im interaktiven Modus:
 
+```bash
+docker rum -it centos:6 /bin/bash
+```
 
+Wir führen ein Update durch:
 
+```bash
+yum -y update
+```
 
+Wir installieren jetzt den Webserver Apache und git:
 
+```bash
+yum -y install httpd git
+```
+
+Wir laden jetzt Kontent für unsere Website:
+
+```bash
+git clone https://github.com/Ferdinand-Braun-Schule/content-dockerquest-spacebones.git
+```
+
+Und kopieren den Inhalt in das öffentliche Verzeichnis des Webservers:
+
+```bash
+cp content-dockerquest-spacebones/doge/* /var/www/html/
+```
+
+Um die Seite zu sehen, müssen wir die Startseite des Apache ausschalten:
+
+```bash
+mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.bak
+```
+
+Der Webserver soll beim booten des Systems automatisch gestartet werden:
+
+```bash
+chkconfig httpd on
+```
+
+Wir verlassen den Container mit
+
+```bash
+exit
+```
+
+und beenden damit auch den Container. Wir schauen das ganze an:
+
+```bash
+docker ps -a
+```
+
+In der ersten Spalte sehen wir die ID. Diese benötigen wir jetzt:
+
+```bash
+docker commit [ID] jreuter:website
+```
+
+Wir überprüfen den Erfolg:
+
+```
+docker images
+```
 
 
 
