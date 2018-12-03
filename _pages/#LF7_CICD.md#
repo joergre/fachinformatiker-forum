@@ -86,7 +86,37 @@ source /etc/profile.d/gradle.sh
 gradle -v
 ```
 
+## gradle wraper
 
+Gradle wraper ermöglicht es, dass immer dir richtige Gradle-Version für das Projekt verwendet wird.
+
+Zuerst erstellen wir eine Datei .gitignore und schreiben in diese Datei .gradle. Dadurch wird die Datei .gradle nicht zu github gesynct.
+
+Wir legen ein Projektordner an:
+
+```bash
+cd
+mkdir mein-projekt
+cd mein-projekt
+```
+
+Dannstarten wir den Wrapper
+
+```bash
+gradle wrapper
+```
+
+Wir schauen uns jetzt die angelegten Dateien und Verzeichnisse an:
+
+```bash
+ls -a
+```
+
+Wir installieren jetzt den Wrapper:
+
+```bash
+gradlew build
+```
 
 
 
