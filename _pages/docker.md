@@ -833,7 +833,7 @@ docker pull centos:6
 Wie bereits bekannt starten wir den Container im interaktiven Modus:
 
 ```bash
-docker rum -it centos:6 /bin/bash
+docker run -it centos:6 /bin/bash
 ```
 
 Wir führen ein Update durch:
